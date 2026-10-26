@@ -1,0 +1,404 @@
+
+
+===== OCR page-01 =====
+
+G DAI HOC CONG NGHE THONG TIN
+10 MÅY & TRUYtN THONG
+Gi thi 1
+DÆm (
+Giåm thi 2
+DE Till GICA K*20D
+Tin m6n hoc: Nh*p mön M?ng måy tinh
+Thåi gian låm båi: 60 phzit
+Ho, ten SV•
+Mä dB thi
+Mä sve
+001
+STT•
+(Thi sinh kh6ng dtzqc så dvng tåi liéu)
+Giåm khåo 1
+G'åm 2
+DAP AN TRAC NGHIEM
+Sd phåch
+DZm ( Chü ):
+nooo
+0 000
+000
+2 ooo
+3 000
+4 OOO
+s 000
+8 ooo
+9 000
+Tht sinh
+SO BAO DANH
+naaoooo
+0 000000
+000000
+2 000000
+3 000000
+4 000000
+000000
+6 000000
+7 000000
+e 000000
+9 000000
+1 0000 II 0000 21 000031 0000
+2 000012000022 0000
+3 000013 000023 000033 0000
+4 000014 0000
+5 000015000025000035 0000
+0000
+7 0000170000270000370000
+8 000018000028 000038 ooco
+9 0000190000290000390000
+IO 000030000040 0000
+- Git phiéu phång, khång bå bån, låm råch. khöng tÅy xåa, måy chåm.
+-TO kin. to "m Céc 6 ton tipcng Ong v6i må t)i, Sb båo danh vå dép {n düng cho Phån
+Lråc ngh*m.
+- Kh5ng drec ghi dé, to dé lén cåc vuöng den, dé måy C!nh Chinh xåc
+SO BÅo DANH lå bån rüt gon cüa MSSV. VJ du: 18520560 180560
+Dé trå cåu 1.2 vå 3, xem tinh huång gti mail nhu hinh du&i dåy:
+1 ser
+agent
+måv Chü
+mail
+user
+agent
+öög
+2
+måy Chü thv
+dien t!) Alice
+4
+mail
+5
+måy Chü tho
+Caen tü Bob
+6
+Cåu 1: Giao thfrc dvqc måy Chü thu dien tü Cia Alice dvng dé gti mail dén måy Chü thu diGn
+tü cüa Bob trong btr&c 4 lå gi?
+B. FTP
+C. SMTP
+D. UDP
+Trang 1/7 - Mi thi 001
+
+
+===== OCR page-02 =====
+
+Cåu 2: Giao thüc duqc ding dé truy cap vd doc thu trong bu&c 6 gi?
+B. IMAP
+A. POP3
+C. ITTP
+D. Tåt cå düng
+2åu 3: Di&u nåo sau dåy lå DÜNG khi måy Chü thtr diGn tutr cüa Bob nh4n dtrqc mail to måy Chü
+ht.r dién tü cüa Alice (bu6c 5)?
+A. Måy Chü thu dien tfr cüa Bob d4t mail d6 trong hép thu cüa Bob
+B. Måy chå thu dién tty cüa Bob m& két n6i TCP dén user agent cüa Bob
+C. Måy Chü thu diGn tty cüa Bob gti mail trvc tiép dén cho user agent cüa Bob
+D. Måy Chü thu diGn tü cüa Bob ding SMTP dé Sri mail dén user agent cüa Bob
+mö hinh chöng giao thüc 5 tang, giå mét HTTP request duec gti tir Source dén
+)estination nhu hinh du6i däy. Häy trå Ibi cåc cåu 4 vå 5:
+1
+2
+Applic•tim
+Transport
+Netwo&
+Link
+Physical
+me met
+peot«ol
+Cåu 4: Cho biét tång nio & vi tri 3.
+A. Täng Application
+C. Täng Network
+6
+10
+9.
+12
+11
+B. Tång Transport
+D. Tång Physical
+Cåu S: Cho biét tång vå don vi dÜ lieu tugng tng & vi 12
+A. Täng Application vå Message
+B. Tång Network vå Segment
+C. Täng Link vå Frame
+D. Tång Physical vå Frame
+Sü dgng thöng tin sau trå cåc cäu höi 6, 7
+Cho so db minh hoe güi (TCP sender) gti mét Cira Sö (window) gåm 4 phån doen
+(segment) dén nguöi nhin (TCP receiver) nhtr hinh sau, d6 phån doon cuöi cüng bi rnåt
+trong quå trinh gti. Giå giå tri sequence number cüa TCP segment dåu tién lå 439 Vä mBi
+segment c0 kich thu6c 798 bytes. Khoång th&i gian trE giüa ngu&i gti Vä ngu&i nhön lå 7 don vi
+th&i gian, do d6 segment dåu tién dén nguöi nhön lüc t 8.
+TCP sender
+TCP receiver
+Trang 2" - Mä thi 001
+
+
+===== OCR page-03 =====
+
+iu 6: Toi th&i diém t=3, TCP segment duge gti c6 sequence number lå bao nhiéu?
+A. 439
+D. 798
+c. 2035
+D. 1317
+Cåu 7: Tei th&i diém t—10, bén nhån se phån hbi segment c6 ACK number lå bao nhiéu?
+A. 2833
+B. 2035
+c. 3631
+Cho mö hinh ü•uyh dt lieu nhtr sau, åp dung cho cåu höi 8,9:
+TCP
+Sender
+tel
+Ttneotå
+t = 19
+21
+rcp
+rcp
+LOST
+• • LOST
+• LOST
+D. 798
+TCP
+Recetver
+t -12
+Giå kh&i tao cüa sequence number lå 161, mBi segment chta 281 bytes dü lieu.
+Ciu 8: Cho biét däy sequence number tung tng v&i 5 segment trén so dB
+A. 161, 168, 175, 183, 190
+c. 161, 442, 723, 1004, 1285
+B. 161, 162, 163, 164, 165
+D. Tåt cå déu sai
+Chu 9: Giå mö hinh nåy dung giao thüc Go-Back-N, cho biét phåt biéu nåo sau däy düng?
+A. Bén nhän nhän duqc 2 g6i tin (gåi tin thü 2 vå g6i tin tht 5) vå yéu cåu bén gti gti loi göi
+tin thir 1, thir 3 va thir 4
+B. Bén nhän nhän dl.rqc 2 g6i tin nhtrng yéu cåu gti lei tt gåi tin thir l.
+C. Bén nh#n nhån dtrqc I g6i tin (g6i tin thir 2) vd yéu cåu bén gfri lei g6i tin thü l, thi.} 3,
+thir4 vå thir 5
+Trang 3/7 OO
+
+
+===== OCR page-04 =====
+
+D. Tit cå dåp {n déu sai.
+Cho mö hinh Sau, trong cåe TCP cticnt n0i chuyen vOi TCP server thöng qua cåe Socket
+dinh nghia nhtr trong hinh. I Iny trå 1M 2 chu höi IO, I l:
+nySoek.t •
+8TREAX)
+bind (my•ddr. "43 )
+tnt.socx STRZAN'
+tay•ddr. 'GS
+poet. ?
+port: ?
+Cäu IO: Cho biét dest port cüa g6i tin B?
+tnt,socr
+. bind (ny•ddz.
+•ygoek•t2 •
+nyJoek•ta . bind Cayaddr, 7421
+phys«al
+A. 6465
+B. 6543
+Ciu 11: Cho biét source port cia g6i tin D?
+B. 5019
+A. 6543
+source
+den pat:
+pat: ?
+c. 5019
+c. 7421
+D. Dåp ån khåc
+D. Dép an khåc
+Cåu 12: Cho mét doen mä nguån Python düng dé t40 mét két n6i socket nhtr bén dtr&i, häy chon
+dip {n düng.
+from socket import
+serverName '127.0.0.1 '
+serverPort 12000
+client-socket - socket(AF INET, SOCK STRE4BO
+clien1Socket.
+A. Doan mä näy Sü dung két nbi TCP
+C Doan mä nåy Sü dung két n6i UDP
+B. Doen mä nay düng cho phia may Chü
+D. Tåt cå dhi sai
+Ciu 13: Xem hinh dinh kern. Däy lä hinh thi&c phån giåi DNS näo
+DNS mjy
+2
+3
+4
+DNS may Chü
+TLO
+DNS may
+6
+ONS m$ th&n
+Host yåu cåu
+og.ny.•åu
+A. Truy van giån tiép
+B. Truy vån de quy
+Trang 4/7 - Mä dé thi 001
+
+
+===== OCR page-05 =====
+
+C. Truy van trvc tiép
+D. Truy vån tuån tv
+JCåu 14: Cho so db mong gita client vå scrvcr v6i cåc thöng sb vé tbc dé truyån (transmission
+rate) vå dé dåi cåc lién két (link length) nhu hinh sau:
+r•te: JOO
+Length: S
+"Jon rete: IO Fbp•
+Link Length: 3 r.
+100
+Length: SOO
+Biét räng tbc dé Ian trén cåc lién két (link) bing 3 x 108 m/s. Tinh tbng dé træ (bö qua
+tröxie IS' tqi nit va tra hang dgi) khi ü•uyh g6i tin c6 kich thu6c 16000 bits tir client dén server.
+A. 0.00017 s
+B. 0.00034 s
+c. 0.0018 s
+D. 0.0036 s
+Ciu IS: Möt PC mét file c6 dung luqng 16n tü mét server. Server c6 thé gti cüng möt
+lüc bao nhiéu segnent khi biét giå tri rwnd cüa bén nhän (receive window) lå 1000 bytes Vä mBi
+segnent duce gti c6 dé dåi 100 bytes?
+A. segnent
+C 1000 segnents
+B. 100 segrnents
+D. IO segments
+Cäu 16: Cho so dö chuyén dbi treng thåi hüu hm (FSM) cüa bén gti vå bén nhän nhl.r hinh bén
+du&i- Dåy Iå kiéu truy&n tin cay nåo?
+tir tång extad (padcet.da>)
+bén nhän
+A. PDT 2.0
+bén gm
+B. RDT 1.0
+C. RDT 2.1
+D. R.DT 2.2
+Cäu 17: Tai sao phäi düng Web Caching
+A. Giåm thbi gian dåp tng cho yéu cau cüa Client
+B. Giåm luu Jugng trén du&ng link tn»•' cüa I tb chüc
+C Cho phép nhtng nhå cung cåp néi dung "it thay dbi" hi?u quå hon.
+D. Tåt cå déu dfing.
+Ciu 18: Phåt biéu näo du&i dåy Iå Sai d6i v&i két n6i HTTP khöng bén vüng:
+A. Mu6n gti dbi tuqng phåi m& két n6i TCP, sau db két n6i se bi d6ng.
+B. CO thé gti nhiéu döi tuqng trén mét két n6i.
+C HTTP khånp bén vcng cån 2RTTs Cho mbi d6i tuq•ng duqc gti di.
+D. Tåi nhi&u doi tuqng yéu cåu nhi&u két n6i.
+Cåu 19: Trong RDT 3.0, chuyen gi se xåy ra khi bén khång Ilhan duqc ACK cüa bén nhan?
+A. Bén gti gti ACK trüng lap cho ben nhån dé båo hiéu Ibi phåt sinh.
+B. Bén gti tv phåt hi$n Ibi vå gti lai g6i tin sau khi th&i gian Chb hét
+C Bén gti gti NAK Cho bén nhån dé båo hi#u ve Ibi phåt sinh.
+D. Tåt cå déu SAI.
+Cåu 20: Cåc g6i tin c0 dé dåi L— 1000 bytes durqc truy&n trén mét két n6i c6 tåc dé mayén lä R
+=1000 Kbps. Jibi t6i da c6 bao nhiéu g6i tin duec truyén trong is
+Trang 5/7 - Mä thi 001
+
+
+===== OCR page-06 =====
+
+A. 125 goi tin
+n. I SO gåi tin
+C. 250 g6i tin
+D. 100 g6i tin
+21: Trong UDP hcndcr v6i kich 2 bytes xåc dinh chiåu
+cia g6i UDP segments ( tinh cå header) . Tren ty thuyét, chiéu dåi Idi da cüa g6i UDP lå
+A. 22 bytcs
+Jb. 16 bytes
+C. bytes
+I). KhOng c6 gi6i hon
+Ciu 22: Phuong thfrc HTTP nao duec Sü dung dé gtri do lieu dén server thöng qua URL nhu vi
+dp sau: ult. edu .vn/studentsearch
+A. PUT
+B. POST
+C. LEAD
+D. GET
+Ciu 23: Giå mét kit néi TCP c6 3 sc ment ACK quay Ben GCri vå d6 ngu&i ta do
+th&i gian di-v& cda segment thünh t SampleRIT1 lå 80 msec, th(r hai SampleRTT2 Iå 100
+msec vå thü ba SampleRTT3 lä 60msec. Giå tri EstimatedRTT ngay sau khi ACK thir 3 quay
+lå? (Giå he sé a—O.2)
+A. 78.5 msec
+B. 79.2 msec
+C. 80 msec
+D. 84 msec
+Cäu 24: Cho mo hinh truy&n th6ng cüa HTTP, trong d6 server phån höi mét HTTP response cho
+client nhu sau:
+GET;
+hap-reply
+Intemet
+host, running
+a web browser
+HTTP/I.1404 Not Found
+Date: Thu, 13 Oct 2016 06:29:17 +0000
+Server: Apache/2.2.3 (CentOS)
+Content-length: 600
+Connection: Close
+Content-type: text/html
+Phåt biéu näo sau däy DÜNG?
+A- Server trå thänh cöng mét tran? Web
+B. Server trå mét néi dung c6 chicu däi lå 600 bytes
+C Phién bån HTTP 1.1 khöng duec server tim thåy
+gaia.cs.umass.edu
+Web server
+D. Néi dung trang Web dä bi thay dbi våo th&i diém Thu, 13 Oct 2016 06:29:17
+Chu 25: Trong h04t döng Go-Back-N (Pipelined), phia güi phåt dbng th&i 5 g6i O, 1, 2, 3, 4. Phia
+nhän thu chfnh xåc 5 g6i vå trå 5 ACK nhung phia gti chi nhan duec ACK(O), ACK(I),
+ACK(4). Tiép theo phia güi se phåt ?
+A. Phåt g6i 5, 6, 7 vå ch& hét hét th&i gian dé phåt loi g6i 2, 3.
+B. Phåt g6i 5, 6 vå ch& hét hét th&i gian dé phåt loi g6i 2, 3, 4.
+C. Phåt g6i 5, 6, 7, 8, 9.
+D. Ch&hét th&i gian dé phåt loi g6i 2, 3
+cau 26: checksum cüa 2 chub 16 bit sau•. 10101100 01010001 01001001 11001100
+A. 00011001 11100010
+c. 01001001 11100010
+B. 00001001 ill 10010
+D. 00001001 11100010
+Cäu 27: Trong sb cåc c4p giao thüc vå cdng dich vu sau, c4p nao lå düng:
+A. FTP: TCP Port 22
+C. DNS: TCPPort 50
+B. Telnet: UDP Port 23
+D. SMTP: TCP Port 25
+Trang 6/7 - Mä di thi 001
+
+
+===== OCR page-07 =====
+
+S: Häy ghép cåc nhiérn vu tuang tng tirng giao thüc du&i dåy:
+a.
+b.
+c.
+d.
+e.
+f.
+POP3
+TCP
+FTP
+DNS
+SMTP
+UDP
+A. a2, b3, c6, d5, el, f4
+C. O, b4, c6, d5, el, B
+1. Gti email giüa cåc server
+2. Tåi email tir email server den email client
+3. Cung cåp dich vu hu&ng két n6i
+4. Dich vv phi két n6i
+5. Phån giåi tén thinh dia chi IP
+6. Truy&n tap tin
+B. a, b3, c5, d6, el, f4
+D. al, b3, c6, d5, e2, f4
+Cåu 29: Giå Sü cåc bån ghi sau näm trén måy Chü DNS server Enterprise.com
+(dns.enterprise.com, 146.54.48.242, A)
+(www.enterprise.com, westl.enterprise.com, CNAME)
+(westl.enterprise.com, 142.81.17.206, A)
+(www.enterprise.com, mail.enterprise.com, MX)
+(mail.enterprise.com, 247.29.169.156, A)
+Dia chi IP cüa trang Web www.enterprise.com lå:
+A. 146.54.48.242.
+c. 247.29.169.156.
+Cåu 30: Hinh sau mö tå quå trinh gi?
+Sender
+SYN
+ACK
+B. 142.81.17.206.
+D. Cå A, B, C déu sai.
+Receiver
+SYN/ACK
+Connection Established
+Data transfer
+(Send bytes of segments)
+A. Bit tay ba btr6c (TCP handshake)
+B. Truyh tin cay (Reliable delivery)
+C. Windowing
+D. Di&u khién lubng (Flow Control)

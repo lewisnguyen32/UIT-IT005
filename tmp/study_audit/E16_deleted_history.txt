@@ -1,0 +1,374 @@
+WARNING: All source text is tracked deletion w:delText. Historical text, not current visible content.
+[P1] c a
+[P3] S 
+[P4] Phát Triển Đề Thi Giữa Kỳ
+[P5] Nhập Môn Mạng Máy Tính
+[P6]  
+[P8] Đề A
+[P15] ĐỀ KIỂM TRA GIỮA KỲ I
+[P16] Năm học: 2023 - 2024
+[P17] Môn: Nhập Môn Mạng Máy Tính
+[P18] Ngày:…/…/…
+[P20] Câu 1: Các giao thức tại Tầng Vận Chuyển Không cung cấp dịch vụ nào sau đây
+[P21] A. ChecksumB. kMultiplexing tại bên gửi
+[P22] C.Đảm bảo độ trễD. DeMultiplexing tại bên nhận
+[P23] Câu 2: Trong mô hình OSI, tầng nào làm nhiệm vụ kiểm tra lỗi và điều chỉnh lại dữ liệu nếu cần?
+[P24] A. Tầng Vận Chuyển
+[P25] B. Tầng Mạng
+[P26] C. Tầng Liên Kết Dữ liệu
+[P27] D. Tầng Vật Lý
+[P28] Câu 3: Giao thức TCP (Transmission Control Protocol) sử dụng kiểm tra lỗi theo phương thức nào?
+[P29] A. Checksum
+[P30] B. CRC (Cyclic Redundancy Check)
+[P31] C. Hamming Code
+[P32] D. Bit Parity
+[P33] Câu 4:Để nối nhiều máy tính với nhau trong mạng LAN, bạn cần một thành phần nào?
+[P34] A. Switch
+[P35] B. Router
+[P36] C. Modem
+[P37] D. Bridge
+[P38] Câu 5 : Giao thức nào được sử dụng để gửi và nhận email qua Internet?
+[P39] A. FTP (File Transfer Protocol)
+[P40] B. SMTP (Simple Mail Transfer Protocol)
+[P41] C. HTTP (Hypertext Transfer Protocol)
+[P42] D. UDP (User Datagram Protocol)
+[P43] Câu 6 :Trong mô hình OSI, tầng nào thực hiện đa multiplexing và đa địa chỉ?
+[P44] A. Tầng Vận Chuyển
+[P45] B. Tầng Liên Kết Dữ liệu
+[P46] C. Tầng Mạng
+[P47] D. Tầng Ứng dụng
+[P48] Câu 7 :IP (Internet Protocol) sử dụng bao nhiêu byte để đại diện cho địa chỉ IPv4?
+[P49] A. 16 bytes
+[P50] B. 4 bytes
+[P51] C. 8 bytes
+[P52] D. 32 bytes
+[P53] Câu 8:Giao thức HTTP được sử dụng để làm gì trong môi trường web?
+[P54] A. Chuyển file
+[P55] B. Truyền dữ liệu
+[P56] C. Điều khiển thiết bị
+[P57] D. Hiển thị trang web
+[P58] Câu 9:Đối với giao thức UDP, dịch vụ nào sau đây không được cung cấp?
+[P59] A. Đảm bảo giao diện
+[P60] B. Kiểm tra lỗi và sửa lỗi
+[P61] C. Multiplexing và Demultiplexing
+[P62] D. Gửi dữ liệu dựa trên địa chỉ IP và cổng đích
+[P64] Câu 10:Tầng nào trong mô hình OSI thực hiện mã hóa và giải mã dữ liệu trước khi truyền qua mạng?
+[P65] A. Tầng Vận Chuyển
+[P66] B. Tầng Liên Kết Dữ liệu
+[P67] C. Tầng Mạng
+[P68] D. Tầng Ứng dụng
+[P69] Câu 11:Trong giao thức HTTPS, chữ "S" đại diện cho điều gì?
+[P70] A. Secure (Bảo mật)
+[P71] B. Simple (Đơn giản)
+[P72] C. Server (Máy chủ)
+[P73] D. Session (Phiên làm việc)
+[P74] Câu 2 : Định danh của một socket bao gồm
+[P75] A. IP address và PortnumberB. IP address
+[P76] C. IP address và Mac addressD. IP address và User id
+[P77] Câu 3: Thứ tự đúng từ trên xuống dưới trong mô hình OSI là :
+[P78] A. Application – Transport – Sesstion – Presentation – Network – Physical – Data Link 
+[P79] B. Application – Presentation – Session – Transport – Network – Data Link - Physical 
+[P80] C. Application – Session – Presentation – Transport – Network – Data Link – Physical 
+[P81] D. Application – Presentation – Session – Transport – Internet – Data Link - Physical
+[P82] Câu 4: Quá trình một thông điệpdiệp (message) được đưa qua các tầng (layer) và được thêm các thông tin điểu khiển vào đầu (header) trong hoạt động của thiết bị mạng được gọi là gì ?
+[P83] A.Compress                                    B.Encapsulation
+[P84] C.De-Encapsulation.                     D. Header-Adding
+[P86] Dạng bài Độ Trễ 
+[P87] Câu 1 : Một gói tin có độ dài L=30000 bits được truyền trên đường liên kết giữa 2 router có tốc độ truyền R=10Mbps, khoảng cách giữa 2 Router d=300km và tốc độ lan truyền là s=3.. Để giảm độ trễ đầu cuối đi một nữa ( có thể điều chỉnh tốc độ truyền  như thế nào ?(Bỏ qua độ trễ xử lí và độ trễ xếp hàng )
+[P93] Câu 2: Một gói tin có độ dài 12000 bit và được truyền qua đường truyền có tốc độ R = 20 Mbps. Nếu tốc độ lan truyền là 2.5x10^8 m/s và khoảng cách giữa hai đầu nối là D = 350 km, khi nào gói tin đến đích nếu tốc độ truyền tăng lên gấp đôi? 
+[P97] Câu 3: Một gói tin với độ dài L = 60000 bit được truyền qua đường truyền có tốc độ R = 10 Mbps và tốc độ lan truyền S = 2.5x10^8 m/s. Nếu khoảng cách giữa hai bộ định tuyến đơn vị giảm một nửa, hãy tìm tốc độ truyền R{new} cần thiết để giữ nguyên độ trễ đầu cuối. 
+[P101] Câu 4: Một gói tin có độ dài L = 50000 bit và tốc độ truyền R = 15 Mbps. Khoảng cách giữa hai bộ định tuyến là D = 500 km và tốc độ lan truyền là S = 3*10^8 m/s. Để giảm độ trễ đầu cuối đi một nửa, tốc độ truyền mới R{new} phải thế nào? 
+[P103] Câu 5: Một gói tin có độ dài L = 40000 bit được gửi qua đường truyền có tốc độ R = 20 Mbps. Khoảng cách giữa hai bộ định tuyến là D = 200 km và tốc độ lan truyền là S = 3*10^8 m/s. Nếu muốn giảm độ trễ đầu cuối đi một nửa, chúng ta cần điều chỉnh tốc độ truyền R{new} như thế nào? 
+[P106] Câu 6: TCP và UDP hoạt động ở tầng nào các chồng giao thức?
+[P107] A. Tầng Vận ChuyểnB.Tầng Mạng
+[P108] C. Tầng Ứng dụngD.  Tầng Liên Kết
+[P110] Dạng câu hỏi về mô hình OSI
+[P111] Câu 4: Lớp nào của OSI Model có nhiệm vụ đảm bảo giao tiếp từ phía cuối đến cuối (end-to-end communication)? 
+[P112] A. Presentation
+[P113]  B. Transport 
+[P114] C. Data Link 
+[P115] D. Network
+[P117] Câu 5: Lớp OSI nào thực hiện việc chuyển đổi và mã hóa dữ liệu? 
+[P118] A. Session
+[P119]  B. Network 
+[P120] C. Application 
+[P121] D. Presentation
+[P123] Câu 6: Lớp OSI nào chịu trách nhiệm thiết lập, duy trì và kết thúc phiên (session)? 
+[P124] A. Session 
+[P125] B. Transport 
+[P126] C. Data Link 
+[P127] D. Presentation
+[P130] Câu 7: Chọn lớp OSI nào sau đây không tồn tại? 
+[P131] A. Internet 
+[P132] B. Network 
+[P133] C. Session 
+[P134] D. Data Link
+[P135] Câu 8: Lớp OSI nào thực hiện việc kiểm soát việc truy cập mạng và quản lý đường dẫn nguồn cho dữ liệu? 
+[P136] A. Application 
+[P137] B. Presentation 
+[P138] C. Network 
+[P139] D. Session
+[P142] Câu 8: Các đơn vị dữ liệu giao thức trong mô hình OSI được gọi là:
+[P143] A.UDP                                               B.PDU
+[P144] C.OSI                                                D.Packet
+[P146] Câu 9: Phát biểu nào sau đây là sai đối với kết nối HTTP không bền vững 
+[P147] A. HTTP không bền vững  cần 2RTTs cho mỗi đối tượng được gửi đi                                      
+[P148] B.Muốn gửi một đối tượng phải mở một kết nối TCP, sau đó kết nối sẽ bị đóng
+[P149] C. Có thể gửi nhiều đối tượng trên một kết nối                                                   
+[P150] D. Tải nhiều đối tượng sẽ yêu cầu nhiều kết nối
+[P151] Áp dụng cho câu 10 -11
+[P152] Cho sơ đồ sau :
+[P154] Câu 2: Phát biểu nào sau đây là sai khi nói về HTTP bền vững? 
+[P155] A. Một kết nối TCP có thể được sử dụng để gửi và nhận nhiều đối tượng. 
+[P156] B. HTTP bền vững không yêu cầu bất kỳ RTTs trong quá trình tải đối tượng. 
+[P157] C. HTTP bền vững giảm thiểu số lần RTTs. 
+[P158] D. Kết nối TCP chỉ được đóng khi client hoặc server quyết định ngắt kết nối.
+[P160] Câu 3: Khi nào kết nối TCP của HTTP không bền vững sẽ được đóng? 
+[P161] A. Khi client nhận được tất cả các đối tượng mà nó yêu cầu.
+[P162]  B. Khi server gửi tất cả các đối tượng mà nó có. 
+[P163] C. Ngay sau khi một đối tượng duy nhất đã được gửi qua kết nối. 
+[P164] D. Khi không có bất kỳ truy vấn nào từ client.
+[P166] Câu 4: Kết nối TCP trong HTTP không bền vững được mở: 
+[P167] A. Tại bắt đầu mỗi phiên truy cập.
+[P168]  B. Cho mỗi đối tượng riêng biệt được truy xuất. 
+[P169] C. Khi có yêu cầu từ server.  
+[P170] D. Chỉ khi có lỗi kết nối.
+[P172] Câu 5: Làm thế nào để cải thiện hiệu suất của HTTP không bền vững? 
+[P173] A. Giữ kết nối mở cho tất cả các truy vấn.
+[P174]  B. Mở nhiều kết nối cho mỗi truy vấn. 
+[P175] C. Sử dụng kết nối TCP khác nhau cho mỗi đối tượng. 
+[P176] D. Chuyển sang sử dụng HTTP bền vững.
+[P178] Câu 6: Phát biểu nào sau đây là sai về kết nối HTTP không bền vững?
+[P179]  A. Mỗi yêu cầu/phiên phản hồi yêu cầu một kết nối TCP mới.
+[P180]  B. HTTP không bền vững không đòi hỏi hai chuyến đi-đến (2RTTs) cho mỗi đối tượng.
+[P181]  C. HTTP không bền vững chậm hơn HTTP bền vững. 
+[P182] D. Việc gửi nhiều đối tượng yêu cầu nhiều kết nối TCP.
+[P184] Câu 7: Chọn phát biểu đúng về HTTP bền vững: 
+[P185] A. HTTP bền vững yêu cầu một kết nối TCP mới cho mỗi đối tượng được tải. 
+[P186] B. HTTP bền vững giữ cho kết nối TCP giữa client và server được bảo lưu cho nhiều đối tượng. 
+[P187] C. HTTP bền vững tăng số lượng RTTs so với HTTP không bền vững. 
+[P188] D. Khi server gửi một đối tượng qua kết nối, kết nối TCP tắt ngay lập tức.
+[P190] Câu 8: Chọn câu đúng về HTTP: 
+[P191] A. HTTP không bền vững sử dụng ít tài nguyên hơn so với HTTP bền vững. 
+[P192] B. HTTP bền vững cung cấp thời gian phản hồi nhanh hơn so với HTTP không bền vững.
+[P193]  C. HTTP không bền vững giữ một kết nối TCP mở cho tất cả requests. 
+[P194] D. HTTP bền vững yêu cầu nhiều RTTs hơn cho mỗi đối tượng được gửi đi.
+[P196] Câu 9: Kết nối HTTP bền vững có thể được ngắt bởi ai? A. Chỉ client B. Chỉ server C. Cả client và server D. Tự động ngắt sau một khoảng thời gian không hoạt động
+[P198] Câu 10: Phát biểu nào sau đây là đúng với HTTP bền vững? 
+[P199] A. Khi client hoặc server ngắt kết nối, tất cả các yêu cầu/phiên phản hồi đang chờ sẽ bị hủy. 
+[P200] B. Mỗi đối tượng cần một kết nối TCP riêng biệt để được tải về. 
+[P201] C. HTTP bền vững không thể tải nhiều đối tượng qua một kết nối. 
+[P202] D. Kết nối TCP giữa client và server được bảo lưu cho một đối tượng duy nhất.
+[P204] Câu 10: Ở bước 6 những giao thức nào có thể được sử dụng
+[P205] A. SMTP                                                    B.IMAP
+[P206] C.  Cả A và B đều sao                         D. Cả A và B đều đúng
+[P207] Giải:
+[P209]  
+[P210] Các giao thức có thể được sử dụng ở bước 6( Giao thức truy cập mail ) : POP,IMAP,HTTP.
+[P211] Câu 11 : Ở bước 2 trong sơ đồ giao thức nào được sử dụng
+[P212] A.    TCP                                            B.IMAP
+[P213] C.     POP3                                        D.SMTP
+[P214] Giải : Giao thức ở bước 2  ,bước 4 là SMTP
+[P216] Câu 12:TCP SYN Segment ( gói tin TCP có cờ SYN) sử dụng Sequence number nào để khởi tạo kết nối  TCP giữa cilent và server
+[P217] A. 0                                                    B.Số nguyên tố ngẫu nhiễn 0- 65535
+[P218] C.  -1                                                   D.Số ngẫu nhiên
+[P219] Câu 13 : Cho một phiên làm việc SMTP ,hãy sắp xếp trình tự giao tiếp đúng ở phía cilent
+[P220] A.  HELO, MAIL FROM, DATA, RCPT TO, QUIT                                                  
+[P221] B. HELO, MAIL FROM, RCPT TO, DATA, QUIT
+[P222] C.  HELO, DATA, MAIL FROM, QUIT, RCPT TO                                                  
+[P223] D. HELO, RCPT TO, DATA, QUIT, MAIL FROM
+[P226] Câu 14:Trong giao thức truyền dữ liệu tin cậy (RDT), giao thức nào được xử lí trong trường hợp mất gói tin ACK?
+[P227] A.RDT 3.0                                     B.RDT 2.2
+[P228] C.RDT  2.1.                                   D.Không thể xử lí được việc mất gói tin ACK: 
+[P229] Câu 15 : Hãy xác đinh URL của đối tượng (Objeet) trong thông điệp HTTP GET ở hình bên đưới
+[P230] T /favicon.ico HTTP/1.1\rln st: thuvien.uit.edu.vn rn 
+[P231] connection2: keep-alive\r\n
+[P232] User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) Safari/537.36|r\n accept:image/webp,image/apng.image/svg+xml,imae/*,*/*;q=0.8|r\n 
+[P233] ferer: http://thuvien.uit.edu.vn/rin cept
+[P234] Encoding: gzip, deflatelrin 
+[P235] acept-Language: vi-VN, vi; q=0.9\r\n
+[P236] cookie:_ga=GA1.3.1446413362.1665909881;ASP.NET_SessionId=3qvtcqpxkajm5rpqscnr3ktn|rn
+[P237] A. thuvien.uit.edu.vn/favicon.ico
+[P238] B. /favicon.ico
+[P239] C. thuvien.uit.edu.vn/
+[P240] D. http://thuvien.uit.edu.vn/
+[P241] Câu 17.  SMTP sử dụng cổng số bao nhiêu
+[P242] A.  80                                                B. 25
+[P243] C.  143                                              D. 225
+[P244] Câu 18: Cho thông điệp HTTP GET sau đây:
+[P245] GET /page/1 HTTP/1.1
+[P246] Host: api.example.net
+[P247] URL của đối tượng được yêu cầu là gì?
+[P248] A. /page/1
+[P249] B. api.example.net/page/1
+[P250] C. api.example.net
+[P251] D. page/1
+[P252]               
+[P257] Câu 19          Hãy xác định URL của đối tượng (Object) trong thông điệp HTTP GET sau đây:
+[P258] GET:https://www.example.org:8080/path/to/page.html?query=123 HTTP/1.1
+[P259] Host: www.example.org
+[P260] User-Agent: Chrome/97.0.4692.71
+[P261] A. /path/to/page.html?query=123
+[P262] B. www.example.org:8080/path/to/page.html?query=123
+[P263] C. /page.html?query=123
+[P264] D. path/to/page.html?query=123
+[P265] Dạng câu hỏi về UDP:
+[P266] Câu 1: UDP là giao thức của tầng nào trong mô hình OSI? 
+[P267] A. Tầng Network 
+[P268] B. Tầng Transport 
+[P269] C. Tầng Session 
+[P270] D. Tầng Presentation
+[P271] Câu 2: Một trong những ưu điểm của UDP so với TCP là gì? 
+[P272] A. Mạnh mẽ hơn
+[P273]  B. Tốc độ truyền nhanh hơn 
+[P274] C. Hỗ trợ kiểm soát lưu lượng 
+[P275] D. Xác nhận dữ liệu
+[P276] Câu 3: UDP hoạt động theo mô hình kết nối nào? 
+[P277] A. Kết nối hướng 
+[P278] B. Kết nối không hướng 
+[P279] C. Nửa kết nối 
+[P280] D. Kết nối song song
+[P281] Câu 4: UDP phù hợp với ứng dụng nào sau đây nhất?
+[P282]  A. Những ứng dụng cần độ tin cậy cao 
+[P283] B. Streaming video
+[P284]  C. Chuyển tiền qua Internet Banking 
+[P285] D. Ứng dụng email
+[P286] Câu 5: Giao thức nào sử dụng UDP và được dùng để cung cấp thông tin về địa chỉ IP cấp phát tự động? 
+[P287] A. TCP 
+[P288] B. HTTP 
+[P289] C. DHCP 
+[P290] D. SSL
+[P291] Câu 6: Trong gói tin UDP, thông tin về cổng nguồn và đích nằm ở phần nào? A. Header B. Payload C. Footer D. Checksum
+[P292] Câu 7: Tổng độ dài của header của gói tin UDP là bao nhiêu byte?
+[P293]  A. 8
+[P294]  B. 16 
+[P295] C. 32
+[P296]  D. 64
+[P297] Câu 8: Trường "Length" trong header của gói tin UDP biểu diễn thông tin gì?
+[P298]  A. Độ dài của gói tin UDP 
+[P299] B. Độ dài của payload C. Độ dài của header D. Độ dài của phần footer
+[P300] Câu 9: Trong UDP, lỗi gói tin được kiểm tra bằng cách nào?
+[P301]  A. Sử dụng số sequence 
+[P302] B. Sử dụng checksum 
+[P303] C. Sử dụng acknowledgment
+[P304]  D. Không có cơ chế kiểm tra lỗi
+[P305] Câu 10: Trong mô hình client-server, cổng nào thường được dùng để liên lạc với server qua giao thức UDP?
+[P306]  A. 80 B. 8080 C. 53 D. 23
+[P307] Câu 11: Giao thức nào dưới đây không sử dụng UDP? A. DNS B. SNMP C. SMTP D. BOOTP
+[P308] Câu 13: Trường nào sau đây không nằm trong header gói tin UDP? A. Source port B. Destination port C. Length D. Sequence number
+[P309] Câu 14: Trường nào trong header gói tin UDP chứa thông tin về độ dài gói tin UDP (bao gồm cả header và dữ liệu)? A. Source Port B. Destination Port C. Length D. Checksum
+[P310] Câu 15: UDP thích hợp với loại ứng dụng nào sau đây? 
+[P311] A. Real-time applications 
+[P312] B. File transfer applications 
+[P313] C. Email 
+[P314] D. Web browsing 
+[P315] Câu 16: Giao thức nào dưới đây sử dụng UDP và cung cấp dịch vụ phân giải tên miền?
+[P316]  A. SMTP 
+[P317] B. DHCP 
+[P318] C. DNS 
+[P319] D. HTTP
+[P320] Câu 18: Cái gì được sử dụng để kiểm tra sự toàn vẹn của dữ liệu trong gói tin UDP? 
+[P321] A. Length 
+[P322] B. Acknowledgment 
+[P323] C. Checksum 
+[P324] D. Sequence number
+[P326] Dạng Câu hỏi về RDT
+[P327] Câu 1: Giao thức RDT nào có khả năng xử lý trường hợp mất gói tin dữ liệu? 
+[P328] A. RDT 1.0 
+[P329] B. RDT 2.0 
+[P330] C. RDT 2.1 
+[P331] D. RDT 3.0
+[P332] Câu 2: Trong giao thức RDT, phiên bản nào thực hiện gửi lại gói tin nếu không nhận được gói ACK sau thời gian chờ của nó? 
+[P333] A. RDT 1.0 
+[P334] B. RDT 2.1 
+[P335] C. RDT 2.2 
+[P336] D. RDT 3.0
+[P337] Câu 3: Phiên bản nào của giao thức RDT không thể xử lý việc mất gói tin ACK? A. RDT 1.0 
+[P338] B. RDT 2.0 
+[P339] C. RDT 2.1 
+[P340] D. Không phiên bản nào không thể xử lý
+[P342] Câu 4: Mô hình giao thức RDT nào được thiết kế để xử lý độ trễ trong mạng? 
+[P343] A. RDT 2.0 
+[P344] B. RDT 2.1 
+[P345] C. RDT 2.2 
+[P346] D. RDT 3.0
+[P347] Câu 5: Giao thức RDT nào có khả năng phát hiện và sửa lỗi trong gói dữ liệu? 
+[P348] A. RDT 1.0 
+[P349] B. RDT 2.2 
+[P350] C. RDT 1.1 
+[P351] D. RDT 2.1
+[P352] Câu 6: RDT 1.0 tạo ra giả định gì về môi trường mạng? 
+[P353] A. Không có lỗi 
+[P354] B. Mất gói dữ liệu
+[P355] C. Gói dữ liệu bị trễ 
+[P356] D. Mất gói ACK
+[P357] Câu 7: Giao thức RDT 2.1 giải quyết vấn đề gì trong RDT 2.0? 
+[P358] A. Phát hiện gói tin bị mất 
+[P359] B. Gói tin ACK bị trễ 
+[P360] C. Gói tin dữ liệu bị trễ 
+[P361] D. Không có gói tin ACK
+[P362] Câu 8: Trường hợp nào sau đây là một lợi ích của RDT 3.0 so với các phiên bản trước? 
+[P363] A. Gói dữ liệu lớn hơn 
+[P364] B. Khả năng giữ kết nối 
+[P365] C. Xử lý độ trễ và mất gói trong mạng 
+[P366] D. Tốc độ truyền tin nhanh hơn
+[P367] Câu 9: Giao thức RDT 2.2 khác gì so với RDT 2.1? 
+[P368] A. RDT 2.2 thêm cơ chế gửi lại gói tin 
+[P369] B. RDT 2.2 có thể xử lý tốt trong môi trường mạng với mất gói tin 
+[P370] C. Gói tin ACK của RDT 2.2 có số liệu chuỗi 
+[P371] D. RDT 2.2 không xử lý được trường hợp mất gói tin ACK
+[P372] Câu 10: Trường hợp nào sau đây không được cải tiến trong RDT 3.0 so với các phiên bản trước?
+[P373]  A. Quản lý độ trễ mạng 
+[P374] B. Xử lý mất gói tin dữ liệu và gói tin ACK 
+[P375] C. Tạo giao thức tin cậy trong môi trường không đáng tin cậy 
+[P376] D. Khả năng gửi các gói tin có kích thước lớn
+[P377] Câu 11: Trong phiên bản nào của giao thức RDT, chúng ta thấy cơ chế gửi lại đầu tiên? 
+[P378] A. RDT 1.0 
+[P379] B. RDT 2.0 
+[P380] C. RDT 2.1 
+[P381] D. RDT 3.0
+[P382] Câu 12: Khi nào giao thức RDT sẽ gửi lại gói tin? 
+[P383] A. Khi gói tin dữ liệu bị lỗi.
+[P384]  B. Khi gói tin ACK bị lỗi. 
+[P385] C. Khi không nhận được gói tin ACK trong khoảng thời gian chờ. 
+[P386] D. Khi kết nối TCP bị ngắt.
+[P387] Câu 13: Mô hình nào của giao thức RDT bắt đầu tính toán RTT (Round-Trip Time) để cải thiện thời gian chờ? 
+[P388] A. RDT 1.0 
+[P389] B. RDT 2.1 
+[P390] C. RDT 2.2 
+[P391] D. RDT 3.0
+[P392] Câu 14: Phiên bản nào của giao thức RDT gia tăng số lượng gói dữ liệu có thể gửi trước khi phải đợi gói tin ACK (cửa sổ trượt)? 
+[P393] A. RDT 2.0 
+[P394] B. RDT 3.0 
+[P395] C. RDT 2.1 
+[P396] D. RDT 1.0.
+[P397] Câu 15: Trong phiên bản nào của RDT có cơ chế nén gói tin? 
+[P398] A. RDT 2.1 
+[P399] B. RDT 2.2 
+[P400] C. RDT 3.0 
+[P401] D. RDT không có cơ chế nén gói tin.
+[P402] Câu 16: Gói tin ACK của giao thức RDT đề cập đến gói dữ liệu nào? 
+[P403] A. Gói dữ liệu cuối cùng đã nhận được. 
+[P404] B. Gói dữ liệu sau cùng đã gửi đi. 
+[P405] C. Gói dữ liệu đầu tiên đã gửi đi. 
+[P406] D. Gói dữ liệu sắp được gửi đi.
+[P408] Câu 17: Giao thức RDT nào có thể giải quyết vấn đề nếu gói tin ACK bị mất? 
+[P409] A. RDT 2.0 
+[P410] B. RDT 2.1 
+[P411] C. RDT 2.2 
+[P412] D. RDT 3.0
+[P413] Câu 18: Cơ chế thời gian chờ và gửi lại trong giao thức RDT được áp dụng từ phiên bản nào? 
+[P414] A. RDT 1.0 
+[P415] B. RDT 2.0 
+[P416] C. RDT 2.1 
+[P417] D. RDT 3.0
+[P418] Câu 19: Giao thức RDT nào cung cấp dịch vụ giao hàng tin cậy? 
+[P419] A. RDT 1.0 
+[P420] B. RDT 2.1 
+[P421] C. RDT 2.2 
+[P422] D. RDT 3.0
+[P423] Câu 20: Gói dữ liệu trong giao thức RDT được xác nhận theo thứ tự nào? 
+[P424] A. theo thứ tự ngược lại.
+[P425]  B. theo thứ tự ngẫu nhiên. 
+[P426] C. không theo thứ tự. 
+[P427] D. theo thứ tự đã gửi.

@@ -1,0 +1,210 @@
+
+
+===== PDF PAGE 1 =====
+TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN ĐỀ THI GIỮA KỲ I 2025-2026
+KHOA MẠNG MÁY TÍNH VÀ TRUYỀN THÔNG Môn:Nhập môn mạng máy tính
+Thời gian làm bài:65 phút
+Câu 1.Trong giai đoạn bắt tay 3 bước, nếu client gửi góiSYN, server phản hồiSYN + ACK
+nhưng client không gửi lạiACK, điều gì xảy ra?
+A.Server vẫn coi kết nối đã thiết lập thành công
+B.Server chờ một thời gian rồi hủy kết nối (timeout)
+C.Server tự gửi ACK thay client
+D.Server đóng/ngắt kết nối mà không chờ.
+Câu 2.Trong một ứng dụng mạng kiểuclient - server, thành phần nào chủ động khởi tạo kết
+nối?
+A.ClientB.Cả clien và serverC.RouterD.Server
+Câu 3.Chọn mô tảđúngnhất về giao thức UDP?
+A.Không kết nối, có kiểm tra lỗi tự động sửa
+B.Có kết nối, tin cậy, chậm hơn TCP
+C.Có kêt nối, không tin cậy
+D.Không kết nối, không tin cậy, nhanh hơn TCP
+Câu 4.Giả sử một thông điệp có độ dài1000byteđược gửi từ tầng ứng dụng sử dụng dịch vụ UDP
+của tầng vận chuyển. Khi sử dụng Wireshark để bắt gói tin này thì độ dài (tính bằngbyte) được
+chỉ ra trong trường Length (của UDP header) là bao nhiêu?
+A.992B.980C.1008D.1080
+Câu 5.Tính checksum của 2 chuỗi 16-bit nhị phân sau đây?
+0100 1100 0110 1110và1010 0101 0110 0001
+A.0111 1011 0100 0000
+B.1111 0001 1100 1111
+C.0000 1110 0011 0000
+D.Khác
+Câu 6.Trong mô hìnhPeer-to-Peer (P2P), đặc điểm nào sau đây làđúng nhất?
+A.Chỉ có một máy chủ trung tâm quản lý toàn bộ hệ thống
+B.Dữ liệu chỉ có thể được tải xuống, không thể tải lên
+C.Mọi nút mạng đều có thể vừa chia sẻ vừa nhận dữ liệu
+D.Các peer không thể kết nối trực tiếp với nhau
+1
+
+===== PDF PAGE 2 =====
+Câu 7.Khi một máy chủ không biết địa chỉ IP của một tên miền, bước đầu tiên nó sẽ làm gì?
+A.Hỏi trực tiếp máy chủ gốc
+B.Gửi yêu cầu đến máy chủ của trang web đó
+C.Dò địa chỉ MAC của tên miền bằng ARP
+D.Gửi truy vấn đến DNS cục bộ (local DNS server)
+Câu 8.Cho danh sách các giao thức và dịch vụ sau. Chọn đáp án ghép nối đúng?
+1 - Duyệt web
+2 - Gửi mail
+3 - Xem mail
+4 - Phân giải tên miền
+5 - Gọi điện qua Internet
+a - SMTP
+b - IMAP
+c - HTTP
+d - SIP
+e - POP
+f - DNS
+A.1-c, 2-a, 3-e, 4-f, 5-d
+B.1-d, 2-a, 3-e, 4-f, 5-c
+C.1-c, 2-b, 3-a, 4-d, 4-e
+D.1-c, 2-b, 3-a, 4-d, 5-f
+Câu 9.TrườngSequence Numbertrong header TCP biểu thị cho thông tin gì?
+A.Số thứ tự của gói tin IP tương ứng
+B.Số thứ tự cảu ACK tiếp theo
+C.Số thứ tự củabyteđầu tiên trong đoạn dữ liệu TCP hiện tại
+D.Tổng sốbyteđã được truyền
+Câu 10.Trong giao tiếp ứng dụng, một socket được định danh bởi thông tin gì?
+A.(Tên miền, giao thức)
+B.(Địa chỉ IP, số cổng)
+C.(Địa chỉ MAC, số cổng)
+D.(Địa chỉ IP nguồn, địa chỉ IP đích)
+Câu 11.B gửi cho A một gói tin theo TCP có Sequence Number= 1000, ACK= 2000và Window
+Size= 4000, phát biểu nào sau đâyđúng nhất?
+A.Bên A cần gửi tiếp đoạnbytetừ1000đến2000
+B.Bên B đãn nhận được đoạnbytetừ1000đến4000
+C.Bên B đang báo lỗi checksum
+D.Bên A có thể gửi tối đa4000bytetiếp theo, bắt đầu từbytethứ2000
+Câu 12.Một gói tin dài1500byteđược gửi qua đường truyền2M bps, độ dài đường truyền là
+2000km, tín hiệu lan truyền với tốc độ2×10 8m/s. Hỏi tổng độ trễ (Transmission delay +
+Propagation delay) xấp xỉ bao nhiêu?
+A.0.008sB.0.011sC.0.006sD.Khác
+2
+
+===== PDF PAGE 3 =====
+Câu 13.Gói tin UDPkhôngchứa trường nào sau đây?
+A.Destination Port
+B.Source Port
+C.Sequence Number
+D.Length
+Câu 14.Kỹ thuật nào có thể giữ phiên bản cho người dùng sau khi đăng nhập vào một website?
+A.DNS cachingB.Web cacheC.Proxy trung gianD.Cookies
+Câu 15.Ghép nối các đặc tính và giao thức tương ứng:
+(1) Không kết nối, không tin cậy
+(2) Có kết nối, kiểm soát luồng và tắt nghẽn
+(3) Dùng số thứ tự 0-1, stop-and-wait
+(4) ACK tuần tự, gửi lại toàn bộ từ gói bị mất
+(5) ACK độc lập từng gói, lưu đệm out-of-order
+(a) TCP
+(b) Selective Repeat
+(c) RDT3.0
+(d) RDT2.2
+(e) UDP
+(g) Go-back-N
+A.1e, 2b, 3d, 4b, 5aB.1e, 2a, 3c, 4g, 5bC.1a, 2c, 3d, 4e, 5gD.Khác
+Dành cho các câu hỏi từ 16 đến 17:
+Trong cửa sổ TCP Go-back-N, A gửi đi 3 gói tin pkt0, pkt1, pkt2 (mỗi gói có length là500bytes)
+biết gói ptk0 cóseq= 100. Biết rằng B nhận được cả 3 gói tin, và phản hồi lại ACK0, ACK1, và
+ACK2
+Câu 16.Giá trị ACK trong 3 gói ACK0, ACK1, ACK2 lần lượt là bao nhiêu?
+A.601,1101,1601B.100,600,1100C.600,1100,1600D.Khác
+Câu 17.Giả sử gói ACK1 bị mất, A chỉ nhận được ACK0 và AcK2, A sẽ làm gì tiếp theo?
+A.Tiếp tục gửi gói pkt3 cóseq= 1600
+B.Đóng kết nối
+C.Gửi lại gói pkt1
+D.Gửi lại gói pkt1, pkt2
+Câu 18.Quá trình bắt tay 3 bước (Three-Way-Handshake) được sử dụng để làm gì?
+A.Đồng hộ hóa đồng hồ hệ thống giữa hai máy
+B.Thiết lập và xác nhận kết nối TCP giữa hai chiều client và server
+C.Đảm bảo dữ liệu được mã hóa trước khi truyền
+D.Kiểm tra lỗi trong các gói tin UDP
+Câu 19.Trong quá trình phân giải tên miền, khi náy chủ DNScục bộtự truy vấn tiếp các máy
+chủ khác để tìm kết quả, kiểu truy vấn này được gọi là gì?
+A.Truy vấn song song
+B.Truy vấn cache
+C.Truy vấn đệ quy (recursion query)
+D.Truy vấn tuần tự (iterative query)
+3
+
+===== PDF PAGE 4 =====
+Câu 20.Trong giao thức HTTP, yêu cầu từ trình duyệt thường được gửi bằng phương thức nào để
+lấy nội dung của một trang web?
+A.GETB.PUTC.UDPATED.POST
+Câu 21.Trong mạng Internet,mạng biên (edge metwork)chủ yếu bao gồm những gì?
+A.Các đường tuyền cáp quan quốc tế
+B.Các router trung tâm của nhà cung cấp dịch vụ Internet
+C.Các router lõi có băng thông cao
+D.Các thiết bị đầu cuối như PC, smartphone, mà máy chủ web
+Câu 22.Mục đích chính củaweb cache (bộ nhớ đệm web)là gì?
+A.Mã hóa dữ liệu khi truyền qua HTTP
+B.Lưu trữ trang web vĩnh viễn để sao lưu
+C.Giảm thời gian phản hồi và tăng băng thông khi truy cập lại cùng tài nguyên
+D.Chặn truy cập các trang web không an toàn
+Câu 23.Khi máy A gửi gói FIN, còn máy B chưa gửi lại FIN, thì điều gì sẽ xảy ra?
+A.Máy A vẫn có thể nhận dữ liệu từ máy B
+B.Kết nối hoàn toàn bị đóng
+C.Cả hay bên ngừng nhận truyền dữ liệu
+D.Máy A sẽ gửi RST để hủy
+Câu 24.Trong giao thứcGo-back-N (GBN), khi một gói tin bị mất, bên nhận sẽ làm gì?
+A.Gửi NAK cho từng gói mất
+B.Bỏ qua gói đó và tiếp tục nhận các gói sau
+C.Gửi ACK riêng cho từng gói
+D.Bỏ qua tất cả gói đến sau gói bị mất và gửi ACK lặp lại cho gói cuối cùng nhận đúng
+Câu 25.Khi người dùng truy cập một trang web qua HTTPS, sự khác biệt chính so với HTTP là
+gì?
+A.Không thể truyền file đa phương tiện
+B.Dữ liệu được mã hóa qua TLS/SSL trước khi truyền
+C.Dữ liệu truyền đi nhanh hơn HTTP
+D.Sử dụng cổng 8080 thay vì 80
+Câu 26.Khi dữ liệu di chuyển từ tầng Ứng dụng xuống tầng Vật lý, mỗi tầng sẽ làm gì?
+A.Tăng tốc độ truyền dữ liệu
+B.Thêm tiêu đề (header) của lớp mình vào dữ liệu nhận được
+4
+
+===== PDF PAGE 5 =====
+C.Nén dữ liệu lại để tiết kiệm băng thông
+D.Xóa bỏ phần tiêu đề của lớp trước
+Câu 27.Trường Window Size trong header TCP dùng để làm gì?
+A.Cho biết số lượngbytemà bên nhận có thể nhận thêm (không tràn bộ đệm)
+B.Thay đổi số thứ tự gói tin
+C.Xác định độ dài dữ liệu mỗi gói tin
+D.Giới hạn tổng số kết nối TCP đồng thời
+Câu 28.Phát biểu nào sau đây đúng về việc gửi nhận thư điện tử?
+A.Gửi và nhận tư điện tử đền cần dùng dịch vụ của TCP
+B.Có thể dùng SMTP kết nối đến máy chủ thư và lấy thư điện tử về đọc
+C.SMTP, IMAP có thể dùng để gửi thư điện tử
+D.A, B, C đều đúng
+Câu 29.TCP là viết tắt của cụm từ gì?
+A.Transmission Connection Protocol
+B.Transmission Control Protocol
+C.Transport Communication Protocol
+D.Traffic Control Protocol
+Câu 30.TrongRDT2.1, để tránh nhầm lẫn khi gói tin ACK hoặc NAK bị mất hoặc trùng, giao
+thức thêm cơ chế nào?
+A.Mã hóa dữ liệu bằng checksum
+B.Thêm số thứ tự (sequence number) cho từng gói tin
+C.Dùng hai kênh riêng biệt
+D.Gửi lại toàn bộ dữ liệu
+5
+
+===== PDF PAGE 6 =====
+Đáp án tham khảo
+Câu Đáp án Câu Đáp án Câu Đáp án
+1 C 11 D 21 D
+2 A 12 D 22 C
+3 D 13 C 23 A
+4 C 14 D 24 D
+5 C 15 B 25 B
+6 C 16 C 26 B
+7 D 17 A 27 A
+8 A 18 B 28 A
+9 C 19 D 29 B
+10 B 20 A 30 B
+Lưu ý:
+•Đề thi do Cộng tác viên và thành viên của BHT CNPM sưu tập và soạn lại sau khi thi
+•Đáp án tham khảo do Cộng tác viên và thành viên BHT CNPM thực hiện, không phải đáp
+án chính thức được công bố
+•Nếu có vấn đề về đề thi, vui lòng liên hệ với chúng mình qua:
+–Email: bht.cnpm.uit@gmail.com
+–Fanpage: www.facebook.com/bhtcnpm
+–Group BHT NNSC: www.facebook.com/groups/bht.cnpm.uit
+–Website: www.bhtcnpm.com
+6

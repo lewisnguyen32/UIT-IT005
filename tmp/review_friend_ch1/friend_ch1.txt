@@ -1,0 +1,229 @@
+
+
+===== PDF PAGE 1 =====
+Chương 1: Giới thiệu
+1 Khái niệm về internet và giao thức
+1.1 Internet
+1.1.1 Internet: Góc nhìn thực tế
+•Hàng tỷ thiết bị tính toán được kết nối:
+–hosts là các hệ thống đầu cuối
+–các ứng dụng mạng được chạy ở "rìa" của internet
+•Chuyển mạch gói: chuyển tiếp các gói (các khối dữ liệu) thông qua bộ định tuyến, bộ chuyển
+mạch
+•Liên kết truyền thông:
+–cáp quang, cáp đồng, vô tuyến, vệ tinh
+–băng thông là tốc độ truyền
+•Mạng là tạp hợp các thiết bị, bộ định tuyến, liên kết được quản lí bởi một tổ chức
+•Internet (Mạng của các mạng): internet là thứ kết nối các ISP (Internet Service Provider) với
+nhau
+•Giao thức:
+–Quản lí việc truyền, nhận các thông điệp
+–Ví dụ: HTTP - HyperText Transfer Protocol (Web), video trực tuyến, Skype, TCP - Trans-
+mission Control Protocol, IP - Internet Protocol, WiFi, 4/5G, Ethernet,. . .
+•Các bộ tiêu chuyển Internet:
+–RFC: Request for Comments
+–IEFT: Internet Enginnering Task Force
+1.1.2 Internet: Góc nhìn dịch vụ
+•Cơ sở hạ tầng cung cấp các dịch vụ cho các ứng dụng
+•Cung cấp giao diện lập trình cho các ứng dụng phân tán:
+–"Hooks" cho phép ứng dụng (bên gửi hoặc bên nhận) kết nối và sử dụng dịch vụ vận chuyển
+Internet (Hooks là các Socket API)
+–Cung cấp các tùy chọn dịch vụ, tương tự như dịch vụ bưu chính
+1
+
+===== PDF PAGE 2 =====
+07th Oct 2026IT005 - Review NotesPham Phuoc
+1.2 Giao thức
+•Giao thức định nghĩa cấu trúc, thứ tự của thông điệp khi gửi và nhận giữa các thành phần
+trong mạng, và các hành động được thực hiện khi truyền hoặc nhận một thông điệp
+2 Mạng biên: hosts, mạng truy cập, đường truyền vật lí
+2.1 Cái nhìn tổng quan về cấu trúc mạng Internet
+•Mạng biên:
+–hosts: máy khách và máy chủ
+–máy chủ thường được đặt ở các trung tâm dữ liệu
+•Mạng truy cập, đường truyền vật lí: liên kết truyền thông có dây và không dây
+•Mạng lõi:
+–liên kết các bộ định tuyến
+–mạng của các mạng
+2.2 Mạng truy cập và đường truyền vật lí
+Đặt vấn đề: làm sao để kết nối hệ thống đầu cuối vào bộ định tuyến biên ?
+•Mạng truy câp khu dân cư
+•Mạng truy cập tổ chức
+•Mạng truy cập di động (WiFi, 4G/5G)
+•Ghép kênh theo tần số (frequency division multiplexing - FDM): các kênh khác nhau được
+truyền trong các dải tần số khác nhau
+2.3 Mạng truy cập bằng cáp
+•HFC: hybrid fiber coax - đồng trục sợi lai
+•Bất đối xứng: tốc độ tải xuống40M b/sđến1.2Gb/s, tốc độ tải lên30đến100M b/s
+•Mạng của cáp, sợi quang kết nối mạng gia đình đến bộ định tuyến của ISP
+•Mạng gia đình chia sẻ mạng truy cập đến cable headend (trung tâm đầu cuối truyền hình cáp)
+2.4 Mạng truy cập đường thuê bao kĩ thuật số (DSL - Digital Subcriber
+Line)
+•Sử dụng đường điện thoại có sẵn để kết nối đến trung tâm DSLAM - DSL access multiplexer
+•Dữ liệu qua đường dây điện thoại DSL đi đến Internet
+•Tín hiệu thoại qua đường dây điện thoại DSL đi đến mạng điện thoại
+•Tốc độ tải xuống24−52M b/s
+•Tốc độ tải lên3.5−16M b/s
+2
+
+===== PDF PAGE 3 =====
+07th Oct 2026IT005 - Review NotesPham Phuoc
+2.5 Mạng truy cập không dây
+•Chia sẻ mạng truy cập không dây kết nối hệ thống đầu cuối đến bộ định tuyến thông qua trạm
+gốc (base station) hay còn gọi là điểm truy cập (access point)
+•Mạng cục bộ không dây (WLANs):
+–Thường bên trong hoặc xung quanh tòa nhà (khoảng30m)
+–802.11b/g/n (WiFi): tốc độ11/54/450M b/s
+•Mạng truy cập di động diện rộng (Wide-area cellular access networks)
+–Được cung cấp bởi nhà cung cấp mạng di động (hàng chục km)
+–10M bps
+–Mạng di động 4G/5G
+2.6 Mạng truy cập mạng doanh nghiệp
+•Công ty, trường học,. . .
+•Điểm khác biệt là có Ethernet switch
+•Kết hợp giữa các công nghệ kết nối có dây và không dây, kết nối phối hợp giữa các bộ chuyển
+mạch và các bộ định tuyến
+–Ethernet: kết nối có dây với tốc độ100M b/s,1Gb/s,10Gb/s
+–WiFi: điểm truy cập không dây với tốc độ11,54,450M b/s
+2.7 Mạng truy cập mạng trung tâm dữ liệu
+•Liên kết băng thông cao (10−100Gb/s) kết nối hàng trăm đến hàng nghìn máy chủ với nhau
+và kết nối với Internet
+2.8 Host: gửi các gói dữ liệu
+•Chức năng gửi của host:
+–nhận thông điệp của ứng dụng
+–chia nhỏ thành nhiều phần nhỏ hơn, gọi là các gói, có độ dài L bit
+–chuyển gói vào mạng truy cập với tốc độ truyền R
+–tốc độ truyền của liên kết còn gọi là dung lượng (capacity), hay còn gọi là băng thông đường
+truyền
+•Độ trễ truyền (packet transmission delay)d trans = L
+R
+3
+
+===== PDF PAGE 4 =====
+07th Oct 2026IT005 - Review NotesPham Phuoc
+2.9 Liên kết đường truyền vật lí
+•bit: lan truyền giữa các cặp máy gửi / nhận
+•Liên kết vật lý: những gì nằm giữa máy gửi và máy nhận
+•Đường truyền có hướng: Tín hiệu lan truyền trong môi trường chất rắn: cáp đồng, cáp sợi quang,
+cáp đồng trục
+•Đường truyền vô hướng: Tín hiệu lan truyền tự do: sóng vô tuyến,. . .
+•Cáp xoắn cặp (Twisted pair-TP):
+–Category 5:100M b/s,1Gb/sEthernet
+–Category 6:10Gb/sEthernet
+•Cáp đồng trục (Coaxial cable)
+–hai dây dẫn đồng tâm, hai chiều
+–băng thông rộng:
+∗nhiều kênh tần số trên 1 cáp
+∗hàng trămM b/smỗi kênh
+•Cáp sợi quang:
+–sợi thủy tinh mang xung ánh sáng, mỗi xung mang một bit
+–hoạt động tốc độ cao: truyền điểm - điểm tốc độ cao (hàng chục - hàng trăm Gb/s)
+–tỉ lệ lỗi thấp:
+∗các bộ repeaters đặt cách xa nhau
+∗không bị nhiễu điện từ
+•Vô tuyến không dây
+–tín hiệu được mang trong các "dải" (bands) phổ điện thử khác nhau
+–không có dây vật lý
+–truyền broadcast, bán song công (half-duplex) (từ bên gửi đến bên nhận)
+–ảnh hương bởi môi trường lan truyền:
+∗phản xạ
+∗vật cản
+∗nhiễu
+•Các loại liên kết không dây:
+–Wireless LAN (WiFi)
+–Diện rộng (mạng di động - 4G/5G)
+–Bluetooth: thay thế cáp, hạn chế: khoảng cách ngắn, giới hạn tốc độ
+–Sóng mặt đất (terrestrial microwave)
+–Vệ sinh (satellite)
+4
+
+===== PDF PAGE 5 =====
+07th Oct 2026IT005 - Review NotesPham Phuoc
+3 Mạng lõi
+3.1 Mạng lõi
+•Mạng lưới kết nối các bộ định tuyến
+•Chuyển mạch gói (macket-switching): hots chia các thông điệp của tầng ứng dụng thành nhiều
+gói
+•Mạng chuyển tiếp các gói từ bộ định tuyến này đến bộ định tuyến khác thông qua các liên kết
+trên đường từ nguồn đến đích
+3.2 Chức năng của mạng lõi
+•Chuyển tiếp:
+–còn gọi là chuyển mạch, là quá trình đi vào cổng này và ra cổng khác trong router
+–hành độngcục bộ: chuyển tiếp gói tin từ đầu vào đến liên kết đầu ra thích hợp trên bộ
+định tuyến
+•Định tuyến:
+–giải thuật định tuyến
+–hành độngtoàn cục: xác định các tuyến đường từ nguồn đến đích, được thực hiện bởi các
+gói tin
+3.3 Chuyển mạch gói
+•Độ trễ truyền (packet transmission deylay): mấtL/Rgiây để truyền một gói tin có độ dàiL
+bit trên liên kết có tốc độRb/s
+•Lưu và chuyển: toàn bộ gói tin phải đến bộ định tuyến trước khi được truyền đến liên kết tiếp
+theo
+•Hàng đợi: hàng đợi xảy ra khi yêu cầu đến nhanh hơn so với khả năng phục vụ
+•Xếp hàng và mất gói: nếu tốc độ gói tin đến vượt quá tốc độ truyền tải của liên kết trong một
+khoảng thời gian:
+–gói tin sẽ vào hàng đợi và chờ đến khi được truyền tải trên liên kết đầu ra
+–khi hàng đợi đầy, gói tin đến tiếp sẽ bị hủy bỏ (drop / lost)
+3.4 Chuyển mạch kênh
+•Các tài nguyên được phân bổ và dành riêng cho một kết nối từ nguồn đến đích
+•Giả sử, một liên kết có 4 kênh truyền, các phân đoạn từ nguồn đến đích sẽ được thuê riêng cho
+kết nối đó
+•Hiệu số được đảm bảo
+•Các phân đoạn của kênh sẽ rảnh nếu không được sử dụng bởi cuộc gọi (không chia sẻ)
+•Thường sử dụng trong mạng điện thoại truyền thống
+5
+
+===== PDF PAGE 6 =====
+07th Oct 2026IT005 - Review NotesPham Phuoc
+3.4.1 Ghép kênh tần số (Frequency Division Multiplexing - FDM)
+•Tần số quang, điện từ được chia thành nhiều dải tần số
+•Mỗi "cuộc gọi" được phân bổ vào những băng tần riêng, và có thể truyền ở tốc độ tối đa của
+băng tần đó
+3.4.2 Ghép kênh thời gian (Time Division Multiplexing - TDM)
+•Thời gian được chia thành các khe (slot)
+•Mỗi cuộc gọi được phân bổ vào các khe định kỳ, có thể truyền ở tốc độ tối đa của dải tần số
+trong các khe thời gian của nó
+3.5 Cấu trúc Internet
+•Hosts kết nối với Internet thông qua các ISP truy cập
+•ISP truy cập được kết nối với nhau, do đó các hosts có thể gửi thông điệp cho nhau
+•Kết quả là mạng của các mạng trở nên phức tạp
+4 Hiệu suất: mất mát, chậm trễ, thông lượng
+4.1 Bốn nguyên nhân gây ra chậm trễ gói tin
+•Độ trễ truyền:
+–d trans = L
+R
+–L: độ dài của gói tin
+–R: tốc độ truyền
+•Độ trễ lan truyền:
+–d prop = d
+s
+–d: độ dài đường truyền
+–s: tốc độ lan truyền (2.10 8 m/s)
+•Độ trễ hàng đợi:
+–d queue = L.a
+R
+–L: độ dài gói tin
+–a: tốc độ gói tin đến
+–R: băng thông của liên kết
+4.2 Độ trễ và đường truyền Internet trong thực tế
+•Chương trình traceroute hỗ trợ đo lường độ trễ từ nguồn đến từng bộ định tuyến theo lộ trình
+từ nguồn tới đích. Đối với mỗi bộ định tuyến thứ i:
+–Gửi 3 gói tin đến mỗi bộ định tuyến thứ i trên lộ trình từ nguồn tới đích (với giá trị trường
+time-to-live là i)
+–Bộ định tuyến thứ i sẽ phản hồi với bên gửi
+–Bên gửi đo đạc thời gian từ khi gửi gói tin đến khi nhận phản hồi để tính độ trễ
+6
+
+===== PDF PAGE 7 =====
+07th Oct 2026IT005 - Review NotesPham Phuoc
+5 Mô hình phân chia tầng
+TCP/IP 5 Layers
+•Tầng ứng dụng: hỗ trợ các ứng dụng mạng: HTTP, IMAP, SMTP, DNS (message)
+•Tầng vậng chuyển: chuyển tiếp dữ liệu giữa các tiến trình: TCP, UDP (segment)
+•Tầng mạng: định tuyến các gói dữ liệu (datagrams) từ nguồn đến đích: IP, các giao thức định
+tuyến (package)
+•Tầng liên kết: chuyển dữ liệu giữa các phân tử lân cận trong mạng: Ethernet, 802.11 (WiFi),
+PPP (frame)
+•Tầng vật lí: chuyển các bit trên đường truyền
+7

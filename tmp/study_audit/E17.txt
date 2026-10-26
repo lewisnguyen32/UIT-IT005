@@ -1,0 +1,2775 @@
+
+
+===== PDF PAGE 1 =====
+1
+Ôn tập giữa kì I
+Nhập môn mạng máy tính
+(Buổi 1)
+• Bùi Ngọc Khánh Linh
+MMTT2022.2
+• Lê Hoàng Vũ
+MMTT2022.3
+• Nguyễn Ngọc Xuân Tùng
+ATTT2022.2
+• Bùi Thị Ngọc Trăm
+MMTT2022.3
+• Lê Ngọc Kiều Anh
+MMTT2022.1
+• Nguyễn Thành Nhân
+MMTT2022.2
+
+===== PDF PAGE 2 =====
+2
+I.
+Internet là gì? Giao 
+thức là gì?
+II.
+Mạng biên
+III.
+Mạng lõi
+IV.
+Hiệu suất
+V .
+Các lớp giao thức, 
+các mô hình dịch vụ
+Chương 1: Giới thiệu
+
+===== PDF PAGE 3 =====
+3
+I. Internet là gì? Giao 
+thức là gì?
+Chương 1: Giới thiệu
+
+===== PDF PAGE 4 =====
+4
+Internet: Góc nhìn thực tế
+❖ Hàng triệu các thiết bị máy tính được kết nối:
+• Hosts = các hệ thống đầu cuối
+• Chạy các ứng dụng mạng
+❖ Các liên kết truyền thông:
+• Cáp quang, cáp đồng, radio, vệ tinh
+• Tốc độ truyền: băng thông
+❖ Chuyển mạch gói: chuyển tiếp gói tin (Khối dữ lệu)
+• Thiết bị định tuyến (Routers) và thiết bị chuyển mạch 
+(Switches)
+❖ Mạng
+• Tập hợp các thiết bị, bộ định tuyến, liên kết: Được quản lí bởi 
+một tổ chức
+
+
+===== PDF PAGE 5 =====
+5
+Internet: Góc nhìn thực tế
+❖Internet: “Mạng của các mạng”
+• Các nhà cung cấp dịch vụ mạng (ISPs) được kết 
+nối với nhau
+❖Các giao thức điều khiển gửi và nhận thông tin
+• Ví dụ: TCP, IP, HTTP, Skype, 802.11
+❖Các chuẩn Internet
+• RFC: Request for comments
+• IETF: Internet Engineering Task Force
+
+
+===== PDF PAGE 6 =====
+6
+Internet: Góc nhìn dịch vụ
+❖Cơ sở hạ tầng cung cấp các dịch vụ cho các ứng 
+dụng:
+• Web, VoIP, email, games, thương mại điện tử, 
+mạng xã hội
+❖Cung cấp giao diện lập trình cho các ứng dụng:
+• Cho phép gửi và nhận các chương trình ứng 
+dụng để kết nối với Internet
+• Cung cấp các lựa chọn dịch vụ, tương tự như 
+dịch vụ bưu chính
+
+
+===== PDF PAGE 7 =====
+7
+Giao thức là gì?
+❖Giao thức của con người
+• “Mấy giờ rồi?”
+• “Tôi có một câu hỏi”
+• Lời giới thiệu
+ Quy tắc cho việc:
+ … gởi một tin nhắn cụ thể
+ … thực hiện một hành động cụ thể 
+khi nhận được một thông điệp 
+hoặc một sự kiện
+❖Giao thức mạng
+• Máy tính (thiết bị) thay vì con người
+• Tất cả những hoạt động truyền thông 
+trên Internet đều được quy định bởi 
+những giao thứ
+Giao thức định nghĩa cấu trúc, thứ tự
+của thông điệp khi gởi và nhận giữa các 
+thành phần trong mạng, và các hành 
+động được thực hiện khi truyền hoặc 
+nhận một thông điệp
+
+===== PDF PAGE 8 =====
+8
+Giao thức là gì?
+❖Giao thức của con người và giao thức mạng:
+
+
+===== PDF PAGE 9 =====
+9
+II. Mạng Biên
+Chương 1: Giới thiệu
+
+===== PDF PAGE 10 =====
+10
+Cái nhìn gần hơn về cấu trúc mạng
+❖Mạng biên:
+• Hosts: Máy khách và máy chủ
+• Máy chủ thường đặt trong trung tâm dữ liệu
+❖Mạng truy cập, phương tiện truyền thông vật lý:
+• Kết nối truyền thông có dây và không dây
+❖Mạng lõi:
+• Các thiết bị định tuyến được liên kết
+• Mạng của các mạng
+
+
+===== PDF PAGE 11 =====
+11
+Mạng truy cập và phương tiện truyền thông vật lý
+❖Làm thế nào để kết nối các hệ thống đầu 
+cuối với thiết bị định tuyến biên?
+• Mạng truy cập khu dân cư
+• Mạng truy cập tổ chức
+• Mạng truy cập di động
+
+
+===== PDF PAGE 12 =====
+12
+Mạng truy cập: Mạng gia đình
+
+
+===== PDF PAGE 13 =====
+13
+Mạng truy cập: Mạng doanh nghiệp
+❖Công ty, trường học, …
+❖ Kết hợp giữa các công nghệ kết nối có dây và không dây, kết nối phối hợp giữa các 
+bộ chuyển mạch và các bộ định tuyến
+• Ethernet: kết nối có dây với tốc độ 100Mb/s, 1Gb/s, 10Gb/s
+• WiFi: điểm truy cập không dây với tốc độ 11, 54, 450 Mb/s
+
+
+===== PDF PAGE 14 =====
+14
+Mạng truy cập không dây
+❖Chia sẻ mạng truy cập không dây kết nối hệ thống đầu cuối đến bộ định tuyến
+•  Thông qua trạm gốc (base station) hay còn gọi là điểm truy cập (access point)
+❖Mạng cục bộ không dây (WLANs)
+• Thường bên trong hoặc xung quanh 
+tòa nhà (Khoảng 30m)
+• 802.11b/g/n (WiFi): tốc độ 11, 54, 450 
+Mb/s
+❖Mạng truy cập tế bào diện rộng (Wide-
+area cellular access networks)
+• Được cung cấp bởi nhà cung cấp mạng 
+di động, tế bào (hàng chục km)
+• 10 Mbps
+• 4G/5G mạng tế bào
+
+===== PDF PAGE 15 =====
+15
+Mạng truy cập: Đường dây thuê bao kỹ thuật số
+❖Sử dụng đường điện thoại có sẵn để kết nối đến trung tâm DSLAM 
+ • Dữ liệu qua đường dây điện thoại DSL đi đến Internet 
+ • Tín hiệu thoại qua đường dây điện thoại DSL đi đến mạng điện thoại 
+❖ Tốc độ tải xuống 24-52 Mb/s 
+❖ Tốc độ tải lên 3.5-16 Mb/s 
+
+
+===== PDF PAGE 16 =====
+16
+Mạng truy cập: Mạng cáp
+❖HFC: hybrid fiber coax – đồng trục sợi lai 
+• Bất đối xứng: tốc độ tải xuống 40 Mb/s đến 1.2 Gb/s, tốc độ tải lên 30 đến 100 Mb/s
+❖ Mạng của cáp, sợi quang kết nối mạng gia đình đến bộ định tuyến của ISP 
+• Mạng gia đình chia sẻ mạng truy cập đến cable headend
+
+
+===== PDF PAGE 17 =====
+17
+Mạng truy cập: Mạng cáp
+❖Liên kết băng thông cao (10 - 100 Gb/s) kết nối 
+hàng trăm đến hàng nghìn máy chủ với nhau và 
+kết nối với Internet
+
+
+===== PDF PAGE 18 =====
+18
+Liên kết: Đường truyền vật lý
+❖ Bit:
+• Lan truyền giữa các cặp máy gửi/nhận
+❖ Liên kết vật lý
+• Những gì nằm giữa máy gửi và máy nhận
+❖ Đường truyền có hướng
+• Tín hiệu lan truyền trong môi trường chất rắn: 
+Cáp đồng, cáp sợi quang, cáp đồng trục
+❖ Đường truyền vô hướng
+• Tín hiệu lan truyền tự do, ví dụ: sóng vô tuyến
+❖ Cáp xoắn cặp (Twisted pair-TP)
+• Hai dây đồng cách điện
+ Category 5: 100Mbps, 1 Gbps Ethernet
+ Category 6: 10Gbps Ethernet
+
+
+===== PDF PAGE 19 =====
+19
+Liên kết: Đường truyền vật lý
+❖ Cáp đồng trục (Coaxial cable):
+• Hai dây dẫn đồng tâm
+• Hai chiều
+• Băng thông rộng:
+ Nhiều kênh tần số trên 1 cáp
+ Hàng trăm Mb/s mỗi kênh
+❖ Cáp sợi quang
+• Sợi thủy tinh mang xung ánh sáng, mỗi xung 
+mang một bit
+• Hoạt động tốc độ cao:
+ Truyền điểm-điểm tốc độ cao (hàng chục - 
+hàng trăm Gb/s)
+• Tỉ lệ lỗi thấp: 
+ Các bộ repeaters đặt cách xa nhau 
+ Không bị nhiều điện từ
+
+
+===== PDF PAGE 20 =====
+20
+Liên kết: Đường truyền vật lý
+❖ Vô tuyến không dây:
+• Tín hiệu được mang trong các “dải” (bands) 
+phổ điện từ khác nhau
+• Không có dây vật lý
+• Truyền broadcast, bán song công (half-duplex) 
+(từ bên gửi đến bên nhận)
+• Ảnh hưởng bởi môi trường lan truyền:
+ • Phản xạ
+ • Vật cản
+ • Nhiễu
+❖ Các loại liên kết không dây
+• Wireless LAN (WiFi)
+- Tốc độ 10-100’s Mb/s; khoảng cách hàng chục mét
+• Diện rộng (mạng tế bào - 4G/5G)
+- Tốc độ hang chục Mbps (4G), khoảng cách 10 Km 
+• Bluetooth: thay thế cáp
+- Khoảng cách ngắn, giới hạn tốc độ
+• Sóng mặt đất (terrestrial microwave)
+- Truyền điểm-điểm; các kênh có tốc độ 45 Mb/s
+• Vệ tinh (satellite)
+- Tốc độ tải lên đến 100 Mb/s (Starlink)
+- Độ trễ đầu cuối 270 ms end-end (vệ tinh địa tĩnh)
+
+===== PDF PAGE 21 =====
+21
+III. Mạng Lõi
+Chương 1: Giới thiệu
+
+===== PDF PAGE 22 =====
+22
+Mạng lõi
+❖Mạng lưới kết nối các bộ định tuyến
+❖Chuyển mạch gói (packet-switching): hosts 
+chia các thông điệp của tầng ứng dụng 
+thành nhiều gói
+• Mạng chuyển tiếp các gói từ bộ định tuyến này đến 
+bộ định tuyến khác thông qua các liên kết trên 
+đường từ nguồn đến đích
+
+
+===== PDF PAGE 23 =====
+23
+Hai chức năng chính của mạng lõi
+❖Chuyển tiếp
+• Còn được gọi là chuyển mạch
+• Hành động cục bộ: chuyển 
+tiếp gói tin từ đầu vào đến 
+liên kết đầu ra thích hợp trên 
+bộ định tuyến
+❖Định tuyến
+• Hành động toàn cục: 
+xác định các tuyến 
+đường từ nguồn đến 
+đích, được thực hiện 
+bởi các gói tin
+• Giải thuật định tuyến
+
+
+===== PDF PAGE 24 =====
+24
+Chuyển mạch gói: Lưu và chuyển
+❖Độ trễ truyền (packet transmission delay): mất 
+L/R giây để truyền gói tin có độ dài L bit trên liên 
+kết có tốc độ R b/s
+❖Lưu và chuyển: toàn bộ gói tin phải đến bộ định 
+tuyến trước khi được truyền đến liên kết tiếp theo
+
+
+===== PDF PAGE 25 =====
+25
+Chuyển mạch gói: Hàng đợi (Queueing)
+Hàng đợi xảy ra khi yêu cầu đến nhanh hơn so với khả năng phục vụ
+
+
+===== PDF PAGE 26 =====
+26
+Chuyển mạch gói: Hàng đợi (Queueing)
+❖ Xếp hàng và mất gói: nếu tốc độ gói tin đến (tính bằng bit/s) vượt quá tốc 
+độ truyền tải (bit/s) của liên kết trong một khoảng thời gian:
+• Gói tin sẽ vào hàng đợi và chờ đến khi được truyền tải trên liên kết đầu ra
+• Gói tin sẽ bị hủy bỏ (drop/lost) nếu bộ đệm của bộ định tuyến bị đầy 
+
+
+===== PDF PAGE 27 =====
+27
+Thay thế cho chuyển mạch gói: chuyển mạch kênh (circuit switching)
+❖ Các tài nguyên phân bổ và dành riêng cho “cuộc gọi” 
+giữa nguồn và đích
+• Trên sơ đồ, mỗi liên kết có 4 kênh truyền
+ Cuộc gọi sử dụng trên truyền thứ hai ở 
+ liên kết phía trên và kênh thứ nhất của 
+ liên kết bên phải.
+• Tài nguyên dành riêng: không chia sẻ
+ Hiệu suất được đảm bảo
+• Các phân đoạn của kênh sẽ rảnh nếu không được sử 
+dụng bởi cuộc gọi (không chia sẻ)
+• Thường được sử dụng trong mạng điện thoại truyền 
+thống
+
+
+===== PDF PAGE 28 =====
+28
+Chuyển mạch kênh: FDM và TDM
+❖ Ghép kênh tần số (Frequency Division Multiplexing -
+FDM)
+• Tần số quang, điện từ được chia thành nhiều dải tần số
+• Mỗi cuộc gọi được phân bổ vào những băng tần riêng, 
+và có thể truyền ở tốc độ tối đa của băng tần đó
+❖ Ghép kênh thời gian (Time Division Multiplexing 
+(TDM)
+• Thời gian được chia thành các khe (slot)
+• Mỗi cuộc gọi được phân bổ vào các khe định kỳ, có thể 
+truyền ở tốc độ tối đa của dải tần số trong các khe thời 
+❖ gian của nó
+
+
+===== PDF PAGE 29 =====
+29
+Chuyển mạch gói và chuyển mạch kênh
+❖ Tốt nhất cho dữ liệu được truyền không đều (lúc có lúc không) (bursty
+data)
+• Chia sẻ tài nguyên
+• Đơn giản, không cần thiết lập cuộc gọi
+❖ Có thể dẫn đến tắc nghẽn: gói tin bị trễ hoặc mất do tràn bộ đệm
+• Các giao thức cần thiết cho việc truyền dữ liệu một cách tin cậy và kiểm 
+soát tắc nghẽn
+
+===== PDF PAGE 30 =====
+30
+Cấu trúc Internet: Mạng của các mạng
+❖ Hosts kết nối với Internet thông 
+qua các ISP truy cập
+❖ ISP truy cập được kết nối với 
+nhau
+• Do đó hai host bất kỳ có thể gởi 
+các thông điệp cho nhau
+❖ Kết quả là mạng của các mạng 
+trở nên phức tạp
+• Sự phát triển được thúc đẩy bởi 
+kinh tế, chính sách của quốc gia
+
+
+===== PDF PAGE 31 =====
+31
+Cấu trúc Internet: Mạng của các mạng
+
+
+===== PDF PAGE 32 =====
+32
+Cấu trúc Internet: Mạng của các mạng
+
+
+===== PDF PAGE 33 =====
+33
+Cấu trúc Internet: Mạng của các mạng
+
+
+===== PDF PAGE 34 =====
+34
+Cấu trúc Internet: Mạng của các mạng
+
+
+===== PDF PAGE 35 =====
+35
+Cấu trúc Internet: Mạng của các mạng
+
+
+===== PDF PAGE 36 =====
+36
+Cấu trúc Internet: Mạng của các mạng
+
+
+===== PDF PAGE 37 =====
+37
+IV. Hiệu suất
+Chương 1: Giới thiệu
+
+===== PDF PAGE 38 =====
+38
+Độ trễ và mất gói
+• Các gói tin xếp hang trong bộ đệm của bộ định tuyến và đợi đến khi 
+được truyền
+• Mất gói xảy ra khi bộ nhở của hàng đợi bị đầy
+
+
+===== PDF PAGE 39 =====
+39
+Độ trễ
+dproc: độ trễ xử lý tại nút
+dtrans: độ trễ truyền
+- L: độ dài của gói tin (bits)
+- R: tốc độ truyền (bps)
+- dtrans = L/R
+dqueue: độ trễ hàng đợi
+dprop: độ trễ do lan truyền
+- d: độ dài của đường truyền
+- s: tốc độ lan truyền
+- dprop = d/s
+
+===== PDF PAGE 40 =====
+40
+Độ trễ
+Ví dụ 1: 
+ Mất bao lâu để truyền hết một gói tin có độ dài là 1MB trên đường link có 
+độ dài là 2500km? Biết tốc độ lan truyền là 2.5 x 108 m/s và tốc độ truyền 
+là 2Mbps.
+  
+
+===== PDF PAGE 41 =====
+41
+Độ trễ
+Ví dụ 1: 
+ Mất bao lâu để truyền hết một gói tin có độ dài là 1MB trên đường link có 
+độ dài là 2500km? Biết tốc độ lan truyền là 2.5 x 108 m/s và tốc độ truyền 
+là 2Mbps.
+  L = 106 bytes = 8 x 106 bits
+  d = 2500km = 2500000 m
+  s = 2.5 x 108 m/s
+  R = 2 Mbps = 2 x 106 bps
+ Tổng thời gian = 𝐿
+𝑅 + 𝑑
+𝑠 = 4 + 10 × 10−3 = 4.01 𝑠
+
+===== PDF PAGE 42 =====
+42
+Độ trễ
+Cho độ dài của gói tin là 8000 bits. Tốc độ lan truyền ở mỗi đường link là 3 x 108 m/s.
+Tổng thời gian qua 3 đường link là?
+Độ trễ truyền: 100 Mbps
+Độ dài đường link: 3 Km 
+Độ trễ truyền: 10 Mbps
+Độ dài đường link: 3 Km 
+Độ trễ truyền: 1000 Mbps
+Độ dài đường link: 500 Km 
+Ví dụ 2: 
+
+===== PDF PAGE 43 =====
+43
+Độ trễ
+dtrans1 = L/R = 8000/100x106 = 8x10-5 s
+dprop1 = d/s = 3000/3x108 = 10-5 s
+dtrans2 = L/R = 8000/1000x106 = 8x10-6 s
+dprop2 = d/s = 500x103/3x108 = 1.667x10-3
+dtrans3 = L/R = 8000/10x106 = 10-4 s
+dprop3 = d/s = 3000/3x108 = 10-5 s
+Tổng thời gian = 1.875x10-3 s
+Ví dụ 2: 
+
+===== PDF PAGE 44 =====
+44
+Thông lượng
+- Thông lượng: là tốc độ truyền các bit trên đường link
+- Cách xác định: 
+ + Thông lượng của đường truyền bằng với tốc độ truyền của đường 
+link có tốc độ nhỏ nhất.
+ + Đường link nào có hiệu suất cao nhất thì tốc độ truyền của đường 
+link là thông lượng.
+
+===== PDF PAGE 45 =====
+45
+Thông lượng
+Ví dụ:
+Biết rằng Rs = 50 Mbps, Rc = 90 
+Mbps, R = 300 Mbps. Hãy tìm thông 
+lượng và hiệu suất của các đường 
+link.
+
+===== PDF PAGE 46 =====
+46
+Thông lượng
+Thông lượng: T = min(Rs, Rc, R/4) = 50 Mbps
+Hiệu suất của đường link Server: H1 = 𝑇
+𝑅𝑠 = 1
+Hiệu suất của đường link trung gian: H2 = 𝑇
+𝑅/4 = 2
+3
+Hiệu suất của đường link Client: H3 = 𝑇
+𝑅𝑐 = 5
+9
+
+===== PDF PAGE 47 =====
+47
+Mô hình tầng mạng
+Mục đích:
+- Nhằm xử lý các hệ thống phức tạp
+- Từ đó có thể cấu trúc rõ ràng cho phép xác định quan hệ của các mảnh 
+của hệ thống phức tạp
+- Mô-đun hoá làm dễ dàng cho việc bảo trì và nâng cấp hệ thống.
+Đặc điểm:
+- Mỗi lớp thực hiện một dịch vụ qua những hoạt động bên trong của lớp
+- Dựa trên các dịch vụ của lớp bên dưới
+
+===== PDF PAGE 48 =====
+48
+Mô hình tầng mạng
+Mô hình mạng TCP/IP:
+- Application: hỗ trợ các ứng dụng mạng
+Vd: FTP, SMTP, HTTP
+- Transport: chuyễn dữ liệu từ tiền trình này sang
+tiến trình kia
+Vd: TCP, UDP
+- Network: định tuyến gói dữ liệu từ nguồn đến
+đích
+Vd: IP
+- Link: truyền dữ liệu giữa các thành phần mạng
+lân cận
+ Vd: Ethernet, WIFI, PPP
+- Physical: truyền bit trên các đường link.
+
+
+===== PDF PAGE 49 =====
+49
+Mô hình tầng mạng
+Mô hình mạng OSI:
+- Presentation: cho phép các ứng dụng giải thích ý
+nghĩa của dữ liệu
+ Vd: mã hoá, nén, những quy ước chuyên biệt
+- Session: sự động bộ hoá, khả năng chịu lỗi, phục
+hồi sự trao đổi dữ liệu.
+application
+presentation
+session
+transport
+network
+link
+physical
+
+===== PDF PAGE 50 =====
+50
+Mô hình tầng mạng
+source
+application
+transport
+network
+link
+physical
+HtHn M
+segment Ht
+datagram
+destination
+application
+transport
+network
+link
+physical
+HtHnHl M
+HtHn M
+Ht M
+M
+network
+link
+physical
+link
+physical
+HtHnHl M
+HtHn M
+HtHn M
+HtHnHl M
+router
+switch
+message M
+Ht M
+Hn
+frame
+
+
+===== PDF PAGE 51 =====
+51
+I.
+Nguyên lý của các
+ứng dụng mạng
+II.
+Web và HTTP
+III.
+E-mail, SMTP, IMAP
+IV.
+Hệ thống phân giải
+tên miền DNS
+V .
+Các ứng dụng P2P
+VI.
+Lập trình socket với
+UDP và TCP
+Chương 2: Tầng ứng dụng
+
+===== PDF PAGE 52 =====
+52
+I. Nguyên lý của các
+ứng dụng mạng
+Chương 2: Tầng ứng dụng
+
+===== PDF PAGE 53 =====
+53
+Nguyên lý của các ứng dụng mạng
+1. Các kiến trúc ứng dụng:
+• Kiến trúc Client – Server
+• Kiến trúc P2P (Peer to peer)
+
+
+===== PDF PAGE 54 =====
+54
+Nguyên lý của các ứng dụng mạng
+1. Các kiến trúc ứng dụng:
+Client – Server P2P
+Server:
+- Luôn luôn hoạt động.
+- Địa chỉ IP cố định.
+- Thường tổ chức thành các trung 
+tâm dữ liệu để mở rộng quy mô.
+Client
+- Liên lạc, giao tiếp với máy chủ.
+- Có thể kết nối không liên tục.
+- Có thể thay đổi địa chỉ IP.
+- Không giao tiếp trực tiếp với các 
+máy khách khác
+- Không có máy chủ luôn hoạt động.
+- Các hệ thống đầu cuối bất kỳ giao 
+tiếp trực tiếp với nhau.
+- Các peer yêu cầu dịch vụ từ các 
+peer khác và cung cấp dịch vụ 
+ngược lại cho các peer khác.
+- Khả năng tự mở rộng – các peer 
+mới cung cấp thêm dịch vụ mới, 
+cũng như có thêm nhu cầu mới về 
+dịch vụ.
+- Các peer có thể kết nối không liên 
+tục và không thay đổi địa chỉ IP 
+(quản lý phực tạp)
+
+===== PDF PAGE 55 =====
+55
+Nguyên lý của các ứng dụng mạng
+2. Socket:
+- Định nghĩa: là tiến trình gửi/nhận thông điệp đến/từ socket của nó.
+- Socket hoạt động như cách cửa
+• Tiến trình gửi đẩy thông điệp ra khỏi cửa
+• Tiến trình gửi dựa trên hạ tầng vận chuyển bên kia của cánh cửa để phân 
+phối thông điệp đến socket tại tiến trình nhận
+
+
+===== PDF PAGE 56 =====
+56
+Nguyên lý của các ứng dụng mạng
+3. Xác định tiến trình
+- Để nhận các thông điệp, tiến trình phải có định danh identifier. Định danh 
+(identifier) bao gồm cả địa chỉ IP và số hiệu cổng (port) liên kết với tiến trình 
+trên hệ thống đầu cuối
+- Thiết bị đầu cuối có một địa chỉ IP 32-bit duy nhất
+Ví dụ về số hiệu cổng:
+• Máy chủ HTTP (Web): 80
+• Máy chủ thư điện tử (SMTP): 25
+• Máy chủ IMAP: 143
+Để gửi thông điệp HTTP đến máy chủ web hoctap.suctremmt.com:
+• Địa chỉ IP: 104.21.14.195
+• Số hiệu cổng: 80
+
+===== PDF PAGE 57 =====
+57
+Nguyên lý của các ứng dụng mạng
+4. Các dịch vụ giao thức Transport Internet
+Dịch vụ TCP
+• Truyền tải tin cậy (reliable transport) giữa các tiến trình gửi và nhận.
+• Điều khiển luồng (flow control): bên gửi không áp đảo (gửi quá khả năng) bên nhận.
+• Điều khiển tắc nghẽn (congestion control): điều tiết bên gửi khi mạng quá tải.
+• Hướng kết nối (connectionoriented): thiết lập kết nối giữa bên gửi và bên nhận.
+• Không cung cấp: định thì, thông lượng tối thiểu, an ninh.
+Dịch vụ UDP
+• Truyền tải không tin cậy giữa tiến trình gửi và nhận.
+• Không cung cấp: tính tin cậy, điều khiển luồng, điều khiển tắc nghẽn, định thì, thông lượng đảm bảo, an ninh hay thiết lập kết nối.
+
+===== PDF PAGE 58 =====
+58
+Nguyên lý của các ứng dụng mạng
+4. Các dịch vụ giao thức Transport Internet
+
+
+===== PDF PAGE 59 =====
+59
+Nguyên lý của các ứng dụng mạng
+5. Bảo mật TCP
+- TCP và UDP Socket đều không có mã hóa. Dữ liệu chưa được mã hóa được gửi vào socket đi qua Internet dưới dạng 
+nguyên bản.
+- Transport Layer Security (TLS)
+• Cung cấp các kết nối TCP có mã hóa.
+• Toàn vẹn dữ liệu. 
+• Chứng thực đầu cuối.
+- Các ứng dụng sử dụng các thư viện TLS, qua đó làm việc với TCP
+- Dữ liệu dạng nguyên bản được gửi vào các socket đi qua Internet ở dạng được mã hóa.
+
+===== PDF PAGE 60 =====
+60
+II. Web và HTTP
+Chương 2: Tầng ứng dụng
+
+===== PDF PAGE 61 =====
+61
+Web và HTTP
+1. Web
+- Trang web bao gồm các đối tượng và các đối tượng đó có thể là file HTML, ảnh JPEG,…
+- Hầu hết trang Web bao gồm file HTML cơ sở (base HTML file) và nhiều đối tuợng được tham chiếu. Mỗi một đối 
+tuợng được định vị bằng một URL.
+- VD URL: https://course.uit.edu.vn/nguquagiothi
+course.uit.edu.vn/nguquagiothi
+Tên máy Đường dẫn
+
+===== PDF PAGE 62 =====
+62
+Web và HTTP
+2. HTTP (hypertext transfer protocol)
+- Giao thức tầng ứng dụng cho Web 
+- Mô hình Máy khách – máy chủ (Client – Server) 
+• Client: trình duyệt – yêu cầu, tiếp nhận, (sử dụng giao thức HTTP) và hiển thị các đối tượng Web 
+• Server: máy chủ web gửi (sử dụng giao thức HTTP) các đối tượng trong phản hồi của các yêu cầu
+- Sử dụng TCP để truyền dữ liệu nhằm đảm bảo sự toàn vẹn gói tin
+- Hoạt động theo nguyên tắc “phi trạng thái”
+
+===== PDF PAGE 63 =====
+63
+Web và HTTP
+2. HTTP (hypertext transfer protocol)
+ Các kết nối HTTP gồm 2 loại:
+HTTP không bền vững HTTP bền vững
+• Kết nối TCP được mở.
+• Chỉ tối đa một đối tượng 
+được gửi qua kết nối TCP.
+• Kết nối TCP đóng lại.
+• Kết nối TCP được mở đến 
+một máy chủ (server).
+• Nhiều đối tượng có thể 
+gửi thông qua duy nhất 
+một kết nối TCP giữa máy 
+khách (client) và máy chủ 
+đó.
+• Kết nối TCP đóng lại.
+
+===== PDF PAGE 64 =====
+64
+Web và HTTP
+2. HTTP (hypertext transfer protocol)
+ RTT: thời gian cho một gói nhỏ di chuyển từ máy khách đến máy chủ và 
+ngược lại.
+Thời gian đáp ứng:
+- HTTP không bền vững (trên mỗi đối tượng):
+• 1 RTT để bắt đầu kết nối TCP.
+• 1 RTT cho yêu cầu HTTP và vài byte phản hồi HTTP đầu tiên trả về.
+• Thời gian truyền đối tượng/tập tin
+ Thời gian đáp ứng = 2RTT + thời gian truyền tập tin
+- HTTP bền vững:
+• Máy chủ để kết nối mở sau khi gửi phản hồi.
+• Các thông điệp HTTP tiếp theo giữa cùng một máy khách/máy chủ 
+được gửi qua kết nối đã mở.
+• Client gửi yêu cầu ngay khi gặp một đối tượng được tham chiếu.
+• Chỉ cần 1 RTT cho tất cả đối tượng được tham chiếu.
+
+===== PDF PAGE 65 =====
+65
+Web và HTTP
+3. Thông điệp yêu cầu HTTP
+Có 2 loại thông điệp HTTP:
+- Yêu cầu (request).
+- Phản hồi (response).
+Thông điệp HTTP được ghi dưới dạng kí tự ASCII
+Thông điệp HTTP bao gồm: 
+- Dòng đầu tiên mô tả yêu cầu của Client hoặc trạng thái của Server.
+- Một tập Header gồm nhiều trường khác nhau, mô tả thông tin của yêu cầu hoặc thân của 
+thông điệp HTTP.
+- Một dòng trống để báo hiệu kết thúc tập Header.
+- Phần thân chứa các thông tin bổ sung cho yêu cầu hoặc phản hồi. Phần thân có thể có 
+hoặc không, tùy thuộc vào loại yêu cầu hoặc phản hồi tương ứng.
+
+===== PDF PAGE 66 =====
+66
+Web và HTTP
+3. Thông điệp yêu cầu HTTP
+
+
+===== PDF PAGE 67 =====
+67
+Web và HTTP
+3. Thông điệp yêu cầu HTTP
+Ví dụ:
+GET /index.html HTTP/1.1 
+Host: example.com 
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5 
+Accept-Encoding: gzip,deflate 
+Connection: keep-alive
+\r\n
+Dòng yêu cầu
+Dòng header
+Ký tự xuống dòng
+
+===== PDF PAGE 68 =====
+68
+Web và HTTP
+3. Thông điệp yêu cầu HTTP
+Ví dụ: HTTP request
+GET /index.html HTTP/1.1 
+Host: example.com 
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8
+Accept-Language: en-US,en;q=0.5 
+Accept-Encoding: gzip,deflate 
+Connection: keep-alive
+\r\n
+method
+URL version
+Tên miền
+Ngôn ngữ 
+ưu tiên
+Định dạng Client có thể 
+hiểu
+Định dạng mã hóa 
+Client chấp nhận
+Loại kết nối
+
+===== PDF PAGE 69 =====
+69
+Web và HTTP
+3. Thông điệp yêu cầu HTTP
+Ví dụ: HTTP response
+HTTP/1.1 200 OK 
+Date: Thu, 20 Oct 2023 07:09:06 GMT
+Server: Apache/2.4.51 (Debian)
+Content-Type: text/html; charset=UTF-8
+Content-Length: 123
+Connection: keep-alive 
+Mã trạng thái và chú thích
+Thời gian gửi
+Server trả lời
+Định dạng 
+đối tượng
+Độ dài đối 
+tượng
+
+===== PDF PAGE 70 =====
+70
+Web và HTTP
+3. Thông điệp yêu cầu HTTP
+  Các method cơ bản
+GET HEAD POST PUT DELETE
+Có thân Không Không Có thể có 
+hoặc không Có Có thể có 
+hoặc không
+Thông điệp 
+trả lời có 
+thân
+Có Không Có thể có 
+hoặc không
+Có thể có 
+hoặc không
+Có thể có 
+hoặc không
+Có thể 
+Cache
+Có Có Chỉ khi còn 
+mới Không Không
+An toàn Tùy tình 
+huống Có Tùy tình 
+huống Không Không
+Idempotent Có Có Không Có Có
+Chú thích: Được cả HTTP bền vững và không bền vững sử dụng.
+           Được HTTP bền vững sử dụng.
+
+===== PDF PAGE 71 =====
+71
+Web và HTTP
+3. Thông điệp yêu cầu HTTP
+- Một số mã trạng thái phản hồi HTTP:
+200 OK – Yêu cầu thành công, đối tượng được yêu cầu sau ở trong thông điệp này.
+301 Moved Permanently – Đối tượng được yêu cầu đã di chuyển, vị trí mới được xác định trong 
+thông điệp này.
+400 Bad Request – Thông điệp yêu cầu không được hiểu bởi server.
+404 Not Found – Tài liệu được yêu cầu không tìm thấy trên server này.
+505 HTTP Version Not Supported – Máy chủ không hỗ trợ phiên bản giao thức HTTP.
+
+===== PDF PAGE 72 =====
+72
+Web và HTTP
+4. Cookie
+Định nghĩa: Là các tệp tin được trang web tạo ra nhằm lưu trữ thông tin về người dùng. Các trang web và 
+trình duyệt của người dùng sử dụng cookie để duy trì một số trạng thái giữa các phiên làm việc.
+Cookie gồm 4 thành phần:
+- Cookie header line của thông điệp đáp ứng HTTP.
+- Cookie header line trong thông điệp đáp ứng HTTP kế tiếp.
+- File cookie được lưu trữ trên host của người dùng, được quản lý bởi trình duyệt của người sử dụng.
+- Cơ sở dữ liệu back-end tại Website.
+
+===== PDF PAGE 73 =====
+73
+Web và HTTP
+4. Cookie
+Client Server
+File Cookie
+ID 123
+Server tạo bản 
+ghi cho Client 
+với ID 123
+Sau 1 khoảng 
+thời gian
+Truy cập thông 
+tin người dùng 
+có ID 123
+ID 123
+Truy cập thông 
+tin người dùng 
+có ID 123
+ID 123
+
+===== PDF PAGE 74 =====
+74
+Web và HTTP
+5. Web caches (Proxy server)
+Cache là thành phần trong cấu trúc mạng có vai trò xử lý các yêu cầu của Client thay cho Server.
+Giúp người dùng truy cập web mà không cần giao tiếp với Server nguồn.
+Cache có ổ đĩa riêng dùng để lưu trữ các đối tượng mà Client yêu cầu gần đây.
+Trình duyệt sẽ gửi tất cả yêu cầu HTTP tới Cache khi được cấu hình:
+- Nếu Cache có đối tượng được yêu cầu thì Cache sẽ trả về cho Client mà không cần tới Server gốc.
+- Nếu Cache không có đối tượng được yêu cầu thì sẽ chuyển yêu cầu tới cho Server gốc rồi gửi lại cho 
+Client.
+Cache hoạt động cả trên Client và trên Server
+Cache giúp trải nghiệm sử dụng dịch vụ mạng tốt hơn:
+- Giảm thời gian đáp ứng cho yêu cầu của Client.
+- Giảm lưu lượng truy cập trên một đường link.
+
+
+===== PDF PAGE 75 =====
+75
+III. E-mail, SMTP, IMAP
+Chương 2: Tầng ứng dụng
+
+===== PDF PAGE 76 =====
+76
+E–mail, SMTP, IMAP
+1. E–mail – Thư điện tử
+Gồm 3 thành phần chính:
+- User agents
+- Máy chủ thư điện tử (mail server)
+- Simple mail transfer protocol: SMTP
+
+===== PDF PAGE 77 =====
+77
+E–mail, SMTP, IMAP
+1. E–mail – Thư điện tử
+User Agent
+Còn được gọi là “mail reader”
+Soạn thảo, chỉnh sửa, đọc thư điện tử
+Thư đi/đến được lưu trữ trên máy chủ
+Mail server
+- Hộp thư (mail box) chứa thông điệp đến user
+- Hàng thông điệu (message queue) của các thông điệp mail ra ngoài (chuẩn bị 
+gửi).
+- Giao thức SMTP giữa các mail server để gửi các thông điệp email.
+• Client là máy chủ thư điện tử gửi
+• Server là máy chủ thư điện tử nhận
+SMTP RFC (5321)
+- Sử dụng TCP để truyền thông điệp email một cách tin cậy từ client đến
+server.
+- Truyền trực tiếp: server gửi đến server nhận.
+- 3 giai đoạn truyền:
+• Thiết lập kết nối
+• Truyền thông điệp
+• Đóng kết nối
+- Tương tác lệnh/ phản hồi tương tự HTTP, FTP:
+• Lệnh: văn bản ASCII
+• Phản hồi: mã và cụm trạng thái
+
+===== PDF PAGE 78 =====
+78
+E–mail, SMTP, IMAP
+2. So sánh SMTP và HTTP
+Điểm giống Điểm khác
+SMTP HTTP
+- Dùng kết nối bền vững (đối 
+với HTTP bền vững)
+- Cả 2 giao thức được dùng để 
+gửi các tệp từ host này sang 
+host khác
+- Đều có tương tác/phản hồi, 
+mã trạng thái dạng ASCII
+- Chủ yếu là giao thức đẩy 
+(push)
+- Để hết các đối tượng vào 
+trong một thông điệp
+- Mỗi thông điệp phải 
+trong định dạng ASCII 7 
+bit
+- Chủ yếu là giao thức kéo 
+(pull)
+- Đóng gói mỗi đối tượng 
+trong từng thông điệp 
+phản hồi của nó
+- Không áp dụng giới hạn 
+về số bit
+
+===== PDF PAGE 79 =====
+79
+E–mail, SMTP, IMAP
+3. Các giao thức tuy cập mail
+SMTP: truyền/lưu trữ mail vào server người nhận => gửi mail
+Giao thức truy cập mail: truy cập mail từ server người nhận => nhận mail
+
+===== PDF PAGE 80 =====
+80
+Giả lập tình huống
+Tình huống: Vũ gửi mail đến Trăm
+SMTP SMTP
+Giao thức 
+truy cập mail
+User 
+Agent
+User 
+Agent
+Giao thức truy cập mail: Truy xuất từ máy chủ
+• POP (Post Office Protocol)  [RFC 1939]: xác thực, tải thư về
+• IMAP (Internet Mail Access Protocol) [RFC 3051]: thư được lưu trữ trên máy
+chủ, IMAP cung cấp truy xuất, xóa, thư mục thư được lưu trữ trên máy chủ.
+• HTTP: gmail, Hotmail, Yahoo!Mail, v.v. cung cấp giao diện web trên STMP (để
+gửi), IMAP (hoặc POP) để truy xuất thư e-mail.
+Máy chủ thư 
+của Vũ
+Máy chủ thư 
+của Trăm
+
+===== PDF PAGE 81 =====
+81
+Câu hỏi 1
+Thứ tự đúng của các tầng từ trên xuống dưới của chồng giao thức Internet:
+A.  Application – Transport – Network – Link – Physical
+B.  Application – Presentation – Session – Transport – Network – Data Link – Physical
+C.  Application – Transport – Session – Network – Physical
+D. Application – Presentation – Session – Transport – Internet – Data Link – Physical 
+Đáp án: A
+
+
+===== PDF PAGE 82 =====
+82
+Câu hỏi 2
+Một người dùng sử dụng dịch vụ Persistent without pipelining của HTTP truy cập vào một website bao gồm 1
+trang HTML và 5 hình ảnh được tham chiếu. Biết phiên bản của Server là HTTP 1.1, giả sử thời gian truyền file 
+của mỗi đối tượng là 0.5 RTT. Cho biết tổng thời gian (theo RTT) để người dùng tải và xem hết website này.
+A.  3 RTT
+B.  5 RTT
+C. 6 RTT
+D. 10 RTT
+Đáp án: D
+Giải thích: HTTP bền vững (không pipeline)
+=> 7 RTT (mở kết nối TCP và 6 đối tượng) + 0.5 * 6 RTT (thời gian truyền file của mỗi đối tượng) = 10 RTT
+
+===== PDF PAGE 83 =====
+83
+Câu hỏi 3
+Trong số các cặp giao thức và cổng dịch vụ sau, cặp nào là đúng:
+A.  HTTP: UDP, Port 80
+B.  SMTP: TCP, Port 110
+C.  FTP: TCP, Port 21
+D. Tất cả đều đúng
+Đáp án: C
+=> Sai, đổi UDP thành TCP
+=> Sai, đổi Port 110 thành 25
+
+===== PDF PAGE 84 =====
+84
+IV. Hệ thống phân giải
+tên miền DNS
+Chương 2: Tầng ứng dụng
+
+===== PDF PAGE 85 =====
+85
+Hệ thống phân giải tên miền DNS
+1. DNS là gì?
+- DNS (Domain Name System) là cơ sở dữ liệu phân tán được triển khai theo hệ thống 
+phân cấp các máy chủ DNS (DNS servers); là một giao thức ở tầng ứng dụng cho phép 
+hosts truy vấn đến cơ sở dữ liệu này
+- Là dịch vụ tầng ứng dụng 
+- Sử dụng giao thức UDP và TCP - Port 53 
+- DNS được sử dụng để hỗ trợ nhiều giao thức khác như HTTP và SMTP
+
+===== PDF PAGE 86 =====
+86
+Hệ thống phân giải tên miền DNS
+1. DNS là gì?
+- Có 3 lớp máy chủ DNS trong hệ thống phân cấp
+
+
+===== PDF PAGE 87 =====
+87
+Hệ thống phân giải tên miền DNS
+2. Hoạt động của DNS
+
+
+===== PDF PAGE 88 =====
+88
+Hệ thống phân giải tên miền DNS
+2. Hoạt động của DNS
+(1) Host gửi một DNS query tới local DNS server. 
+(2)  Local DNS server chuyển tiếp thông điệp của query đến root 
+DNS server
+(3)  Root DNS server ghi chú lại hậu tố edu và trả về cho local 
+DNS server danh sách địa chỉ IP thuộc về TLD servers
+(4)  Local DNS server gửi lại thông điệp của query cho 1 trong 
+những TLD server
+(5)  TLD server ghi chú lại hậu tố umass.edu và phản hồi địa chỉ 
+IP của authoritative DNS server (dns.umass.edu)
+(6)  Local DNS server gửi lại thông điệp query trực tiếp tới 
+dns.umass.edu
+(7)  Local DNS server nhận được phản hồi là địa chỉ IP của 
+gaia.cs.umass.edu
+(8) Host nhận được địa chỉ IP của domain cần tìm
+a) Truy vấn lặp
+
+===== PDF PAGE 89 =====
+89
+Hệ thống phân giải tên miền DNS
+2. Hoạt động của DNS
+b)  Truy vấn đệ quy
+Đẩy trách nhiệm phân giải tên miền cho Server được liên lạc
+
+===== PDF PAGE 90 =====
+90
+Hệ thống phân giải tên miền DNS
+3. DNS Catching
+- Các máy chủ DNS cục bộ lưu trữ tạm lại các truy vấn DNS trước đó, thường sẽ lưu thông tin
+về TLD Server, lưu các ánh xạ của các cặp tên miền – địa chỉ IP
+=> Giảm lưu lượng truy cập tới máy chủ DNS gốc một cách đáng kể
+- Các thông tin được Cache có thể bị lỗi thời do tên miền thay đổi địa chỉ IP trong khi máy chủ
+DNS chưa xóa các ánh xạ cũ
+- Thời gian lưu trữ tùy thuộc vào loại bản ghi DNS
+ 
+
+===== PDF PAGE 91 =====
+91
+Hệ thống phân giải tên miền DNS
+4. DNS Record & Message 
+ 
+
+
+===== PDF PAGE 92 =====
+92
+Hệ thống phân giải tên miền DNS
+4. DNS Record & Message
+- Các thông điệp truy vấn (query) và trả lời (reply) đều có cùng một định dạng 
+ 
+
+
+===== PDF PAGE 93 =====
+93
+Hệ thống phân giải tên miền DNS
+4. DNS Record & Message 
+ 
+
+
+===== PDF PAGE 94 =====
+94
+Hệ thống phân giải tên miền DNS
+Ví dụ RTT của DNS
+VD: Giả sử truy cập vào một URL lần đầu 
+tiên, địa chỉ IP của web chưa được lưu lại 
+trong Cache nên cần truy vấn DNS để 
+phân giải URL. Biết rằng cần đi qua 4 
+máy chủ DNS để truy vấn IP, máy chủ 
+DNS đầu tiên là máy chủ cục bộ, có RTT 
+0 = 4ms. Máy chủ DNS thứ 2, 3 và 4 có 
+RTT lần lượt là 14ms, 4ms và 21ms. Giả 
+sử URL chỉ chứa một đối tượng là file 
+HTML nhỏ nên thời gian truyền không 
+đáng kể. Tính thời gian từ lúc vào URL 
+cho tới khi Client nhận đối tượng, biết 
+RTT giữa Client và máy chủ Web là 84ms
+
+
+===== PDF PAGE 95 =====
+95
+Hệ thống phân giải tên miền DNS
+Ví dụ RTT của DNS
+- Thời gian để phân giải tên miền thành địa chỉ IP: 
+  RTTDNS = RTT0 + RTT1 + RTT2 + RTT3 
+     = 4 + 14 + 4 + 21 
+     = 43ms 
+- Truy cập trang web thông qua HTTP => Cần khởi tạo kết nối TCP 
+- Cần 1 RTT để khởi tạo kết nối và 1 RTT để lấy đối tượng 
+  RTTobj = 2RTTHTTP = 168ms 
+- Tổng thời gian từ lúc vào URL cho tới khi Client nhận đối tượng: 
+  RTTS = RTTDNS + RTTobj = 43 + 168 = 211ms
+
+===== PDF PAGE 96 =====
+96
+V. Các ứng dụng
+P2P
+Chương 2: Tầng ứng dụng
+
+===== PDF PAGE 97 =====
+97
+Các ứng dụng P2P
+1. Khái niệm
+- Mạng Peer-to-peer (P2P) là một kiến trúc ứng dụng phân tán vùng nhiệm vụ hoặc khối lượng 
+công việc giữa các peer
+- Các peer là những thiết bị tham gia trong ứng dụng có đặc quyền như nhau, tạo thành một 
+mạng lưới các node ngang hàng
+ 
+
+===== PDF PAGE 98 =====
+98
+Các ứng dụng P2P
+1. Khái niệm
+Ví dụ: 
+- Phân phối tập tin (BitTorrent) 
+- Mạng chia sẻ tập tin (eDonkey) 
+- Giao dịch tiền ảo (Bitcoin) 
+- VoIP (TeamSpeak)
+ 
+
+
+===== PDF PAGE 99 =====
+99
+Các ứng dụng P2P
+2. Phân phối tập tin P2P (sử dụng BitTorrent)
+ 
+- Tệp tin được chia thành các khối 256Kb (chunks). Các bên (peer) trong torrent gửi/nhận 
+các khối của tệp tin đó. 
+- Torrent: nhóm các bên (peers) tham gia trao đổi các khối 
+- Mỗi torrent có một node cơ sở hạ tầng gọi là tracker dùng để theo dõi các bên(peers) 
+trong torrent đó. 
+- Khi một peer tham gia vào torrent, nó tự đăng ký với tracker và thông báo định kỳ cho 
+tracker rằng mình vẫn còn trong torrent
+
+===== PDF PAGE 100 =====
+100
+Các ứng dụng P2P
+2. Phân phối tập tin P2P (sử dụng BitTorrent)
+ 
+- Khi mới tham gia torrent, một peer sẽ không có khối nào nhưng sẽ dần tích lũy chúng từ 
+các peer khác. 
+- Các peer sẽ lấy danh sách các peer khác từ tracker để kết nối với chúng và cả láng giềng 
+của các peer đó 
+- Trong quá trình tải xuống, một peer sẽ tải lên những khối nó đã có tới các peer khác và 
+có thể rời bỏ torrent sau khi có toàn bộ tập tin hoặc tiếp tục tải lên các khối còn lại
+
+===== PDF PAGE 101 =====
+101
+Các ứng dụng P2P
+2. Phân phối tập tin P2P (sử dụng BitTorrent)
+ 
+
+
+===== PDF PAGE 102 =====
+102
+VI. Lập trình socket
+Chương 2: Tầng ứng dụng
+
+===== PDF PAGE 103 =====
+103
+Lập trình socket
+Xét ứng dụng client-server sau:
+1. Client đọc dữ liệu (một dòng ký tự) từ bàn phím và gửi dữ liệu đến server
+2. Server nhận dữ liệu và chuyển các ký tự sang dạng in hoa
+3. Server gửi dữ liệu đã được điều chỉnh cho client
+4. Client nhận dữ liệu đã được điều chỉnh đó và hiển thị trên màn hình
+
+===== PDF PAGE 104 =====
+104
+Lập trình socket
+1. Lập trình socket với UDP
+- UDP – User Datagram Protocol (Giao thức dữ liệu người dung): Giao thức chuyển gói tin 
+không đảm bảo
+ 
+
+
+===== PDF PAGE 105 =====
+105
+Lập trình socket
+1. Lập trình socket với UDP
+ 
+  UDP server     UDP client
+ 
+
+
+===== PDF PAGE 106 =====
+106
+Lập trình socket
+2. Lập trình socket với TCP
+- TCP – Transmission Control Protocol(Giao thức điều khiển truyền vận) là giao thức chuyển 
+gói tin đáng tin cậy
+ 
+
+
+===== PDF PAGE 107 =====
+107
+Lập trình socket
+2. Lập trình socket với TCP
+- TCP – Transmission Control Protocol(Giao thức điều khiển truyền vận) là giao thức chuyển 
+gói tin đáng tin cậy
+ 
+
+
+===== PDF PAGE 108 =====
+108
+Lập trình socket
+2. Lập trình socket với TCP
+ 
+  TCP server     TCP client
+ 
+
+
+===== PDF PAGE 109 =====
+109
+I. II.
+Multiplexing và
+Demultiplexing
+III.
+UDP
+Chương 3: Tầng vận chuyển
+Các dịch vụ tầng
+vận chuyển
+Nguyên lý truyền
+dữ liệu tin cậy
+IV.
+
+===== PDF PAGE 110 =====
+110
+I.
+Các dịch vụ tầng 
+Vận chuyển
+Chương 3: Tầng vận chuyển
+
+===== PDF PAGE 111 =====
+111
+1. Các dịch vụ tầng vận chuyển
+Enabling Applications on Devices to Communicate
+
+===== PDF PAGE 112 =====
+112
+1. Các dịch vụ tầng vận chuyển
+- Cung cấp truyền thông logic giữa các tiến trình ứng dụng đang chạy trên 
+các host khác nhau.
+- Các giao thức chạy trên các hệ thống đầu cuối:
++ Phía gửi: chia nhỏ các thông điệp (message) ứng dụng thành các
+segments, sau đó chuyển các segments này cho tầng network
++ Phía nhận: tái kết hợp các segments thành các thông điệp (message),
+các thông điệp này được chuyển lên tầng Application
+- Có 2 giao thức chính: TCP và UDP
+
+===== PDF PAGE 113 =====
+113
+1. Các dịch vụ tầng vận chuyển
+Hoạt động tầng Vận chuyển
+Bên gửi: 
++ Nhận message từ tầng ứng dụng (nhận thư) 
++ Xác định giá trị header (thông tin phong bì) 
++ Tạo segment (bỏ thư vào phong bì) 
++ Chuyển segment đến tầng mạng
+Bên nhận:
++ Nhận segment từ tầng mạng 
++ Kiểm tra giá trị header 
++ Bỏ header, trích xuất thông điệp của   
+tầng ứng dụng 
++ Chuyển thông điệp đến tầng ứng dụng 
+qua socket
+
+
+===== PDF PAGE 114 =====
+114
+1. Các dịch vụ tầng vận chuyển
+Các giao thức tầng Vận chuyển trên Internet
+TCP
+(Transmission Control Protocol)
++ Tin cậy, truyền theo thứ tự 
++ Điền khiển tắc nghẽn
++ Điều khiển luồng
++ Thiết lập kết nối
+UDP
+(User Datagram Protocol)
++ Không tin cậy, truyền không theo thứ tự 
++ Không rườm rà, “nỗ lực tốt nhất” (best-
+effort) 
+Không có các dịch vụ: 
++ Bảo đảm độ trễ 
++ Bảo đảm băng thông
+
+===== PDF PAGE 115 =====
+115
+1. Các dịch vụ tầng vận chuyển
+Cấu trúc segment TCP
+
+===== PDF PAGE 116 =====
+116
+1. Các dịch vụ tầng vận chuyển
+• Số thứ tự: Số thứ tự là số 32 bit ngẫu
+nhiên được gán cho bit đầu tiên của
+dữ liệu, chỉ được sử dụng một lần
+trong một kết nối. .
+• Số ACK: lớn hơn 1 so với số thứ tự
+• Kích thước cửa sổ: là kích thước bộ
+đệm hay dung lượng mà dữ liệu có
+thể được nhận trong bộ đệm
+• Kích thước phân đoạn tối đa: vượt
+quá kích thước này, thiết bị sẽ không
+thể nhận được các phân đoạn dữ liệu
+
+===== PDF PAGE 117 =====
+117
+• Cờ SYN: được mô tả như một yêu 
+cầu thiết lập kết nối. SYN = 1 nghĩa là 
+thiết bị muốn thiết lập kết nối an 
+toàn, nếu không SYN = 0
+• Cờ ACK: phản hồi của SYN. ACK = 1 
+nghĩa là thiết bị đã nhận được tin 
+nhắn SYN và xác nhận nó, nếu không 
+ACK = 0
+• Cờ FIN: sau khi quá trình truyền dữ 
+liệu hoàn tất, các thiết bị phải chấm 
+dứt kết nối bằng cờ FIN. FIN = 1 là 
+thiết bị muốn ngắt kết nối, nếu không 
+FIN = 0
+1. Các dịch vụ tầng vận chuyển
+
+
+===== PDF PAGE 118 =====
+118
+1. Các dịch vụ tầng vận chuyển
+Quy trình bắt tay 3 bước (3 – way handsharking)
+Bước 1: Máy khách gửi SYN 
+đến máy chủ
+Bước 2: Máy chủ trả lời bằng 
+SYN và ACK cho máy khách
+Bước 3: Máy khách gửi ACK 
+đến máy chủ
+Thiết lập kết nối
+
+===== PDF PAGE 119 =====
+119
+1. Các dịch vụ tầng vận chuyển
+Quy trình bắt tay 3 bước (3 – way handsharking)
+Chấm dứt kết nối
+Bước 1: Máy khách gửi FIN 
+đến máy chủ
+Bước 2: Máy chủ trả lời bằng 
+FIN và ACK cho máy khách
+Bước 3: Máy khách gửi ACK 
+đến máy chủ
+
+===== PDF PAGE 120 =====
+120
+II.
+Multiplexing và 
+Demultiplexing
+Chương 3: Tầng Vận chuyển
+
+===== PDF PAGE 121 =====
+121
+2. Multiplexing và Demultiplexing
+Multiplexing tại bên gửi Demultiplexing tại bên nhận
+Xử lý dữ liệu từ nhiều socket, 
+thêm thông tin header về tầng 
+Transport vào segment
+Sử dụng thông tin trong  header 
+để chuyển segment vừa nhận vào 
+đúng socket
+
+===== PDF PAGE 122 =====
+122
+2. Multiplexing và Demultiplexing
+• Host nhận các gói dữ liệu (datagram) IP
++ Mỗi gói dữ liệu có địa chỉ IP nguồn và IP đích
++ Mỗi gói dữ liệu mang một segment (đơn vị dữ 
+liệu của tầng Vận chuyển)
++ Mỗi segment có số port nguồn và đích 
+• Host dùng các địa chỉ IP và số port để gởi 
+segment đến socket thích hợp 
+Cách làm việc của Demultiplexing
+
+
+===== PDF PAGE 123 =====
+123
+2. Multiplexing và Demultiplexing
+Demultiplexing không kết nối
+• Socket UDP được xác định bởi 2 yếu tố:
++ địa chỉ IP đích
++số port đích
+• Khi host nhận segment UDP :
++ Kiểm tra số port đích trong segment
++ Đưa segment UDP đến socket có số port đó
+• Do đó, 2 segment với cùng địa chỉ IP đích cùng số port đích, nhưng
+khác địa chỉ IP nguồn và khác số port nguồn, các segment đó sẽ được
+gửi đến cùng một tiến trình thông qua cùng một socket
+
+===== PDF PAGE 124 =====
+124
+2. Multiplexing và Demultiplexing
+
+
+===== PDF PAGE 125 =====
+125
+2. Multiplexing và Demultiplexing
+Demultiplexing hướng kết nối
+• Socket TCP được xác định bởi 4 yếu tố: 
++ Địa chỉ IP nguồn                   + Địa chỉ IP đích 
++ Số port đích                          + Số port nguồn 
+Demux: nơi nhận dùng tất cả 4 giá trị trên để điều hướng segment đến socket 
+thích hợp
+• Host server có thể hỗ trợ nhiều socket TCP đồng thời:
++ Mỗi socket được xác định bởi bộ 4 của nó
++ Các web server có các socket khác nhau cho mỗi kết nối từ client 
++ Kết nối HTTP không bền vững sẽ có socket khác nhau cho mỗi yêu cầu
+
+===== PDF PAGE 126 =====
+126
+2. Multiplexing và Demultiplexing
+
+
+===== PDF PAGE 127 =====
+127
+Ôn tập giữa kì I
+Nhập môn mạng máy tính
+(Buổi 2)
+• Bùi Ngọc Khánh Linh
+MMTT2022.2
+• Lê Hoàng Vũ
+MMTT2022.3
+• Nguyễn Ngọc Xuân Tùng
+ATTT2022.2
+• Bùi Thị Ngọc Trăm
+MMTT2022.3
+• Lê Ngọc Kiều Anh
+MMTT2022.1
+• Nguyễn Thành Nhân
+MMTT2022.2
+
+===== PDF PAGE 128 =====
+128
+III.
+Vận chuyển phi kết 
+nối_UDP
+Chương 3: Tầng Vận chuyển
+
+===== PDF PAGE 129 =====
+129
+A.UDP là gì?
+- UDP (User Datagram Protocol) là một trong những giao thức cốt lõi của giao thức 
+TCP/IP. Dùng UDP, chương trình trên mạng máy tính có thể gửi những dữ liệu ngắn 
+được gọi là datagram tới máy khác.
+❖ Ưu điểm:
+1. UDP nhanh và hiệu quả hơn đối với các mục tiêu như kích thước nhỏ và yêu cầu 
+khắt khe về thời gian.
+2. Bản chất của UDP là không trạng thái nên nó hữu dụng đối với việc trả lời các 
+truy vấn nhỏ với số lượng lớn người yêu cầu.
+
+===== PDF PAGE 130 =====
+130
+A.UDP là gì?
+❖ Nhược điểm:
+1. UDP không cung cấp sự tin cậy và thứ tự truyền và nhận mà TCP làm.
+2. Các gói dữ liệu mà UDP truyền đi có thể đến không đúng thứ tự hoặc bị mất mà 
+không có thông báo.
+➢ Một vài ứng dụng phổ biến sử dụng UDP: DNS (Domain Name System), ứng 
+dụng streaming media, Voice over IP , Trivial File Transfer Protocol (TFTP), và 
+game trực tuyến.
+
+===== PDF PAGE 131 =====
+131
+B. UDP_segment header
+
+
+===== PDF PAGE 132 =====
+132
+B. UDP_segment header
+▪ Source Port (số port nguồn): Số cổng của thiết bị gửi. Trường này có thể đặt là 0 
+nếu máy tính đích đến không cần trả lời người gửi.
+▪ Destination Port (số port đích): Số cổng của thiết bị nhận.
+▪ Length: Xác định chiều dài của toàn bộ datagram: phần header và dữ liệu. Chiều 
+dài tối thiểu là 8 byte khi gói tin không có dữ liệu, chỉ có header.
+▪ Checksum: Kiểm tra lỗi của phần header và dữ liệu.
+
+===== PDF PAGE 133 =====
+133
+C. UDP_checksum
+o Kiểm tra gói tin bên nhận và bên gửi có giống nhau hay không.
+▪ Bên gửi:
+ 1.Xét nội dung của segment , bao gồm các trường của header là chuỗi các số 
+nguyên 16-bit.
+ 2.Checksum: tổng bù 1 của các chuỗi 16-bit trong nội dung segment.
+ 3.Bên gửi đặt giá trị checksum vào trưởng checksum của UDP.
+▪ Bên nhận:
+ 4.Tính toán checksum của segment đã nhận.
+ 5.Kiểm tra giá trị trên có bằng giá trị trong trường checksum hay không.
+ - NO: có lỗi xãy ra.
+ -YES: không có lỗi.
+
+===== PDF PAGE 134 =====
+134
+C. UDP_checksum
+
+
+===== PDF PAGE 135 =====
+135
+III.
+Các nguyên lý truyền 
+dữ liệu tin cậy
+Chương 3: Tầng Vận chuyển
+
+===== PDF PAGE 136 =====
+136
+A.Khái niệm
+▪ Độ phức tạp của giao thức truyền dữ liệu đáng tin cậy sẽ phụ thuộc (mạnh 
+mẽ) vào các đặc điểm của kênh không đáng tin cậy (mất, hỏng, sắp xếp lại 
+dữ liệu?)
+▪ Bên gửi, bên nhận không biết “trạng thái” của nhau, ví dụ: đã nhận được 
+thông điệp chưa
+• trừ khi được liên lạc qua các thông điệp
+
+===== PDF PAGE 137 =====
+137
+A.Khái niệm
+
+
+===== PDF PAGE 138 =====
+138
+B. Tổng quan
+1.RDT 1.0 (truyền dữ liệu tin cậy hoàn toàn)
+▪ Có 2 khả năng lớn xảy ra trong RDT 1.0:
+•  Gói tin bị mất trong khi đang truyền (loss of packets)
+•  Máy đích nhận được gói tin nhưng bị lỗi (bit errors)
+
+
+===== PDF PAGE 139 =====
+139
+B. Tổng quan
+2. RDT 2.0 (kênh truyền xảy ra lỗi):
+▪ Kênh cơ bản có thể đảo các bit trong packet
+•   Checksum để kiểm tra các lỗi
+▪ làm sao khôi phục các lỗi:
+•   Acknowledgements (ACKs): bên nhận báo bên gửi là 
+gói tin đã được nhận thành công.
+•  Negative acknowledgements (NAKs): bên nhận báo 
+bên gửi là gói tin đã bị lỗi.
+•   Bên gửi sẽ gửi lại gói tin nếu nhận được NAK.
+
+===== PDF PAGE 140 =====
+140
+B. Tổng quan
+2. RDT 2.0 (kênh truyền xảy ra lỗi):
+▪ Cơ chế mới trong RDT 2.0
+•  Phát hiện lỗi
+• Phản hồi từ bên nhận: ACK, 
+NAK từ bên nhận gửi lại cho 
+bên gửi
+
+
+===== PDF PAGE 141 =====
+141
+B. Tổng quan
+2. RDT 2.0 (kênh truyền xảy ra lỗi):
+• Cách hoạt động:
+  - Khi không lỗi:
+
+
+===== PDF PAGE 142 =====
+142
+B. Tổng quan
+2. RDT 2.0 (kênh truyền xảy ra lỗi):
+• Cách hoạt động:
+  -  Khi có lỗi:
+
+===== PDF PAGE 143 =====
+143
+B. Tổng quan
+2. RDT 2.0 (kênh truyền xảy ra lỗi):
+• Lỗ hỏng:
+
+
+===== PDF PAGE 144 =====
+144
+B. Tổng quan
+3.RDT 2.1 (bên gửi, xử lý các NAK/ACK bị hỏng):
+
+
+===== PDF PAGE 145 =====
+145
+B. Tổng quan
+3.RDT 2.1 (bên gửi, xử lý các NAK/ACK bị hỏng):
+
+
+===== PDF PAGE 146 =====
+146
+B. Tổng quan
+4.RDT 2.2 (một giao thức không cần NAK):
+• Chức năng giống như RDT 2.1, nhưng chỉ dùng ACK để phản hồi.
+• Thay cho NAK, bên nhận gửi ACK cho gói cuối cùng được nhận thành công.
+• Bên nhận phải ghi rõ số thứ tự của gói vừa được ACK
+• ACK bị trùng tại bên gửi dẫn tới kết quá giống như hành động của NAK: 
+truyền lại gói tin vừa rồi.
+
+===== PDF PAGE 147 =====
+147
+B. Tổng quan
+4.RDT 2.2 (một giao thức không cần NAK):
+
+
+===== PDF PAGE 148 =====
+148
+B. Tổng quan
+4.RDT 2.2 (một giao thức không cần NAK):
+
+
+===== PDF PAGE 149 =====
+149
+B. Tổng quan
+5.RDT 3.0:
+• Mất gói tin:
+- Cách tiếp cận:
+ + Bên gửi chờ ACK trong khoảng thời gian “hợp lý”.
+ + Truyền lại nếu không nhận được ACK trong khoảng thời gian này.
+ + Nếu gói (hoặc ACK) bị trễ (không mất).
+• Việc truyền lại sẽ gây trùng, nhưng số thứ tự đã xử lý trường hợp này.
+• Bên nhận phải xác định số thứ tự của gói vừa gửi ACK.
+
+===== PDF PAGE 150 =====
+150
+B. Tổng quan
+5.RDT 3.0:
+❑ Giả định mới:
+▪ Kênh truyền cũng có thể làm mất gói tin (dữ liệu, các ACK).
+• Checksum, số thứ tự, các ACK, việc truyền lại sẽ hỗ trợ… nhưng không đủ.
+
+===== PDF PAGE 151 =====
+151
+B. Tổng quan
+5.RDT 3.0:
+❑Nguyên lý hoạt động:
+
+
+===== PDF PAGE 152 =====
+152
+B. Tổng quan
+5.RDT 3.0:
+• Thêm biến timer:
+• U(sender): utilization - tỉ lệ thời gian truyền của bên gửi.
+VD: 1 Gbps link, truyền một gói tin 8000 bit trên kênh truyền có độ trễ lan truyền 
+15(ms).
+Giải:
+ - Thời gian truyền gói tin đến kênh truyền:
+
+===== PDF PAGE 153 =====
+153
+B. Tổng quan
+5.RDT 3.0:
+Gói 1KB sau 30ms thì tốc độ truyền 33kb/sec trên 1Gbps link.
+
+
+===== PDF PAGE 154 =====
+154
+B. Tổng quan
+5.RDT 3.0:
+▪ Hiệu suất giao thức RDT 3.0 
+kém.
+▪ Giao thức giới hạn hệu suất của 
+cơ sở hạ tầng cơ bản(kênh 
+truyền).
+
+===== PDF PAGE 155 =====
+155
+B. Tổng quan
+5.RDT 3.0:
+▪ pipelining: bên gửi gửi nhiều 
+packet cùng một lúc mà không 
+cần chờ ACK
+• Dãy số thứ tự phải được tăng lên
+• Đưa vào bộ đệm tại bên gửi 
+hoặc bên nhận
+
+
+===== PDF PAGE 156 =====
+156
+B. Tổng quan
+6. Go-Back-N:
+- Bên gửi: gửi tối đa N packets liên tiếp mà không cần chờ ACK (“window”).
++ Khi nhận ACK(n) => ACK cho tất cả các packet đã gửi tính tới gói tin có seq là n 
+(cumulative ACK – ACK tích lũy).
++ Tính timer cho packet gửi sớm nhất nhưng chưa được ACK.
++ timeout(n): gửi lại tất cả các packet trong “window” từ vị trí (n).
+- Nhận packet đúng thứ tự: gửi ACK tương ứng với packet đúng thứ tự có STT cao 
+nhất.
+
+===== PDF PAGE 157 =====
+157
+B. Tổng quan
+6. Go-Back-N:
+- Nhận packet không đúng thứ tự:
++ Có thể hủy hoặc đưa vào buffer: 
+tùy vào cách triển khai.
++ Gửi lại ACK tương ứng với packet 
+đúng thứ tự có số TT cao nhất.
+
+
+===== PDF PAGE 158 =====
+158
+B. Tổng quan
+7. Selective repeat:
+- Bên nhận gửi ACK cho từng packet nhận thành công (cơ chế buffer tại bên gửi).
+- Bên gửi bật cơ chế timeout/gửi lại các packet không được ACK.
+- Cơ chế window tại bên gửi:
+ + Cho phép gửi liên tiếp N packet có số thứ tự tăng dần.
+ + Giới hạn số packet được gửi nhưng không được ACKs.
+
+===== PDF PAGE 159 =====
+159
+B. Tổng quan
+7. Selective repeat:
+
+
+===== PDF PAGE 160 =====
+160
+B. Tổng quan
+7. Selective repeat:
+
+
+===== PDF PAGE 161 =====
+161
+C. Ôn tập
+Câu 1: phát biểu nào sau đây là đúng về trường length trong UDP header?
+A.Xác định chiều dài của dữ liệu (payload).
+B.Xác định chiều dài của header.
+C.Có chiều dài là 16 bytes.
+D.Có giá trị tối thiểu là 8 bytes.
+
+===== PDF PAGE 162 =====
+162
+C. Ôn tập
+Câu 2: Xem hình và cho biết đây là sơ đồ biểu diễn của nguyên lý truyền tin cậy 
+nào:
+A.RDT 1.0
+B.Go-back-N
+C.RDT 2.0
+D.RDT 3.0
+
+===== PDF PAGE 163 =====
+163
+C. Ôn tập
+Câu 3: Cách giải quyết trong RDT 2.0 truyền tin cậy có lỗ hỏng nghiêm trọng nào 
+sau đây:
+A.ACK/NAK bị hỏng.
+B.Chỉ gửi các ACK.
+C.Không có checksum.
+D.Đáp án khác.
+
+===== PDF PAGE 164 =====
+164
+C. Ôn tập
+Câu 4: Hãy cho biết hình vẽ sau mô tả theo giao thức RDT nào?
+A.RDT 3.0     B.RDT 2.1     C.RDT 2.0      D.RDT 2.2
+
+
+===== PDF PAGE 165 =====
+165
+C. Ôn tập
+Câu 5: Cho 3 số 16 bit
+Giá trị checksum UDP là:
+A.1100101011000001                B.0100101011000001
+C.1011010100111101                D.0100101011000010
+
+
+===== PDF PAGE 166 =====
+166
+C. Ôn tập
+Câu 6: Cho một segment UDP có độ dài được chỉ ra trong trường Length là 1000 
+byte. Dung lượng tải (payload) của segment là:
+A.920                 B.992                 C.980                 D. 982
+Câu 7: RDT 2.0 hỗ trợ những thành phần:
+A. ACKs, NAKs, Sequence Number, Checksum
+B. ACKs, Checksum, Sequence Number
+C. ACKs, NAKs, Checksum
+D. ACKs, Checksum, Timer
+
+===== PDF PAGE 167 =====
+167
+Giải đề thi
+
+===== PDF PAGE 168 =====
+168
+Câu 1: Hãy chọn đáp án đúng khi mô tả về Cookie:
+A. Là một chuỗi ký tự trong dòng địa chỉ web
+B. Là một tập tin lưu trên server
+C. Là một tập tin lưu ở Client
+D. Là một tập tin.XML
+ 
+[Đề thi mẫu HKI – 2022]
+Đáp án: C
+
+===== PDF PAGE 169 =====
+169
+Câu 2: Một người dùng sử dụng dịch vụ Persistent without pipeling
+của HTTP truy cập vào một website bao gồm 1 trang HTML và 5 hình
+ảnh được tham chiếu. Biết phiên bản của Server là HTTP 1.1, giả sử
+thời gian truyền file của mỗi đối tượng là 0.5 RTT. Cho biết tổng thời
+gian (theo RTT) để người dùng tải và xem hết website này.
+A. 3RTT B. 5RTT C. 6RTT D. 10RTT
+Đáp án: D
+[Đề thi mẫu HKI – 2022]
+1 file html + 5 file ảnh + thời gian trễ = 2RTT + 5RTT + (0.5RTT.6) = 10RTT
+
+===== PDF PAGE 170 =====
+170
+Câu 3: Thời gian trễ do truyền (transmission delay) của một gói 
+có độ dài 2000 bytes truyền qua liên kết có tốc độ truyền 2 Mbps?
+A. 5s
+B. 1000ms
+C. 1ms
+D. Đáp án khác 
+[Đề thi mẫu HKI – 2022]
+Đáp án: D
+𝑑𝑡𝑟𝑎𝑛𝑠=
+𝐿
+𝑅 =
+2000.8
+2.106 = 8 ms
+
+===== PDF PAGE 171 =====
+171
+Câu 4: Đường truyền từ host X tới host Y phải đi qua 3 đoạn ứng với
+các liên kết Link1, Link2, Link3. Biết tốc độ các đường liên kết lần
+lượt 1 Mbps, 2Mbps, 3Mbps. Hỏi thông lượng đầu cuối là bao nhiêu?
+A. 1Mbps B. 2Mbps C. 3Mbps D. 6Mbps
+[Đề thi mẫu HKI – 2022]
+Đáp án: A
+
+===== PDF PAGE 172 =====
+172
+Câu 5: Trong segment mà bên nhận gửi cho bên gửi, nếu số ACK
+là 200, có nghĩa là bên nhận đã nhận được byte thứ bao nhiêu:
+A. 200 B. 199 C. 201 D. 198
+Câu 6: Alice thực hiện truy cập vào một trang web 4 lần và các mã 
+trạng thái lần lượt nhận được là 200,304, 404, 502. Số lần Alice xem 
+nội dung trang web thành công? 
+A. 1lần B. 2 lần C. 3 lần D. 4 lần
+[Đề thi mẫu HKI – 2022]
+Đáp án: B
+Đáp án: B
+
+===== PDF PAGE 173 =====
+173
+Câu 7: Trong số các cặp giao thức và cổng dịch vụ sau, cặp nào là đúng:
+A. HTTP: UDP , Port 80
+B. SMTP: TCP , Port 110
+C. FTP: TCP , Port 21
+D. Tất cả đều đúng
+[Đề thi mẫu HKI – 2022]
+Đáp án: C
+
+===== PDF PAGE 174 =====
+174
+Câu 8: Phát biểu nào sau đây là SAI về kiến trúc Client – Server 
+(Máy khách – Máy chủ)? 
+A. Server luôn luôn hoạt động, có địa chỉ IP cố định
+B. Client có thể thay đổi địa chỉ IP
+C. Client có thể kết nối trực tiếp với nhau
+D. Client có thể kết nối với Server không liên tục
+Câu 9: Phát biểu nào sau đây là ĐÚNG về trường length trong UDP Header? 
+A. Xác định chiều dài của header 
+B. Xác định chiều dài của dữ liệu (payload) 
+C. Có giá trị tối thiểu là 8 bytes 
+D. Có chiều dài là 16 bytes
+[Đề thi mẫu HKI – 2022]
+Đáp án: C
+Đáp án: C
+
+===== PDF PAGE 175 =====
+175
+Câu 10: Phân tích một phần gói tin HTTP request từ trình duyệt gửi lên Web
+server như sau:
+GET /docs/index.html HTTP/1.1\r\n
+Host: www-net.cs.umass.edu\r\n
+Ta biết được một số thông tin về trình duyệt là:
+A. Trình duyệt dùng kết nối bền vững (persistent) và URL đầy đủ của trang web
+được yêu cầu là: wwwnet.cs.umass.edu/index.html
+B. Trình duyệt dùng kết nối không bền vững (non-persistent) và URL đầy đủ của
+trang web được yêu cầu là: www-net.cs.umass.edu/docs/index.html
+C. Trình duyệt dùng kết nối bền vững (persistent) và URL đầy đủ của trang web
+được yêu cầu là: wwwnet.cs.umass.edu/docs/index.html
+D. Trình duyệt dùng kết nối bền vững (persistent) và URL đầy đủ của trang web
+được yêu cầu là: wwwnet.cs.umass.edu
+[Đề thi mẫu HKI – 2022]
+Đáp án: C
+
+===== PDF PAGE 176 =====
+176
+Câu 11: Mô tả nào sau đây SAI về giao thức IMAP 
+A. Là giao thức cho phép gửi mail 
+B. Sử dụng cổng 143 
+C. Hoạt động dựa trên TCP 
+D. Là Internet Mail Access Protocol
+Câu 12: Mục đích của số port trong header của TCP và UDP là gì?
+A. Bắt đầu quá trình bắt tay 3 bước
+B. Tập hợp các segment cho đúng thứ tự
+C. Xác định số lượng segment có thể được gửi đi cùng lúc mà
+không cần ACK
+D. Xác định tiến trình đang gửi/nhận dữ liệu
+[Đề thi mẫu HKI – 2022]
+Đáp án: D
+Đáp án: D
+
+===== PDF PAGE 177 =====
+177
+Câu 13: 
+Tính checksum của 2 chuỗi 16 bit sau: 
+10101100 01010001 và 01001001 11001100 
+A. 00001001 11100010 
+B. 01001001 11100010 
+C. 00001001 11110010 
+D. 00011001 11100010
+[Đề thi mẫu HKI – 2022]
+10101100 01010001
+01001001 11001100
+11110110 00011101
+00001001 11100010 (checksum)
+ 
+Đáp án: A
+
+===== PDF PAGE 178 =====
+178
+Câu 14:
+Một trang web có đính kèm 3 file hình ảnh và 11 file âm thanh. Nếu 
+browser dùng non-persistent để download toàn bộ trang về để hiện thì 
+thì mất bao nhiêu RTT?
+A. 14 B. 15 C.28 D.30
+1 file html + 3 file ảnh + 11 file âm thanh
+= 2RTT + 2RTT.3 + 2RTT.11 = 30RTT
+Đáp án: D
+
+===== PDF PAGE 179 =====
+179
+Câu 15:
+Giả sử Host A muốn gửi 1 file có kích thước 15 triệu bytes đến Host B.
+Từ Host A đến Host B có 3 đoạn đường truyền nối tiếp nhau, với tốc độ
+truyền tương ứng là R1 = 5 Mbps, R2 = 4 Mbps, R3 = 7 Mbps. Thời gian
+truyền file đến host B là:
+A. 37.5s B. 3.75s C. 3s  D. 30s
+Thông lượng đường truyền = min(R1,R2,R3) = 4 Mbps
+Thời gian truyền file từ host A đến host B =
+𝐿
+𝑅 =
+15.8
+4 = 30s
+Đáp án: D
+
+===== PDF PAGE 180 =====
+180
+Câu 1: RDT 2.0 hỗ trợ những thành phần: 
+A. ACKs, NAKs, Sequence Number, Checksum
+B. ACKs, Checksum, Sequence Number
+C. ACKs, NAKs, Checksum
+D. ACKs, Checksum, Timer
+[Đề thi mẫu 2]
+
+===== PDF PAGE 181 =====
+181
+Câu 2: Độ dài của UDP header là:
+A. 20 bytes
+B. 6 bytes
+C. 4 bytes
+D. 8 bytes
+[Đề thi mẫu 2]
+
+===== PDF PAGE 182 =====
+182
+Câu 3: Dịch vụ KHÔNG PHẢI là dịch vụ do DNS cung cấp: 
+A. Bí danh Mail server
+B. Dịch tên host ra địa chỉ IP 
+C. Định nghĩa định dạng, thứ tự các thông điệp được gửi 
+và nhận 
+D. Phân phối tải 
+[Đề thi mẫu 2]
+
+===== PDF PAGE 183 =====
+183
+Câu 4: Giả sử host X cần gởi 1500 bytes dữ liệu cho host Y. 
+Gói thứ nhất chứa 754 bytes với sequence number là 32. Vậy 
+sequence number của gói thứ hai là:
+A. 33  
+B. 787 
+C. 786  
+D. 755 
+[Đề thi mẫu 2]
+
+===== PDF PAGE 184 =====
+184
+Câu 5: Trong số các cặp giao thức và cổng dịch vụ sau, cặp 
+nào là đúng?
+A. Telnet: UDP Port 23  
+B. FTP: TCP Port 21 
+C. HTTP: UDP Port 80  
+D. HTTPS: TCP Port 80 
+[Đề thi mẫu 2]
+
+===== PDF PAGE 185 =====
+185
+Câu 6: Dịch vụ nào cho phép người dùng sử dụng tên miền 
+thay vì dùng địa chỉ IP khi duyệt Web Internet?
+A. DNS  
+B. SMTP  
+C. HTTP  
+D. FTP 
+[Đề thi mẫu 2]
+
+===== PDF PAGE 186 =====
+186
+Câu 7: Giữa client và server, bên nào quyết định đóng kết nối 
+TCP? 
+A. Chỉ server quyết định 
+B. Client hoặc server quyết định đều được 
+C. Client và server cùng quyết định 
+D. Chỉ client quyết định 
+[Đề thi mẫu 2]
+
+===== PDF PAGE 187 =====
+187
+Câu 8: Đơn vị dữ liệu tại các tầng Application, Network, Data
+link lần lượt là:
+A. Data, Datagram, Segment
+B. Packet, Datagram, Frame
+C. Data, Bit, Segment
+D. Data, Packet, Frame
+[Đề thi mẫu 2]
+
+===== PDF PAGE 188 =====
+188
+Câu 8: Đơn vị dữ liệu tại các tầng Application, Network, Data
+link lần lượt là:
+A. Data, Datagram, Segment
+B. Packet, Datagram, Frame
+C. Data, Bit, Segment
+D. Data, Packet, Frame
+[Đề thi mẫu 2]
+
+===== PDF PAGE 189 =====
+189
+Câu 9: Trong quá trình bắt tay ba bước (3-way handshake), giả 
+sử seq number của gói TCP SYN là n, cho biết giá trị ACK của 
+gói TCP SYN/ACK?
+A. 1  
+B. n  
+C. 0  
+D. n + 1 
+[Đề thi mẫu 2]
+
+===== PDF PAGE 190 =====
+190
+Câu 10: Thứ tự đúng của các tầng từ trên xuống dưới của các 
+chồng giao thức Internet: 
+A. Application – Transport - Session – Network – Physical 
+B. Application – Transport – Network – Link - Physical 
+C. Application - Presentation - Session - Transport – Internet - 
+Data Link - Physical 
+D. Application – Presentation – Session – Transport – 
+Network – Data Link – Physical 
+[Đề thi mẫu 2]
+
+===== PDF PAGE 191 =====
+191
+Câu 11: Các đơn vị dữ liệu giao thức trong mô hình OSI được 
+gọi là:
+A. OSI  
+B. Data  
+C. PDU
+D. Packet 
+[Đề thi mẫu 2]
+
+===== PDF PAGE 192 =====
+192
+Câu 12: Phát biểu nào dưới đây ĐÚNG?
+A. TCP và HTTP là những giao thức được cài đặt ở tầng giao vận 
+B. Telnet, HTTP, SMTP, FTP là những giao thức được cài đặt 
+ở tầng ứng dụng 
+C. TCP/IP là giao thức được cài đặt ở tầng ứng dụng 
+D. SMTP và PPP là những giao thức được cài đặt ở tầng vật lý 
+[Đề thi mẫu 2]
+
+===== PDF PAGE 193 =====
+193
+Câu 13: Quan sát hình bên và cho biết đây 
+là sơ độ biểu diễn của nguyên lý truyền tin 
+cậy nào?
+A. rdt 2.2  
+B. rdt 1.0  
+C. rdt 2.1  
+D. rdt 3.0 
+[Đề thi mẫu 2]
+
+
+===== PDF PAGE 194 =====
+194
+Câu 14: Khẳng định nào sau đây SAI về kỹ thuật chuyển mạch gói?
+A. Chất lượng truyền luôn đảm bảo chất lượng 
+B. Các gói tin được chia thành nhiều mảnh nhỏ và gửi đến máy nhận 
+thông qua đường truyền mạng 
+C. Đường truyền dùng chung cho nhiều máy có nhu cầu truyền cùng 
+lúc 
+D. Đường truyền dùng chung cho nhiều máy có nhu cầu truyền cùng 
+lúc 
+[Đề thi mẫu 2]
+
+===== PDF PAGE 195 =====
+195
+Câu 15: Giả sử Host A muốn gửi 1 file có kích thước 15 triệu bytes đến 
+Host B. Từ Host A đến Host B có 3 đoạn đường truyền nối tiếp nhau, với 
+tốc độ truyền tương ứng là R1 = 5 Mbps, R2 = 4 Mbps, R3 = 6 Mbps. Thời 
+gian truyền file đến host B là:
+A. 37,5s
+B. 3,75s
+C. 3s 
+D. 30s
+[Đề thi mẫu 2]
+
+===== PDF PAGE 196 =====
+196
+Câu 16: Cho mô hình trao đổi gói 
+tin TCP như sau. Số cần được điền 
+vào chỗ trống lần lượt là:
+A. 96,3  
+B. 96,4  
+C. 95,4
+D. 95,3 
+[Đề thi mẫu 2]
+
+
+===== PDF PAGE 197 =====
+197
+Câu 17: Phát biểu nào sau đây ĐÚNG?
+A. Kênh vệ tinh là đường truyền có tốc độ truyền cao nhất  
+B. Đường truyền dùng chung cho nhiều máy có nhu cầu truyền cùng lúc  
+C. End system là một mạng máy tính kết nối hàng trăm triệu thiết bị tính toán 
+khắp nơi trên thế giới
+D. Hệ điều hành Windows 10 không phải là một ứng dụng mạng
+[Đề thi mẫu 2]
+
+===== PDF PAGE 198 =====
+198
+Câu 18: Đoạn mã bên dưới được viết cho ứng dụng nào?
+A. Ứng dụng UDP socket phía server  
+B. Ứng dụng TCP socket phía server  
+C. Ứng dụng UDP socket phía client  
+D. Ứng dụng TCP socket phía client 
+[Đề thi mẫu 2]
+
+
+===== PDF PAGE 199 =====
+199
+Câu 19: Một gói tin có kích thước 750 bytes lan truyền từ router A đến router B 
+cách nhau 420 km, mất 1,47 ms. Biết tốc độ lan truyền của gói tin trong dây dẫn là
+2,9.108 m/s. Băng thông của đường liên kết là:
+A. 220 Mbps
+B. 440 Mbps 
+C. 400 Mbps
+D. 200 Mbps
+[Đề thi mẫu 2]
+
+===== PDF PAGE 200 =====
+200
+Câu 20: Giả sử rằng độ dài gói là L = 25000 bits, và tốc độ truyền liên kết là R =
+200 Mbps. Số gói tin tối đa trong một giây có thể được truyền bởi liên kết này là
+bao nhiêu?
+A. 8000
+B. 125
+C. 1000
+D. Không có đáp án
+[Đề thi mẫu 2]
+
+===== PDF PAGE 201 =====
+201
+Câu 21: Trong giao thức HTTP 1.1, khẳng định nào sau đây ĐÚNG?
+A. HTTP server quản lý trạng thái làm việc của HTTP client
+B. Client truyền thông với server bằng giao thức UDP
+C. Server luôn luôn lắng nghe ở cổng 80
+D. Giao thức HTTP thuộc tầng Application
+[Đề thi mẫu 2]
+
+===== PDF PAGE 202 =====
+202
+Câu 22: Client gửi một thông điệp HTTP request đến server với trường If-
+modified-since trong header. Giả sử đối tượng trong server không có bất kỳ sự
+thay đổi nào kể từ thời điểm sau cùng khi client lấy đối tượng thì server sẽ gửi lại
+một thông điệp đáp ứng status code có giá trị:
+A. 201
+B. 404
+C. 304
+D. 200
+[Đề thi mẫu 2]
+
+===== PDF PAGE 203 =====
+203
+Câu 23: UDP checksum của dữ liệu được mô tả bằng hai dãy số nhị phân: 1001
+0110 1000 0011 và 0101 0110 1010 1001 là:
+A. 0001 0010 1101 0011
+B. 0 1001 0110 1101 0010
+C. 1 0110 1101 0010 1100
+D. 1001 0110 1101 0010
+[Đề thi mẫu 2]
+
+===== PDF PAGE 204 =====
+204
+Câu 24: TCP thiết lập kết nối theo thứ tự:
+A. Client gởi gói tin ACK – server gởi gói tin ACK – client gởi gói tin SYN
+B. Client gởi gói tin SYN – server gởi gói tin ACK – client gởi gói tin ACK
+C. Client gởi gói tin ACK – server gởi gói tin SYN/ACK – client gởi gói tin SYN
+D. Client gởi gói tin SYN – server gởi gói tin SYN/ACK – client gởi gói tin 
+ACK
+[Đề thi mẫu 2]
+
+===== PDF PAGE 205 =====
+205
+Câu 25: TCP không hỗ trợ chức năng:
+A. Đảm bảo thông lượng tối thiểu cho đường truyền
+B. Đảm bảo gửi gói tin một cách tin cậy trên đường truyền
+C. Thiết lập kết nối giữa client – server
+D. Kiểm soát lượng gói tin từ bên gửi sang bên nhận, tránh việc làm tràn bộ đệm 
+phía nhận
+[Đề thi mẫu 2]
+
+===== PDF PAGE 206 =====
+206
+Câu 26: Giả sử chương trình bắt gói tin Wireshark bắt được chuỗi byte (biểu diễn bằng ASCII) do
+một Web server gửi đến một trình duyệt Web (Web browser) như sau, để trả lời cho một request
+message trước đó mà nó nhận được. Trong đó, ký hiệu <cr><lf> là về đầu dòng tiếp theo:
+HTTP/1.1 200 OK<cr><lf>Date: Fri, 11 Dec 2020 12:39:45 GMT..Server: Apache/2.0.52 (Fedora) <cr><lf>Last-Modified: 
+Thu, 10 Dec 2020 18:27:46 GMT<cr><lf>ETag: "526c3-f22-a88a4c80"Accept-Ranges: bytes<cr><lf>Content- BHT 
+MMT&TT – Nhập Môn Mạng Máy Tính    Trang 2 Length: 3784<cr><lf>Keep-Alive: timeout=max=100<cr><lf>Connection: 
+Keep-Alive<cr><lf>Content-Type: text/html; charset=ISO-8859-1<cr><lf><cr><lf><!doctype html public"-//w3c//dtd html 4.0 
+transitional//en"><lf><html><lf><head><lf> <meta http-equiv="Content-Type"content="text/html; charset=iso-8859-1"><lf> 
+<meta name="GENERATOR" content="Mozilla/4.79 [en] (Windows NT 5.0; U) Netscape]"><lf> <title>CMPSCI 453 / 591 / 
+NTU-ST550A Spring 2020 homepage</title><lf></head><lf> <còn nữa nhưng không in ra ở đây> 
+Thời điểm tài liệu được cập nhật lần cuối cùng?  
+A. Fri, 11 Dec 2020 12:39:45 GMT 
+B. Thu, 10 Dec 2021 18:27:46 GMT 
+C. Thu, 10 Dec 2020 18:27:46 GMT 
+D. Không có đáp án đúng
+[Đề thi mẫu 2]
+
+===== PDF PAGE 207 =====
+207
+Câu 27: Biết rằng:
+ - Đường truyền có tổng băng thông là 9 Mbps.
+ - Đường truyền sử dụng TDM với 31 slot/s
+ - Thời gian thiết lập mạch nối giữa hai điển A và B là 0,5 s
+Hãy tính thời gian (theo đơn vị giây) để truyền một file có kích thước 2 MB từ host
+A đến host B trên mạng Circuit Switching?
+A. 6,88
+B. 55,61
+C. 55,11
+D. 55,37
+[Đề thi mẫu 2]
+
+===== PDF PAGE 208 =====
+208
+Câu 28: Hai máy tính A và B kết nối với nhau qua một đường truyền có tốc độ 60
+Kbps và khoảng cách là m. Tốc độ lan truyền của tín hiệu trên đường truyền là
+2,5.105 km/s. Máy A gởi một gói tin có độ dài 200 bits đến máy B. Khoảng cách
+m để độ trễ truyền gói tin (transimission delay) bằng với độ trễ lan truyền
+(propagation delay) từ máy A đến máy B:
+A. 833 m
+B. 833 km
+C. 6667 km
+D. 6667 m
+[Đề thi mẫu 2]
+
+===== PDF PAGE 209 =====
+209
+Câu 29: Host A được nối với 1 router qua đường truyền 1, Host B cũng được nối
+với 1 router qua đường truyền 2. Giả sử gói tin có chiều dài 1000 bytes, tốc độ lan
+truyền ở cả hai đường truyền đều là 2,5.108 m/s. Tốc độ truyền ở cả hai đường
+truyền lần lượt là 1 Mbps và 2 Mbps. Thời gian router xử lý hai gói tin này là 2 ms.
+Chiều dài đường truyền đầu là 4000 km và chiều dài đường truyền thứ hai là 1000
+km. Với các giá trị như trên, hãy tính tổng thời gian gói tin đi từ host A đến host B.
+Giả sử thời gian nằm ở hàng đợi của gói tin tại router là không đáng kể.
+A. 34 ms
+B. 32 ms
+C. 25 ms
+D. 23.5 ms
+[Đề thi mẫu 2]
+
+===== PDF PAGE 210 =====
+210
+Câu 30: Giả sử từ trình duyệt, bạn click vào một link dẫn đến 1 trang web; địa chỉ
+IP của URL của link đó được lưu tại bộ nhớ cache của máy tính bạn, nên việc truy
+vấn DNS là không cần thiết. Ký hiệu RTT là thời gian đi – về 1 vòng giữa client và
+server. Biết trang web bao gồm 1 trang cơ sở và 3 ảnh nhỏ; thời gian đẩy dữ liệu
+lên đường truyền là không đáng kể so với RTT. Cần khoảng thời gian (theo RTT)
+bao lâu tính từ khi bạn click vào link cho tới khi nhận được toàn bộ trang web
+trong trường hợp trình duyệt sử dụng kết nối HTTP không thường trực (non-
+persistent HTTP), có thể sử dụng tối đa 10 kết nối song song.?
+A. 3
+B. 4
+C. 10
+D. 8
+[Đề thi mẫu 2]
+
+===== PDF PAGE 211 =====
+211
+Câu 1: Giao thức được máy chủ thư điện tử của Alice sử dụng để gửi mail đến 
+máy chủ thư điện tử của Bob trong bước 4 là gì?
+A. HTTP  B. FTP   C. SMTP  D. UDP
+Câu 2: Giao thức được dùng để truy cập và đọc thư trong bước 6 là gì?
+A.  POP3  B. IMAP  C. HTTP  D. Tất cả đều đúng
+[Đề thi mẫu 2020]
+Đáp án: D 
+Đáp án: C 
+
+===== PDF PAGE 212 =====
+212
+Câu 3: Điều nào sau đây là ĐÚNG khi máy chủ thư điện tử của Bob nhận được 
+mail từ máy chủ thư điện tử của Alice (bước 5)?
+A. Máy chủ thư điện tử của Bob đặt mail đó trong hộp thư của Bob
+B. Máy chủ thư điện tử của Bob mở kết nối TCP đến user agent của Bob
+C. Máy chủ thư điện tử của Bob gửi mail trực tiếp đến cho user agent của Bob
+D. Máy chủ thư điện tử của Bob dùng SMTP để gửi mail đến user agent của Bob
+[Đề thi mẫu 2020]
+Đáp án: A 
+
+
+===== PDF PAGE 213 =====
+213
+Câu 4: Cho biết tầng nào ở vị trí 3
+A. Tầng Application    B. Tầng Transport
+C. Tầng Network    D. Tầng Physical
+[Đề thi mẫu 2020]
+Đáp án: C 
+Cho mô hình chồng giao thức 5 tầng, giả sử một HTTP request được gửi 
+từ Destination như hình dưới đây
+
+
+===== PDF PAGE 214 =====
+214
+Câu 5: Cho biết tầng và đơn vị dữ liệu tương ứng ở vị trí 12
+A. Tầng Application và Message  B. Tầng Network và Segment
+C. Tầng Link và Frame   D. Tầng Physical và Frame
+[Đề thi mẫu 2020]
+Đáp án: C 
+Cho mô hình chồng giao thức 5 tầng, giả sử một HTTP request được gửi 
+từ Destination như hình dưới đây
+
+===== PDF PAGE 215 =====
+215
+Câu 6: Tại thời điểm t = 3, TCP segment được gửi có sequence number 
+là bao nhiêu?
+A. 439   B. 798   C. 2035  D. 1317
+[Đề thi mẫu 2020]
+Đáp án: C
+Cho sơ đồ minh họa người gửi (TCP sender) 
+gửi một cửa sổ (window) gồm 4 phân đoạn 
+(segment) đến người nhận (TCP receiver) 
+như hình sau, trong đó phân đoạn cuối cùng 
+bị mất trong quá trình gửi. Giả sử giá trị 
+sequence number của TCP segment đầu 
+tiên là 439 và mỗi segment có kích thước 
+798 bytes. Khoảng thời gian trễ giữa người 
+gửi và người nhận là 7 đơn vị thời gian, do đó 
+segment đầu tiên đến người nhận lúc t = 8.
+
+
+===== PDF PAGE 216 =====
+216
+Câu 7: Tại thời điểm t = 10, bên nhận sẽ phản hồi segement có ACK 
+number là bao nhiêu?
+A. 2833  B. 2035  C. 3631  D. 798
+[Đề thi mẫu 2020]
+Đáp án: B 
+Cho sơ đồ minh họa người gửi (TCP sender) 
+gửi một cửa sổ (window) gồm 4 phân đoạn 
+(segment) đến người nhận (TCP receiver) 
+như hình sau, trong đó phân đoạn cuối cùng 
+bị mất trong quá trình gửi. Giả sử giá trị 
+sequence number của TCP segment đầu 
+tiên là 439 và mỗi segment có kích thước 
+798 bytes. Khoảng thời gian trễ giữa người 
+gửi và người nhận là 7 đơn vị thời gian, do đó 
+segment đầu tiên đến người nhận lúc t = 8.
+
+
+===== PDF PAGE 217 =====
+217
+Câu 8: Cho biết dãy sequence number 
+tương ứng với 5 segment trên sơ đồ
+A. 161, 168, 175, 185, 190
+B. 161, 162, 163, 164, 165
+C. 161, 442, 723, 1004, 1285
+D. Tất cả đều sai
+[Đề thi mẫu 2020]
+Đáp án: C 
+Cho mô hình truyền dữ liệu như sau. 
+Giá trị khởi tạo của sequence number là 
+161, mỗi segment chứa 281 bytes dữ liệu.
+Trả lời câu hỏi 8, 9.
+
+===== PDF PAGE 218 =====
+218
+Câu 9: Giả sử mô hình này sử dụng giao thức Go-Back-N, cho biết phát 
+biểu nào sau đây đúng?
+A. Bên nhận nhận được 2 gói tin (gói tin thứ 2 và gói tin thứ 5) và yêu 
+cầu bên gửi gửi lại gói tin thứ 1, thứ 3 và thứ 4
+B. Bên nhận nhận được 2 gói tin nhưng yêu cầu gửi lại từ gói tin thứ 1.
+C. Bên nhận nhận được 1 gói tin (gói tin thứ 2) và yêu cầu bên gửi gửi 
+lại gói tin thứ 1, thứ 3, thứ 4, và thứ 5
+D. Tất cả đáp án đều sai
+[Đề thi mẫu 2020]
+Đáp án: B 
+
+===== PDF PAGE 219 =====
+219
+Câu 10: Cho biết dest port của gói tin B?
+A. 6465  B. 6543  C. 5019  D. Đáp án khác
+[Đề thi mẫu 2020]
+Đáp án: A 
+6543
+6465
+5019
+7421
+
+===== PDF PAGE 220 =====
+220
+Câu 11: Cho biết source port của gói tin D?
+A. 6543  B. 5019  C. 7421  D. Đáp án khác
+[Đề thi mẫu 2020]
+Đáp án: B 
+6543
+6465
+5019
+7421
+
+===== PDF PAGE 221 =====
+221
+Câu 12: Cho một đoạn mã nguồn Python dùng để tạo một kết nối socket như 
+bên dưới, hãy chọn đáp án đúng.
+from socket import *
+serverName = ‘127.0.1’
+serverPort = 12000
+clientSocket = socket(AF_INET, SOCK_STREAM)
+ClientSocket.connect(serverName,serverPort)
+A. Đoạn mã này sử dụng kết nối TCP  
+B. Đoạn mã này dùng cho phía máy chủ
+C. Đoạn mã này sử dụng kết nối UDP
+D. Tất cả đều sai
+[Đề thi mẫu 2020]
+Đáp án: A 
+
+===== PDF PAGE 222 =====
+222
+Câu 13: Xem hình đính kèm. Đây là hình thức phân giải DNS nào
+A. Truy vấn gián tiếp  
+B. Truy vấn đệ quy
+C. Truy vấn trực tiếp
+D. Truy vấn tuần tự
+[Đề thi mẫu 2020]
+Đáp án: D 
+
+
+===== PDF PAGE 223 =====
+223
+Câu 14: Cho sơ đồ mạng giữa client và server với các thông số về tốc độ 
+truyền (transmission rate hình đính kèm)
+Biết rằng tốc độ lan truyền trên các liên kết (link) đều bằng 3 x 108 m/s. Tính 
+tổng độ trễ (bỏ qua độ trễ xử lý tại nút và trễ hàng đợi) khi truyền gói tin có 
+kích thước 16000 bits từ client đến server.
+A. 0.00017 s  B. 0.00034 s  C. 0.0018 s  D. 0.0036 s
+[Đề thi mẫu 2020]
+Đáp án: D 
+100 Mbps 10 Mbps
+3 Km
+
+===== PDF PAGE 224 =====
+224
+Câu 15: Một PC download một file có dung lượng lớn từ một server. Server có 
+thể gửi cùng một lúc bao nhiêu segment khi biết giá trị rwnd của bên nhận 
+(receive window) là 1000 bytes và mỗi segment được gửi có độ dài 100 
+bytes?
+A. 1 segment    B. 100 segments
+C. 1000 segments   D. 10 segments
+[Đề thi mẫu 2020]
+Đáp án: D 
+
+===== PDF PAGE 225 =====
+225
+Câu 16: Cho sơ đồ chuyển đổi trạng thái hữu hạn (FSM) của bên gửi và bên nhận 
+như hình bên dưới. Đây là kiểu truyền tin cậy nào?
+A. RDT 2.0  B. RDT 1.0  C. RDT 2.1  D. RDT 2.2
+[Đề thi mẫu 2020]
+Đáp án: B 
+
+
+===== PDF PAGE 226 =====
+226
+Câu 17: Tại sao phải dùng Web Caching (Chọn đáp án đúng)
+A. Giảm thời gian đáp ứng cho yêu cầu của client
+B. Giảm lưu lượng trên đường link truy cập của 1 tổ chức
+C. Cho phép những nhà cung cấp nội dung “ít thay đổi’’ hiệu quả hơn
+D. Tất cả đều đúng
+[Đề thi mẫu 2020]
+Đáp án: D 
+
+===== PDF PAGE 227 =====
+227
+Câu 18: Phát biểu nào dưới đây là sai đối với kết nối HTTP không bền vững
+A. Muốn gửi đối tượng phải mở kết nối TCP , sau đó kết nối sẽ bị đóng
+B. Có thể gửi nhiều đối tượng trên một kết nối
+C. HTTP không bền vững cần 2RTTs cho mỗi đối tượng được gửi đi
+D. Tải nhiều đối tượng yêu cầu nhiều kết nối
+[Đề thi mẫu 2020]
+Đáp án: B 
+
+===== PDF PAGE 228 =====
+228
+Câu 19: Trong RDT 3.0, chuyện gì sẽ xảy ra khi bên gửi không nhận được ACK của 
+bên nhận?
+A. Bên gửi gửi ACK trùng lặp cho bên nhận để báo hiệu về lỗi phát sinh
+B. Bên gửi tự phát hiện lỗi và gửi lại gói tin sau khi thời gian chờ hết hạn
+C. Bên gửi gửi NAK cho bên nhận để báo hiệu về lỗi phát sinh
+D. Tất cả đều SAI
+[Đề thi mẫu 2020]
+Đáp án: B 
+
+===== PDF PAGE 229 =====
+229
+Câu 20: Các gói tin có độ dài L = 1000 bytes được truyền trên một kết nối có tốc 
+độ truyền là R = 1000 Kbps. Hỏi tối đa có bao nhiêu gói tin được truyền trong 1s
+A. 125 gói tin
+B. 150 gói tin
+C. 250 gói tin
+D. 100 gói tin
+[Đề thi mẫu 2020]
+Đáp án: A
+
+===== PDF PAGE 230 =====
+230
+Câu 21: Trong UDP header có trường length với kích thước 2 bytes, dùng để xác 
+định chiều dài của gói UDP segments (tính cả header). Trên lý thuyết, chiều dài tối 
+đa của gói UDP là:
+A. 22 bytes
+B. 216  − 1 bytes
+C. 16 bytes
+D. Không có giới hạn
+[Đề thi mẫu 2020]
+Đáp án: B 
+
+===== PDF PAGE 231 =====
+231
+Câu 22: Phương thức HTTP nào được sử dụng để gửi dữ liệu đến server thông 
+qua URL như ví dụ sau: www.uit.edu.vn/studentsearch?id=19521234
+A. PUT
+B. POST
+C. HEAD
+D. GET
+[Đề thi mẫu 2020]
+Đáp án: D 
+
+===== PDF PAGE 232 =====
+232
+Câu 24: Cho mô hình truyền thông của 
+HTTP , trong đó server phản hồi một 
+HTTP response cho client như sau. 
+Phát biểu nào sau đây là ĐÚNG?
+A. Server trả về thành công một trang 
+Web 
+B. Server trả về một nội dung có chiều 
+dài 600 bytes 
+C. Phiên bản HTTP 1.1 không được 
+server tìm thấy 
+D. Nội dung trang Web đã bị thay đổi 
+vào thời điểm Thu, 13 Oct 2016 
+06:29:17
+[Đề thi mẫu 2020]
+Đáp án: B
+
+
+===== PDF PAGE 233 =====
+233
+Câu 25: Trong hoạt động Go-Back-N (Pipelined), phía gửi phát đồng thời 5 gói 0, 1, 
+2, 3, 4. Phía nhận thu chính xác 5 gói và trả về 5 ACK nhưng phía gửi chỉ nhận 
+được ACK(0), ACK(1), ACK(4). Tiếp theo phía gửi sẽ phát?
+A. Phát gói 5, 6, 7 và chờ hết thời gian để phát lại gói 2, 3
+B. Phát gói 5, 6 và chờ hết thời gian để phát lại gói 2, 3, 4
+C. Phát gói 5, 6, 7, 8, 9
+D. Chờ hết thời gian để phát lại gói 2, 3
+[Đề thi mẫu 2020]
+Đáp án: B
+
+===== PDF PAGE 234 =====
+234
+Câu 26: Tính checksum của 2 chuỗi 16 bit sau: 10101100  01010001 và 
+01001001 11001100
+A. 00011001 11100010
+B. 00001001 11110010
+C. 01001001 11100010
+D. 00001001 11100010
+[Đề thi mẫu 2020]
+Đáp án: D
+Câu 27: Trong số các cặp giao thức và cổng dịch vụ sau, cặp nào là đúng:
+A. FTP: TCP Port 22
+B. Telnet: UDP Port 23
+C. DNS: TCP Port 50
+D. SMTP: TCP Port 25
+Đáp án: D
+
+===== PDF PAGE 235 =====
+235
+A. a2, b3, c6, d5, e1, f4   B. a2, b3, c5, d6, e1, f4
+C. a2, b4, c6, d5, e1, f3   D. a1, b3, c6, d5, e2, f4
+[Đề thi mẫu 2020]
+Đáp án: A
+Câu 28: Hãy ghép các nhiệm vụ tương ứng từng giao thức dưới đây:
+
+
+===== PDF PAGE 236 =====
+236
+Địa chỉ IP của trang Web www.enterprise.com là:
+A. 146.54.48.242   B. 142.81.17.206
+C. 247.29.169.156   D. Cả A, B, C đều sai
+[Đề thi mẫu 2020]
+Đáp án: B
+Câu 29: Giả sử các bản ghi sau nằm trên máy chủ DNS server enterprise.com
+
+
+===== PDF PAGE 237 =====
+237
+[Đề thi mẫu 2020]
+Đáp án: A
+Câu 30: Hình sau mô tả quá trình gì?
+A. Bắt tay ba bước (TCP handshake)
+B. Truyền tin cậy (Reliable delivery)
+C. Windowing
+D. Điều khiển luồng (Flow Conntrol)
+
+
+===== PDF PAGE 238 =====
+238
+Thanks For 
+Watching

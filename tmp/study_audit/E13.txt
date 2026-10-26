@@ -1,0 +1,855 @@
+
+
+===== PDF PAGE 1 =====
+BAN HỌC TẬP CÔNG NGHỆ PHẦN MỀM
+TRAINING GIỮA KỲ HỌC KỲ I NĂM HỌC 2023 – 2024
+CONTACT
+bht.cnpm.uit@gmail.com
+fb.com/bhtcnpm
+fb.com/groups/bht.cnpm.uit
+Khoa Công nghệ Phần mềm
+Trường Đại học Công nghệ Thông tin 
+Đại học Quốc gia thành phố Hồ Chí Minh
+BAN HỌC TẬP
+1
+
+
+===== PDF PAGE 2 =====
+NHẬP MÔN MẠNG MÁY TÍNH
+TRAINING
+Thời gian: 19:30 thứ năm ngày 26/10/2023
+Địa điểm: Microsoft Teams
+Trainers: Nguyễn Việt Khoa KTMP2022.2
+Phạm Trung Nguyên CNTT2022.2
+2
+
+===== PDF PAGE 3 =====
+GIẢI ĐỀ THI THỬ
+3
+Câu 1: Phát biểu nào sau đây là SAI khi nói về giao thức mạng?
+A. Quy định khuôn dạng dữ liệu khi truyền 
+B. Quy định cách thức xử lý dữ liệu ở mỗi bên 
+C. Quy định thứ tự các thông điệp khi truyền 
+D. Độc lập với các giao thức khác
+❖ Gợi ý: 
+➢ Các giao thức không độc lập với nhau. Ví dụ như những giao thức ở tầng ứng dụng thường 
+sẽ quy định giao thức ở tầng vận chuyển. Chẳng hạn giao thức HTTP ở tầng ứng dụng sẽ sử 
+dụng giao thức TCP ở tầng vận chuyển
+
+===== PDF PAGE 4 =====
+GIẢI ĐỀ THI THỬ
+4
+Câu 2. Mạng truy cập nào sau đây là hữu tuyến?
+A. Ethernet
+B. 3G, 4G
+C. Wifi
+D. WLAN 
+❖ Gợi ý:
+➢ WLAN là viết tắt của Wireless Local Area Network (Mạng cục bộ không dây)
+
+===== PDF PAGE 5 =====
+GIẢI ĐỀ THI THỬ
+5
+Câu 3. Routing là gì?
+A. Tiến trình lập kế hoạch cho chuyến đi của Packet
+B. Xác định đường đi cho các gói từ nguồn đến đích
+C. Tiến trình vận chuyển qua một điểm trung chuyển
+D. Chuyển các gói tin từ đầu vào đến đầu ra thích hợp
+❖ Gợi ý:
+➢ Routing (định tuyến): là hành động toàn cục, xác định đường đi cho các gói từ nguồn đến 
+đích
+➢ Forwarding (chuyển tiếp): là hành động cục bộ, chuyển các gói tin từ đầu vào đến đầu ra 
+thích hợp
+
+===== PDF PAGE 6 =====
+GIẢI ĐỀ THI THỬ
+6
+Câu 4. Ưu điểm của kỹ thuật chuyển mạch gói so với chuyển mạch kênh là gì? 
+A. Thời gian chuyển tiếp dữ liệu ngắn hơn 
+B. Hiệu suất sử dụng đường truyền cao hơn 
+C. Không xảy ra tắc nghẽn 
+D. Đảm bảo chất lượng dịch vụ 
+❖ Gợi ý:
+➢ Đối với chuyển mạch kênh, khi kênh đã được thiết lập thì thời gian chờ tại các nút chuyển 
+tiếp là rất ngắn, không đáng kể. Còn đối với chuyển mạch gói, khi các nút chuyển tiếp nhận 
+được các gói tin nó cần một khoảng thời gian để xử lí gói tin.
+
+===== PDF PAGE 7 =====
+GIẢI ĐỀ THI THỬ
+7
+❖ Gợi ý:
+➢ Đối với chuyển mạch kênh, khi kênh được thiết lập thì chỉ được sử dụng cho một liên kết. 
+Còn đối với chuyển mạch gói, đường truyền luôn được sử dụng. Do đo hiệu suất sử dụng 
+đường truyền sẽ cao hơn
+➢ Kĩ thuật trong chuyển mạch gói sẽ gây ra tắc nghẽn. Tốc độ gói tin đến các thiết bị chuyển 
+tiếp quá lớn, thiết bị không kịp xử lí sẽ gây ra tắc nghẽn. 
+➢ Do chuyển mạch gói dùng chung đường truyền nên khi có nhiều liên kết trên đường truyền 
+thì tốc độ truyền sẽ không được đảm bảo .
+
+===== PDF PAGE 8 =====
+GIẢI ĐỀ THI THỬ
+8
+Câu 5. Trong kiến trúc phân tầng, khi nhận được dữ liệu từ tầng cao hơn chuyển xuống, tầng 
+dưới xử lý như thế nào?
+A. Sửa thông tin phần tiêu đề 
+B. Loại bỏ phần tiêu đề của gói tin 
+C. Thêm tiêu đề cho gói tin 
+D. Thay thế tiêu đề của gói tin bằng tiêu đề mới
+❖ Gợi ý: 
+➢ Quá trình này còn được gọi là Encapsulation
+
+===== PDF PAGE 9 =====
+GIẢI ĐỀ THI THỬ
+9
+
+
+===== PDF PAGE 10 =====
+GIẢI ĐỀ THI THỬ
+10
+Câu 6. Giả sử đường đi từ nút A đến nút B qua 3 liên kết với băng thông lần lượt là 4Mbps, 
+1Mbps và 2 Mbps. Thời gian để A truyền đến B một file có kích thước 10 MB là bao nhiêu? Giả 
+sử trong quá trình truyền, không có dữ liệu nào khác truyền trên mạng. Bỏ qua độ trễ xếp 
+hàng, độ trễ lan truyền và độ trễ xử lý tại các node trung gian.
+A. 80 s B. 20 s C. 40 s D. 140 s
+❖ Gợi ý:
+➢ Tốc độ truyền thực tế trên toàn đường truyền sẽ bằng băng thông nhỏ nhất trong số băng 
+thông của các liên kết 
+➢ R = 1Mbps, L = 10MB = 80 Mb
+➢ t = L / R = 80 Mb / 1Mbps = 80 s
+
+===== PDF PAGE 11 =====
+GIẢI ĐỀ THI THỬ
+11
+Câu 7. Xác định thời gian để gửi gói tin có dung lượng 640.000 bits từ máy A đến máy B sử 
+dụng mạng chuyển mạch kênh (circuit-switched network) với tốc độ truyền là 1.536Mbps.  Biết 
+rằng mạng này sử dụng kỹ thuật TDM cho phép 12 người dùng đồng thời và thời gian thiết lập 
+kết nối từ A đến B mất 1 giây.
+A. 6s                B. 5s                    C. 7s                        D. Đáp án khác
+❖ Gợi ý:
+➢ Tốc độ truyền trên mỗi kênh = 1.536 / 12 = 0.128 Mbps, L = 640000 bits = 0.64 Mb
+➢ t = L / R => 0.64 / 0.128 = 5 
+➢ Thời gian gửi = 5 + 1 giây thiếp lập kết nối = 6s
+
+===== PDF PAGE 12 =====
+GIẢI ĐỀ THI THỬ
+12
+Câu 8. Host A được nối với 1 router qua đường truyền 1, host B cũng được nối với router đó 
+qua đường truyền 2. Giả sử gói tin có chiều dài 1000 bytes, tốc độ lan truyền (propagation 
+speed) ở cả hai đường truyền là 2,5.108 m/s. Tốc độ truyền (transmission rate) ở cả hai đường 
+truyền lần lượt là 1Mbps và 2Mbps. Thời gian router xử lí gói tin này là 2 msec. Chiều dài đường 
+truyền đầu là 4000 km và chiều dài đường truyền thứ hai là 1000km. Hãy tính tổng thời gian 
+gói tin đi từ Host A đến Host B. Giả sử thời gian nằm ở hàng đợi của gói tin tại router là không 
+đáng kể.
+A. 34msec             B. 2.032 sec              C. 30 msec                     D. 32 msec.
+
+===== PDF PAGE 13 =====
+GIẢI ĐỀ THI THỬ
+13
+Câu 8. Host A được nối với 1 router qua đường truyền 1, host B cũng được nối với router đó qua đường truyền 2. Giả sử 
+gói tin có chiều dài 1000 bytes, tốc độ lan truyền (propagation speed) ở cả hai đường truyền là 2,5.108 m/s. Tốc độ 
+truyền (transmission rate) ở cả hai đường truyền lần lượt là 1Mbps và 2Mbps. Thời gian router xử lí gói tin này là 2 
+msec. Chiều dài đường truyền đầu là 4000 km và chiều dài đường truyền thứ hai là 1000km. Hãy tính tổng thời gian gói 
+tin đi từ Host A đến Host B. Giả sử thời gian nằm ở hàng đợi của gói tin tại router là không đáng kể.
+❖ Gợi ý:
+➢ Gói tin từ A, đẩy lên đường truyền mất dtrans1, lan truyền trên đường truyền đến router mất 
+dprop1 . Tại router cần dproc để xử lý gói tin, sau đó cần dtrans2 để đẩy gói tin đường truyền 2 và 
+dprop2 để lan truyền đến host B.
+➢ Thời gian tổng:
+     t = dtrans1 + dprop1 + dproc + dtrans2 + dprop2 = (1000x8)/106 + (4000x103)/(2,5.108) + 2.10-3 +  
+(1000x8)/(2x106) + (1000x103)/(2,5.108) = 34 msec
+
+===== PDF PAGE 14 =====
+GIẢI ĐỀ THI THỬ
+14
+Câu 9. Công cụ nào sau đây cho phép đo lường độ trễ khi truyền gói tin
+A. Scan
+B. Packet sniffing và scan
+C. Ping và scan
+D. Traceroute và ping
+
+===== PDF PAGE 15 =====
+GIẢI ĐỀ THI THỬ
+15
+Câu 10. Phát biểu nào sau đây sai khi nói về mô hình Client – Server
+A. Là mô hình mạng được sử dụng phổ biến nhất
+B. Tiến trình máy khách sẽ khởi tạo liên lạc và tiến trình máy chủ sẽ chờ để được liên lạc
+C. Máy chủ luôn luôn hoạt động
+D. Máy khách luôn luôn kết nối và có thể giao tiếp trực tiếp với máy khách khác.
+❖ Gợi ý:
+➢ Máy khách có thể kết nối không liên tục với máy chủ và không giao tiếp với máy khách 
+khác.
+
+===== PDF PAGE 16 =====
+GIẢI ĐỀ THI THỬ
+16
+Câu 11. Tại sao các ứng dụng như HTTP, FTP, SMTP sử dụng giao thức ở tầng vận chuyển là 
+TCP
+A. Vì ở tầng vận chuyển chỉ có giao thức TCP
+B. Các ứng dụng này đều cần hỗ trợ bởi cơ chế truyền “best effort”
+C. Đảm bảo tốc độ download nhanh
+D. Các ứng dụng này cần đảm bảo tính tin cậy
+❖ Gợi ý:
+➢ Các ứng dụng này yêu cầu không được mất mát dữ liệu và đảm bảo dữ liệu phải chính xác.
+
+===== PDF PAGE 17 =====
+GIẢI ĐỀ THI THỬ
+17
+Câu 12. Phát biểu nào sau đây sai khi nói về giao thức HTTP?
+A. Là giao thức thuộc tầng ứng dụng của Web.
+B. Được triển khai trên cả hai phía client và server
+C. Hai phiên bản 1.0 và 1.1 đều sử dụng TCP làm giao thức ở tầng vận chuyển
+D. Máy chủ có thể lưu lại thông tin về các yêu cầu trước đó của máy khách
+
+===== PDF PAGE 18 =====
+GIẢI ĐỀ THI THỬ
+18
+Câu 13. Một người dùng ứng dụng sử dụng dịch vụ Persistent without pipelining của HTPP truy 
+cập vào một trang website gồm 1 trang HTML và 5 hình ảnh được tham chiếu trên cùng một 
+máy chủ. Biết phiên bản của Server là HTTP 1.1, giả sử thời gian truyền file của mỗi đối tượng là 
+0.5 RTT. Cho biết tổng thời gian (theo RTT) để người dùng tải và xem hết website này.
+A. 5 RTT                B. 6 RTT               C. 10 RTT                     D. 3 RTT
+❖ Gợi ý: 
+➢ Cần 1 RTT để HTTP client thiết lập kết nối với HTTP server, 1 RTT để HTTP client gửi thông 
+điệp yêu câu và HTTP server gửi thông điệp phản hồi chứa đối tượng HTML 
+➢ Máy chủ giữ kết nối, các thông điệp tiếp theo được gửi qua kết nối đó, do đó cần 5 RTT
+➢ Có tất cả 6 đối tượng nên tổng thời gian truyền file là 3 RTT
+➢ Tổng thời gian: 10 RTT
+
+===== PDF PAGE 19 =====
+GIẢI ĐỀ THI THỬ
+19
+Câu 14. Một trang web có một đoạn văn vản và 10 ảnh minh họa. File mã nguồn HTML và các 
+file ảnh nằm trên 2 máy chủ Web khác nhau. Khi người dùng truy cập vào trang web này, có 
+bao nhiêu kết nối TCP được thiết lập nếu giao thức được sử dụng là HTTP 1.1?
+A. 10                 B. 11               C. 1                       D. 2
+❖ Gợi ý:
+➢ HTTP client sẽ thiết lập một kết nối đến máy chủ chứa file mã nguồn HTTP
+➢ Do các file ảnh nằm trên máy chủ Web khác nên cần tạo thêm một kết nối nữa đến máy chủ 
+Web đó. Do sử dụng giao thức HTTP 1.1, nên chỉ cần thiết lập một kết nối và 10 hình ảnh sẽ 
+được truyền qua kết nối này.
+
+===== PDF PAGE 20 =====
+GIẢI ĐỀ THI THỬ
+20
+Câu 15. Giả sử thông báo HTTP GET từ máy khách đến máy chủ như sau:
+GET /kurose_ross_sandbox/interactive/quotation10.html HTTP/1.1
+Host: gaia.cs.umass.edu
+Accept: text/plain, text/html, image/jpeg, image/gif, audio/vnf.wave, audio/basic, video/mp4, video/wmv,
+Accept-Language: en-us, en-gb;q=0.7, en;q=0.8, fr, fr-ch, zh
+If-Modified-Since: Sat, 07 Oct 2023 06:49:12 -0700
+User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+Khẳng định nào sau đây là sai? 
+A. Trình duyệt đang yêu câu đối tượng quotation10.html
+B. Trình duyệt sử dụng phiên bản HTTP 1.1
+C. Đây là một thông điệp HTTP GET có điều kiện (conditional GET)
+D. Trình duyệt đang yêu cầu một đối tượng từ server mà trong cache của nó chưa có.
+
+===== PDF PAGE 21 =====
+GIẢI ĐỀ THI THỬ
+21
+GET /kurose_ross_sandbox/interactive/quotation10.html HTTP/1.1
+Host: gaia.cs.umass.edu
+Accept: text/plain, text/html, image/jpeg, image/gif, audio/vnf.wave, audio/basic, video/mp4, video/wmv,
+Accept-Language: en-us, en-gb;q=0.7, en;q=0.8, fr, fr-ch, zh
+If-Modified-Since: Sat, 07 Oct 2023 06:49:12 -0700
+User Agent: Mozilla/5.0 (Windows NT 5.1; rv:11.0) Gecko/20100101 Firefox/11.0
+❖ Gợi ý: 
+➢ Dòng đầu tiên là dòng yêu cầu có 3 trường: method, URL đến đối tượng yêu cầu và phiên 
+bản HTTP. Như vậy đối tượng được yêu cầu là quotation10.html, phiên bản của HTTP là 1.1
+➢ Đây là thông điệp GET có điều kiện vì sử dụng phương thức GET và có trường If-Modified-
+Since
+➢ Trong cache của trình duyệt đã chứa đối tượng này rồi. Và trình duyệt gửi thông điệp này để 
+kiểm tra xem đối tượng đó trên server đã bị thay đổi chưa. 
+
+===== PDF PAGE 22 =====
+GIẢI ĐỀ THI THỬ
+Câu 16. Phát biểu nào sau đây sai khi nói về Cookie:
+A. Được sử dụng để ghi lại thông tin của người truy cập.
+B. Tệp cookie là một tệp đặc biệt nằm trên máy của người 
+dùng, được quản lí bởi trình duyệt người dùng.
+C. Cookie có thể được dùng để kiểm chứng mà không cần 
+đăng nhập qua tên và mật khẩu
+D. File cookie là một tệp tin .XML
+22
+
+===== PDF PAGE 23 =====
+GIẢI ĐỀ THI THỬ
+Câu 16. Phát biểu nào sau đây sai khi nói về Cookie:
+A. Cookie được sử dụng để ghi lại thông tin của người truy cập, 
+chẳng hạn như ngôn ngữ, vị trí, sở thích, v.v. Đúng
+B. Tệp cookie là một tệp đặc biệt nằm trên máy của người dùng, 
+được quản lí bởi trình duyệt người dùng. Đúng
+C. Cookie có thể được dùng để kiểm chứng mà không cần đăng nhập 
+qua tên và mật khẩu. Ví dụ, một trang web có thể sử dụng cookie để 
+lưu lại trạng thái đăng nhập của người dùng, do đó người dùng 
+không cần phải đăng nhập lại mỗi khi truy cập trang web. Đúng
+=> Chọn D. File cookie là văn bản không phải .XML
+23
+23
+
+===== PDF PAGE 24 =====
+GIẢI ĐỀ THI THỬ
+Câu 17. Tại sao nên sử dụng web caching
+A. Giảm lưu lượng trên liên kết truy cập ra Internet của tổ chức
+B. Giảm thời gian đáp ứng cho yêu cầu của client
+C. Cho phép các nhà cung cấp nội dung “kém” vẫn phân phối 
+nội dung một cách hiệu quả
+D. Tất cả đều đúng
+24
+24
+
+===== PDF PAGE 25 =====
+GIẢI ĐỀ THI THỬ
+Câu 17. Tại sao nên sử dụng web caching
+A. Giảm lưu lượng trên liên kết truy cập ra Internet của tổ chức
+B. Giảm thời gian đáp ứng cho yêu cầu của client
+C. Cho phép các nhà cung cấp nội dung “kém” vẫn phân phối 
+nội dung một cách hiệu quả
+D. Tất cả đều đúng
+=> Chọn D
+25
+25
+
+===== PDF PAGE 26 =====
+GIẢI ĐỀ THI THỬ
+18. Trong quá trình truyền thông điệp thư điện tử với giao thức 
+SMTP, thông điệp phải ở dạng:
+A. Mã ASCII 8 bit
+B. Mã ASCII 7 bit
+C. Dạng nào cũng chấp nhận được
+D. Ký tự chữ cái và các ký số
+26
+26
+
+===== PDF PAGE 27 =====
+GIẢI ĐỀ THI THỬ
+18. Trong quá trình truyền thông điệp thư điện tử với giao thức SMTP, thông điệp phải ở 
+dạng:
+A. Mã ASCII 8 bit
+B. Mã ASCII 7 bit
+C. Dạng nào cũng chấp nhận được
+D. Ký tự chữ cái và các ký số
+=>Chọn B.
+Trong quá trình truyền thông điệp thư điện tử với giao thức SMTP, thông điệp 
+phải ở dạng text/plain. Điều này có nghĩa là nội dung của thông điệp phải được 
+mã hóa theo định dạng văn bản ASCII. Bảng mã ASCII chuẩn sử dụng 7 bit để biểu 
+diễn một ký tự. Do đó, thông điệp thư điện tử sẽ được mã hóa bằng 7 bit.
+27
+27
+
+===== PDF PAGE 28 =====
+GIẢI ĐỀ THI THỬ
+19. Phát biểu nào sau đây sai khi so sánh hai giao thứ SMTP và 
+HTTP
+A. Cả hai giao thức đều được sử dụng để gửi file giữa các máy 
+tính
+B. HTTP là giao thức kiểu đẩy, còn SMTP lại là giao thức kiểu kéo
+C. HTTP đặt các đối tượng trong các thông điệp riêng rẽ để gửi 
+còn SMTP tất cả các đối tượng được đặt cùng trong một thư 
+điện tử
+D. Phía client là phía thiết lập kết nối TCP trước.
+28
+28
+
+===== PDF PAGE 29 =====
+GIẢI ĐỀ THI THỬ
+19. Phát biểu nào sau đây sai khi so sánh hai giao thứ SMTP 
+và HTTP:
+=> Chọn B. SMTP là giao thức kiểu đẩy, còn HTTP là giao thức 
+kiểu kéo.
+29
+29
+
+===== PDF PAGE 30 =====
+GIẢI ĐỀ THI THỬ
+20. Phát biểu nào sau đây là SAI về dịch vụ DNS?  
+A. Không gian tên miền có kiến trúc phân cấp  
+B. Giao thức DNS sử dụng được cả hai giao thức vận chuyển 
+UDP và TCP với số cổng là 53 
+C. DNS cung cấp dịch vụ phân tán tải (load distribution) 
+D. Là giao thức ở tầng vận chuyển cho phép máy tính và 
+máy chủ trao đổi thông tin nhằm mục đích xác định địa 
+chỉ IP
+30
+30
+
+===== PDF PAGE 31 =====
+GIẢI ĐỀ THI THỬ
+20. Phát biểu nào sau đây là SAI về dịch vụ DNS?  
+A. Không gian tên miền có kiến trúc phân cấp, trong đó tên miền cao 
+nhất (gốc) là “root”, tiếp đó là đến tên miền cấp Top level domain, rồi 
+đến tên miền có thẩm quyền . Đúng
+B. Giao thức DNS sử dụng được cả hai giao thức vận chuyển UDP và 
+TCP với số cổng là 53. Giao thức UDP được sử dụng cho các yêu cầu 
+DNS thông thường, trong khi giao thức TCP được sử dụng cho các 
+yêu cầu DNS yêu cầu độ tin cậy cao. Đúng
+C. DNS cung cấp dịch vụ phân tán tải bằng cách sử dụng nhiều máy 
+chủ DNS. Điều này giúp cho việc truy cập tên miền trở nên nhanh 
+chóng và đáng tin cậy hơn.. Đúng
+31
+31
+
+===== PDF PAGE 32 =====
+GIẢI ĐỀ THI THỬ
+20. Phát biểu nào sau đây là SAI về dịch vụ DNS?  
+=> Chọn D. Dịch vụ DNS là một dịch vụ ở tầng ứng dụng, 
+không phải tầng vận chuyển. Dịch vụ DNS cung cấp dịch vụ 
+chuyển đổi giữa tên miền và địa chỉ IP. Tầng vận chuyển chịu 
+trách nhiệm truyền dữ liệu giữa hai máy tính, không phải dịch vụ 
+DNS.
+32
+32
+
+===== PDF PAGE 33 =====
+GIẢI ĐỀ THI THỬ
+21. Giả sử những bản ghi này thuộc máy 
+chủ DNS TDL: 
+(www.enterprise.com, dns.enterprise.com, 
+NS) 
+(dns.enterprise.com, 146.54.95.149, A) 
+Giả sử những bản ghi này thuộc máy chủ 
+DNS enterprise.com: 
+(www.enterprise.com, 
+east1.enterprise.com, CNAME) 
+(east1.enterprise.com, 142.81.17.206, A) 
+(enterprise.com, mail.enterprise.com, MX) 
+(mail.enterprise.com, 247.29.11.220, A) 
+Kiểu truy vấn là truy vấn tuần tự 
+33
+Phát biểu nào sau đây sai? 
+A. dns.enterprise.com là tên máy chủ 
+tên miền có thẩm quyền quản lí 
+tên miền enterprise.com 
+B. east1.enterprise.com có tên gốc là 
+enterprise.com 
+C. mail.enterprise.com là tên của 
+máy chủ thư liên kết với tên miền 
+enterprise.com 
+D. Trong lúc truy vấn 
+www.enterprise.com, Khi DNS cục 
+bộ liên lạc với máy chủ TLD, có 2 
+câu trả lời (RR) được trả về   
+33
+
+===== PDF PAGE 34 =====
+GIẢI ĐỀ THI THỬ
+21. Giả sử những bản ghi này thuộc máy 
+chủ DNS TDL: 
+(www.enterprise.com, dns.enterprise.com, 
+NS) 
+(dns.enterprise.com, 146.54.95.149, A) 
+Giả sử những bản ghi này thuộc máy chủ 
+DNS enterprise.com: 
+(www.enterprise.com, 
+east1.enterprise.com, CNAME) 
+(east1.enterprise.com, 142.81.17.206, A) 
+(enterprise.com, mail.enterprise.com, MX) 
+(mail.enterprise.com, 247.29.11.220, A) 
+Kiểu truy vấn là truy vấn tuần tự 
+3434
+
+===== PDF PAGE 35 =====
+GIẢI ĐỀ THI THỬ
+21. Giả sử những bản ghi này thuộc máy 
+chủ DNS TLD: 
+(www.enterprise.com, dns.enterprise.com, 
+NS) 
+(dns.enterprise.com, 146.54.95.149, A) 
+Giả sử những bản ghi này thuộc máy chủ 
+DNS enterprise.com: 
+(www.enterprise.com, 
+east1.enterprise.com, CNAME) 
+(east1.enterprise.com, 142.81.17.206, A) 
+(enterprise.com, mail.enterprise.com, MX) 
+(mail.enterprise.com, 247.29.11.220, A) 
+Kiểu truy vấn là truy vấn tuần tự 
+=> Chọn B. 
+east1.enterprise.com là tên gốc 
+của www.enterprise.com
+35
+35
+
+===== PDF PAGE 36 =====
+GIẢI ĐỀ THI THỬ
+22. Giả sử trong trình duyệt Web, bạn nhấp vào một liên 
+kết để nhận được một trang Web. Địa chỉ IP cho URL 
+được liên kết không được lưu vào bộ nhớ đệm trong 
+máy chủ cục bộ, do đó cần phải tra cứu DNS để lấy 
+địa chỉ IP. Giả sử bốn máy chủ DNS được truy cập 
+trước khi máy chủ của bạn nhận được địa chỉ IP từ 
+DNS. Máy chủ DNS đầu tiên được truy cập là bộ đệm 
+DNS cục bộ, có độ trễ RTT là RTT0 = 5ms. Các máy 
+chủ DNS thứ hai, thứ ba và thứ tư được liên hệ có 
+RTT lần lượt là 39, 48 và 38ms. Ban đầu, giả sử rằng 
+trang Web được liên kết với liên kết chứa chính xác 
+một đối tượng, bao gồm một lượng nhỏ văn bản 
+HTML. Giả sử RTT giữa máy chủ cục bộ và máy chủ 
+Web chứa đối tượng là RTTHTTP = 34 ms. Giả sử đối 
+tượng HTML tham chiếu tới 10 đối tượng rất nhỏ 
+trên cùng một máy chủ. 
+Bỏ qua thời gian truyền, mất bao lâu từ khi máy 
+khách nhấp vào liên kết cho đến khi nhận được 
+đối tượng cơ sở và tất cả 10 đối tượng bổ sung 
+từ máy chủ web tại máy khách, giả sử HTTP 
+không bền vững và máy khách được cấu hình 
+để hỗ trợ tối đa 5 kết nối TCP song song:
+A. 402
+B. 334
+C. 266
+D. 368
+36
+36
+
+===== PDF PAGE 37 =====
+GIẢI ĐỀ THI THỬ
+22. Giả sử trong trình duyệt Web, bạn nhấp vào một liên 
+kết để nhận được một trang Web. Địa chỉ IP cho URL 
+được liên kết không được lưu vào bộ nhớ đệm trong 
+máy chủ cục bộ, do đó cần phải tra cứu DNS để lấy 
+địa chỉ IP. Giả sử bốn máy chủ DNS được truy cập 
+trước khi máy chủ của bạn nhận được địa chỉ IP từ 
+DNS. Máy chủ DNS đầu tiên được truy cập là bộ đệm 
+DNS cục bộ, có độ trễ RTT là RTT0 = 5ms. Các máy 
+chủ DNS thứ hai, thứ ba và thứ tư được liên hệ có 
+RTT lần lượt là 39, 48 và 38ms. Ban đầu, giả sử rằng 
+trang Web được liên kết với liên kết chứa chính xác 
+một đối tượng, bao gồm một lượng nhỏ văn bản 
+HTML. Giả sử RTT giữa máy chủ cục bộ và máy chủ 
+Web chứa đối tượng là RTTHTTP = 34 ms. Giả sử đối 
+tượng HTML tham chiếu tới 10 đối tượng rất nhỏ 
+trên cùng một máy chủ. 
+Bỏ qua thời gian truyền, mất bao lâu từ khi máy khách nhấp vào liên 
+kết cho đến khi nhận được đối tượng cơ sở và tất cả 10 đối tượng 
+bổ sung từ máy chủ web tại máy khách, giả sử HTTP không bền 
+vững và máy khách được cấu hình để hỗ trợ tối đa 5 kết nối TCP 
+song song
+37
+37
+
+===== PDF PAGE 38 =====
+GIẢI ĐỀ THI THỬ
+22. Giả sử trong trình duyệt Web, bạn nhấp vào một liên 
+kết để nhận được một trang Web. Địa chỉ IP cho URL 
+được liên kết không được lưu vào bộ nhớ đệm trong 
+máy chủ cục bộ, do đó cần phải tra cứu DNS để lấy 
+địa chỉ IP. Giả sử bốn máy chủ DNS được truy cập 
+trước khi máy chủ của bạn nhận được địa chỉ IP từ 
+DNS. Máy chủ DNS đầu tiên được truy cập là bộ đệm 
+DNS cục bộ, có độ trễ RTT là RTT0 = 5ms. Các máy 
+chủ DNS thứ hai, thứ ba và thứ tư được liên hệ có 
+RTT lần lượt là 39, 48 và 38ms. Ban đầu, giả sử rằng 
+trang Web được liên kết với liên kết chứa chính xác 
+một đối tượng, bao gồm một lượng nhỏ văn bản 
+HTML. Giả sử RTT giữa máy chủ cục bộ và máy chủ 
+Web chứa đối tượng là RTTHTTP = 34 ms. Giả sử đối 
+tượng HTML tham chiếu tới 10 đối tượng rất nhỏ 
+trên cùng một máy chủ. 
+Bỏ qua thời gian truyền, mất bao lâu từ khi máy khách nhấp vào liên 
+kết cho đến khi nhận được đối tượng cơ sở và tất cả 10 đối tượng 
+bổ sung từ máy chủ web tại máy khách, giả sử HTTP không bền 
+vững và máy khách được cấu hình để hỗ trợ tối đa 5 kết nối TCP 
+song song
+• Thời gian để đi qua 4 server DNS: 5 + 39 + 48 + 38 = 130 ms
+• Lần đầu, văn bản HTTML -> 2 RTT 
+• Tham chiếu tới 10 đối tượng rất nhỏ, có 5 kết nối song song
+-> Hai lần truyền, mỗi lần mất 2RTT
+ -> 4 RTT
+• Tổng thời gian :
+130 + 2 RTT + 4 RTT = 334 ms
+Chọn B.
+38
+38
+
+===== PDF PAGE 39 =====
+GIẢI ĐỀ THI THỬ
+23. Tầng vận chuyển cung cấp truyền thông logic giữa các 
+thành phần nào sau đây? 
+A. Router 
+B. Host và tiến trình 
+C. Tiến trình 
+D. Host   
+39
+39
+
+===== PDF PAGE 40 =====
+GIẢI ĐỀ THI THỬ
+23. Tầng vận chuyển cung cấp truyền thông logic giữa các 
+thành phần nào sau đây? 
+=> Chọn C. Tầng vận chuyển cung cấp truyền thông logic giữa 
+các tiến trình ứng dụng đang chạy trên các host khác nhau, 
+không phải giữa các host hay giữa host với tiến trình
+40
+40
+
+===== PDF PAGE 41 =====
+GIẢI ĐỀ THI THỬ
+24. Ưu điểm của UDP so với TCP là gì? 
+A. UDP đảm bảo việc truyền tin cậy 
+B. UDP sử dụng ít tài nguyên máy tính hơn vì không phải duy trì 
+trạng thái các kết nối 
+C. UDP hỗ trợ cơ chế để đảm bảo không làm tràn thông tin ở 
+bên máy nhận 
+D. UDP đảm bảo gói tin được truyền đến đúng thứ tự 
+41
+41
+
+===== PDF PAGE 42 =====
+GIẢI ĐỀ THI THỬ
+24. Ưu điểm của UDP so với TCP là gì? 
+A. UDP không đảm bảo việc truyền tin cậy. Các gói tin UDP có thể bị mất, bị trùng 
+lặp hoặc bị hư hỏng. Sai
+C. UDP không hỗ trợ cơ chế để đảm bảo không làm tràn thông tin ở bên máy 
+nhận. Máy nhận có thể bị tràn thông tin nếu nó nhận được quá nhiều gói tin UDP 
+cùng một lúc. Sai
+D. UDP không đảm bảo gói tin được truyền đến đúng thứ tự. Các gói tin UDP có 
+thể được truyền đến máy nhận theo thứ tự không đúng. Sai
+=> Chọn B. UDP sử dụng ít tài nguyên máy tính hơn vì không phải duy trì trạng 
+thái các kết nối. UDP không có các bước thiết lập kết nối và xác nhận dữ liệu, do 
+đó nó không yêu cầu nhiều tài nguyên máy tính như TCP.
+42
+42
+
+===== PDF PAGE 43 =====
+GIẢI ĐỀ THI THỬ
+25. Quá trình xử lý dữ liệu từ nhiều socket, thêm thông tin 
+header về tầng vận chuyển vào segment được gọi là gì? 
+A. segmentation 
+B. demultiplexing 
+C. routing 
+D. multiplexing 
+43
+43
+
+===== PDF PAGE 44 =====
+GIẢI ĐỀ THI THỬ
+25. Quá trình xử lý dữ liệu từ nhiều socket, thêm thông tin 
+header về tầng vận chuyển vào segment được gọi là gì? 
+=> Chọn D. Tại bên gửi:
+- Xử lý dữ liệu từ nhiều socket, thêm thông tin header
+về tầng Vận chuyển vào segment (được sử dụng sau
+cho demultiplexing)
+44
+44
+
+===== PDF PAGE 45 =====
+GIẢI ĐỀ THI THỬ
+26. Giả sử từ trên nút mạng A có hai tiến trình trao đổi dữ 
+liệu với một tiến trình trên nút mạng B, điều khiển bởi 
+giao thức UDP. Phát biểu nào sau đây là đúng?  
+A. Hai tiến trình trên nút mạng A sử dụng chung một socket để 
+trao đổi dữ liệu với tiến trinh trên nút B 
+B. Nút B sử dụng hai socket khác nhau để trao đổi dữ liệu với hai 
+tiến trình của nút A  
+C. Các gói tin gửi từ nút A tới tiến trình trên nút B có cùng số 
+hiệu cổng đích  
+D. Các gói tin gửi từ nút B tới hai tiến trình trên nút A có cùng số 
+hiệu cổng đích 
+45
+45
+
+===== PDF PAGE 46 =====
+GIẢI ĐỀ THI THỬ
+26. Giả sử từ trên nút mạng A có hai tiến trình trao đổi dữ 
+liệu với một tiến trình trên nút mạng B, điều khiển bởi 
+giao thức UDP. Phát biểu nào sau đây là đúng?  
+=> Chọn C. 
+46
+46
+
+===== PDF PAGE 47 =====
+GIẢI ĐỀ THI THỬ
+26. Giả sử từ trên nút mạng A có hai tiến trình trao đổi dữ 
+liệu với một tiến trình trên nút mạng B, điều khiển bởi 
+giao thức UDP. Phát biểu nào sau đây là đúng?  
+=> Chọn C. Giao thức UDP là một giao thức vận chuyển không 
+kết nối, do đó các gói tin được gửi từ nút A tới nút B không 
+cần phải thiết lập kết nối trước. Điều này có nghĩa là mỗi gói 
+tin sẽ chứa tất cả thông tin cần thiết để định tuyến đến đích, 
+bao gồm địa chỉ IP và số hiệu cổng đích.
+Trong trường hợp này, có hai tiến trình trên nút A gửi dữ liệu tới 
+cùng một tiến trình trên nút B. Do đó, tất cả các gói tin gửi từ 
+nút A tới nút B đều có cùng số hiệu cổng đích.
+47
+47
+
+===== PDF PAGE 48 =====
+GIẢI ĐỀ THI THỬ
+26. Giả sử từ trên nút mạng A có hai tiến trình trao đổi dữ liệu 
+với một tiến trình trên nút mạng B, điều khiển bởi giao thức 
+UDP. Phát biểu nào sau đây là đúng?  
+A. Hai tiến trình trên nút mạng A sử dụng chung một socket để trao 
+đổi dữ liệu với tiến trinh trên nút B . Sai vì mỗi tiến trình trên nút A 
+cần có một socket riêng để giao tiếp với nút B.
+B. Nút B sử dụng hai socket khác nhau để trao đổi dữ liệu với hai tiến 
+trình của nút A . Sai vì nút B không cần phải sử dụng hai socket 
+khác nhau để trao đổi dữ liệu với hai tiến trình của nút A.
+D. Các gói tin gửi từ nút B tới hai tiến trình trên nút A có cùng số hiệu 
+cổng đích . Sai vì các gói tin gửi từ nút B tới hai tiến trình trên nút A 
+sẽ có hai số hiệu cổng đích khác nhau.
+48
+48
+
+===== PDF PAGE 49 =====
+GIẢI ĐỀ THI THỬ
+27. Phát biểu nào sau đây sai khi nói về hoạt động của UDP? 
+A. Bên gửi nhận dữ liệu từ tầng ứng dụng, tạo segment rồi 
+chuyển xuống tầng mạng 
+B. Bên gửi thiết lập kết nối với bên nhận 
+C. Bên nhận kiểm tra lỗi trên gói tin 
+D. Bên nhận chuyển dữ liệu cho tiến trình tầng ứng dụng dựa 
+vào số hiệu cổng đích 
+49
+49
+
+===== PDF PAGE 50 =====
+GIẢI ĐỀ THI THỬ
+27. Phát biểu nào sau đây sai khi nói về hoạt động của UDP? 
+A. Bên gửi nhận dữ liệu từ tầng ứng dụng, tạo segment rồi chuyển 
+xuống tầng mạng. Đây là quá trình hoạt động chung của tất cả các 
+giao thức tầng vận chuyển, UDP là giao thức tầng vận chuyển. Đúng
+C. Bên nhận kiểm tra lỗi trên gói tin. Giao thức UDP không cung cấp 
+cơ chế kiểm tra lỗi, nhưng bên nhận có thể tự kiểm tra lỗi trên gói tin. 
+Đúng
+D. Bên nhận chuyển dữ liệu cho tiến trình tầng ứng dụng dựa vào số 
+hiệu cổng đích. Đây là quá trình hoạt động chung của tất cả các giao 
+thức tầng vận chuyển. Đúng
+=> Chọn B. Đây là một đặc điểm của giao thức TCP, không phải UDP.
+50
+50
+
+===== PDF PAGE 51 =====
+GIẢI ĐỀ THI THỬ
+28. UDP checksum dùng để làm gì? 
+A. Lưu kích thước của gói dữ liệu 
+B. Kiểm tra thứ tự của các gói dữ liệu 
+C. Kiểm tra lỗi trong gói dữ liệu tại bên nhận 
+D. Kiểm tra lỗi đồng thời sửa lỗi gói dữ liệu  
+51
+51
+
+===== PDF PAGE 52 =====
+GIẢI ĐỀ THI THỬ
+28. UDP checksum dùng để làm gì? 
+A. Lưu kích thước của gói dữ liệu 
+B. Kiểm tra thứ tự của các gói dữ liệu 
+C. Kiểm tra lỗi trong gói dữ liệu tại bên nhận 
+D. Kiểm tra lỗi đồng thời sửa lỗi gói dữ liệu  
+Chọn C. Khi một tiến trình nhận được một gói tin UDP, tiến trình 
+này sẽ tính toán lại UDP checksum và so sánh với UDP 
+checksum được gửi đi. Nếu hai checksum không khớp, gói tin 
+bị lỗi và sẽ bị bỏ qua.
+52
+52
+
+===== PDF PAGE 53 =====
+GIẢI ĐỀ THI THỬ
+29. Tính checksum của hai 2 chuỗi 16 bit sau: 
+1010110001010001 và 0100100111001100
+A. 0000100111110010
+B. 0100100111100010
+C. 0000100111100010
+D. 0001100111100010
+53
+53
+
+===== PDF PAGE 54 =====
+GIẢI ĐỀ THI THỬ
+29. Tính checksum của hai 2 chuỗi 16 bit sau: 
+1010110001010001 và 0100100111001100
+                  10101100 01010001
+                  01001001 11001100
+Tổng:         11110110 00011101
+Checksum: 00001001 11100010
+=>Chọn C
+54
+54
+
+===== PDF PAGE 55 =====
+GIẢI ĐỀ THI THỬ
+30. Nút mạng nhận được gói tin UDP có 64 bit đầu tiên như sau:
+00000001 10111011 11100000 11111001 00000100 11101010 
+01011001 10110100
+Phần payload (data) của gói tin có kích thước là bao nhiêu?
+A. 1258 bytes
+B. 1250 bytes
+C. 22964 bytes
+D. 1254 bytes
+55
+55
+
+===== PDF PAGE 56 =====
+GIẢI ĐỀ THI THỬ
+30. Nút mạng nhận được gói tin UDP có 64 bit đầu tiên như 
+sau:
+00000001 10111011 11100000 11111001 00000100 
+11101010 01011001 10110100
+00000100 11101010: Độ dài gói tin bao gồm Header và Payload
+Kích thước của Payload = Kích thước gói tin – 8 bytes Header 
+=1250.
+Chọn B
+56
+56
+
+===== PDF PAGE 57 =====
+Câu hỏi bổ sung phần RDT
+57
+Câu 1: Trong giao thức rdt2.1 giá trị tại vị trí ___ có mũi tên màu đỏ phải là gì?
+A. Rcvpkt              B. NAK                   C. ACK                        D. ACK1 
+
+
+===== PDF PAGE 58 =====
+Câu hỏi bổ sung phần RDT
+58
+Câu 2: Trong giao thức rdt2.2 như hình bên dưới, tại sao bên gửi lại thực hiện hành động 
+udt_send(sndpkt)
+A. packet nhận được bị lỗi                                          B. ACK không đúng số thứ tự
+C. A, B đều đúng                                                          D. Không nhận được packet
+
+
+===== PDF PAGE 59 =====
+Câu hỏi bổ sung phần RDT
+59
+Câu 3: Trong mô hình hành độn của giao thức rdt3.0 dưới đây, có nhận xét gì về nội dung 
+thông tin trong 2 packet pkt0 được đánh dấu ở bên gửi?
+A. Khác nhau B. Giống nhau
+C. Có thể giống nhau hoặc khác nhau                   D. Chưa thể nhận xét
+
+
+===== PDF PAGE 60 =====
+Câu hỏi bổ sung phần RDT
+60
+Câu 4: Xem hình mô tả hoạt động của Go-back-N dưới đây, sau thời gian timeout, bên gửi sẽ 
+hành động như thế nào?
+A. Chỉ gởi lại pkt2                                    B. Gửi lại pkt2, pkt3, pkt4, pkt5
+C. Gửi lại pkt0, pkt1, pkt2, pkt3                       D. Gởi lại pkt1, pkt2, pkt3, pkt4
+
+
+===== PDF PAGE 61 =====
+Câu hỏi bổ sung phần RDT
+61
+Câu 5: Chọn phát biểu đúng về đặc điểm của các giao thức pipeline 
+A. Bên gửi cho phép gửi đồng thời nhiều gói, không cần được chờ báo nhận
+B. Nhóm các số thứ tự phải được tăng dần
+C. Phải có bộ nhớ đệm tại nơi gửi và/hoặc nơi nhận
+D. A, B, C đều đúng
+Câu 6: Đâu là ưu điểm của kĩ thuật pipeline so với kĩ thuật stop and wait?
+A. Ít bị lỗi hơn và xử lí lỗi cũng đơn giản hơn
+B. Không cần xử lý bên gửi – bên nhận phức tạp
+C. Hiệu suất sử dung băng thông cao hơn
+D. Tất cả đều đúng 
+
+===== PDF PAGE 62 =====
+BAN HỌC TẬP CÔNG NGHỆ PHẦN MỀM
+TRAINING GIỮA KỲ HỌC KỲ I NĂM HỌC 2022 – 2023
+CONTACT
+bht.cnpm.uit@gmail.com
+fb.com/bhtcnpm
+fb.com/groups/bht.cnpm.uit
+Khoa Công nghệ Phần mềm
+Trường Đại học Công nghệ Thông tin 
+Đại học Quốc gia thành phố Hồ Chí Minh
+BAN HỌC TẬP
+62
+HẾT
+CẢM ƠN CÁC BẠN ĐÃ THEO DÕI
+CHÚC CÁC BẠN CÓ KẾT QUẢ THI THẬT TỐT!

@@ -1,0 +1,74 @@
+[P2] TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN KHOA MẠNG MÁY TÍNH & TRUYỀN THÔNG
+[P5] Giám thị 1
+[P6] Giám thị 2
+[P9] ĐỀ THI MẪU
+[P10] Tên môn học: Nhập môn Mạng máy tính
+[P12] Thời gian làm bài: 60 phút
+[P15] Họ, tên SV:.....................................................
+[P16] Mã SV:Mã đề thi
+[P17] STT:001
+[P18] (Thí sinh không được sử dụng tài liệu)
+[P20]  ----------------------------------------------------------------------------------------------------------------------
+[P58] Chỉ chọn một đáp án (Không bôi mờ các đáp án khác để máy chấm chính xác)
+[P59] Số báo danh: 6 chữ số - phiên bản rút gọn của MSSV. Ví dụ: 18520560 → 180560
+[P60] Mã đề: 3 chữ số - ghi và tô đúng và đủ
+[P62] Câu 1: Hãy chọn đáp án đúng khi mô tả về Cookie:
+[P64] Là một chuỗi kí tự trong dòng địa chỉ web C. Là một tập tin lưu ở Client
+[P67] Là một tập tin lưu trên server D. Là một tập tin.XML 
+[P69] Câu 2: Một người dùng sử dụng dịch vụ Persistent without pipeling của HTTP truy cập vào một website bao gồm 1 trang HTML và 5 hình ảnh được tham chiếu. Biết phiên bản của Server là HTTP 1.1, giả sử thời gian truyền file của mỗi đối tượng là 0.5 RTT. Cho biết tổng thời gian (theo RTT) để người dùng tải và xem hết website này.
+[P71] A. 3 RTTB. 5 RTTC. 6 RTTD. 10 RTT
+[P73] Câu 3: Thời gian trễ do truyền (transmission delay) của một gói có độ dài 2000 bytes truyền qua liên kết có tốc độ truyền 2 Mbps?
+[P75] A. 5sB. 1000msC. 1msD. Đáp án khác
+[P77] Câu 4: Đường truyền từ host X tới host Y phải đi qua 3 đoạn ứng với các liên kết Link1, Link2, Link3 Biết tốc độ các đường liên kết lần lượt 1 Mbps, 2 Mbps, 3 Mbps. Hỏi thông lượng đầu cuối là bao nhiêu?
+[P79] A. 1 MbpsB. 2 MbpsC. 3 MbpsD. 6 Mbps
+[P81] Trang 1/2 - Mã đề thi 001
+[P82] Câu 5: Trong segment mà bên nhận gửi cho bên gửi, nếu số ACK là 200, có nghĩa là bên nhận đã nhận được byte thứ bao nhiêu:
+[P84] A. 200B. 199C. 201D. 198
+[P86] Câu 6: Alice thực hiện truy cập vào một trang web 4 lần và các mã trạng thái lần lượt nhận được là 200, 304, 404, 502. Số lần Alice xem nội dung trang web thành công ?
+[P88] A. 1 lầnB. 2 lầnC. 3 lầnD. 4 lần
+[P90] Câu 7: Trong số các cặp giao thức và cổng dịch vụ sau, cặp nào là đúng:
+[P91] A. HTTP: UDP, Port 80B. SMTP: TCP, Port 110
+[P92] C. FTP: TCP, Port 21D. Tất cả đều ĐÚNG
+[P94] Câu 8: Điều nào sau đây là đúng về bắt tay 3 bước (3-way handshake) của TCP?
+[P96] A. Số Seq của gói SYN đầu tiên luôn luôn là 0
+[P97] B. SYN bit của gói đầu tiên được gán bằng 1
+[P98] C. Gói TCP SYN đầu tiên được gửi ra từ phía
+[P99] D. FIN bit của gói đầu tiên được gán bằng 1
+[P100] server
+[P105] Câu 9: Phát biểu nào sau đây là SAI về kiến trúc Client – Server (Máy khách – Máy chủ)?
+[P107] A. Server luôn hoạt động, có địa chỉ IP cố địnhB. Client có thể thay đổi địa chỉ IP
+[P108] C. Client có thể kết nối trực tiếp với nhauD. Client có thể kết nối với Server không liên tục
+[P110] Câu 10: Phát biểu nào sau đây là ĐÚNG về trường length trong UDP Header?
+[P112] Xác định chiều dài của header C. Có giá trị tối thiểu là 8 bytes
+[P114] Xác định chiều dài của dữ liệu (payload) D. Có chiều dài là 16 bytes
+[P116] Câu 11: Phân tích một phần gói tin HTTP request từ trình duyệt gửi lên Web server như sau:
+[P117] GET /docs/index.html HTTP/1.1\r\n
+[P118] Host: www-net.cs.umass.edu\r\n
+[P119] Ta biết được một số thông tin về trình duyệt là:
+[P121] A. Trình duyệt dùng kết nối bền vững (persistent) và URL đầy đủ của trang web được yêu cầu là: www-net.cs.umass.edu/index.html
+[P123] Trình duyệt dùng kết nối không bền vững (non-persistent) và URL đầy đủ của trang web được yêu cầu
+[P124] là: www-net.cs.umass.edu/docs/index.html
+[P126] Trình duyệt dùng kết nối bền vững (persistent) và URL đầy đủ của trang web được yêu cầu là: www-net.cs.umass.edu/docs/index.html
+[P128] Trình duyệt dùng kết nối bền vững (persistent) và URL đầy đủ của trang web được yêu cầu là: www-net.cs.umass.edu
+[P130] Câu 12: Mô tả nào sau đây SAI về giao thức IMAP
+[P132] A. Là giao thức cho phép gửi mail
+[P133] B. Sử dụng cổng 143
+[P134] C. Hoạt động dựa trên TCP
+[P135] D. Là Internet Mail Access Protocol
+[P137] Câu 13: Mục đích của số port trong header của TCP và UDP là gì?
+[P139] Bắt đầu quá trình bắt tay 3 bước
+[P140] Tập hợp các segment cho đúng thứ tự
+[P141] Xác định số lượng segment có thể được gửi đi cùng lúc mà không cần ACK
+[P142] Xác định tiến trình đang gửi/nhận dữ liệu
+[P144] Câu 14: Tính checksum của 2 chuỗi 16 bit sau: 10101100 01010001 và 01001001 11001100
+[P146] A. 00001001 11100010B. 01001001 11100010C. 00001001 11110010D. 00011001 11100010
+[P148] Câu 15: Trong TCP Slow start, trước khi Congestion window (Cwin) đạt đến giá trị ngưỡng, nó sẽ tăng theo phương thức nào sau đây?
+[P150] A. Tăng tuyến tính
+[P151] B. Tăng theo cấp số
+[P152] C. Tăng bình phương
+[P153] D. Không tăng
+[P155] nhân
+[P162] -----------------------------------------------
+[P167] -----------
+[P168] HẾT ----------
+[P175] Trang 2/2 - Mã đề thi 001

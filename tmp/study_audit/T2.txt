@@ -1,0 +1,581 @@
+
+
+===== PDF PAGE 1 =====
+A note on the use of these PowerPoint slides:We’re making these slides freely available to all (faculty, students, readers). They’re in PowerPoint form so you see the animations; and can add, modify, and delete slides  (including this one) and slide content to suit your needs. They obviously represent a lotof work on our part. In return for use, we only ask the following:If you use these slides (e.g., in a class) that you mention their source (after all, we’d like people to use our book!)If you post any slides on a www site, that you note that they are adapted from (or perhaps identical to) our slides, and note our copyright of this material.For a revision history, see the slide note for this page. Thanks and enjoy!  JFK/KWRAll material copyright 1996-2023J.F Kurose and K.W. Ross, All Rights ReservedComputer Networking: A Top-Down Approach 8thedition Jim Kurose, Keith RossPearson, 2020
+Chương 2Tầng Ứng dụng(Application Layer)
+
+===== PDF PAGE 2 =====
+2
+Tầng Ứng dụng – Tổng quanoNguyên lý của các ứng dụng mạngoWeb và HTTPoE-mail, SMTP, IMAPoHệ thống phân giải tên miền DNSoCác ứng dụng P2PoLập trình socket với UDP và TCP
+
+
+===== PDF PAGE 3 =====
+3
+Tầng Ứng dụng: Tổng quanMục tiêu: oKhái niệmvà khía cạnhtriển khaicủa các giao thức tầng ứng dụngMô hình dịch vụ tầng vận chuyểnMô hình client-server (máy khách –máy chủ)Mô hình peer-to-peer (ngang hàng)Tìm hiểuoTìm hiểu về các giao thức thôngqua việc xem xét các giao thứcphổ biến của Tầng Ứng dụng:HTTPSMTP, IMAPDNSoLập trình ứng dụng mạngSocket API
+
+===== PDF PAGE 4 =====
+4
+Một số ứng dụng mạngMạng xã hộiWebNhắn tin, chate-mailoTrò chơi trực tuyến với nhiều người cùng tham giaoTruyền hình trực tuyến (streaming stored video – Vd: YouTube, Hulu, Netflix) Chia sẻ file P2PĐàm thoại trên mạng IP (e.g., Skype)Hội thảo video thời gian thực (e.g., Zoom)Internet searchĐăng nhập từ xa…Q:Ứng dụng ưa thích của bạn?
+
+===== PDF PAGE 5 =====
+mobile networkhome networkenterprisenetwork
+national or global ISPlocal or regional ISPdatacenter networkcontent provider network
+              
+              
+              
+              
+              
+              
+              
+              
+applicationtransportnetworkdata linkphysical
+applicationtransportnetworkdata linkphysical
+applicationtransportnetworkdata linkphysical
+5
+Tạo một ứng dụng mạngViết chương trình:Chạy trên các hệ thống đầu cuối (khác nhau)Giao tiếp qua mạngVí dụ: phần mềm máy chủ web giao tiếp với phần mềm duyệt web Không cần viết phần mềm cho các thiết bị trong mạng lõiCác thiết bị trong mạng lõi không chạy các ứng dụng của người dùngCác ứng dụng trên các hệ thống đầu cuối cho phép phát triển ứng dụng và quảng bá nhanh chóng
+
+
+===== PDF PAGE 6 =====
+mobile networkhome networkenterprisenetwork
+national or global ISPlocal or regional ISPdatacenter networkcontent provider network
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+6
+Mô hình Client – Server (Máy khách – máy chủ)oMáy chủ (Server): Luôn luôn hoạt độngĐịa chỉ IP cố địnhThường tổ chức thành các trung tâm dữ liệu để mở rộng quy môoMáy khách (Client):Liên lạc, giao tiếp với máy chủCó thể kết nối không liên tụcCó thể thay đổi địa chỉ IPKhông giao tiếp trực tiếp với các máy khách khácoVí dụ: HTTP, IMAP, FTP
+
+
+===== PDF PAGE 7 =====
+mobile networkhome networkenterprisenetwork
+national or global ISPlocal or regional ISPdatacenter networkcontent provider network
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+                   
+7
+Kiến trúc mạng ngang hàng (peer-to-peer)Không có máy chủ luôn hoạt độngCác hệ thống đầu cuối bất kỳ giao tiếp trực tiếp với nhauCác peer yêu cầu dịch vụ từ các peer khác và cung cấp dịch vụ ngược lại cho các peer khác Khả năng tự mở rộng– các peer mới cung cấp thêm dịch vụ mới, cũng như  có thêm nhu cầu mới về dịch vụCác peer có thể kết nối không liên tục và thay đổi địa chỉ IP•Quản lý phức tạpVí dụ: Chia sẻ tập tin P2P [BitTorrent]
+
+
+===== PDF PAGE 8 =====
+8
+SocketoTiến trình gửi/nhậnthông điệpđến/từsocket của nóoSocket hoạt động tương tựa như cánh cửaTiến trình gửi đẩy thông điệp ra khỏi cửaTiến trình gửi dựa trên hạ tầng vận chuyển bên kia của cánh cửa để phân phốithông điệp đến socket tại tiến trình nhậnoHai socket có liên quan: một socket ở mỗi bên
+Internetđiều khiển bởiHệ điều hànhđiều khiển bởinhà phát triển ứng dụng
+transportapplicationphysicallinknetworkprocesstransportapplicationphysicallinknetworkprocesssocket
+
+
+===== PDF PAGE 9 =====
+9
+Xác định tiến trìnhĐể nhận các thông điệp, tiến trình phải có định danh identifierThiết bị đầu cuối có một địa chỉ IP 32-bit duy nhấtQ: địa chỉ IP của hệ thống đầu cuối mà tiến trình chạy trên đó có đủ để xác định tiến trình đó hay không?A: không, có nhiều tiến trình có thể được chạy trên cùng một hệ thống đầu cuốiĐịnh danh (identifier)bao gồm cảđịa chỉ IPand số hiệu cổng (port) liên kết với tiến trình trên hệ thốngđầu cuối.Ví dụ về số hiệu cổng:Máy chủ HTTP (Web): 80Máy chủ thư điện tử: 25Để gửi thông điệp HTTPđến máychủ web gaia.cs.umass.edu:•Địa chỉ IP: 128.119.245.12•Số hiệu cổng: 80Còn nữa…
+
+===== PDF PAGE 10 =====
+10
+Một giao thức tầng Ứng dụng định nghĩa:oCác loại thông điệp được trao đổiVí dụ: yêu cầu (request), phản hồi(response) oCú pháp thông điệp:Các trường trong thông điệp và cách các trường được đinh nghĩaoNgữ nghĩa của thông điệpÝ nghĩa của thông tin trong cáctrườngoCác quy tắc (rules):Khi nào và cách thức các tiến trình gửi và phản hồi các thông điệp
+oCác giao thức (protocol) mở:Được định nghĩa trong các RFCs, mọi người đều có quyền truy cập vào định nghĩa giao thứcCho phép khả năng tương tácVí dụ: HTTP, SMTPoCác giao thức độc quyền:Ví dụ: Skype, Zoom
+
+===== PDF PAGE 11 =====
+11
+Dịch vụ vận chuyển nào mà một ứng dụng cần?oToàn vẹn dữ liệu (Data integrity)Một số ứng dụng (ví dụ: truyền tập tin,  file transfer, web) yêu cầu độ tin cậy 100% khi truyền dữ liệu Một số ứng dụng khác (ví dụ: audio) có thể chịu được mất mátoĐịnh thì (Timing)Một số ứng dụng (Ví dụ: điện thoại Internet, game tương tác) yêu cầu độ trễ thấp để đạt được hiệu quảoThông lượng (Throughput)Một số ứng dụng (ví dụ: đa phươngtiện - multimedia) yêu cầu thônglượng tối thiểu để đạt được hiệu quảMột số ứng dụng khác (“ứng dụngmềm dẻo - elastic apps”) sử dụngbất kỳ thông lượng nào mà nó nhậnoAn ninh (Security)Mã hóa, toàn vẹn dữ liệu,…
+
+===== PDF PAGE 12 =====
+12
+Yều cầu dịch vụ vận chuyển: các ứng dụng phổ biếnỨng dụngTruyền/tải tập tinThư điện tửTài nguyên webAudio/video thời gian thựcstreaming audio/videoGame tương tácNhắn tinMất dữ liệuKhôngKhôngKhôngChịu lỗiChịu lỗiChịu lỗiKhôngThông lượngMềm dẻoMềm dẻoMềm dẻoaudio: 5Kbps-1Mbpsvideo:10Kbps-5MbpsNhư trên Kbps+Mềm dẻoĐộ nhạy thời gianKhôngKhôngKhôngCó, 10’s msecCó, few secsCó, 10’s msecCó và không
+
+===== PDF PAGE 13 =====
+13
+Các dịch vụ giao thức vận chuyển InternetDịch vụ TCP:Truyền tải tin cậy (reliable transport) giữa các tiến trình gửivà nhậnĐiều khiển luồng (flow control):bên gửi không áp đảo (gửi quákhả năng) bên nhậnĐiều khiển tắc nghẽn (congestion control):điều tiết bên gửi khi mạngquá tảiHướng kết nối (connection-oriented):thiết lập kết nối giữa bêngửi và bên nhận×Không cung cấp:định thì, thônglượng tối thiểu, an ninh
+Dịch vụ UDP:Truyền tải không tin cậygiữa tiếntrình gửi và nhận×Không cung cấp:tính tin cậy, điềukhiển luồng, điều khiển tắc nghẽn, định thì, thông lượng đảm bảo, an ninh hay thiết lập kết nốiQ:Tại sao phải quan tâm?   Tại sao có UDP
+
+===== PDF PAGE 14 =====
+14
+Ứng dụng Internet và các giao thức vận chuyểnỨng dụngTruyền/tải tập tinThư điện tửTài nguyên Web Điện thoại InternetStreaming audio/videoGame tương tácGiao thứcTầng Ứng dụngFTP [RFC 959]SMTP [RFC 5321]HTTP [RFC 7230, 9110]SIP [RFC 3261], RTP [RFC 3550], hoặc các giao thức độc quyềnHTTP [RFC 7230], DASHWOW, FPS (proprietary) Giao thứcVận chuyểnTCPTCPTCPTCP or UDPTCPUDP or TCP
+
+===== PDF PAGE 15 =====
+15
+Bảo mật TCPoTCP và UDP Socket:Không mã hóaDữ liệu chưa được mã hóa đượcgửi vào socket đi qua Internet dướidạng nguyên bản (!)oTransport Layer Security (TLS)Cung cấp các kết nối TCP có mãhóaToàn vẹn dữ liệuChứng thực đầu cuốioTLS được triển khai ở Tầng ỨngdụngCác ứng dụng sử dụng các thư việnTLS, qua đó làm việc với TCPDữ liệu dạng nguyên bản được gửivào các socket đi qua Internet ở dạng được mã hóaXem thêm ở các chương sau
+
+===== PDF PAGE 16 =====
+16
+Tầng Ứng dụng – Tổng quanoNguyên lý của các ứng dụng mạngoWeb và HTTPoE-mail, SMTP, IMAPoHệ thống phân giải tên miền DNSoCác ứng dụng P2PoLập trình socket với UDP và TCP
+
+
+===== PDF PAGE 17 =====
+17
+Web và HTTPoTrước tiên, ôn tập lại…Trang web bao gồm cácđối tượng(objects), có thể được lưu trữ ở các máy chủWeb khác nhauĐối tượng có thể là tập tin HTML, các hình ảnh JPEG, các tập tin audio,…Trang web bao gồm tập tin HTML cơ bản chứa tham chiếu đến nhiều đối tượng, mỗi đối tượng được đánh địa chỉ bới một URLwww.someschool.edu/someDept/pic.gifTên máyĐường dẫn
+
+===== PDF PAGE 18 =====
+18
+Tổng quan về HTTPoHTTP: hypertext transfer protocolGiao thức tầng ứng dụng cho WebMô hình Máy khách – máy chủ (Client –Server)•Client: trình duyệt – yêu cầu, tiếp nhận, (sử dụng giao thức HTTP) và hiển thị cácđối tượng Web•Server: máy chủ web gửi (sử dụng giaothức HTTP) các đối tượng trong phản hồicủa các yêu cầuiPhone chạy trình duyệtSafari
+PC chạyTrình duyệtFirefox
+Máy chủ chạyWeb Server Apache 
+
+
+===== PDF PAGE 19 =====
+19
+Tổng quan về HTTP (tt)oDùng TCP:Máy khách khởi tạo kết nối TCP (tạosocket) đến cổng 80 của máy chủMáy chủ chấp nhận kết nối TCP từmáy kháchCác thông điệp HTTP (thông điệpthuộc giao thức Tầng ứng dụng) được trao đổi giữa trình duyệt(HTTP client) và máy chủ web (HTTP server)Kết nối TCP được đóngoHTTP “không lưu trạng thái”Máy chủ không duy trì thông tin vềcác yêu cầu trước đó của máykháchCác giao thức nào duy trì “trạngthái” thì phức tạp!Lịch sử trước đó (trạng thái)phải được duy trìNếu máy chủ/máy khách bị sựcố, cách nhìn về “trạng thái”của nó có thể bị mâu thuẫn,phải được điều chỉnhNgoài lề
+
+===== PDF PAGE 20 =====
+20
+Các kết nối HTTP: 2 loạioHTTP không bền vững1.Kết nối TCP được mở2.Chỉ tối đa một đối tượng được gửiqua kết nối TCP3.Kết nối TCP đóng lạioTải nhiều đối tượng yêu cầu nhiềukết nốioHTTP bền vữngKết nối TCP được mở đến một máychủ (server)Nhiều đối tượng có thể được gửithông qua duy nhấtmột kết nối TCP giữa máy khách (client) và máy chủđóKết nối TCP đóng lại
+
+===== PDF PAGE 21 =====
+21
+HTTP không bền vững: Ví dụGiả sử người dùng vào URL như sau:1a. HTTP client khởi tạo kết nối TCP với HTTP server tại www.someSchool.edu trên cổng 802.HTTP client gửithông điệpyêu cầuHTTP (chứa URL) vào trong socket kết nốiTCP. Thông điệp chỉ ra rằngmáy khách muốn đối tượngsomeDepartment/home.index1b. HTTP server tại host www.someSchool.edu chờ kết nối TCP tại cổng 80 "chấp nhận" kết nối, thông báo cho client3.HTTP server nhận thông điệp yêu cầu, tạothông điệp phản hồichứa đốitượng được yêu cầu, và gửi thôngđiệp đến socket của nótime
+(chứa text, tham chiếu đến10 hình jpeg)www.someSchool.edu/someDepartment/home.index
+
+
+===== PDF PAGE 22 =====
+22
+HTTP không bền vững: Ví dụ (tt)oGiả sử người dùng vào URL như sau:
+5. HTTP client nhận được thông báo phản hồi có chứa file html, hiển thị html.  Phân tích cú pháp tệp html, tìm 10 đối tượng jpeg được tham chiếu6.Các bước 1-5 lặp lại cho mỗi đối tượng trong số 10 đối tượng jpeg4.HTTP  server đóng kếtnối TCP.time
+(chứa text, tham chiếu đến10 hình jpeg)www.someSchool.edu/someDepartment/home.index
+
+===== PDF PAGE 23 =====
+23
+HTTP không bền vững: thời gian đáp ứngoRTT (định nghĩa):Thời gian cho một gói nhỏ di chuyển từ máy khách đến máy chủ và ngược lạioThời gian đáp ứng HTTP (trên mỗi đối tượng):1 RTT để bắt đầu kết nối TCP1 RTT cho yêu cầu HTTP và vài byte phản hồi HTTP đầu tiên trả vềThời gian truyền đối tượng / tập tinThời gian đểtruyềntập tinkhởi tạo TCPKết nốiRTTYêu cầutập tinRTTTập tin được nhậntimetime
+Thời gian đáp ứng HTTP không bền vững = 2RTT + thời gian truyền tập tin
+
+===== PDF PAGE 24 =====
+24
+HTTP bền vững (HTTP 1.1)oVấn đề với HTTP không bền vữngYêu cầu 2 RTT cho mỗi đối tượngChi phí hệ điều hành cho mỗi kết nốiTCPTrình duyệt thường mở nhiều kết nối TCP song song để tìm nạp song song các đối tượng được tham chiếuoHTTP bền vững (HTTP1.1):Máy chủ để kết nối mở sau khi gửi phản hồicác thông điệp HTTP tiếp theo giữa cùng một máy khách/máy chủ được gửi qua kết nối đã mởClient gửi request ngay khi gặp một đối tượng được tham chiếuChỉ cần một RTT cho tất cả các đối tượng được tham chiếu (cắt giảm một nửa thời gian phản hồi)
+
+===== PDF PAGE 25 =====
+25
+Thông điệp yêu cầu HTTPoHai loại thông điệp HTTP: yêu cầu, phản hồioThông điệp yêu cầu HTTP:ASCII (định dạng con người có thể đọc được)Các dòngheaderGET /index.html HTTP/1.1\r\nHost: www-net.cs.umass.edu\r\nUser-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:80.0) Gecko/20100101 Firefox/80.0 \r\nAccept: text/html,application/xhtml+xml\r\nAccept-Language: en-us,en;q=0.5\r\nAccept-Encoding: gzip,deflate\r\nConnection: keep-alive\r\n\r\nKý tự xuống dòngKý tự về đầu dòngDòng yêu cầu( Các lệnh GET, POST, HEAD)Ký tự xuống dòng, về đầu dòng mới chỉ điểm cuối cùng của thông điệp* Check out the online interactive exercises for more examples: http://gaia.cs.umass.edu/kurose_ross/interactive/
+
+===== PDF PAGE 26 =====
+26
+Thông điệp yêu cầu HTTP: định dạng chungDòngyêu cầuCác dòngheaderThânmethodspspcrlfversionURLcrlfvalueheader field namecrlfvalueheader field name~~ ~~crlfentity body~~ ~~
+
+===== PDF PAGE 27 =====
+27
+Các thông điệp yêu cầu HTTP khácoPhương thức POST:Trang web thường bao gồm form inputDữ liệu của người dùng được gửi từ máy khách đến máy chủ trong nội dung thực thể của thông điệp yêu cầu HTTP POSToPhương thức GET (để gửi dữ liệu đến máy chủ):Bao gồm dữ liệu người dùng trong trường URL của thông điệp yêu cầu HTTP GET (sau dấu '?'):
+oPhương thức HEAD:Các dòng header sẽ được trả về nếu URL được chỉ định được yêu cầu bằng phương thức HTTP GET.Phương thức PUT:Tải tập tin (đối tượng) mới lên máy chủThay thế hoàn toàn tập tin tồn tại tại URL được chỉ định bằng nội dung trong nội dung thực thể của thông điệp yêu cầu HTTP POSTwww.somesite.com/animalsearch?monkeys&banana
+
+===== PDF PAGE 28 =====
+28
+Thông điệp phản hồi HTTPDòng trạng thái (Giao thứcmã trạng tháiCụm từ trạng thái)Các dòngTiêu đềDữ liệu, ví dụ: Tập tin HTML được yêu cầuHTTP/1.1 200 OKDate: Tue, 08 Sep 2020 00:53:20 GMTServer: Apache/2.4.6 (CentOS) OpenSSL/1.0.2k-fips PHP/7.4.9 mod_perl/2.0.11 Perl/v5.16.3Last-Modified: Tue, 01 Mar 2016 18:57:50 GMTETag: "a5b-52d015789ee9e"Accept-Ranges: bytesContent-Length: 2651Content-Type: text/html; charset=UTF-8\r\ndata data data data data ... * Check out the online interactive exercises for more examples: http://gaia.cs.umass.edu/kurose_ross/interactive/
+
+===== PDF PAGE 29 =====
+29
+Các mã trạng thái phản hồi HTTPoMã trạng tháixuất hiện ở dòng 1 trong thông báo phản hồi từ máy chủ đếnmáy khách.Một số mã trạng thái:o200 OKYêu cầu thành công, đối tượng được yêu cầu kèm sau trong thông điệp nàyo301 Moved PermanentlyĐối tượng được yêu cầu đã di chuyển, vị trí mới được xác định sau trong thông điệp này (trong trường Location: )o400 Bad RequestMáy chủ không hiểu thông điệp yêu cầuo404 Not FoundTài liệu được yêu cầu không tìm thấy trên máy chủ nàyo505 HTTP Version Not Supported
+
+===== PDF PAGE 30 =====
+30
+Thử nghiệm HTTP (phía máy khách)1. Kết nối đến máy chủ Web yêu thích của bạn:Mở kết nối TCP đến cổng 80 (cổng máy chủ HTTP mặc định) tại trang web yêu thíchBất cứ thứ gì được nhập sẽ được gửi đến cổng 80 tại tên miền đã gõ% nc -c -v gaia.cs.umass.edu 80hoặctelnet gaia.cs.umass.edu 803. Xem thông điệp phản hồi được gửi bởi máy chủ HTTP!(hoặc sử dụng Wireshark để xem các thông điệp đã gửi/nhận)2. Nhập yêu cầu GET HTTP:GET /kurose_ross/interactive/index.php HTTP/1.1Host: gaia.cs.umass.eduBằng cách gõ những dòng này (enter 2 lần), bạn đã gửi yêu cầu GET tối thiểu (nhưng đầy đủ) đến máy chủ
+
+===== PDF PAGE 31 =====
+31
+Duy trì trạng thái người dùng/máy chủ: cookieoNhắc lại:  HTTP không lưu trữ trạngthái - statelessoKhông có khái niệm trao đổi nhiều bước của thông điệp HTTP để hoàn thành một "transaction - giao dịch" WebKhông cần máy khách/máy chủ theo dõi "trạng thái" của quá trình trao đổi nhiều bướcTất cả các yêu cầu HTTP độc lập vớinhauMáy khách/máy chủ không cần phải khôiphục những giao dịch chưa hoàn thành
+Giao thức lưu trạng thái: máy khách thựchiện hai thay đổi đối với X hoặc không cóthay đổi nào cảtimetime
+X
+X
+X’
+X’’
+X’’t’Câu hỏi: điều gì xảy ra nếu kết nối mạnghoặc máy khách gặp sự cố tại thời điểm t '?
+
+===== PDF PAGE 32 =====
+32
+Duy trì trạng thái người dùng/máy chủ: cookieCác trang web và trình duyệt củangười dung sử dụngcookieđể duytrì một số trạng thái giữa các phiênlàm việcoBốn thành phần:1.Dòng header cookie của thông điệpphản hồi HTTP2.Dòng header cookie trong thôngđiệp yêu cầu HTTP tiếp theo3.Tệp cookie được lưu giữ trên máycủa người dùng, được quản lý bởi trình duyệt của người dùng4.Cơ sở dữ liệu tại Web site
+oVí dụ: Susan sử dụng trình duyệt trên máy tính xách tay, lần đầu tiên truy cập trang web thương mại điện tử cụ thểKhi yêu cầu HTTP ban đầu đến trang web, trang web sẽ tạo:•ID duy nhất (còn gọi là "cookie")•Một bản ghi trong cơ sở dữ liệu cho ID đóCác yêu cầu HTTP tiếp theo từ Susan đến trang web này sẽ chứa giá trị ID cookie, cho phép trang web "xác định" Susan
+
+===== PDF PAGE 33 =====
+33
+Duy trì trạng thái người dùng/máy chủ: cookieMáy kháchMáy chủ Amazonusual HTTP response msgusual HTTP response msgTệp cookieMột tuần sau:usual HTTP request msgcookie: 1678cookie-specificactiontruy cậpebay 8734usual HTTP request msgMáy chủ Amazontạo ID 1678 cho người dùngTạoentryusual HTTP response set-cookie: 1678 ebay 8734amazon 1678usual HTTP request msgcookie: 1678cookie-specificactiontruy cậpebay 8734amazon 1678backenddatabase
+timetime
+
+===== PDF PAGE 34 =====
+34
+HTTP cookiesoCookie có thể được sử dụng cho:Authorization (Cấp phép)Giỏ hàngKhuyến nghịTrạng thái phiên người dùng (Web e-mail)oThách thức: Làm thế nào để giữ trạng thái?Các thời điểm kết thúc giao thức:  duy trì trạng thái tại người gửi/nhận thông qua nhiều giao dịchTrong các thông điệp: cookie trong các thông điệp HTTP mang trạng tháiCookie và quyền riêng tư:• Cookie cho phép các trangweb biết nhiều về bạn trêntrang web của họ.• Cookie liên tục của bên thứ ba(cookie theo dõi) cho phéptheo dõi danh tính chung (giátrị cookie) trên nhiều trang webNgoài lề
+
+===== PDF PAGE 35 =====
+nytimes.comAdX.com
+1HTTP GET2HTTP reply4356
+Hiển thị trang NY times với quảng cáo được nhúng
+GET tệp html cơ sở từ nytimes.com12Tìm nạp quảngcáo từ AdX.com45Hiển thị trang735
+Ví dụ: hiển thị trang web NY Times
+
+===== PDF PAGE 36 =====
+nytimes.com (sports)AdX.com
+1634: sports, 2/15/22
+NY Times: 16347493: NY Times sports, 2/15/22HTTP replySet cookie: 16344HTTP GETReferer: NY Times Sports5HTTP replySet cookie: 7493HTTP GETAdX: 7493“first party” cookie – Từ trang web bạn đã chọn truy cập (cung cấp tệp HTML cơ sở)“third party” cookie – từtrang web bạn khôngchọn truy cập36
+Cookie: theo dõi hành vi duyệt web của người dùng
+
+===== PDF PAGE 37 =====
+nytimes.comAdX.com
+1634: sports, 2/15/22
+NY Times: 16347493: NY Times sports, 2/15/22AdX: 7493
+socks.com
+1HTTP GET24HTTP GETReferer: socks.com, cookie: 74935HTTP replySet cookie: 74937493: socks.com, 2/16/22
+AdX:theo dõi quá trình duyệt web của tôi trên các trang web có quảng cáo AdXCó thể trả về quảng cáo được nhắm mục tiêu dựa trên lịch sử duyệt web37
+Cookie: theo dõi hành vi duyệt web của người dùng
+
+===== PDF PAGE 38 =====
+Một ngày sau đó …
+nytimes.com (arts)AdX.com
+1634: sports, 2/15/22
+NY Times: 16347493: NY Times sports, 2/15/22AdX: 7493
+socks.com
+4HTTP GETReferer:nytimes.com, cookie: 74935HTTP replySet cookie: 74937493: socks.com, 2/16/22
+cookie: 1634HTTP replyHTTP GETSet cookie: 16341634: arts, 2/17/227493: NY Times arts, 2/15/22Returned ad for socks!38
+Cookie: theo dõi hành vi duyệt web của người dùng (tt)
+
+===== PDF PAGE 39 =====
+39
+Cookie: theo dõi hành vi duyệt web của người dùngoCookie có thể được sử dụng để: Theo dõi hành vi của người dùng trên một trang web nhất định (cookie của bên thứ nhất)Theo dõi hành vi của người dùng trên nhiều trang web (cookie của bên thứ ba) mà người dùng không truy cập trang web theo dõi (!)oTheo dõi có thể vô hình đối với người dùng:Thay vì hiển thị quảng cáo kích hoạt HTTP GET để theo dõi, có thể là một liên kết vô hìnhoTheo dõi bên thứ ba (Third party tracking) qua cookie:Bị tắt theo mặc định trong trình duyệt Firefox, SafariSẽ bị vô hiệu hóa trong trình duyệt Chrome vào năm 2023
+
+===== PDF PAGE 40 =====
+40
+GDPR (Quy định chung về bảo vệ dữ liệu của EU) và cookie“Natural persons may be associated with online identifiers […] such as internet protocol addresses, cookie identifiers or other identifiers […].This may leave traces which, in particular when combined with unique identifiers and other information received by the servers, may be used to create profiles of the natural persons and identify them.”GDPR, recital 30 (May 2018)
+Người dùng có quyền kiểm soát rõ ràng về việc cookie có được phép hay khôngKhi cookie có thể xác định một cá nhân, cookie được coi là dữ liệu cá nhân, tuân theo các quy định về dữ liệu cá nhân GDPR
+
+
+===== PDF PAGE 41 =====
+41
+Web cachesoMục tiêu: đáp ứng các yêu cầu của khách hàng mà không liên quan đến máy chủ gốcoUser thiết lập trình duyệt: truy cập Web thông qua Web cacheoTrình duyệt gửi tất cả các yêu cầu HTTP đến bộ nhớ cacheNếu đối tượng trong cache: cache trả về đối tượng cho máy kháchNgược lại cache yêu cầu đối tượng từ máy chủ gốc, lưu vào cache đối tượng đã nhận, sau đó trả về đối tượng cho máy khách
+Máy khách
+Web cacheMáy kháchMáy chủ gốc
+
+
+===== PDF PAGE 42 =====
+42
+Web cache (còn gọi là máy chủ proxy)oWeb cache hoạt động như cả máy khách và máy chủMáy chủ cho máy khách yêu cầu ban đầuMáy khách đến máy chủ gốcoServer cho Cache biết về bộ nhớ đệm cho phép của đối tượng trong tiêu đề phản hồi:oTại sao sử dụng Web caching?Giảm thời gian đáp ứng cho yêu cầucủa client•Bộ nhớ cache gần với máy khách hơnGiảm lưu lượng trên liên kết truy cậpra Internet của tổ chứcInternet dày đặc với bộ nhớ cache•Cho phép các nhà cung cấp nội dung "kém“ vẫn phân phối nội dung mộtcách hiệu quả
+
+
+===== PDF PAGE 43 =====
+43
+Ví dụ Caching:oNgữ cảnh:Tốc độ liên kết truy cập: 1,54 MbpsRTT từ bộ định tuyến tổ chức đến máy chủ: 2 giâyKích thước đối tượng web: 100K bitTỷ lệ yêu cầu trung bình từ trình duyệt đến máy chủ gốc: 15/giâyTốc độ dữ liệu trung bình cho trình duyệt: 1,50 MbpsoHiệu suất:Độ khả dụng của liên kết truy cập = .97Độ khả dụng của LAN = .0015Độ trễ cuối cuối = Độ trễ Internet  +                         độ trễ liên kết truy cập + độ trễ mạng LAN = 2 giây + phút + USECS
+Máy chủGốcpublicInternetMạngtổ chức1 Gbps LAN1.54 Mbps access link
+              
+              Vấn đề: Sự chậm trễxếp hàng lớn khi sửdụng cao!
+
+===== PDF PAGE 44 =====
+oNgữ cảnh:Tốc độ liên kết truy cập: 1,54 MbpsRTT từ bộ định tuyến tổ chức đến máy chủ: 2 giâyKích thước đối tượng web: 100K bitTỷ lệ yêu cầu trung bình từ trình duyệt đến máy chủ gốc: 15/giâyTốc độ dữ liệu trung bình cho trình duyệt: 1,50 MbpsoHiệu suất:Độ khả dụng của liên kết truy cập = .97Độ khả dụng của LAN = .0015Độ trễ cuối cuối = Độ trễ Internet  +                         độ trễ liên kết truy cập + độ trễ mạng LAN = 2 giây + phút + USECS
+44
+Tùy chọn 1: mua liên kết truy cập nhanh hơnMáy chủGốcpublic InternetMạngtổ chức1 Gbps LAN1.54 Mbps access link
+154 Mbps
+154 Mbps
+.0097
+Chi phí: liên kết truy cập nhanh hơn (đắt!)msecs
+
+
+===== PDF PAGE 45 =====
+45
+Tùy chọn 2: cài đặt Web cacheMáy chủGốcpublic InternetMạngTổ chức1 Gbps LAN1.54 Mbps access link
+Làm cách nào để tính độ khả dụng đường liên kết, độ trễ?local web cache
+oNgữ cảnh:Tốc độ liên kết truy cập: 1,54 MbpsRTT từ bộ định tuyến tổ chức đến máy chủ: 2 giâyKích thước đối tượng web: 100K bitTỷ lệ yêu cầu trung bình từ trình duyệt đến máy chủ gốc: 15/giâyTốc độ dữ liệu trung bình cho trình duyệt: 1,50 MbpsoChi phí: web cache (rẻ)oHiệu suất:Độ khả dụng của liên kết truy cập = ?Độ khả dụng của LAN =  ?Độ trễ = ?                         
+
+===== PDF PAGE 46 =====
+46
+Tính toán độ khả dụng, độ trễ với cacheoGiả sử tỷ lệ truy cập bộ nhớ cache là 0,4: 40% yêu cầu được phục vụ bởi cache, với độ trễ thấp (milisec), 60% yêu cầu được máy chủ gốcđáp ứngTốc độ truyền dữ liệu đến trình duyệt trên access liên kết  = 0,6 * 1,50 Mbps = 0,9 Mbps Độ khả dụng liên kết truy cập = 0,9 / 1,54 = 0,58 có nghĩa là độ trễ hàng đợi thấp (MCSEC) tại liên kết truy cậpoTổng độ trễ cuối cùng:= 0,6 * (độ trễ từ máy chủ gốc)+ 0,4 * (độ trễ khi đáp ứng bởi cache)= 0,6* (2,01) + 0,4 *(~ mili giây) = ~ 1,2 giâyMáy chủGốcpublicInternetMạngTổ chức1 Gbps LAN1.54 Mbps access link
+local web cacheĐộ trễ đầu cuối trung bình thấp hơn so với liên kết 154 Mbps (và rẻ hơn!)
+
+===== PDF PAGE 47 =====
+47
+Cache của trình duyệt: GET có điều kiệnoMục tiêu:không gửi đối tượng nếu trình duyệt có phiên bản cập nhậtđược lưu trong cacheKhông có độ trễ truyền đối tượng (hoặc sử dụng tài nguyên mạng)Client: xác định thời gian của bản sao được đệm trong thông điệp yêu cầu HTTP•If-modified-since: <date>Server: Phản hồi không chứa đối tượng nếu bản sao được lưu trong bộ nhớ cache của trình duyệt được cập nhật:•HTTP/1.0 304 Not ModifiedHTTP request msgIf-modified-since: <date>HTTP responseHTTP/1.0 304 Not ModifiedĐối tượngkhôngthay đổitrước <date>HTTP request msgIf-modified-since: <date>HTTP responseHTTP/1.0 200 OK<data>Đối tượngthay đổisau <date>
+Máy kháchMáy chủ
+
+
+===== PDF PAGE 48 =====
+48
+HTTP/2 [RFC 7540, 2015]oHTTP1.1: giới thiệu nhiều GET pipelined qua một kết nối TCPMáy chủ phản hồi theo thứ tự (FCFS: lập lịch ai đến trước được phục vụ trước) cho các yêu cầu GETVới FCFS, đối tượng nhỏ có thể phảiđợi truyền (chặn đầu dòng (HOL) phía sau (các) đối tượng lớnPhục hồi mất mát (truyền lại các phân đoạn TCP bị mất) bị trì hoãntruyền đối tượngoHTTP/2: tăng tính linh hoạt tại server trong việc gửi các đối tượng đến clientPhương thức, mã trạng thái, hầu hết các header không thay đổi so với HTTP 1.1Thứ tự truyền của các đối tượng được yêu cầu dựa trên mức độ ưu tiên đối tượng do client chỉ định (không nhất thiết là FCFS)Chia đối tượng thành các frame, lên lịch các frame để giảm thiểu HOL blockingMục tiêu chính:  giảm độ trễ trong các yêu cầu HTTP đa đối tượng
+
+===== PDF PAGE 49 =====
+49
+HTTP/2: giảm thiểu HOL blockingHTTP 1.1: máy khách yêu cầu 1 đối tượng lớn (ví dụ: tệp video) và 3 đối tượng nhỏ hơnclientserver
+GET O1GET O2GET O3GET O4     O1O2O3O4 Dữ liệu đối tượng được yêu cầuO1O2O3O4Các đối tượng được chuyển theo thứ tự yêu cầu: O2, O3, O4 chờ phía sau O1
+
+===== PDF PAGE 50 =====
+50
+HTTP/2: giảm thiểu HOL blockingHTTP/2: các đối tượng được chia thành các frame, truyền frame xen kẽclientserver
+GET O1GET O2GET O3GET O4O2O4 Dữ liệu đối tượng được yêu cầuO1O2O3O4O2, O3, O4 được phân phối nhanh, O1 hơi chậm trễO3O1
+
+===== PDF PAGE 51 =====
+51
+Tổng quan HTTPHTTP responseMáy kháchMáy chủ
+Host: abc.edu\r\nUser-Agent: Firefox/3.6.10\r\n……If-modified-since: <date>\r\nCookie: mssv=aXtdl+ab\r\ndata data datadata data dataHTTP/1.1 200OK\r\nVersionStatus CodePhraseDòng trạng thái(Status Line)304Server: Apache\r\nContent-Length: 2652\r\n…Set-cookie: mssv=aXtdl+ab\r\n…Các dòng header(Header Lines)data data datadata data dataDữ liệu(Data)NOT MODIFIED404NOT FOUNDGET/index.html HTTP/1.1\r\nHTTP requestMETHODURIVersionDòng yêu cầu(Request Line)Các dòngheader(Header Lines)Dữ liệu (Data)OptionalPOST, HEAD …HTTP1.0   HTTP2.X    HTTP3.X(Port: X)(Port: 80)
+
+===== PDF PAGE 52 =====
+52
+Tầng Ứng dụng – Tổng quanoNguyên lý của các ứng dụng mạngoWeb và HTTPoE-mail, SMTP, IMAPoHệ thống phân giải tên miền DNSoCác ứng dụng P2PoLập trình socket với UDP và TCP
+
+
+===== PDF PAGE 53 =====
+53
+E-mail – Thư điện tửoBa thành phần chínhUser agents Máy chủ thư điện tử (mail server) Simple mail transfer protocol: SMTPoUser AgentCòn gọi là “mail reader”Soạn thảo, chỉnh sửa, đọc thư điện tửVí dụ: Outlook, ứng dụng mail iPhoneThư đi, thư đến được lưu trữ trên máy chủHộp thư người dùngHàng đợi thông điệp đi
+mailserver
+mailserver
+mailserverSMTPSMTPSMTP
+useragent
+useragent
+useragent
+useragent
+useragent
+useragent
+
+===== PDF PAGE 54 =====
+54
+E-mail: mail serversoMáy chủ thư điện tử:Hộp thư (mailbox) chứa thông điệp đến userHàng thông điệp (message queue) của các thông điệp mail ra ngoài (chuẩn bị gửi)Giao thức SMTP được dùng để gửi các thông điệp thư điện tử giữa các mail server•Client là máy chủ thư điện tử gửi•Server là máy chủ thư điện tử nhận
+mailservermailservermailserverSMTPSMTPSMTP
+useragent
+useragent
+useragent
+useragent
+useragent
+useragentHộp thư người dùngHàng đợi thông điệp đi
+
+===== PDF PAGE 55 =====
+55
+SMTP RFC (5321)oSử dụng TCP để truyền thông điệp thư điện tử một cách tin cậy từ máy khách đến cổng 25 máy chủTruyền trực tiếp: máy chủ gửi thư đến máy chủ nhậnoBa giai đoạn truyềnBắt tay (lời chào)Truyền thông điệpĐóngoTương tác lệnh/phản hồi (như HTTP)Lệnh: Văn bản ASCIIPhản hồi: Mã trạng thái và cụm từkhởi tạo kết nối TCPRTTtime
+220250 HelloHELOSMTP handshakingKết nối TCPbắt đầu“client” SMTP server“server”SMTP server
+SMTP transfers
+
+===== PDF PAGE 56 =====
+56
+Tình huống: Alice gửi e-mail cho Bob1) Alice sử dụng UA để soạn e-mail gửi đến bob@someschool.edu4) Máy khách SMTP gửi tin nhắn của Alice qua kết nối TCP
+useragent
+mailserver
+mailserver123456Máy chủ thư của AliceMáy chủ thư của Bob
+useragent2) UA của Alice gửi tin nhắn đến máy chủ thư của cô ấy bằng SMTP; Thư được đặt trong hàng đợi thư3) Phía máy khách của SMTP tại máy chủ thư mở kết nối TCP với máy chủ thư điện tử của Bob5) Máy chủ thư của Bob đặt thư trong hộp thư của Bob6) Bob dùng UA của mình để đọc tin nhắn
+
+===== PDF PAGE 57 =====
+57
+Tương tác SMTP mẫuS: 220 hamburger.eduC: HELO crepes.frS: 250  Hello crepes.fr, pleased to meet you C: MAIL FROM: <alice@crepes.fr> S: 250 alice@crepes.fr... Sender ok C: RCPT TO: <bob@hamburger.edu> S: 250 bob@hamburger.edu ... Recipient ok C: DATA S: 354 Enter mail, end with "." on a line by itself C: Do you like ketchup? C: How about pickles? C: . S: 250 Message accepted for delivery C: QUIT S: 221 hamburger.edu closing connection
+
+===== PDF PAGE 58 =====
+58
+SMTP: Kết luậnoSo sánh với HTTP:HTTP: pull (kéo)SMTP: push (đẩy)Cả hai đều có tương tác lệnh/phảnhồi, các mã trạng thái dạng ASCIIHTTP: mỗi đối tượng được đóng góitrong thông điệp phản hồi của nóSMTP: nhiều đối tượng được gửitrong thông điệp chứa nhiều phầnSMTP dùng kết nối bền vữngSMTP yêu cầu thông điệp (header & body) phải ở dạng ASCII 7-bitSMTP máy chủ dùng ký tựCRLF.CRLF để xác định kết thúcthông điệp
+
+===== PDF PAGE 59 =====
+59
+Định dạng thư - emailoSMTP: giao thức trao đổi thư e-mail, được định nghĩa trong RFC 5321 oRFC 2822 định nghĩa cú pháp cho thông điệp email oCác dòng header, nằm trong phần nội dụngDATA của thư, ví dụTo:From:Subject:Khác với lệnhSMTP MAIL FROM:, RCPT TOBody: "thông điệp", chỉ các ký tự ASCIIheaderbodydòngtrống
+
+===== PDF PAGE 60 =====
+60
+Truy xuất email: Các giao thức truy cập thưSMTP: gửi/lưu trữ thư e-mail đến máy chủ của người nhậnGiao thức truy cập thư: Truy xuất từ máy chủ•POP: Post Office Protocol [RFC 1939]: xác thực, tải thư về •IMAP: Internet Mail Access Protocol [RFC 3501]: thư được lưu trữ trên máy chủ, IMAP cung cấp truy xuất, xóa, thư mục thư được lưu trữ trên máy chủ•HTTP: gmail, Hotmail, Yahoo!Mail, v.v. cung cấp giao diện web trên STMP (để gửi), IMAP (hoặc POP) để truy xuất thư e-mail
+Máy chủ thưcủa người gửiSMTPSMTPMáy chủ thưCủa người nhận
+Giao thứctruy cập mail(e.g., POP, IMAP, HTTP)
+useragent
+useragent
+
+===== PDF PAGE 61 =====
+61
+Tầng Ứng dụng – Tổng quanoNguyên lý của các ứng dụng mạngoWeb và HTTPoE-mail, SMTP, IMAPoHệ thống phân giải tên miền DNSoCác ứng dụng P2PoLập trình socket với UDP và TCP
+
+
+===== PDF PAGE 62 =====
+62
+DNS: Domain Name System - Hệ thống tên miềnoCon người: nhiều định danh:SSN, Họ tên, Hộ chiếu #oInternet hosts, routers:Địa chỉ IP address (32 bit) – được dung để định địa chỉ gói tin“tên”, ví dụ uit.edu.vn – được dung bởi con ngườioQ: làm sao để ánh xạ giữa địa chỉ IP và tên, và ngược lại?oHệ thống tên miền - Domain Name System (DNS):oCơ sở dữ liệu phân tán được triển khai trong hệ thống phân cấp của nhiều máy chủ DNSoGiao thức Tầng Ứng dụng: các hệthống đầu cuối, các máy chủ DNS servers giao tiếp đểphân giảitên(địa chỉtên)Lưu ý: chức năng trong phần lõiInternet, được thực hiện như là giaothức Tầng ứng dụngSự phức tạp ở “biên” của mạng”
+
+===== PDF PAGE 63 =====
+63
+DNS: các dịch vụ, cấu trúcoCác dịch vụ DNSDịch tên máy ra địa chỉ IPBí danh máy•Lưu các tên gốc, bí danh tương ứngBí danh máy chủ thư điện tửCân bằng tải•Các bản sao cho web server: nhiềuđịa chỉ IP tương ứng cho 1 tên miềnQ: Tại sao không tập trung hóa DNS?Một điểm chịu lỗiLưu lượngCơ sở dữ liệu tập trung cách xa nơi yêu cầuBảo trìA: Không biến đổi được quy mô!Chỉ riêng máy chủ DNS Comcast: 600 tỷ truy vấn DNS/ngàyChỉ riêng máy chủ DNS Akamai: 2.2 nghìn tỷ truy vấn DNS/ngày
+
+===== PDF PAGE 64 =====
+64
+Suy nghĩ về DNSoCơ sở dữ liệu phân tán khổng lồ:~ Hàng tỷ bản ghi, mỗi bản ghi đơn giảnoXử lý hàng nghìn tỷ truy vấn/ngày:Đọc nhiều hơn ghiHiệu suất quan trọng: hầu hết mọi giao dịch Internet đều tương tác với DNS - số mili giây!oVề mặt tổ chức, phân cấp vật lý:Hàng triệu tổ chức khác nhau chịu trách nhiệm về thông tin của họ“Vấn đề": độ tin cậy, bảo mật
+
+
+===== PDF PAGE 65 =====
+65
+DNS: cơ sở dữ liệu phân tán, phân cấpoClient muốn địa chỉ IP của www.amazon.com; lần đầu tiên sẽ:Client truy vấn máy chủ gốc (root) để tìm máy chủ DNS .comClient truy vấn máy chủ DNS .com để tìm máy chủ DNS amazon.comClient truy vấn máy chủ DNS amazon.com để lấy địa chỉ IP củawww.amazon.comMáy chủ DNS .comMáy chủ DNS .org Máy chủ DNS .edu……Top Level Domain (TLD)Máy chủ DNS gốcRoot (Gốc)Máy chủ DNS nyu.eduMáy chủ DNS umass.eduMáy chủ DNSyahoo.comMáy chủ DNS amazon.comMáy chủ DNS pbs.orgAuthoritative(Có thẩm quyền)…………
+
+===== PDF PAGE 66 =====
+66
+DNS: Máy chủ DNS gốcChính thức, liên hệ cuối cùngbởi máy chủ tên miền nếukhông thể phân giải tên
+
+===== PDF PAGE 67 =====
+67
+DNS: Máy chủ DNS gốcoChính thức, liên hệ cuối cùng bởi máy chủ tên miền nếu không thể phân giải tênoChức năng Internet cực kỳ quan trọngInternet không thể hoạt động mà không có nó!DNSSEC - cung cấp bảo mật (xác thực, tính toàn vẹn của tin nhắn)ICANN (Internet Corporation for Assigned Names and Numbers) quản lý miền DNS gốc
+13 máy chủ gốc trên toàn thế giớiMỗi máy chủ được sao chép nhiềulần (~200 máy chủ ở US)
+
+===== PDF PAGE 68 =====
+68
+Top-Level Domain (TLD), và Máy chủ có thẩm quyềnoCác máy chủ miền cấp cao nhất (TLD):Chịu trách nhiệm cho tên miền .com, .org, .net, .edu, .aero, .jobs, .museums vàtất cả các miền quốc gia cấp cao nhất, ví dụ: .cn, .uk, .fr, .ca, .jpNetwork Solutions: đăng ký có thẩm quyền cho .com, .net TLDTổ chức Educause: .edu TLDoCác máy chủ DNS có thẩm quyền: (Các) máy chủ DNS riêng của tổ chức, cung cấp tên được cấp phép và ánh xạđịa chỉ IP cho các hệ thống đầu cuối được đặt tên của tổ chứcCó thể được quản lý bởi tổ chức hoặc nhà cung cấp dịch vụ
+
+
+===== PDF PAGE 69 =====
+69
+Máy chủ DNS cục bộoKhi host (hệ thống đầu cuối) thực hiện truy vấn DNS, truy vấn sẽ được gửi đến máy chủ DNS cục bộ của nóMáy chủ DNS cục bộ trả về lời đáp, trả lời:•Từ bộ nhớ đệm cục bộ (local cache): các cặp dịchtên-địa chỉgần đây (nhưng có thểhết hạn)•Chuyển tiếp yêu cầu vào hệ thống phân cấp DNS để phân giảiMỗi ISP có máy chủ DNS cục bộ; cách tìm:•MacOS: % scutil --dns•Windows: >ipconfig /alloMáy chủ DNS cục bộ không hoàn toàn thuộc về hệ thống phân cấp
+
+===== PDF PAGE 70 =====
+70
+Phân giải tên DNS: truy vấn luần tựVí dụ: máy tạiengineering.nyu.edu muốn có địachỉ IP chogaia.cs.umass.eduoTruy vấn tuần tự:Máy chủ được hỏi sẽ trả lời vớitên của máy chủ quản lý vùngliên quan“tôi không biết tên này, nhưng hãy hỏi thêm thông tin từmáy chủ này”Host yêu cầuengineering.nyu.edugaia.cs.umass.edumáy chủ DNS gốcmáy chủ DNS cục bộdns.nyu.edu123456Máy chủ DNS có thẩm quyềndns.cs.umass.edu78Máy chủ .edu TLD  
+
+
+===== PDF PAGE 71 =====
+Ví dụ Truy vấn DNSUsernc.uit.edu.vn118.69.123.140Máy chủ DNS gốcmáy chủ DNS cục bộ123456Máy chủ DNS có thẩm quyền78Máy chủ .vn TLD  
+Query/AnswerSTTQ: who is nc.uit.edu.vn?1Q: who is nc.uit.edu.vn?2A: Ask TLD .vn3Q: who is nc.uit.edu.vn?4A: Ask name server5Q: who is nc.uit.edu.vn?6A: 118.69.123.1407A: 118.69.123.140871
+
+===== PDF PAGE 72 =====
+72
+Phân giải tên DNS: truy vấn đệ quyVí dụ: máy tạiengineering.nyu.edu muốn cóđịa chỉ IP chogaia.cs.umass.eduoTruy vấn đệ quy:Đặt gánh nặng phân giải tên lên máy chủ tên miền được liên hệTải nặng ở cấp trên của hệ thống phân cấp?Host yêu cầu tạiengineering.nyu.edugaia.cs.umass.edumáy chủ DNS gốcmáy chủ DNS cục bộdns.nyu.edu123456Máy chủ DNS có thẩm quyềndns.cs.umass.edu78Máy chủ .edu TLD  
+
+
+===== PDF PAGE 73 =====
+73
+Caching thông tin DNSoKhi máy chủ tên miền học về 1 ánh xạ, nó sẽ lưu ánh xạ vào bộ nhớ cache và ngay lập tức trả về ánh xạ được lưu trong bộ nhớ cache để đáp ứng truy vấnBộ nhớ đệm cải thiện thời gian phản hồiCác mục cache hết hạn (biến mất) sau một thời gian (TTL)Thông tin trong các máy chủ TLD thường được lưu trong bộ nhớ cache trong các máy chủ DNS cục bộoCác mục được lưu trong bộ nhớ cache có thể lỗi thời (hết hạn)Nếu máy được đặt tên thay đổi địa chỉ IP, có thể không được biết đến trên toàn Internet cho đến khi tất cả các TTL hết hạn!Dịch từ tên đến địa chỉ nỗ lực tốt nhất!
+
+===== PDF PAGE 74 =====
+74
+Các bản ghi DNSDNS:Cơ sở dữ liệu phân tán lưu trữ bản ghi tài nguyên (RR)type=NSnamelà tên miền - domain (vídụ: foo.com)valuelà tên của máy chủtên miền có thẩm quyềnquản lý tên miền này
+Định dạng RR: (name, value, type, ttl)type=Anamelà tên máy( hostname)valuelà địa chỉ IPtype=CNAMEname là bí danh của một tên “gốc” (tênthực)www.ibm.com có tên thực làservereast.backup2.ibm.comvalue là tên gốctype=MXvaluelà tên máy chủ thưSMTP liên kết vớiname
+
+===== PDF PAGE 75 =====
+oCác thông điệp truy vấnqueryvà trả lờireplyđều có cùng một định dạngPhần header của thông điệp:oidentification: số 16 bit xác định 1 truy vấn, hoặc trả lời cho truy vấn có cùng số nàyoCác cờ (flags):Truy vấn hoặc trả lờiMong muốn đệ quyĐệ quy có sẵnTrả lời là có thẩm quyềnidentification flags# questionsquestions (variable # of questions)# additional RRs# authority RRs# answer RRsanswers (variable # of RRs)authority (variable # of RRs)additional info (variable # of RRs)2 bytes2 bytes
+75
+Các thông điệp của giao thức DNS
+
+===== PDF PAGE 76 =====
+oCác thông điệp truy vấnqueryvà trả lờireplyđều có cùng một định dạngidentification flags# questionsquestions (variable # of questions)# additional RRs# authority RRs# answer RRsanswers (variable # of RRs)authority (variable # of RRs)additional info (variable # of RRs)2 bytes2 bytesCác trườngname, type của một truy vấnCác RRs để trả lời truy vấnCác bản ghi thông tin vềcác máy chủ có thẩm quyềnThông tin “hữu ích” bổ sung có thể sẽ dùng76
+Các thông điệp của giao thức DNS
+
+===== PDF PAGE 77 =====
+77
+oVí dụ: khởi tạo mới công ty “Network Utopia”Đăng ký tên miền networkuptopia.com tại mộtDNS registrar – tổ chức nhận đăngký tên miền(như là Network Solutions)•Cung cấp tên, địa chỉ IP của máy chủ tên miền có thẩm quyền quản lý tên miền này(primary và secondary)•Tổ chức quản lý tên miền thêm hai bản ghi vào trong máy chủ quản lý vùng .com:•(networkutopia.com, dns1.networkutopia.com, NS)•(dns1.networkutopia.com, 212.212.212.1, A)Tạo máy chủ có thẩm quyền cục bộ với địa chỉ IP 212.212.212.1•Bản ghi type A cho www.networkuptopia.com•Bản ghi type MX cho máy chủ thư điện tử thuộc networkutopia.com
+Thêm các bản ghi vào trong DNS
+
+===== PDF PAGE 78 =====
+78
+Tấn công DNSTấn công DDoSoBắn phá các máy chủ gốc bằng lưu lượng truy cậpKhông thành công cho đến nayLọc lưu lượngMáy chủ DNS cục bộ lưu trữ IP của máy chủ TLD, cho phép bỏ qua máy chủ gốcoBắn phá các máy chủ TLDTiềm ẩn nhiều nguy hiểm hơnCác cuộc tấn công giả mạooChặn truy vấn DNS, trả về câu trả lờikhông có thậtDNS cache poisoning (Tấn công đầuđộc DNS cache)RFC 4033: Dịch vụ xác thực DNSSEC
+
+===== PDF PAGE 79 =====
+79
+Tầng Ứng dụng – Tổng quanoNguyên lý của các ứng dụng mạngoWeb và HTTPoE-mail, SMTP, IMAPoHệ thống phân giải tên miền DNSoCác ứng dụng P2PoLập trình socket với UDP và TCP
+
+
+===== PDF PAGE 80 =====
+mobile networkhome networkenterprisenetwork
+national or global ISPlocal or regional ISPdatacenter networkcontent provider network
+80
+Kiến trúc Peer-to-peer (P2P)Không có máy chủ luôn hoạt độngCác hệ thống đầu cuối bất kỳ giao tiếp trực tiếp với nhauCác peer yêu cầu dịch vụ từ các peer khác và cung cấp dịch vụ ngược lại cho các peer khác Khả năng tự mở rộng– các peer mới cung cấp thêm dịch vụ mới, cũng như  có thêm nhu cầu mới về dịch vụCác peer có thể kết nối không liên tục và thay đổi địa chỉ IP•Quản lý phức tạpVí dụ: Chia sẻ tập tin P2P [BitTorrent]
+
+
+===== PDF PAGE 81 =====
+81
+Phân phối tập tin: Máy khách – máy chủ và P2PCâu hỏi:mất bao lâu để phân phối tập tin (kích thướcF) từ một máy chủđến N máy?•Lưu lượng tải lên/tải xuống của bên (peer) là tài nguyên giới hạnusuNdNservernetwork (với bang thông lớn)Tập tin, size Fus:lưu lượng tảilên của máy chủui:lưu lượng tảilên bên idi:lưu lượng tảixuống bên i
+u2d2u1d1diui
+
+
+===== PDF PAGE 82 =====
+82
+Thời gian phân phối tập tin: máy khách-máy chủoMáy chủ truyền:phải gửi (tải lên) tuần tự Nbản sao tập tin:Thời gian để gửi một bản sao:F/usThời gian để gửi N bản sao:NF/usoMáy khách:mỗimáy khách phải tải xuốngbản sao của tập tindmin= tốc độ tải xuống của máy khách tải chậmnhấtThời gian để máy khách tải chậm nhất tải xong:F/dminusnetwork
+diuiF
+Tăng tuyến tính trong NThời gian để phân phốitập tin F đến N máy kháchdùng phương phápmáy khách-máy chủDc-s> max{NF/us,,F/dmin}
+
+===== PDF PAGE 83 =====
+83
+Thời gian phân phối tập tin: P2PoMáy chủ:chỉ cần tải lên ít nhất một bản saoThời gian gửi một bản sao:F/usoMột máy khách:máy khách phải tải xuống bảnsao tập tinThời gian tối thiếu để máy khách tải xuống: F/dminoNhiều máy khách:với N máy thì tổng dunglượng tải về là NF bitTốc độ upload tối đa (khống chế tốc độ tải về tốiđa) là us+Sui usnetwork
+diuiF
+Thời gian phân phốiF đến N máy kháchdùng phương pháp P2PDP2P> max{F/us,,F/dmin,,NF/(us+ Sui)}…nhưng mỗi khi thêm bên (peer) tham gia sử dụng dịch vụ, chính nó lại gia tăng năng lực dịch vụTăng tuyến tính trongN…
+
+===== PDF PAGE 84 =====
+84
+So sánh máy khách-máy chủ với P2P: ví dụTốc độ máy khách upload =u,  F/u = 1 hour,  us= 10u,  dmin≥ us00.511.522.533.50 5 10 15 20 25 30 35NMinimum Distribution TimeP2PClient-Server
+
+===== PDF PAGE 85 =====
+85
+Phân phối tập tin P2P: BitTorrent Tập tin được chia thành các khối 256Kb (chunks)Các bên (peer) trong in torrent gửi/nhận các khốitracker:theo dõi các bên (peers) tham gia trong torrenttorrent:nhóm các bên trao đổicác khốiAlice tham gia…
+… lấy danh sáchcác peer từ tracker… và bắt đầu trao đổi cáckhối với các bên trong torrent
+
+
+===== PDF PAGE 86 =====
+86
+Phân phối tập tin P2P: BitTorrent oBên (peer) tham gia torrent:Không có các khối, nhưng sẽ lần lượt tích lũy chúngtừ các bên (peer) khácĐăng ký với tracker để lấy danh sách các bên (peer)khác, kết nối với peer khác và cả “láng giềng” củacác bên (peer) khácoTrong khi tải xuống, bên (peer) tải các khối dữliệu nó đã có tới các bên (peer) khácoBên (peer) có thể thay đổi các bên (peer) mà nóđang trao đổi các khối dữ liệuoCác bên (peer) có thể tham gia hay rời bỏ nhómphân phốioMột khi bên (peer) có toàn bộ tập tin, nó có thể(ích kỷ) rời khỏi hoặc (vị tha) ở lại trong nhóm
+
+
+===== PDF PAGE 87 =====
+87
+BitTorrent: requesting, sending file chunksoYêu cầu các khối:Tại bất kỳ thời điểm nào, các peer khác nhau có các tập con khác nhaucủa các khốiĐịnh kỳ, Alice yêu cầu mỗi bên(peer) cho danh sách các khối màcác bên (peer) cóAlice yêu cầu các khối đang thiếu từcác bên (peer) , hiếm trướcoGửi các khối: tit-for-tatAlice gửi các khối cho bốn bên(peer) nào hiện tại đang gửi các khốicho cô ở tốc độ cao nhất•Alice xiết các yêu cầu từ các peer khác (sẽ không nhận được khối từAlice)•Đánh giá lại top 4 mỗi 10 giâyMỗi 30 giây: chọn ngẫu nhiên mộtpeer khác, bắt đầu gửi các khối•Không xiết các yêu cầu của bên (peer) này•Bên (peer) mới được chọn có thểtham gia và top 4
+
+===== PDF PAGE 88 =====
+88
+BitTorrent: tit-for-tat
+(1) Alice cho Bob kết nối(2) Alice trở thành một trong bốn nhà cung cấp hàng đầu của Bob; Bob đáp lại(3) Bob trở thành một trong bốn nhà cung cấp hàng đầu của AliceKhi tải lên nhanh hơn: dễtìm đượcđối tác tốt hơn, lấy tập tin nhanhhơn!
+
+
+===== PDF PAGE 89 =====
+89
+Tầng Ứng dụng – Tổng quanoNguyên lý của các ứng dụng mạngoWeb và HTTPoE-mail, SMTP, IMAPoHệ thống phân giải tên miền DNSoCác ứng dụng P2PoLập trình socket với UDP và TCP
+
+
+===== PDF PAGE 90 =====
+90
+Lập trình SocketoMục tiêu: tìm hiểu cách xây dựng các ứng dụng máy khách/máy chủ liên lạcbằng socketsoSocket: một cánh cửa giữa tiến trình ứng dụng và giao thức vận chuyểngiữa 2 đầu cuối
+InternetĐược điều khiển bởiHệ điều hành (OS)Được điều khiển bởiNhà phát triển ứng dụng
+transportapplicationphysicallinknetworkprocesstransportapplicationphysicallinknetworkprocesssocket
+
+
+===== PDF PAGE 91 =====
+91
+Lập trình SocketoHai loại socket cho hai dịch vụ vận chuyển:UDP: chuyển gói tin không đảm bảoTCP: chuyển luồng tin có đảm bảo (stream-oriented)Ví dụ ứng dụng:1.Máy khách đọc một dòng ký tự (dữ liệu) từ bàn phím của nó và gửi dữ liệuđến máy chủ2.Máy chủ nhận dữ liệu và chuyển đổi các ký tự thành chữ hoa3.Máy chủ gửi dữ liệu đã sửa đổi đến máy khách4.Máy khách nhận dữ liệu đã sửa đổi và hiển thị dòng trên màn hình của nó
+
+===== PDF PAGE 92 =====
+92
+Lập trình Socket  với UDP oUDP: không có "kết nối" giữa máy khách và máy chủKhông bắt tay trước khi gửi dữ liệuBên gửi đính kèm rõ ràng địa chỉ IP đích và số cổng vào mỗi gói (packet)Bên nhận trích xuất địa chỉ IP của người gửi và số cổng từ gói đã nhậnUDP: dữ liệu được truyền có thể bị mất hoặc nhận không theo thứ tựQuan điểm ứng dụng:UDP cung cấp cơ chế truyền các nhóm bytes (“datagrams”) không tin cậy giữacác tiến trình của máy khách và máy chủ
+
+===== PDF PAGE 93 =====
+93
+Tương tác socket máy khách/máy chủ: UDP
+ĐóngclientSocketĐọc dữ liệu từclientSocketTạo socket:clientSocket =socket(AF_INET,SOCK_DGRAM)Tạo datagram với địa chỉ IP máy chủVà port = x; Gửi datagram quaclientSocketTạo socket, port= x:serverSocket =socket(AF_INET,SOCK_DGRAM)Đọc dữ liệu từserverSocketGhi phản hồi đếnserverSockethỉ định địa chỉ IP và số cổng
+Máy chủ (chạy với địa chỉ máy chủ IP)Máy khách
+
+
+===== PDF PAGE 94 =====
+94
+Ví dụ: UDP clientfrom socket import *serverName = 'hostname'serverPort = 12000clientSocket = socket(AF_INET, SOCK_DGRAM)message = input('Input lowercase sentence:')clientSocket.sendto(message.encode(),(serverName, serverPort))modifiedMessage, serverAddress = clientSocket.recvfrom(2048)print(modifiedMessage.decode())clientSocket.close()
+Python UDPClientBao gồm thư viện socket của PythonTạo UDP socketNhận thông tin nhập bằng bàn phím người dùngĐính kèm tên máy chủ, cổng vàotin nhắn; gửi vào SocketIn ra chuỗi nhận được và đóng SocketĐọc dữ liệu trả lời (byte) từ SocketLưu ý: cập nhật mã nguồn (2023) lên Python 3
+
+===== PDF PAGE 95 =====
+95
+Ví dụ: UDP serverPython UDPServerfrom socket import *serverPort = 12000serverSocket = socket(AF_INET, SOCK_DGRAM)serverSocket.bind(('', serverPort))print('The server is ready to receive')while True:message, clientAddress = serverSocket.recvfrom(2048)modifiedMessage = message.decode().upper()serverSocket.sendto(modifiedMessage.encode(),clientAddress)Tạo UDP socketGắn socket với số cổng 12000Lặp vô hạnĐọc từ UDP Socket vào tin nhắn, lấy địa chỉcủa máy khách (IP máy khách và cổng)Gửi chuỗi chữ hoa trở lại cho máy kháchLưu ý: cập nhật mã nguồn (2023) lên Python 3
+
+===== PDF PAGE 96 =====
+96
+Lập trình Socket với TCPoMáy khách phải liên lạc với máy chủTiến trình máy chủ phải được chạytrướcMáy chủ phải tạo socket để mời máykhách đến liên lạcoMáy khách tiếp xúc máy chủ bằng:Tạo socket TCP, xác định địa chỉ IP, số cổng của tiến trình máy chủKhi máy khách tạo socket: máy kháchTCP thiết lập kết nối đến máy chủTCPoKhi được máy khách liên lạc,máychủ TCP tạo socket mớicho tiếntrình máy chủ để trao đổi với máykhách đóCho phép máy chủ nói chuyện vớinhiều máy kháchSố cổng nguồn được dùng để phânbiệt các máy khách (xem tiếpchương 3)TCP cung cấp việc truyền các byteđáng tin cậy và theo thứ tự giữa máykhách và máy chủQuan điểm ứng dụng:
+
+===== PDF PAGE 97 =====
+97
+Tương tác socket máy khách/máy chủ: TCPMáy chủ (chạy trên HostID)Máy khách
+Chờ các yêu cầu kết nốiđược gửi đếnconnectionSocket =serverSocket.accept()Tạo socket,port=x, cho các yêu cầu được gửi đến:serverSocket = socket()Tạo socket,Kết nối đếnhostid, port=xclientSocket = socket()Gửi yêu cầu sử dụngclientSocketĐọc yêu cầu từconnectionSocketViết phản hồi đếnconnectionSocketTCP connection setupĐóngconnectionSocketĐọc phản hồi từclientSocketĐóngclientSocket
+
+===== PDF PAGE 98 =====
+98
+Ví dụ: TCP clientfrom socket import *serverName = 'servername'serverPort = 12000clientSocket = socket(AF_INET, SOCK_STREAM)clientSocket.connect((serverName,serverPort))sentence = input('Input lowercase sentence:')clientSocket.send(sentence.encode())modifiedSentence = clientSocket.recv(1024)print ('From Server:', modifiedSentence.decode())clientSocket.close()Python TCPClientTạo Socket TCP đến máychủ, cổng từ xa 12000Không cần đính kèm tên máy chủ, cổngLưu ý: cập nhật mã nguồn (2023) lên Python 3
+
+===== PDF PAGE 99 =====
+99
+Ví dụ: TCP serverfrom socket import *serverPort = 12000serverSocket = socket(AF_INET,SOCK_STREAM)serverSocket.bind(('',serverPort))serverSocket.listen(1)print('The server is ready to receive')while True:connectionSocket, addr = serverSocket.accept()sentence = connectionSocket.recv(1024).decode()capitalizedSentence = sentence.upper()connectionSocket.send(capitalizedSentence.encode())connectionSocket.close()
+Python TCPServerTạo Socket TCP chào đónMáy chủ bắt đầu lắng nghecác yêu cầu TCP đếnLặp vô hạnMáy chủ đợi accept() cho yêu cầu đến, socket mới được tạo trở vềĐọc các byte từ socket (nhưngkhông đọc địa chỉ như UDP)Đóng kết nối đến máy khách này(nhưngkhông đóng socket chào đón)Lưu ý: cập nhật mã nguồn (2023) lên Python 3
+
+===== PDF PAGE 100 =====
+100
+Chương 2: Bảng chú giải – GlossaryChú giảiTiếng ViệtTiếng AnhTầng Ứng dụngApplication LayerMáy kháchClientMáy chủServerMạng ngang hàngP2P (Peer-to-peer)Tiến trìnhProcessSocketGiao thứcProtocolThông điệpMessageYêu cầuRequestThời gian cho một gói nhỏ di chuyển từ máy khách đến máy chủ và ngược lạiRound-Trip-Time (RTT)Phản hồiResponsePhần mào đầuHeaderĐịa chỉ IPIP AddressCổngPort
+
+===== PDF PAGE 101 =====
+101
+Chương 2: Bảng chú giải – Glossary (tt)Chú giảiTiếng ViệtTiếng AnhHyperText Transfer ProtocolHTTPCookieWeb cacheProxyKhông bền vữngNon-persistentBền vữngPersistentĐộ hiệu dụng/khả dụngUltilizationKhông trạng tháiStatelessTrình duyệtBrowserUniform Resource LocatorURLHyperText Markup LanguageHTMLUser agentThư điện tửEmailSimple Mail Transfer ProtocolSMTP
+
+===== PDF PAGE 102 =====
+102
+Chương 2: Bảng chú giải – Glossary (tt)Chú giảiTiếng ViệtTiếng AnhPost Office Protocol POPInternet Mail Access ProtocolIMAPHộp thưMailboxDomain Name SystemHệ thống phân giải tên miềnDNSTop Level Domain (TLD)Máy chủ có thẩm quyềnAuthoritive ServerMáy chủ tên miền cục bộLocal Name ServerTTLTruy vấnQueryTrả lờiReplyPhân giải tên miềnName Resolution
+
+===== PDF PAGE 103 =====
+103
+Chương 2: Bảng chú giải – Glossary (tt)Chú giảiTiếng ViệtTiếng AnhTầng Vậng chuyểnTransport LayerUDPTCPKết nối có hướngConnection-orientedTin cậyReliableKhông tin cậyUnreliableDatagram
+
+===== PDF PAGE 104 =====
+104
+Chương 2: Tóm tắtoKiến trúc ứng dụngClient-server (Máy khách – máy chủ)P2P (Mạng ngang hàng)oCác yêu cầu dịch vụ của ứng dụng:Độ tin cậy, băng thông, độ trễoMô hình dịch vụ vận chuyển InternetHướng kết nối, đáng tin cậy: TCPKhông tin cậy, datagrams: UDPoGiao thức cụ thể:HTTPSMTP, IMAPDNSoLập trình Socket: Socket UDP, TCP
+
+===== PDF PAGE 105 =====
+105
+Chương 2: Tóm tắtoQuá trình trao đổi thông điệp yêucầu/phản hồi điển hình:Máy khách yêu cầu thông tin hoặcdịch vụMáy chủ phản hồi bằng dữ liệu, mãtrạng tháiĐịnh dạng thông điệp:Phần mào đầu (headers): Các trường cung cấp thông tin về dữ liệuDữ liệu: Thông tin (payload) đang được truyền đạtoChủ đề quan trọng: Tập trung so với phi tập trungKhông trạng thái và có trạng tháiKhả năng mở rộngTruyền tin cậy so và không tin cậy"Sự phức tạp tại mạng biên"Quan trọng nhất: đã học về các giao thức!

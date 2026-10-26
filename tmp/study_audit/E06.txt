@@ -1,0 +1,178 @@
+[P3] Đề A NMMMT -UIT
+[P5] Thời gian làm bài: 40 phút (Không kể thời gian giao đề)
+[P6] -------------------------
+[P8] Họ tên thí sinh: .................................................................
+[P9] Số báo danh: ......................................................................
+[P10] Câu 1. Tầng nào dưới đây không thuộc mô hình TCP/IP
+[P11]      A. Tầng Applicaton     B. Tầng Session
+[P12]      C. Tầng Link     D. Tầng Network
+[P13] Đáp án đúng: B
+[P14] Câu 2. Trong giao thức RDT, phiên bản nào thực hiện gửi lại gói tin nếu không nhận được gói ACK sau thời gian chờ của nó?
+[P15]      A. RDT 3.0     B. RDT 2.2     C. RDT 2.1     D. RDT 1.0
+[P16] Đáp án đúng: A
+[P17] Câu 3. Tổng độ dài của header của gói tin UDP là bao nhiêu byte?
+[P18]      A. 16     B. 64     C. 32     D. 8
+[P19] Đáp án đúng: D
+[P20] Câu 4. Các giao thức tại Tầng Vận Chuyển Không cung cấp dịch vụ nào sau đây
+[P21]      A. Checksum     B. Đảm bảo độ trễ
+[P22]      C. DeMultiplexing tại bên nhận     D. Multiplexing tại bên gửi
+[P23] Đáp án đúng: B
+[P24] Câu 5. Khi nào kết nối TCP của HTTP không bền vững sẽ được đóng?
+[P25]      A. Khi client nhận được tất cả các đối tượng mà nó yêu cầu.
+[P26]      B. Khi server gửi tất cả các đối tượng mà nó có.
+[P27]      C. Ngay sau khi một đối tượng duy nhất đã được gửi qua kết nối.
+[P28]      D. Khi không có bất kỳ truy vấn nào từ client.
+[P29] Đáp án đúng: C
+[P30] Câu 6. Giao thức RDT nào cung cấp dịch vụ giao hàng tin cậy?
+[P31]      A. RDT 1.0     B. RDT 2.1     C. RDT 2.2     D. RDT 3.0
+[P32] Đáp án đúng: D
+[P33] Câu 7. Mã 404 trong thông điệp trả lời từ Web server về trình duyệt có ý nghĩa là gì?
+[P34]      A. Server không hiểu yêu cầu của client     B. Đối tượng client yêu cầu không có
+[P35]      C. Không tìm thấy Server     D. Yêu cầu của Client không hợp lệ
+[P36] Đáp án đúng: B
+[P37] Câu 8. Thời gian đáp ứng khi một trình duyệt yêu cầu một đối tượng trên Web server nếu HTTP không bền vững là bao nhiêu?
+[P38]      A. RTT+ thời gian truyền tập tin     B. 2RTT+ thời gian truyền tập tin
+[P39]      C. 3RTT+ thời gian truyền tập tin     D. nRTT+ thời gian truyền tập tin
+[P40] Đáp án đúng: B
+[P41] Câu 9. Trình duyệt đang sử dụng phiên bản HTTP nào?
+[P43] GET /cs453/index.html HTTP/1.1<cr><lf>Host: gaia.cs.umass.edu<cr><lf>UserAgent: Mozilla/5.0 (Windows;U; Windows NT 5.1; en-US; rv:1.7.2)Gecko/20040804 Netscape/7.2 (ax) <cr><lf>Accept:ext/xml, application/xml,application/xhtml+xml,text/html;q=0.9,text/plain;q=0.8,image/png,*/*;q=0.5<cr><lf>Accept-Language:en-us,en;q=0.5<cr><lf>Accept-Encoding: zip,deflate<cr><lf>Accept-Charset:ISO-8859-1,utf-8;q=0.7,*;q=0.7<cr><lf>Keep-Alive:300<cr><lf>Connection:keep-alive<cr><lf><cr><lf>
+[P44]      A. 5.0     B. 1.1     C. 7.2     D. 1.0
+[P45] Đáp án đúng: B
+[P46] Câu 10. Ứng dụng nào sau đây không sử dụng giao thức UDP?
+[P47]      A. DNS     B. Các ứng dụng đa phương tiện
+[P48]      C. SNMP     D. Các ứng dụng truyền nhận tin cậy
+[P49] Đáp án đúng: D
+[P50] Câu 11. HTTP (Hypertext Transfer Protocol) là:
+[P51]      A. Giao thức ứng dụng cho phép các máy tính giao tiếp với nhau qua Web và có khả năng liên kết các trang Web với nhau.
+[P52]      B. Giao thức tầng vận chuyển cho phép truyền tải các trang Web.
+[P53]      C. Một thành phần tên miền.
+[P54]      D. Giao diện Web.
+[P55] Đáp án đúng: A
+[P56] Câu 12. Các giao thức ứng dụng hoạt động trên:
+[P57]      A. Tầng trình diễn     B. Tầng phiên
+[P58]      C. Tầng ứng dụng     D. Tầng liên kết dữ liệu
+[P59] Đáp án đúng: C
+[P60] Câu 13. HTTP làm nhiệm vụ gì:
+[P61]      A. Cung cấp một cơ chế để lấy dữ liệu từ server chuyển đến client
+[P62]      B. Hiển thị các trang Web từ xa trên màn hình và giúp người dùng tương tác với chúng
+[P63]      C. Cung cấp giao diện người dùng như các nút bấm, thanh trượt,...
+[P64]      D. Cung cấp dữ liệu từ server sử dụng giao thức chuyển file (File Transport Protocol)
+[P65] Đáp án đúng: A
+[P66] Câu 14. Trên Internet, email được gửi từ máy nguồn bằng cách thiết lập một kết nối TCP
+[P68] đến một cổng cụ thể trên máy đích. Cổng đó là:
+[P69]      A. 80     B. 110     C. 25     D. 404
+[P70] Đáp án đúng: C
+[P71] Câu 15. Giả sử có một bản ghi của dịch vụ DNS là (cnn.com, r1.infor.cnn.com, CNAME)
+[P72]      A. cnn.com là tên viết tắt (rút gọn) của r1.infor.cnn.com
+[P73]      B. r1.infor.cnn.com là tên viết tắt (rút gọn) của cnn.com
+[P74]      C. Cả A và B đều đúng
+[P75]      D. Cả A và B đều sai
+[P76] Đáp án đúng: A
+[P77] Câu 16. Giao thức được sử dụng để 2 bên truyền file là:
+[P78]      A. HTTP     B. FTP     C. SMTP     D. SNMP
+[P79] Đáp án đúng: B
+[P80] Câu 17. Giả sử có một bản ghi của dịch vụ DNS là (alpha.com, 123.4.5.7, NS). Chọn câu
+[P82] trả lời đúng:
+[P83]      A. 123.4.5.7 là địa chỉ IP của máy alpha.com
+[P84]      B. alpha.com là một tên miền, không phải là một máy
+[P85]      C. 123.4.5.7 là địa chỉ IP của máy phục vụ thư (mail server) có tên miền là google.com
+[P86]      D. Tất cả đều sai
+[P87] Đáp án đúng: B
+[P88] Câu 18. Web server thường sử dụng phần mềm chạy trên:
+[P89]      A. Cổng 25     B. Cổng 404     C. Cổng 125     D. Cổng 80
+[P90] Đáp án đúng: D
+[P91] Câu 19. Trong những thông điệp HTTP trả lời dưới đây, thông điệp nào đúng:
+[P92]      A. 200 "OK"     B. 201 "Moved Permanently"
+[P93]      C. 404 "Not Modified"     D. 20 "Not Implemented"
+[P94] Đáp án đúng: A
+[P95] Câu 20. Những thông điệp nào dưới đây được giao thức POP3 hỗ trợ:
+[P96]      A. Kiểm chứng (Authorization)     B. Đọc một thư (Retrieving a message)
+[P97]      C. Xoá một thư     D. Tất cả đều đúng
+[P98] Đáp án đúng: D
+[P99] Câu 21. Giao thức nào thuộc tầng Application:
+[P100]      A. IP     B. HTTP     C. NFS     D. TCP
+[P101] Đáp án đúng: B
+[P102] Câu 22. Cho biết ứng dụng nào thuộc loại Client/Server:
+[P103]      A. WinWord     B. WWW (World Wide Web)
+[P104]      C. Excel     D. Photoshop
+[P105] Đáp án đúng: B
+[P106] Câu 23. Mã 404 trong thông điệp trả lời từ Web server cho Web client có ý nghĩa:
+[P107]      A. Server không hiểu yêu cầu của client     B. Đối tượng client yêu cầu không có
+[P108]      C. Không có câu trả lời nào đúng     D. Yêu cầu của Client không hợp lệ
+[P109] Đáp án đúng: B
+[P110] Câu 24. Giao thức được sử dụng để truyền thư giữa các máy chủ phục vụ thư (Mail server)
+[P112] là:
+[P113]      A. HTTP     B. FTP     C. SMTP     D. POP
+[P114] Đáp án đúng: C
+[P115] Câu 25. Ứng dụng nào sử dụng mô hình client/server:
+[P116]      A. Bit Torrent     B. Email, Web
+[P117]      C. Skype     D. KaZaA
+[P118] Đáp án đúng: B
+[P119] Câu 26. Ứng dụng nào sử dụng mô hình P2P:
+[P120]      A. Telnet     B. Email     C. Web     D. Skype
+[P121] Đáp án đúng: D
+[P122] Câu 27. Các ứng dụng dùng giao thức TCP:
+[P123]      A. Web, truyền file, Email
+[P124]      B. Web, DNS, điện thoại Internet
+[P125]      C. Hội thảo từ xa, điện thoại Internet, streaming media
+[P126]      D. Telnet, DNS, Email
+[P127] Đáp án đúng: A
+[P128] Câu 28. Các ứng dụng dùng giao thức UDP:
+[P129]      A. Web, truyền file, Email
+[P130]      B. Web, DNS, điện thoại Internet
+[P131]      C. Hội thảo từ xa, điện thoại Internet, streaming media
+[P132]      D. Telnet, DNS, Email
+[P133] Đáp án đúng: C
+[P134] Câu 29. Định danh (identifier) của tiến trình bao gồm:
+[P135]      A. Địa chỉ IP của host
+[P136]      B. Địa chỉ IP và số hiệu cổng liên kết với tiến trình trên host
+[P137]      C. Địa chỉ IP nguồn và địa chỉ IP đích
+[P138]      D. Địa chỉ IP nguồn, số hiệu cổng nguồn, địa chỉ IP đích, số hiệu cổng đích
+[P139] Đáp án đúng: B
+[P140] Câu 30. Đâu là một URL:
+[P141]      A. www.someschool.edu     B. 192.168.1.1
+[P142]      C. .../someDept/pic.gif     D. www.someschool.edu/someDept/pic.gif
+[P143] Đáp án đúng: D
+[P144] Câu 31. RTT (Round Trip Time) là:
+[P145]      A. Thời gian khởi tạo kết nối TCP
+[P146]      B. Thời gian để gửi một gói nhỏ đi từ client đến server
+[P147]      C. Thời gian để gửi một gói nhỏ đi từ client đến server và quay lại
+[P148]      D. Thời gian truyền file
+[P149] Đáp án đúng: C
+[P150] Câu 32. Trong cơ sở dữ liệu của DNS lưu trữ các resource record (RR) có dạng:
+[P151]      A. (name, value, type, ttl)     B. (value, name, ttl, type)
+[P152]      C. (value, ttl, name, type)     D. (name, type, ttl, value)
+[P153] Đáp án đúng: A
+[P154] Câu 33. Những giao thức nào sau đây thuộc tầng vận chuyển (Transport Layer) trong mô
+[P156] hình TCP/IP:
+[P157]      A. UDP     B. IP
+[P158]      C. TCP     D. Cả A và C đều đúng
+[P159] Đáp án đúng: D
+[P160] Câu 34. Giao thức nào cung cấp tính năng vận chuyển gói tin có độ tin cậy cao:
+[P161]      A. UDP     B. TCP     C. ARP     D. IP
+[P162] Đáp án đúng: B
+[P163] Câu 35. Khẳng định nào sau đây là đúng khi nói về kỹ thuật sử dụng băng thông hiệu quả:
+[P164]      A. Điều khiển luồng cửa sổ tĩnh     B. Điều khiển luồng tốc độ đảm bảo
+[P165]      C. Điều khiển luồng cửa sổ động     D. Điều khiển luồng tốc độ động
+[P166] Đáp án đúng: C
+[P167] Câu 36. Giao thức TCP hoạt động cùng tầng với những giao thức nào:
+[P168]      A. ARP, RARP     B. UDP
+[P169]      C. TELNET, FTP     D. IP, ARP
+[P170] Đáp án đúng: B
+[P171] Câu 37. Giao thức UDP được sử dụng cho những ứng dụng:
+[P172]      A. Có yêu cầu liên kết     B. Đòi hỏi độ tin cậy cao
+[P173]      C. Yêu cầu độ trễ nhỏ     D. Không đòi hỏi độ tin cậy cao
+[P174] Đáp án đúng: D
+[P175] Câu 38. Trong gói dữ liệu UDP (UDP segment), vùng dữ liệu thực sự bắt đầu từ byte thứ:
+[P176]      A. 4     B. 5     C. 8     D. 9
+[P177] Đáp án đúng: D
+[P178] Câu 39. Để phát hiện lỗi trong gói tin, người ta sử dụng kỹ thuật:
+[P179]      A. Số thứ tự (sequence number)
+[P180]      B. Số thứ tự ghi nhận (acknowledgement number)
+[P181]      C. Bộ định thời (timer)
+[P182]      D. Checksum
+[P183] Đáp án đúng: D
+[P184] Câu 40. Checksum trong gói dữ liệu UDP có độ dài:
+[P185]      A. 4 bit     B. 8 bit     C. 16 bit     D. 32 bit
+[P186] Đáp án đúng: B
+[P187] ----HẾT---

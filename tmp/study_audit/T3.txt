@@ -1,0 +1,2835 @@
+
+
+===== PDF PAGE 1 =====
+ĐẠI HỌC QUỐC GIA THÀNH PHỐ HỒ CHÍ MINH
+TRƯỜNG ĐẠI HỌC CÔNG NGHỆ THÔNG TIN
+Thực hiện bởi Trường Đại học Công nghệ Thông tin, ĐHQG-HCM
+CHƯƠNG 3
+TẦNG VẬN CHUYỂN
+NHẬP MÔN MẠNG MÁY TÍNH
+1
+
+===== PDF PAGE 2 =====
+Computer Networking: 
+A Top-Down Approach 
+8th edition 
+Jim Kurose, Keith Ross
+Pearson, 2020
+A note on the use of these PowerPoint slides:
+We’re making these slides freely available to all (faculty, students, 
+readers). They’re in PowerPoint form so you see the animations; 
+and can add, modify, and delete slides  (including this one) and 
+slide content to suit your needs. They obviously represent a lot of 
+work on our part. In return for use, we only ask the following:
+▪ If you use these slides (e.g., in a class) that you mention their 
+source (after all, we’d like people to use our book!)
+▪ If you post any slides on a www site, that you note that they 
+are adapted from (or perhaps identical to) our slides, and note 
+our copyright of this material.
+For a revision history, see the slide note for this page. 
+Thanks and enjoy!  JFK/KWR
+     All material copyright 1996-2020
+     J.F Kurose and K.W. Ross, All Rights Reserved
+
+
+===== PDF PAGE 3 =====
+3
+Tổng
+ 
+quan
+Mục đích: 
+▪ Hiểu được các nguyên 
+tắc/cơ chế hoạt động:
+• multiplexing, demultiplexing
+• reliable data transfer
+• flow control
+• congestion control
+▪ Hiểu các giao thức:
+• UDP: connectionless 
+transport
+• TCP: connection-oriented 
+reliable transport
+• TCP congestion control
+
+===== PDF PAGE 4 =====
+Nội
+ 
+dung
+4
+oCác dịch vụ tầng vận chuyển
+oMultiplexing and demultiplexing
+oUDP
+oNguyên lý truyền tin cậy
+oTCP
+oTCP - Điều khiển tắc nghẽn
+oSự phát triển của các tính năng của tầng vận chuyển
+
+
+===== PDF PAGE 5 =====
+Giao 
+thức
+ 
+và
+ 
+dịch
+ 
+vụ
+5
+o Cung cấp “truyền thông luận lý 
+(logical communication)” giữa các 
+tiến trình trên các “host” khác nhau
+o Các giao thức vận chuyển hoạt 
+động trên các thiết bị đầu cuối:
+• Bên gửi: chia các “messages – thông 
+điệp” thành các “segments” và chuyển 
+xuống tầng mạng.
+• Bên nhận: ghép các segment thành 
+messages, chuyển đến tầng ứng dụng.
+o 2 giao thức chính: TCP và UDP
+mobile network
+home network
+enterprise
+          network
+national or global ISP
+local or 
+regional ISP
+datacenter 
+network
+content 
+provider 
+network
+application
+transport
+network
+data link
+physical
+application
+transport
+network
+data link
+physical
+
+===== PDF PAGE 6 =====
+physical
+link
+network (IP)
+application
+physical
+link
+network (IP)
+application
+transport
+Hoạt
+ 
+động
+ 
+của
+ 
+tầng
+ 
+vận
+ 
+chuyển
+6
+Bên gửi:
+app. msg▪ Nhận message từ tầng ứng 
+dụng (nhận thư)
+▪ Xác định giá trị header 
+(thông tin phong bì)
+▪ Tạo segment (bỏ thư vào 
+phong bì)
+▪ Chuyển segment đến 
+tầng mạng
+transport ThTh app. msg
+
+===== PDF PAGE 7 =====
+physical
+link
+network (IP)
+application
+physical
+link
+network (IP)
+application
+transport
+Transport Layer Actions
+7
+transport
+Bên nhận:
+app.  msg
+▪ Bỏ header, trích xuất 
+thông điệp của tầng ứng 
+dụng
+▪ Kiểm tra giá trị header
+▪ Nhận segment từ tầng 
+mạng
+Th app. msg
+▪ Chuyển thông điệp đến 
+tầng ứng dụng qua socket
+
+===== PDF PAGE 8 =====
+Giao 
+thức
+ 
+tầng
+ 
+vận
+ 
+chuyển
+8
+mobile network
+home network
+enterprise
+          network
+national or global ISP
+local or 
+regional ISP
+datacenter 
+network
+content 
+provider 
+network
+application
+transport
+network
+data link
+physical
+application
+transport
+network
+data link
+physical
+oTCP: Transmission Control Protocol
+▪ Tin cậy, vận chuyển đúng thứ tự
+▪ Điều khiển tắc nghẽn
+▪ Điều khiển luồng
+▪ Thiết lập kết nối
+oUDP: User Datagram Protocol
+▪ Không tin cậy, truyền nhận không 
+đúng thứ tự
+▪ Phần mở rộng của giao thức IP 
+“best-effort”
+oKhông cung cấp các dịch vụ sau: 
+▪ Đảm bảo độ trễ
+▪ Đảm bảo băng thông
+
+===== PDF PAGE 9 =====
+Nội
+ 
+dung
+9
+oCác dịch vụ tầng vận chuyển
+oMultiplexing and demultiplexing
+oUDP
+oNguyên lý truyền tin cậy
+oTCP
+oTCP - Điều khiển tắc nghẽn
+oSự phát triển của các tính năng của tầng vận chuyển
+
+
+===== PDF PAGE 10 =====
+transport
+physical
+link
+network transport
+application
+physical
+link
+network
+transport
+application
+physical
+link
+network
+HTTP server
+client
+HTTP msg
+10
+
+===== PDF PAGE 11 =====
+transport
+physical
+link
+network transport
+application
+physical
+link
+network
+transport
+application
+physical
+link
+network
+HTTP server
+client
+HTTP msgHt
+HTTP msg
+11
+
+===== PDF PAGE 12 =====
+transport
+physical
+link
+network transport
+application
+physical
+link
+network
+transport
+application
+physical
+link
+network
+HTTP server
+client
+HTTP msgHt
+HTTP msgHtHn
+HTTP msg
+12
+
+===== PDF PAGE 13 =====
+transport
+physical
+link
+network transport
+application
+physical
+link
+network
+transport
+application
+physical
+link
+network
+HTTP server
+client
+HTTP msgHtHn
+13
+
+===== PDF PAGE 14 =====
+transport
+physical
+link
+network transport
+application
+physical
+link
+network
+transport
+application
+physical
+link
+network
+HTTP server
+client
+HTTP msgHt
+HTTP msg
+14
+HTTP msgHtHn
+
+===== PDF PAGE 15 =====
+transport
+physical
+link
+network transport
+application
+physical
+link
+network
+transport
+application
+physical
+link
+network
+HTTP server
+client
+HTTP msgHt
+HTTP msg
+15
+HTTP msgHt
+
+===== PDF PAGE 16 =====
+transport
+physical
+link
+network transport
+application
+physical
+link
+network
+transport
+application
+physical
+link
+network
+client
+HTTP msgHt
+HTTP msg
+16
+HTTP msg
+Q: Làm thế nào mà tầng vận chuyển biết gửi đúng message 
+tới trình duyệt Firefox thay vì Netflix hoặc Skype?
+
+===== PDF PAGE 17 =====
+Multiplexing/demultiplexing
+17
+process
+socket
+Sử dụng thông tin trong header
+để chuyển segment nhận được 
+đến đúng socket.
+demultiplexing tại bên nhận:
+transport
+application
+physical
+link
+network
+P2P1
+transport
+application
+physical
+link
+network
+P4
+transport
+application
+physical
+link
+network
+P3
+Nhận dữ liệu từ socket, thêm 
+header của tầng vận chuyển
+multiplexing tại bên gửi:
+
+===== PDF PAGE 18 =====
+Demultiplexing 
+làm
+ 
+việc
+ 
+thế
+ 
+nào
+?
+18
+o Khi host nhận được một IP 
+“datagram”
+▪ Mỗi datagram có địa chỉ IP nguồn và IP 
+đích
+▪ Mỗi datagram này chứa 1 segment (đơn 
+vị dữ liệu của tầng vận chuyển)
+o Mỗi segment có port nguồn và port
+đich
+▪ “Host” dùng địa chỉ IP & port numbers để 
+chuyển segment đến đúng socket tương 
+ứng
+source port # dest port #
+32 bits
+application
+data 
+(payload)
+other header fields
+TCP/UDP segment format
+
+===== PDF PAGE 19 =====
+transport
+application
+physical
+link
+network
+P3
+transport
+application
+physical
+link
+network
+P1
+transport
+application
+physical
+link
+network
+P4
+mySocket = 
+socket(AF_INET,SOCK_STREAM)
+mySocket.bind(myaddr,9157);
+source port: 9157
+dest port: 6428
+source port: 6428
+dest port: 9157
+source port: ?
+dest port: ?
+source port: ?
+dest port: ?
+A
+B
+C
+D
+mySocket = 
+socket(AF_INET,SOCK_STREAM)
+mySocket.bind(myaddr,5775);
+mySocket = 
+socket(AF_INET,SOCK_DGRAM)
+mySocket.bind(myaddr,6428);
+Ví
+ 
+dụ
+ 
+về
+ 
+“connectionless 
+-
+ 
+không
+ 
+kết
+ 
+nối
+”
+19
+
+===== PDF PAGE 20 =====
+20
+Hướng
+ 
+kết
+ 
+nối
+o TCP socket được xác định 
+bởi 4-tuple (4 thông tin 
+chính): : 
+▪ source IP address
+▪ source port number
+▪ dest IP address
+▪ dest port number
+o demux: bên nhận sử dụng cả 
+4 thông tin chính để chuyển 
+segment đến đúng socket
+o Server có thể hỗ trợ nhiều 
+TCP socket cùng lúc:
+▪ Mỗi socket được xác định bởi 4 
+thông tin
+▪ Mỗi socket tương ứng với một 
+client đang kết nối với nó
+
+===== PDF PAGE 21 =====
+Ví
+ 
+dụ
+ 
+về
+ 
+“
+hướng
+ 
+kết
+ 
+nối
+”
+21
+transport
+application
+physical
+link
+network
+P1
+transport
+application
+physical
+link
+P4
+transport
+application
+physical
+link
+network
+P2
+host: IP 
+address A
+host: IP 
+address C
+network
+P6P5
+P3
+source IP,port: A,9157
+dest IP, port: B,80
+source IP,port: B,80
+dest IP,port: A,9157 source IP,port: C,5775
+dest IP,port: B,80
+source IP,port: C,9157
+dest IP,port: B,80
+server: IP 
+address B
+Three segments, all destined to IP address: B,
+ dest port: 80 are demultiplexed to different sockets
+
+
+===== PDF PAGE 22 =====
+Tổng
+ 
+kết
+ 
+về
+ 
+Multiplexing, demultiplexing
+22
+o Multiplexing, demultiplexing: dựa trên giá trị trong header của 
+segment, datagram
+▪ UDP: demultiplexing chỉ sử dụng destination port number 
+▪ TCP: demultiplexing sử dụng 4 thông tin: source and destination IP 
+addresses, and port numbers
+o Multiplexing/demultiplexing hoạt động ở tất cả các tầng
+
+===== PDF PAGE 23 =====
+Nội
+ 
+dung
+23
+oCác dịch vụ tầng vận chuyển
+oMultiplexing and demultiplexing
+oUDP
+oNguyên lý truyền tin cậy
+oTCP
+oTCP - Điều khiển tắc nghẽn
+oSự phát triển của các tính năng của tầng vận chuyển
+
+
+===== PDF PAGE 24 =====
+UDP: User Datagram Protocol
+24
+o Một giao thức đơn giản
+o Cung cấp dịch vụ “best effort”
+▪ Segment có thể mất 
+▪ Segment có thể đến không đúng 
+thứ tự
+o Không có bước thiết lập kết 
+nối (bước này làm tăng độ 
+trễ)
+o Đơn giản: không lưu trữ 
+trạng thái kết nối
+o Header nhỏ gọn
+o Không điều khiển tắc nghẽn
+▪ Segment đi nhanh nhất có 
+thể
+Tại sao vẫn dùng UDP?
+o “connectionless”:
+▪ Không có bước thiết lập kết nối
+▪ Mỗi segment được xử lý độc 
+lập
+
+===== PDF PAGE 25 =====
+UDP: User Datagram Protocol
+25
+o UDP được sử dụng bởi:
+▪ streaming multimedia apps (loss tolerant, rate sensitive)
+▪ DNS
+▪ SNMP
+▪ HTTP/3
+o Nếu cần truyền tin cậy qua UDP(e.g., HTTP/3): 
+▪ Thêm xử lý tin cậy ở tầng ứng dụng
+▪ Thêm điều khiển tắc nghẽn ở tầng ứng dụng
+
+===== PDF PAGE 26 =====
+SNMP serverSNMP client
+transport
+(UDP)
+physical
+link
+network (IP)
+application
+UDP: 
+Hoạt
+ 
+động
+27
+transport
+(UDP)
+physical
+link
+network (IP)
+application
+
+===== PDF PAGE 27 =====
+SNMP serverSNMP client
+transport
+(UDP)
+physical
+link
+network (IP)
+application
+transport
+(UDP)
+physical
+link
+network (IP)
+application
+UDP: 
+Hoạt
+ 
+động
+28
+Bên gửi:
+SNMP msg▪ Nhận message từ tầng 
+ứng dụng 
+▪ Xác định giá trị header 
+▪ Tạo segment 
+▪ Chuyển segment đến 
+tầng mạng
+UDPhUDPh SNMP msg
+
+===== PDF PAGE 28 =====
+SNMP serverSNMP client
+transport
+(UDP)
+physical
+link
+network (IP)
+application
+transport
+(UDP)
+physical
+link
+network (IP)
+application
+UDP: 
+Hoạt
+ 
+động
+29
+Bên nhận:
+SNMP msg
+▪ Bỏ header, lấy 
+messages
+▪ Kiểm tra lỗi với giá trị 
+checksum
+▪ Nhận segment từ tầng 
+mạng
+UDPh SNMP msg
+▪ Chuyển message đến 
+tầng ứng dụng qua 
+socket
+
+===== PDF PAGE 29 =====
+UDP header
+30
+source port # dest port #
+32 bits
+application
+data 
+(payload)
+UDP segment format
+length checksum
+length, chiều dài tính 
+theo byte của segment, 
+bao gồm cả header
+Dữ liệu tầng ứng dụng
+
+===== PDF PAGE 30 =====
+UDP checksum
+31
+Gửi:                          5               6                11
+Mục tiêu: phát hiện lỗi trong quá trình truyền (các bit bị lỗi, từ 0 thành 1 hoặc 
+ngược lại)
+Nhận:     4               6                11
+1st number 2nd number sum
+receiver-computed 
+checksum
+sender-computed 
+checksum (as received)
+=
+
+===== PDF PAGE 31 =====
+Internet checksum
+32
+o Mục tiêu: phát hiện lỗi trong quá trình truyền (các bit bị lỗi, từ 0 thành 
+1 hoặc ngược lại)
+sender:
+oChia nội dung của segment
+(bao gồm các trường tiêu 
+đề UDP và địa chỉ IP) dưới 
+dạng chuỗi 16 bit
+ochecksum: Tính tổng bù 1 
+(one’s complement sum)
+oĐặt kết quả vào phần UDP 
+checksum trong header
+receiver:
+oTính checksum của segment nhận 
+được
+oSo sánh kết quả tính được và nội 
+dung phần checksum
+▪ Không bằng nhau – có lỗi
+▪ Bằng nhau – không phát hiện lỗi. 
+Tuy nhiên….
+
+===== PDF PAGE 32 =====
+Internet checksum: 
+ví
+ 
+dụ
+33
+o Ví dụ: cộng 2 chuỗi 16-bit 
+sum
+checksum
+Note: nếu kết quả là 17 bits, lấy bit cuối cùng bên trái cộng vào kết quả.
+1 1 1 0 0 1 1 0 0 1 1 0 0 1 1 0
+1 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1
+1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1wraparound
+1 0 1 1 1 0 1 1 1 0 1 1 1 1 0 0
+0 1 0 0 0 1 0 0 0 1 0 0 0 0 1 1
+
+===== PDF PAGE 33 =====
+Internet checksum: 
+điểm
+ 
+yếu
+!
+34
+o Ví dụ: cộng 2 chuỗi 16-bit 
+sum
+checksum
+1 1 1 0 0 1 1 0 0 1 1 0 0 1 1 0
+1 1 0 1 0 1 0 1 0 1 0 1 0 1 0 1
+1 1 0 1 1 1 0 1 1 1 0 1 1 1 0 1 1wraparound
+1 0 1 1 1 0 1 1 1 0 1 1 1 1 0 0
+0 1 0 0 0 1 0 0 0 1 0 0 0 0 1 1
+0 1 
+1 0 
+Khi có 2 bit bị 
+thay đổi, 
+checksum không 
+thay đổi
+
+===== PDF PAGE 34 =====
+Tổng
+ 
+kết
+: UDP
+35
+o Giao thức đơn giản: 
+▪ Segment có thể bị mất, sai thứ tự
+▪ “Best-effort”: gửi và hy vọng có kết quả tốt nhất
+o UDP vẫn có điểm cộng:
+▪ Không có quá trình thiết lập kết nối
+▪ Có checksum để kiểm tra lỗi
+o Các tính năng bổ sung thì đưa lên tầng ứng dụng (e.g., HTTP/3)
+
+===== PDF PAGE 35 =====
+Nội
+ 
+dung
+36
+oCác dịch vụ tầng vận chuyển
+oMultiplexing and demultiplexing
+oUDP
+oNguyên lý truyền tin cậy
+oTCP
+oTCP - Điều khiển tắc nghẽn
+oSự phát triển của các tính năng của tầng vận chuyển
+
+
+===== PDF PAGE 36 =====
+Nguyên
+ 
+lý
+ 
+truyền
+ 
+tin 
+cậy
+37
+sending 
+process
+data
+receiving 
+process
+data
+reliable channel
+application
+transport
+Tổng quát dịch vụ truyền tin cậy
+
+===== PDF PAGE 37 =====
+Principles of reliable 
+d
+ata 
+t
+ransfer 
+38
+sending 
+process
+data
+receiving 
+process
+dataapplication
+transport
+Triển khai cụ thể của dịch vụ truyền tin cậy
+unreliable channel
+network
+transport
+sender-side of
+reliable data 
+transfer protocol
+receiver-side
+of reliable data 
+transfer protocol
+sending 
+process
+data
+receiving 
+process
+data
+reliable channel
+application
+transport
+reliable service abstraction
+
+===== PDF PAGE 38 =====
+Principles of reliable 
+d
+ata 
+t
+ransfer 
+39
+sending 
+process
+data
+receiving 
+process
+dataapplication
+transport
+Triển khai cụ thể của dịch vụ truyền tin cậy
+unreliable channel
+network
+transport
+sender-side of
+reliable data 
+transfer protocol
+receiver-side
+of reliable data 
+transfer protocolĐộ phức tạp của giao thức 
+truyền dữ liệu đáng tin cậy sẽ 
+phụ thuộc (mạnh mẽ) vào các 
+đặc điểm của kênh không đáng 
+tin cậy (mất, hỏng, sắp xếp lại dữ 
+liệu?)
+
+===== PDF PAGE 39 =====
+Principles of reliable 
+d
+ata 
+t
+ransfer 
+40
+sending 
+process
+data
+receiving 
+process
+dataapplication
+transport
+Triển khai cụ thể của dịch vụ truyền tin cậy
+unreliable channel
+network
+transport
+sender-side of
+reliable data 
+transfer protocol
+receiver-side
+of reliable data 
+transfer protocolo Bên gửi, bên nhận không biết 
+“trạng thái” của nhau, ví dụ: đã 
+nhận được thông điệp chưa?
+▪ trừ khi được liên lạc qua 
+các thông điệp
+
+
+===== PDF PAGE 40 =====
+Reliable data transfer protocol (
+rdt
+): interfaces
+41
+sending 
+process
+data
+receiving 
+process
+data
+unreliable channel
+sender-side
+implementation of 
+rdt reliable data 
+transfer protocol
+receiver-side
+implementation of 
+rdt reliable data 
+transfer protocol
+rdt_send()
+udt_send() rdt_rcv()
+deliver_data()
+dataHeader dataHeader
+rdt_send(): được gọi bởi tầng ứng 
+dụng). Chuyển dữ liệu cần truyền 
+đến tầng Ứng dụng bên nhận
+udt_send(): được gọi bởi rdt, 
+để truyền các gói trên kênh 
+không tin cậy đến nơi nhận
+rdt_rcv(): được gọi khi gói dữ 
+liệu đến kênh của bên nhận
+deliver_data(): được gọi bởi rdt để 
+chuyển dữ liệu đến tầng cao hơn
+Bi-directional communication over 
+unreliable channel
+data
+packet
+
+===== PDF PAGE 41 =====
+Truyền
+ 
+dữ
+ 
+liệu
+ 
+tin 
+cậy
+: 
+bắt
+ 
+đầu
+42
+Chúng ta sẽ:
+o Từng bước phát triển truyền dữ liệu tin cậy (rdt) bên phía người gửi và 
+nhận
+o Chỉ xem xét việc truyền dữ liệu theo một chiều (bên gửi đến bên nhận)
+o Sử dụng finite state machines (FSM) để xác định bên gửi và nhận
+trạng 
+thái
+1
+trạng 
+thái 2
+Sự kiện gây chuyển trạng thái
+Các hành động được thực hiện khi
+chuyển trạng thái
+Trạng thái: khi ở “trạng 
+thái” này thì trạng 
+thái kế tiếp được xác 
+định duy nhất bởi sự 
+kiện kế tiếp
+Sự kiện
+Các hành động
+
+===== PDF PAGE 42 =====
+Tổng
+ 
+quan
+43
+RDT1.0
+RDT2.0
+RDT2.1
+RDT2.2
+RDT3.0
+
+===== PDF PAGE 43 =====
+Truyền
+ 
+dữ
+ 
+liệu
+ 
+tin 
+cậy
+44
+• Kênh truyền tin cậy hoàn 
+toànRDT1.0
+
+===== PDF PAGE 44 =====
+rdt1.0 
+-
+ 
+Truyền
+ 
+dữ
+ 
+liệu
+ 
+tin 
+cậy
+ 
+hoàn
+ 
+toàn
+45
+chờ gọi 
+từ tầng 
+trên packet = make_pkt(data)
+udt_send(packet)
+rdt_send(data)
+extract (packet,data)
+deliver_data(data)
+chờ gọi 
+từ tầng 
+dưới
+rdt_rcv(packet)
+bên gửi bên nhận
+
+
+===== PDF PAGE 45 =====
+Truyền
+ 
+dữ
+ 
+liệu
+ 
+tin 
+cậy
+46
+• Kênh truyền tin cậy hoàn 
+toànRDT1.0
+• Vấn đề: Kênh truyền có lỗiRDT2.0
+
+===== PDF PAGE 46 =====
+rdt2.0: 
+Kênh
+ 
+truyền
+ 
+xảy
+ 
+ra
+ 
+lỗi
+47
+o Kênh cơ bản có thể đảo các bit trong packet
+▪ checksum để kiểm tra các lỗi
+o Câu hỏi: làm sao khôi phục các lỗi:
+▪ acknowledgements (ACKs): bên nhận báo bên gửi là gói tin đã được 
+nhận thành công. 
+▪ negative acknowledgements (NAKs): bên nhận báo bên gửi là gói tin đã 
+bị lỗi
+▪ Bên gửi sẽ gửi lại gói tin nếu nhận được NAK
+o Cơ chế mới trong rdt2.0:
+▪ Phát hiện lỗi
+▪ Phản hồi từ bên nhận: ACK,NAK từ bên nhận gửi lại cho bên gửi
+Làm thế nào để con người phục hồi 
+“lỗi” trong cuộc trò chuyện?
+
+===== PDF PAGE 47 =====
+rdt2.0: 
+Kênh
+ 
+truyền
+ 
+xảy
+ 
+ra
+ 
+lỗi
+48
+bên gửi bên nhận
+Nhận pkt, pkt lỗi
+Nhận pkt
+Gửi ack
+Gửi nak
+Gửi ack
+Nhận ack
+Gửi lại pkt
+Gửi pkt
+Nhận nak
+Gửi pkt
+Nhận pkt
+pkt
+pkt
+pkt
+nak
+ack
+ack
+
+===== PDF PAGE 48 =====
+rdt2.0: 
+hoạt
+ 
+động
+ 
+khi
+ 
+không
+ 
+lỗi
+49
+Chờ gọi 
+từ tầng 
+trên
+snkpkt = make_pkt(data, checksum)
+udt_send(sndpkt)
+extract(rcvpkt,data)
+deliver_data(data)
+udt_send(ACK)
+rdt_rcv(rcvpkt) && 
+   notcorrupt(rcvpkt)
+rdt_rcv(rcvpkt) && isACK(rcvpkt)
+udt_send(sndpkt)
+rdt_rcv(rcvpkt) &&
+   isNAK(rcvpkt)
+udt_send(NAK)
+rdt_rcv(rcvpkt) && 
+  corrupt(rcvpkt)
+Chờ ACK 
+hoặc 
+NAK
+Chờ gọi 
+từ tầng 
+dưới
+rdt_send(data)
+L
+
+===== PDF PAGE 49 =====
+rdt2.0: 
+hoạt
+ 
+động
+ 
+khi
+ 
+có
+ 
+lỗi
+50
+Chờ gọi 
+từ tầng 
+trên
+snkpkt = make_pkt(data, checksum)
+udt_send(sndpkt)
+extract(rcvpkt,data)
+deliver_data(data)
+udt_send(ACK)
+rdt_rcv(rcvpkt) && 
+   notcorrupt(rcvpkt)
+rdt_rcv(rcvpkt) && isACK(rcvpkt)
+udt_send(sndpkt)
+rdt_rcv(rcvpkt) &&
+   isNAK(rcvpkt)
+udt_send(NAK)
+rdt_rcv(rcvpkt) && 
+  corrupt(rcvpkt)
+Chờ ACK 
+hoặc 
+NAK
+Chờ gọi 
+từ tầng 
+dưới
+rdt_send(data)
+L
+
+===== PDF PAGE 50 =====
+Truyền
+ 
+dữ
+ 
+liệu
+ 
+tin 
+cậy
+51
+• Kênh truyền tin cậy hoàn 
+toànRDT1.0
+• Vấn đề: Kênh truyền có lỗi
+• Giải quyết:  ACK và NAKRDT2.0
+• Vấn đề:  ACK/NAK lỗiRDT2.1
+
+===== PDF PAGE 51 =====
+rdt2.0 
+có
+ 
+lỗ
+ 
+hổng
+ 
+nghiêm
+ 
+trọng
+!
+52
+bên gửi bên nhận
+Nhận pkt
+Nhận pkt
+Gửi ack
+Gửi ack
+Gửi ack
+Nhận ack
+Gửi pkt
+Gửi lại pkt
+Nhận ack, ack lỗi
+Gửi pkt
+Nhận pkt
+a
+b
+a
+ack
+ack
+ack
+a  b  c a a b Trùng
+
+===== PDF PAGE 52 =====
+rdt2.1 
+bên
+ 
+gửi
+, 
+xử
+ 
+lý
+ 
+các
+ 
+ACK/NAK 
+bị
+ 
+hỏng
+53
+bên gửi bên nhận
+Nhận pkt0
+Nhận pkt1
+Gửi ack0
+Gửi ack0
+Gửi ack1
+Nhận ack0
+Gửi pkt1
+Gửi lại pkt0
+Nhận ack0, ack0 lỗi
+Gửi pkt0
+Nhận pkt0
+pkt0
+pkt1
+pkt0
+ack0
+ack0
+ack1
+a  b  c a ab Trùng
+
+===== PDF PAGE 53 =====
+rdt2.1 
+bên
+ 
+gửi
+, 
+xử
+ 
+lý
+ 
+các
+ 
+ACK/NAK 
+bị
+ 
+hỏng
+54
+bên gửi bên nhận
+Nhận pkt
+Nhận pkt
+Gửi ack
+Gửi ack
+Gửi ack
+Nhận ack
+Gửi pkt
+Gửi lại pkt
+Nhận ack, ack lỗi
+Gửi pkt
+Nhận pkt
+a
+b
+a
+ack
+ack
+ack
+a  b  c a a b
+bên gửi bên nhận
+Nhận pkt0
+Nhận pkt1
+Gửi ack0
+Gửi ack0
+Gửi ack1
+Nhận ack0
+Gửi pkt1
+Gửi lại pkt0
+Nhận ack0, ack0 lỗi
+Gửi pkt0
+Nhận pkt0
+pkt0
+pkt1
+pkt0
+ack0
+ack0
+ack1
+a  b  c a ab
+
+===== PDF PAGE 54 =====
+Truyền
+ 
+dữ
+ 
+liệu
+ 
+tin 
+cậy
+57
+• Kênh truyền tin cậy hoàn toànRDT1.0
+• Vấn đề: Kênh truyền có lỗi
+• Giải quyết:  ACK và NAKRDT2.0
+• Vấn đề:  ACK/NAK lỗi
+• Giải quyết: Đánh số gói tin {0,1}RDT2.1
+RDT2.2
+
+===== PDF PAGE 55 =====
+rdt2.2: 
+một
+ 
+giao
+ 
+thức
+ 
+không
+ 
+cần
+ 
+NAK
+58
+o Chức năng giống như rdt2.1, chỉ dùng các ACK
+o Thay cho NAK, bên nhận gởi ACK cho gói cuối cùng được nhận 
+thành công
+▪ Bên nhận phải ghi rõ số thứ tự của gói vừa được ACK
+o ACK bị trùng tại bên gửi dẫn tới kết quả giống như hành động 
+của NAK: truyền lại gói vừa rồi
+
+===== PDF PAGE 56 =====
+rdt2.2: 
+một
+ 
+giao
+ 
+thức
+ 
+không
+ 
+cần
+ 
+NAK
+59
+bên gửi bên nhận
+Nhận pkt1, pkt1 lỗi
+Nhận pkt1
+Gửi ack1
+Gửi ack0
+Gửi ack1
+Nhận nak1
+Gửi pkt1
+Gửi pkt1
+Nhận ack0
+Gửi pkt0
+Nhận pkt0
+pkt0
+pkt1
+pkt1
+ack0
+nak1
+ack1
+bên gửi bên nhận
+Nhận pkt1, pkt1 lỗi
+Nhận pkt1
+Gửi ack0
+Gửi ack0
+Gửi ack1
+Nhận ack0
+Gửi pkt1
+Gửi pkt1
+Nhận ack0
+Gửi pkt0
+Nhận pkt0
+pkt0
+pkt1
+pkt1
+ack0
+ack0
+ack1
+
+
+===== PDF PAGE 57 =====
+Truyền
+ 
+dữ
+ 
+liệu
+ 
+tin 
+cậy
+61
+• Kênh truyền tin cậy hoàn toànRDT1.0
+• Vấn đề: Kênh truyền có lỗi
+• Giải quyết:  ACK và NAKRDT2.0
+• Vấn đề:  ACK/NAK lỗi
+• Giải quyết: Đánh số gói tin {0,1}RDT2.1
+• Không cần NAKRDT2.2
+RDT3.
+0
+•Vấn đề: Mất gói tin
+
+===== PDF PAGE 58 =====
+rdt3.0: 
+các
+ 
+kênh
+ 
+với
+ 
+lỗi
+ 
+và
+ 
+mất
+ 
+mát
+62
+Giả định mới: kênh truyền cũng 
+có thể làm mất gói (dữ liệu, 
+các ACK)
+▪ checksum, số thứ tự, các ACK, 
+việc truyền lại sẽ hỗ trợ… nhưng 
+không đủ
+Cách tiếp cận: bên gửi chờ ACK 
+trong khoảng thời gian “hợp lý” 
+oTruyền lại nếu không nhận 
+được ACK trong khoảng thời 
+gian này
+oNếu gói (hoặc ACK) chỉ trễ 
+(không mất):
+▪ Việc truyền lại sẽ gây trùng, 
+nhưng số thứ tự đã xử lý trường 
+hợp này
+▪ Bên nhận phải xác định số thứ tự 
+của gói vừa gửi ACK
+oYêu cầu bộ định thì (timer)
+
+===== PDF PAGE 59 =====
+Hoạt
+ 
+động
+ 
+của
+ 
+rdt3.0
+63
+bên gửi bên nhận
+Nhận pkt1
+Gửi pkt0
+Gửi ack0
+Nhận ack1
+Nhận ack0
+Nhận ack0
+Nhận pkt0
+Gửi pkt1
+Nhận ack1
+Gửi pkt0
+Nhận pkt0
+pkt0
+pkt0
+pkt1
+ack1
+ack0
+ack0
+(a) Không mất mát
+bên gửi bên nhận
+Nhận pkt1
+Nhận pkt0
+Gửi ack0
+Gửi ack1
+Gửi ack0
+Nhận ack0
+Gửi pkt0
+Nhận pkt1
+Nhận ack1
+Gửi pkt0
+Nhận pkt0
+pkt0
+pkt0
+ack1
+ack0
+ack0
+(b) Mất gói
+pkt1
+X
+loss
+pkt1
+timeout
+Gửi lại pkt1
+
+===== PDF PAGE 60 =====
+Hoạt
+ 
+động
+ 
+của
+ 
+rdt3.0
+64
+Nhận pkt1
+Gửi ack1
+(phát hiện trùng gói)
+pkt1
+bên gửi bên nhận
+Nhận pkt1
+Nhận pkt0
+Gửi ack0
+Gửi ack1
+Gửi ack0
+Nhận ack0
+Gửi pkt0
+Gửi pkt1
+Nhận ack1
+Gửi pkt0
+Nhận pkt0
+pkt0
+pkt0
+ack1
+ack0
+ack0
+(c) Mất ACK
+ack1
+X
+loss
+pkt1
+timeout
+Gửi lại pkt1
+Nhận pkt1
+Gửi ack1
+(phát hiện trùng)
+pkt1
+bên gửi bên nhận
+Nhận pkt1
+Gửi ack0
+Nhận ack0
+Gửi pkt1
+Gửi pkt0
+Nhận pkt0
+pkt0
+ack0
+(d) Thời gian chờ quá ngắn / delayed ACK
+pkt1
+timeout
+resend pkt1
+ack1
+Gửi ack1
+send pkt0
+rcv ack1
+pkt0
+ack1
+ack0
+send pkt0
+rcv ack1 pkt0
+Nhận pkt0
+Gửi ack0ack0
+Nhận pkt0
+Gửi ack0
+(phát hiện trùng)
+
+===== PDF PAGE 61 =====
+Tổng
+ 
+kết
+ 
+về
+ 
+Truyền
+ 
+dữ
+ 
+liệu
+ 
+tin 
+cậy
+65
+• Kênh truyền tin cậy hoàn 
+toànRDT1.0
+• Vấn đề: Kênh truyền có lỗi
+• Giải quyết:  ACK và NAKRDT2.0
+• Vấn đề:  ACK/NAK lỗi
+• Giải quyết: Đánh số gói tin 
+{0,1}
+RDT2.1
+• Không cần NAKRDT2.2
+• Vấn đề: Mất gói tin
+• Giải quyết: Thêm biến timerRDT3.0
+
+===== PDF PAGE 62 =====
+Hiệu
+ 
+suất
+ 
+của
+ 
+rdt3.0 
+(stop
+-
+and
+-
+wait)
+66
+o Ví dụ: 1 Gbps link, truyền một gói tin 8000 bit trên kênh truyền 
+có độ trễ lan truyền 15 ms
+o U sender: utilization – tỉ lệ thời gian truyền của bên gửi 
+Dtrans = L
+R
+8000 bits
+109 bits/sec= = 8 microsecs
+• Thời gian truyền gói tin đến kênh truyền:
+
+===== PDF PAGE 63 =====
+rdt3.0: 
+hoạt
+ 
+động
+ 
+stop
+-
+and
+-
+wait
+67
+first packet bit transmitted, t = 0
+sender receiver
+RTT 
+first packet bit arrives
+last packet bit arrives, send ACK
+ACK arrives, send next 
+packet, t = RTT + L / R
+
+===== PDF PAGE 64 =====
+rdt3.0: 
+hoạt
+ 
+động
+ 
+stop
+-
+and
+-
+wait
+68
+sender receiver
+Usender= L / R
+RTT
+RTT 
+L/R
++ L / R
+= 0.00027
+= .008
+30.008
+o Hiệu suất giao thức rdt 3.0 kém
+o Giao thức giới hạn hiệu suất của cơ sở hạ tầng cơ bản (kênh truyền)
+
+===== PDF PAGE 65 =====
+rdt3.0: 
+hoạt
+ 
+động
+ 
+giao
+ 
+thức
+ 
+“pipelined”
+69
+pipelining: bên gửi gửi nhiều packet cùng một lúc mà không cần 
+chờ ACK
+▪ Dãy số thứ tự phải được tăng lên 
+▪ Đưa vào bộ đệm tại bên gửi hoặc bên nhận
+
+
+===== PDF PAGE 66 =====
+Pipelining: 
+tăng
+ 
+hiệu
+ 
+suất
+70
+first packet bit transmitted, t = 0
+sender receiver
+RTT 
+last bit transmitted, t = L / R
+first packet bit arrives
+last packet bit arrives, send ACK
+ACK arrives, send next 
+packet, t = RTT + L / R
+last bit of 2nd packet arrives, send ACK
+last bit of 3rd packet arrives, send ACK
+Gửi 3 gói tin cùng lúc 
+thì hiệu suất tăng 3 lần!
+ 
+U sender = .0024 
+30.008 = 0.00081  3L / R 
+RTT + L / R 
+= 
+
+===== PDF PAGE 67 =====
+Go
+-
+Back
+-
+N: 
+bên
+ 
+gửi
+71
+o Bên gửi: gửi tối đa N packets liên tiếp mà không cần chờ ACK 
+(“window”)
+▪ k-bit seq # in pkt header
+▪ Khi nhận ACK(n) => ACK cho tất cả các packet đã gửi tính tới gói tin có 
+seq là n (cumulative ACK – ACK tích lũy)
+▪ Tính timer cho packet gửi sớm nhất nhưng chưa được ACK
+▪ timeout(n): gửi lại tất cả các packet trong “window” từ vị trí (n)
+
+===== PDF PAGE 68 =====
+Go
+-
+Back
+-
+N: 
+bên
+ 
+nhận
+72
+o Nhận packet đúng thứ tự: gửi ACK tương ứng với packet đúng thứ tự có 
+STT cao nhất
+o Nhận packet không đúng thứ tụ: 
+▪ Có thể hủy hoặc đưa vào buffer: tùy vào cách triển khai
+▪ Gửi lại ACK tương ứng với packet đúng thứ tự có số TT cao nhất
+rcv_base
+received and ACKed
+Out-of-order: received but not  ACKed
+Not received
+Receiver view of sequence number space:
+… …
+
+===== PDF PAGE 69 =====
+Go
+-
+Back
+-
+N: 
+các
+ 
+hành
+ 
+động
+73
+send  pkt0
+send  pkt1
+send  pkt2
+send  pkt3
+(wait)
+sender receiver
+receive pkt0, send ack0
+receive pkt1, send ack1
+ 
+receive pkt3, discard, 
+           (re)send ack1
+send  pkt2
+send  pkt3
+send  pkt4
+send  pkt5
+Xloss
+pkt 2 timeout
+receive pkt4, discard, 
+           (re)send ack1
+receive pkt5, discard, 
+           (re)send ack1
+rcv pkt2, deliver, send ack2
+rcv pkt3, deliver, send ack3
+rcv pkt4, deliver, send ack4
+rcv pkt5, deliver, send ack5
+ignore duplicate ACK
+sender window (N=4)
+0 1 2 3 4 5 6 7 8 
+0 1 2 3 4 5 6 7 8 
+0 1 2 3 4 5 6 7 8 
+0 1 2 3 4 5 6 7 8 
+rcv ack0, send pkt40 1 2 3 4 5 6 7 8 
+0 1 2 3 4 5 6 7 8 
+0 1 2 3 4 5 6 7 8 
+0 1 2 3 4 5 6 7 8 
+0 1 2 3 4 5 6 7 8 
+0 1 2 3 4 5 6 7 8 rcv ack1, send pkt5
+
+===== PDF PAGE 70 =====
+Go
+-
+Back
+-
+N in action
+74
+
+
+===== PDF PAGE 71 =====
+Selective repeat
+75
+o Bên nhận gửi ACK cho từng packet nhận thành công (cơ chế buffer tại 
+bên gửi)
+o Bên gửi bật cơ chế timeout/gửi lại các packet không được ACK
+o Cơ chế window tại bên gửi 
+o Cho phép gửi liên tiếp N packet có số thứ tự tăng dần
+o Giới hạn số packet được gửi nhưng không được ACKs
+
+===== PDF PAGE 72 =====
+Selective repeat
+76
+
+
+===== PDF PAGE 73 =====
+Selective Repeat: 
+các
+ 
+hành
+ 
+động
+78
+send  pkt0
+send  pkt1
+send  pkt2
+send  pkt3
+(wait)
+sender receiver
+send  pkt2
+(but not 3,4,5)
+Xloss
+pkt 2 timeout
+sender window (N=4)
+0 1 2 3 4 5 6 7 8 
+0 1 2 3 4 5 6 7 8 
+0 1 2 3 4 5 6 7 8 
+0 1 2 3 4 5 6 7 8 
+rcv ack0, send pkt40 1 2 3 4 5 6 7 8 
+0 1 2 3 4 5 6 7 8 
+0 1 2 3 4 5 6 7 8 
+0 1 2 3 4 5 6 7 8 
+0 1 2 3 4 5 6 7 8 
+0 1 2 3 4 5 6 7 8 rcv ack1, send pkt5
+receive pkt0, send ack0
+receive pkt1, send ack1
+ 
+receive pkt3, buffer, 
+           send ack3
+record ack3 arrived
+receive pkt4, buffer, 
+           send ack4
+receive pkt5, buffer, 
+           send ack5
+rcv pkt2; deliver pkt2,
+pkt3, pkt4, pkt5; send ack2
+Q: what happens when ack2 arrives?
+
+===== PDF PAGE 74 =====
+Nội
+ 
+dung
+81
+oCác dịch vụ tầng vận chuyển
+oMultiplexing and demultiplexing
+oUDP
+oNguyên lý truyền tin cậy
+oTCP
+oTCP - Điều khiển tắc nghẽn
+oSự phát triển của các tính năng của tầng vận chuyển
+
+
+===== PDF PAGE 75 =====
+TCP: 
+tổng
+ 
+quan
+  
+RFCs: 793,1122, 2018, 5681, 7323
+82
+o ACKs tích lũy
+o Cơ chế pipelining:
+▪ Điều khiển tắc nghẽn và điều khiển 
+luồng với “window size”
+o  Hướng kết nối: 
+▪ handshaking (trao đổi các thông điệp 
+thiết lập và đóng kết nối)
+o  “flow controlled”:
+▪ Bên gửi không gửi nhiều làm quá tải 
+bên nhận
+o point-to-point:
+▪ 1 bên gửi, 1 bên nhận
+o Tin cậy, dữ liệu đúng thứ 
+tự theo byte
+o“full duplex data”:
+▪ Luồng dữ liệu 2 chiều trong 
+cùng một kết nối
+▪ MSS: maximum segment 
+size (độ dài tối đa của 1 
+segment)
+
+===== PDF PAGE 76 =====
+Cấu
+ 
+trúc
+ 
+của
+ 
+TCP segment
+83
+source port # dest port #
+32 bits
+not
+used receive window flow control: # bytes 
+receiver willing to accept
+sequence number
+segment seq  #: counting 
+bytes of data into bytestream 
+(not segments!)
+application
+data 
+(variable length)
+data sent by 
+application into 
+TCP socket
+A
+acknowledgement number
+ACK: seq # of next expected 
+byte; A bit: this is an ACK
+options (variable length)
+TCP options
+head
+lenlength (of TCP header)
+checksumInternet checksum
+RST, SYN, FIN: connection 
+management
+FSR
+Urg data pointer
+PUC E
+C, E: congestion notification
+
+===== PDF PAGE 77 =====
+TCP: Reliable data transfer 
+84
+oTruyền theo thứ tự: Sequence number, ACK
+oTruyền lại:
+▪Segment lỗi: ACK
+▪Segment bị mất: timeout
+
+===== PDF PAGE 78 =====
+TCP sequence numbers, ACKs: 
+ví
+ 
+dụ
+86
+o Thông điệp tầng ứng dụng: 9000 bytes (byte #0 -> byte #9999)
+o Mỗi segment chứa tối đa 2000 bytes
+o => 5 2000-byte segments
+Sender - Sequence number Receiver ACK  
+Seq = 0, length = 2000B
+S = 2000, length = 2000B
+S = 4000, length = 2000B
+S = 6000, length = 2000B
+S = 8000, length = 1000B
+I receive until #1999, I 
+want byte from #2000
+ACK = 2000
+ACK = 4000
+ACK = 6000
+ACK = 8000
+ACK = 9000
+0->1999 2000->3999 4000->5999 6000->7999 8000->8999
+You need byte 
+from 2000, I’ll 
+send you from 
+#2000
+
+===== PDF PAGE 79 =====
+TCP sequence numbers, ACKs
+87
+host ACKs 50B
+host ACKs 30B, send 50B
+Host BHost A
+Send 30B
+Seq=42, ACK=79, data = 30B
+Seq=79, ACK=72, data = 50B
+Seq=72, ACK=129
+
+
+===== PDF PAGE 80 =====
+TCP Sender 
+(
+tinh
+ 
+giản
+)
+91
+Sự kiện: Nhận dữ liệu từ tầng 
+ứng dụng
+oTạo segment với STT seq #
+oseq #: STT của byte đầu 
+tiên trong segment 
+oBắt đầu tính thời gian với 
+segment cũ nhất
+Sự kiện: timeout
+o Gửi lại segment bị timeout
+o Bắt đầu tính lại thời gian
+ 
+Sự kiện: nhận được ACK
+oNếu ACK xác nhận cho các 
+segment chưa được ACK
+▪ Cập nhật trạng thái
+▪ Tính lại thời gian với các 
+segment chưa được ACK
+
+===== PDF PAGE 81 =====
+TCP Receiver: ACK generation 
+[RFC 5681]
+92
+Sự kiện tại bên nhận
+Nhận được segment đúng với 
+STT đang chờ. Tất cả segment
+trước đó đã được ACK.
+Nhận được segment đúng với 
+STT đang chờ, một segment
+chưa được ACK.
+Nhận được segment không 
+đúng thứ tự (STT cao hơn). 
+Nhận được segment trong 
+khoảng bị trống (giữa STT đang 
+chờ và STT nhận được trước 
+đó). 
+Hành động
+Chờ segment kế tiếp trong 500ms, 
+nếu không nhận được thì sẽ ACK.
+Gửi ACK tích lũy để ACK cho 2 
+segment.
+Gửi ACK trùng ngay lập tức, để chỉ 
+cho bên gửi biết đang chờ segment 
+nào.
+ACK ngay lập tức cho segment có thứ 
+tự thấp nhất trong khoảng bị trống
+
+===== PDF PAGE 82 =====
+TCP: 
+các
+ 
+trường
+ 
+hợp
+ 
+truyền
+ 
+lại
+93
+Mất ACK
+Host BHost A
+Seq=92, 8 bytes of data
+Seq=92, 8 bytes of data
+ACK=100
+X
+ACK=100
+timeout
+timeout
+Host BHost A
+Seq=92,  8
+bytes of data
+ACK=120
+timeout
+ACK=100
+ACK=120
+SendBase=100
+SendBase=120
+SendBase=120
+Seq=92, 8 bytes of data
+Seq=100, 20 bytes of data
+SendBase=92
+send cumulative 
+ACK for 120
+
+===== PDF PAGE 83 =====
+TCP: 
+các
+ 
+trường
+ 
+hợp
+ 
+truyền
+ 
+lại
+94
+ACK tích lũy
+Host BHost A
+Seq=92, 8 bytes of data
+Seq=120,  15 bytes of data
+Seq=100, 20 bytes of data
+X
+ACK=100
+ACK=120
+
+
+===== PDF PAGE 84 =====
+TCP: 
+truyền
+ 
+lại
+ 
+nhanh
+95
+Host BHost Atimeout
+X
+Seq=100, 20 bytes of data
+Việc nhận 3 ACK trùng lặp cho biết 
+đã nhận được 3 segment sau một 
+segment bị thiếu – có khả năng bị 
+mất phân đoạn. 
+=> Truyền lại!
+Khi bên gửi nhận được 3 ACK 
+yêu cầu cùng segment, bên 
+gửi gửi lại segment được yêu 
+cầu mà không cần chờ 
+timeout.
+TCP: truyền lại nhanh
+
+===== PDF PAGE 85 =====
+TCP: flow control 
+–
+ 
+điều
+ 
+khiển
+ 
+luồng
+96
+application
+process
+TCP socket
+receiver buffers
+TCP
+code
+IP
+code
+receiver protocol stack
+Q: Điều gì xảy ra nếu tầng 
+mạng truyền dữ liệu nhanh 
+hơn tầng ứng dụng xóa dữ 
+liệu khỏi bộ đệm của socket?
+Network layer 
+delivering IP datagram 
+payload into TCP 
+socket buffers
+from sender
+Application removing 
+data from TCP socket 
+buffers
+
+
+===== PDF PAGE 86 =====
+TCP: 
+điều
+ 
+khiển
+ 
+luồng
+97
+application
+process
+TCP socket
+receiver buffers
+TCP
+code
+IP
+code
+receiver protocol stack
+Q: Điều gì xảy ra nếu tầng 
+mạng truyền dữ liệu nhanh 
+hơn tầng ứng dụng xóa dữ 
+liệu khỏi bộ đệm của socket?
+from sender
+Application removing 
+data from TCP socket 
+buffers
+receive window flow control: # bytes 
+receiver willing to accept
+
+===== PDF PAGE 87 =====
+TCP: 
+điều
+ 
+khiển
+ 
+luồng
+98
+application
+process
+TCP socket
+receiver buffers
+TCP
+code
+IP
+code
+receiver protocol stack
+Q: Điều gì xảy ra nếu tầng 
+mạng truyền dữ liệu nhanh 
+hơn tầng ứng dụng xóa dữ 
+liệu khỏi bộ đệm của socket?
+bên nhận kiểm soát bên gửi, vì 
+vậy bên gửi sẽ không làm tràn 
+bộ đệm của bên nhận bằng cách 
+truyền quá nhiều, quá nhanh
+flow control
+from sender
+Application removing 
+data from TCP socket 
+buffers
+
+===== PDF PAGE 88 =====
+TCP: 
+điều
+ 
+khiển
+ 
+luồng
+99
+o Bên gửi thông báo bộ đệm trống bằng thông tin rwnd trong TCP header
+o Bên gửi giới hạn lượng dữ liệu được gửi khi nhận được rwnd để đảm bảo 
+bên nhận không bị quá tải
+buffered data
+free buffer spacerwnd
+RcvBuffer
+TCP segment payloads
+to application process
+TCP receiver-side buffering
+
+===== PDF PAGE 89 =====
+TCP: 
+điều
+ 
+khiển
+ 
+luồng
+100
+o Bên gửi thông báo bộ đệm trống bằng 
+thông tin rwnd trong TCP header
+o Bên gửi giới hạn lượng dữ liệu được 
+gửi khi nhận được rwnd để đảm bảo 
+bên nhận không bị quá tải
+flow control: # bytes receiver willing to accept
+receive window
+TCP segment format
+
+===== PDF PAGE 90 =====
+TCP: 
+quản
+ 
+lý
+ 
+kết
+ 
+nối
+101
+o trước khi trao đổi dữ liệu, bên gửi/bên nhận “handshake – bắt tay”:
+▪ đồng ý thiết lập kết nối (mỗi bên đều biết bên kia sẵn sàng thiết lập kết nối)
+▪ đồng ý về các thông số kết nối (ví dụ: bắt đầu từ seq #s)
+connection state: ESTAB
+connection variables:
+seq # client-to-server
+         server-to-client
+rcvBuffer size
+   at server,client 
+           
+application
+network
+connection state: ESTAB
+connection Variables:
+seq # client-to-server
+          server-to-client
+rcvBuffer size
+   at server,client 
+           
+application
+network
+Socket clientSocket =   
+  newSocket("hostname","port number");
+Socket connectionSocket = 
+welcomeSocket.accept();
+
+
+===== PDF PAGE 91 =====
+TCP 3
+-
+way handshake: 
+bắt
+ 
+tay
+ 
+3 
+bước
+102
+SYNbit=1, Seq=x
+choose init seq num, x
+send TCP SYN msg
+ESTAB
+SYNbit=1, Seq=y
+ACKbit=1; ACKnum=x+1
+choose init seq num, y
+send TCP SYNACK
+msg, acking SYN
+ACKbit=1, ACKnum=y+1
+received SYNACK(x) 
+indicates server is live;
+send ACK for SYNACK;
+this segment may contain 
+client-to-server data received ACK(y) 
+indicates client is live
+SYNSENT
+ESTAB
+SYN RCVD
+Client state
+LISTEN
+Server state
+LISTEN
+clientSocket = socket(AF_INET, SOCK_STREAM)
+serverSocket = socket(AF_INET,SOCK_STREAM)
+serverSocket.bind((‘’,serverPort))
+serverSocket.listen(1)
+connectionSocket, addr = serverSocket.accept()
+clientSocket.connect((serverName,serverPort))
+
+===== PDF PAGE 92 =====
+Ví
+ 
+dụ
+ 
+thực
+ 
+tế
+107
+1. On belay?
+2. Belay on.
+3. Climbing.
+
+===== PDF PAGE 93 =====
+Đóng
+ 
+kết
+ 
+nối
+108
+o Client, server đóng kết nối cho mỗi bên 
+▪ Gửi TCP segment có FIN bit = 1
+o Phản hồi khi nhận segment có FIN với ACK
+o Khi nhận FIN, ACK có thể kết hợp với FIN của nó
+▪ có thể xử lý các trao đổi FIN đồng thời
+
+===== PDF PAGE 94 =====
+Đóng
+ 
+kết
+ 
+nối
+ 
+109
+FIN_WAIT_2
+CLOSE_WAIT
+FINbit=1, seq=y
+ACKbit=1; ACKnum=y+1
+ACKbit=1; ACKnum=x+1
+wait for server
+close
+can still
+send data
+can no longer
+send data
+LAST_ACK
+CLOSED
+TIMED_WAIT
+timed wait 
+for 2*max 
+segment lifetime
+CLOSED
+FIN_WAIT_1 FINbit=1, seq=xcan no longer
+send but can
+ receive data
+clientSocket.close()
+client state server state
+ESTABESTAB
+
+
+===== PDF PAGE 95 =====
+Nội
+ 
+dung
+110
+oCác dịch vụ tầng vận chuyển
+oMultiplexing and demultiplexing
+oUDP
+oNguyên lý truyền tin cậy
+oTCP
+oTCP - Điều khiển tắc nghẽn
+oSự phát triển của các tính năng của tầng vận chuyển
+
+
+===== PDF PAGE 96 =====
+Quản
+ 
+lý
+ 
+tắc
+ 
+nghẽn
+ 
+của
+ 
+TCP: AIMD
+111
+o Cách tiếp cận: bên gửi liên tục tăng tốc độ truyền cho đến khi việc mất gói 
+tin sảy ra (tắc nghẽn – congestion), sau đó giảm tốc độ truyền dựa trên sự 
+kiên mất.
+AIMD : thăm dò 
+băng thông
+TCP sender  Sending rate
+time
+Tăng tốc độ gửi lên 1 MSS cho 
+đến khi phát hiện sự mất mát
+Tăng cấp số cộng
+Giảm tốc độ gửi 1 nửa khi mất 
+mát sảy ra t
+Giảm cấp số nhân
+
+===== PDF PAGE 97 =====
+TCP: 
+Điều
+ 
+khiển
+ 
+tắc
+ 
+nghẽn
+112
+o Ký hiệu
+▪ Cwnd(n) - congestion windows: số segment được gửi trong 
+cùng một window
+▪ Ssthresh (slowstart threshold): ngưỡng kết thúc giai đoạn 
+slowstart và chuyển sang congestion avoidance
+
+===== PDF PAGE 98 =====
+TCP slow start 
+113
+o khi bắt đầu, tăng tốc độ theo cấp số nhân 
+cho đến khi xảy ra sự kiện mất đầu tiên :
+▪ Ban đầu cwnd = 1 MSS
+▪ Nhân đôi cwnd sau mỗi RTT
+▪ được thực hiện bằng cách tăng cwnd cho 
+mỗi ACK nhận được
+Host A Host B
+RTT
+time
+Tóm tắt: tốc độ ban đầu 
+chậm, nhưng tăng nhanh theo 
+cấp số nhân
+
+===== PDF PAGE 99 =====
+TCP: 
+từ
+ 
+slow start 
+đến
+ 
+congestion avoidance
+114
+o Q: khi nào nên tăng theo cấp số nhân chuyển sang tuyến tính? 
+oA:
+▪ Ssthresh: ngưỡng kết thúc 
+Slowstart
+▪ Khi sự kiện mất sảy ra, 
+ssthresh bằng 1/2 giá trị của 
+cwnd trước khi sảy ra mất mát
+* Check out the online interactive exercises for more examples: http://gaia.cs.umass.edu/kurose_ross/interactive/
+X
+
+===== PDF PAGE 100 =====
+TCP: 
+Điều
+ 
+khiển
+ 
+tắc
+ 
+nghẽn
+ 
+–
+ 
+Các
+ 
+giai
+ 
+đoạn
+115
+cwnd(n) =
+cwnd(n-1)x2
+Slowstart
+cwnd(n) =
+cwnd(n-1)+1
+Congestion 
+Avoidance 3ACK: 
+cwnd(n)=
+cwnd(n-1)/2+3
+Timeout: 
+cwnd(n)=1
+Fast
+Recovery
+
+===== PDF PAGE 101 =====
+TCP: 
+Điều
+ 
+khiển
+ 
+tắc
+ 
+nghẽn
+ 
+–
+ 
+Chuyển
+ 
+giai
+ 
+đoạn
+116
+Slow Start
+Congestion AvoidanceFast Recovery
+Cwnd>=ssthresh
+Receive 3 duplicate ACKs
+Timeout
+Receive new ACK
+Receive 3 
+duplicate 
+ACKs
+
+===== PDF PAGE 102 =====
+Tổng
+ 
+kết
+117
+timeout
+ssthresh = cwnd/2
+cwnd = 1 MSS
+dupACKcount = 0
+retransmit missing segment 
+L
+cwnd > ssthresh
+congestion
+avoidance 
+cwnd = cwnd + MSS    (MSS/cwnd)
+dupACKcount = 0
+transmit new segment(s), as allowed
+new ACK
+.
+dupACKcount++
+duplicate ACK
+fast
+recovery 
+cwnd = cwnd + MSS
+transmit new segment(s), as allowed
+duplicate ACK
+ssthresh= cwnd/2
+cwnd = ssthresh + 3
+retransmit missing segment
+dupACKcount == 3
+timeout
+ssthresh = cwnd/2
+cwnd = 1 
+dupACKcount = 0
+retransmit missing segment 
+ssthresh= cwnd/2
+cwnd = ssthresh + 3
+retransmit missing segment
+dupACKcount == 3cwnd = ssthresh
+dupACKcount = 0
+New ACK
+slow 
+start
+timeout
+ssthresh = cwnd/2 
+cwnd = 1 MSS
+dupACKcount = 0
+retransmit missing segment 
+cwnd = cwnd+MSS
+dupACKcount = 0
+transmit new segment(s), as allowed
+new ACKdupACKcount++
+duplicate ACK
+L
+cwnd = 1 MSS
+ssthresh = 64 KB
+dupACKcount = 0
+New
+ACK!
+New
+ACK!
+New
+ACK!
+
+===== PDF PAGE 103 =====
+Nội
+ 
+dung
+118
+oCác dịch vụ tầng vận chuyển
+oMultiplexing and demultiplexing
+oUDP
+oNguyên lý truyền tin cậy
+oTCP
+oTCP - Điều khiển tắc nghẽn
+oSự phát triển của các tính năng của tầng vận chuyển
+
+
+===== PDF PAGE 104 =====
+Evolving transport
+-
+layer functionality
+119
+o TCP, UDP: principal transport protocols for 40 years
+o different “flavors” of TCP developed, for specific scenarios:
+▪ moving transport–layer functions to application layer, on top of UDP
+• HTTP/3: QUIC
+Scenario Challenges
+Long, fat pipes (large data 
+transfers)
+Many packets “in flight”; loss shuts down 
+pipeline
+Wireless networks Loss due to noisy wireless links, mobility; 
+TCP treat this as congestion loss
+Long-delay links Extremely long RTTs
+Data center networks Latency sensitive
+Background traffic flows Low priority, “background” TCP flows 
+
+===== PDF PAGE 105 =====
+QUIC: Quick UDP Internet Connections
+120
+o application-layer protocol, on top of UDP
+▪ increase performance of HTTP
+▪ deployed on many Google servers, apps (Chrome, mobile YouTube 
+app) 
+IP
+TCP
+TLS
+HTTP/2
+IP
+UDP
+QUIC
+HTTP/2 (slimmed)
+Network
+Transport
+Application
+HTTP/2 over TCP
+HTTP/3
+HTTP/2 over QUIC over UDP
+
+===== PDF PAGE 106 =====
+QUIC: Quick UDP Internet Connections
+121
+o multiple application-level “streams” multiplexed over single QUIC 
+connection
+▪ separate reliable data transfer, security
+▪ common congestion control
+adopts approaches we’ve studied in this chapter for 
+connection establishment, error control, congestion control
+• error and congestion control: “Readers familiar with TCP’s loss 
+detection and congestion control will find algorithms here that parallel 
+well-known TCP ones.” [from QUIC specification]
+• connection establishment: reliability, congestion control, 
+authentication, encryption, state established in one RTT
+
+===== PDF PAGE 107 =====
+QUIC: Connection establishment
+122
+TCP handshake
+(transport layer)
+TLS handshake
+(security)
+TCP (reliability, congestion control 
+state) + TLS (authentication, crypto 
+state)
+▪ 2 serial handshakes
+data
+QUIC handshake
+data
+QUIC:  reliability, congestion control, 
+authentication, crypto state
+▪ 1 handshake
+
+===== PDF PAGE 108 =====
+QUIC: streams: parallelism, no HOL blocking
+123
+(a) HTTP 1.1
+TLS encryption
+TCP RDT
+TCP Cong. Contr.
+transport application
+(b) HTTP/2 with QUIC: no HOL blocking
+TCP RDT
+TCP Cong. Contr.
+TLS encryption
+error!
+HTTP 
+GET 
+HTTP 
+GET 
+HTTP 
+GET 
+QUIC Cong. Cont.
+QUIC 
+encrypt
+QUIC
+ RDT
+QUIC
+ RDT
+QUIC
+ RDT
+QUIC 
+encrypt
+QUIC 
+encrypt
+UDP UDP
+QUIC Cong. Cont.
+QUIC 
+encrypt
+QUIC
+ RDT
+QUIC
+ RDT
+QUIC
+ RDT
+QUIC 
+encrypt
+QUIC 
+encrypt
+error!
+HTTP 
+GET HTTP 
+GET HTTP 
+GET 
+
+
+===== PDF PAGE 109 =====
+Chương
+ 
+3: 
+Tổng
+ 
+kết
+124
+▪ Các nguyên lý của tầng vận 
+chuyển:
+• multiplexing, demultiplexing
+• Truyền tin cậy
+• Điều khiển luồng
+• Điều khiển tắc nghẽn
+• UDP
+• TCP
+Tiếp theo:
+▪ Tầng network

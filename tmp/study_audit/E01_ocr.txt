@@ -1,0 +1,387 @@
+
+
+===== OCR page-01 =====
+
+TRIJÖNG DAI nqc cÖNG NGHE THONG TIN
+KHOA MANG MÅY TiNH & TRUYÉN THONG
+DÉ Till GIÜA
+Tén mon hoc: Nh*p mon M*ng måy tinh
+Thåi gian låm båi: 60 phüt
+Diem
+Giåm thi I :
+HO, tén sinh vién•
+Mä sinh vién•
+Sö thir ttr•
+(Thi sinh khöng dzcgc sic dung tåi lieu)
+Chü
+giåm thi
+Giåm thi 2:
+Chü
+14
+iåm khåo
+Giåm khåo 2:
+15 16 17 18
+8
+28
+9
+29
+19
+20
+c
+21
+c
+22
+23
+24
+5
+25
+26
+27
+Giåm khåo 1:
+10 11 12 13
+30
+Cåu 1: Cho mét HTTP response tü server trå vb nhu sau:
+HTTP/ 1.1301 Moved Permanently\r\n
+[Expert Info (Chat/Sequence): HTTP/ 1.1301 Moved
+Response Version: HTTP/ 1.1
+Status Code: 301
+[Status Code Description; Moved Permanently)
+Response Phrase: Moved Permanently
+Server: nginx\r\n
+Date: Mon, 14 Oct
+Content-Type: text/html\r\n
+Content-Length: 178\r\n
+Connection: keep-alive\r\n
+Location: https://p o ages/logo 186x150 .png\
+Phåt biéu nåo sau dåy lå dång?
+A. Server trå vb mä 301 do d6i tuqng yéu cau dä.bi x6a khöi Server.
+B. URL cüa d6i tuvng yéu cåu dä duqc thay dbi qua mét URL m6i.
+C. Server trå vb mä 301 båo cho Client biét phién bån HTTP må Client yéu cåu khåc phién bån HTTP
+1.1 må Server dang Chey.
+D. Tåt cå cåc dåp ån trén.
+Cåu 2: Cåc g6i tin cé dé dåi L = 1000 bytes dtrqc truy&n tren mét két n6i c6 tbc dé truybn Iå R =1000
+Kbps. Höi t6i da c6 bao nhiéu g6i tin duec truyen trong Is
+A. 100 g6i tin
+B. 250 g6i tin
+C. 150 g6i tin
+. D. 125 g6i tin
+Cåu 3: Th&i gian tré do truy&n (transmission delay) cåa mot g6i c6 dé dåi 1000 bytes truyén qua lién két
+c6 töc dé truybn 2 Mbps?
+A. 4ms
+C. 500ms
+Cåu 4: Tång nåo du6i mö hinh TCP/IP:
+D. 5ms
+Trang 1/6 - Mä db thi 2
+
+
+===== OCR page-02 =====
+
+Cåu 5: Trong hinh tü phån mbm Wireshark du6i dåy, dåy lå mét TCP segment giri tt server. Néu bén
+nh@n nhQn duvc se entnå , bén nh@n sé hån höi mét se entc6 s6 ACK lå bao
+Tr'ansmi5510n Control Protocol* Src Port: http (80) i. Ost Portv 49373 (49373)' Seq; 11. Ack; 24% Len:: 30S
+Source port: http (80)
+Destination 49373 (49373)
+(Stream o)
+(rel ative sequence number)
+Sequence number: 1
+(relative sequence number))
+[Next sequence number: 306
+(relative ack number)
+Acknowledgment number: 249
+Header length} 20 byte$
+Flags: ox018 (PSHt ACK)
+size value: 2920
+[Calculated window size: 2920)
+Size $CÄ1ing -2 (no window seal ing used))
+Checksum: 0xb3e6 Cvalidation disabled]
+[5EQ/ACK analysis]
+TCP segment data (305 bytes)
+A. Session
+A. ACKI = 100, ACK2
+B. Transport
+C. Application
+D. Network
+A. 250
+c. 21
+D. 306
+Cåu 6: Trong xép chång giao thüc Internet, 16p nao chuyén dü lieu tir tién trinh nåy dén tién trinh kia
+(process-process).
+A. Application.
+C. Network.
+B. Transport.
+Cåu 7: Phåt biéu nåo sau dåy lå DUNG truö•ng length trong UDP Header?
+A. Xåc dillh Chibu dåi cåa dü lieu (payload)
+B. Xåc dinh Chibu dåi cüa header
+C. C6 Chibu dåi lå 16 bytes
+D. C6 giå tri tåi thiéu lå 8
+Cåu 8: Xem hinh vå cho biét dåy lå so db biéu diön cüa nguyén 19 truyen tin cay nåo?
+bén nhån
+bén qåf
+Gül pkto
+•Nhån pktO
+ack0
+Gth éktl
+ackl
+Gtf ackl
+loss
+timeou
+lei pktl
+Nhån pktl
+ackl
+Nhin ack
+Gül pkto
+A. rdtl .0
+B. Go-back-N
+Güf ack0
+ack
+C. rdt2.O
+Cåu 9: Cho tinh hu6ng truyén lei TCP. Häy chon dåp ån düng.
+Host A
+SendBase=92
+Host B
+SendBase=100
+Send Base—120
+SendBasee120
+120, ACK3 = 120
+Seq=92, 8 bytes of data
+g Seq=100, 20 bytes of da
+ACKi
+ACK2
+seq-92Æ 8
+bytes af data
+ACK3
+D. rdt3.O
+Trang 2/6 - Mä thi 2
+
+
+===== OCR page-03 =====
+
+B. ACKI = 100, ACK2 = 100, ACK3 = 120
+C. ACKI 92, ACK2 100, ACK3 = 100
+D. Dåp ån khåc
+Cåu 10: Måy A muån giri mét file cho måy B. Dubng di tir måy A dén måy B phåi di qua 3 dubng lién
+két, m6i du&ng lién két lån luet c0 tbc dé truy&n nhtr sau: RI = 300 Kbps, R2 = 3 Mbps vå R3 = I Mbps.
+Thöng Itrqng (throughput) cüa viéc truyen file lå bao nhiéu?
+A. 4,3Mbps
+C. 3Mbps
+B. 1Mbps
+D, 300Kbps
+Cåu 11: Cåch giåi quyét trong giao thüc RDT 2.0 truy&n dü lieu tin cay cé lö hbng nghiém trong nåo sau
+dåy?
+A. ACK/NAK bi höng
+C. Khöng c6 checksum
+B. Chi gti cåc ACK
+D. Dåp ån khåc
+Cåu 12: Cho mö hinh truybn giüa host vå server, tbc dö truyén vd dé dåi cüa kénh truybn nhu mö tå
+trong hinh vé. Cho biét m6i g6i tin c6 kfch thu6c 12000 bits, van tbc di chuyén cüa cåc g6i tin trén duöng
+truyén bäng v6i tbc ånh sång '3 X 10B m/s.
+T6c truyEn: 100 Mbps
+dåi kénh truybn: 9 Km
+T6c truyEn: LO Mbps
+00 dåi kénh 500 Km
+T6c dé truy&n: 10 Mbps
+DO dåi kénh truy&n: 2 Km
+DO tré dåu cuåi (bao gom tré truyån vå tré Ian truybn nhtrng bö qua tré hång dgi vå tré xtr l!) tü thbi diém
+host bén tråi bät dåu gti bit dåu tién cüa mét g6i tin dén th&i diém bit cuöi cüng cüa g6i tin d6 den server
+bén nhåi ld bao
+A. 4,203333ms
+C. 3,363333ms
+B. 2,520000ms
+D. Dåp ån khåc
+Cåu 13: Don vi dü lieu cüa cåc tang theo thir qr trong mö hinh TCP/IP ld:
+A. Data, Packet, Segment, Bit, Frame
+B. Data, Segment, Frame, Packet, Bit
+C. Data, Segment, Packet, Frame, Bit
+D. Data, Packet, Segment, Frame, Bit
+Cåu 14: Ghép sé TCP port h04c UDP port ttrcng fing v6i tng dung sau dåy
+A. lc, 2a, 3b, 4d
+C. lc, 2d, 3b, 4a
+1. HTTP, 2. 3. FTP, 4. SMTP
+a. 25, b- 21, c. 80, d- 53
+B. lc, 2b, 3a, 4d
+D. lc, 2a, 3d, 4b
+Cåu 15: Giå host A cån giri 1500 byte cho host B sir dung TCP. G6i thfr nhåt chta 1000 byte dü lieu,
+frtr&ng Sequence Number cüa g6i nåy lå 120. Tru&ng Sequence Number cüa g6i thit hai sé lå?
+A. 1121
+c. 500
+Cåu 16: TCP khöng hö trp tinh näng nåo sau dåy?
+B. 1120
+D. Dåp ån khåc
+A. Kiém soåt luong g6i tin tu bén gti sang bén nh@n, trånh viéc låm trån bé dém phfa Ilhan Wow control).
+B. Thiet IQp két noi giüa client — server (connection oriented).
+C. Dåm båo thöng luvng t6i thiéu cho dlRyng truyén (minimum throughput guarantees).
+D. Dåm båo giri g6i tin mét cåch tin cay tren dubng truy&n (reliable transport).
+Cåu 17: Cho mö hinh truyån dü lieu theo két n6i TCP nhu bén du6i. Phia TCP sender tién hånh güi mot
+window v6i 5 segments toi cåc thbi diém lån Itrvt tucng tng lå t=l, t=2, t=3, t=4 vå t=5. Giå sir räng
+sequence number cüa segment dhu tiån toi th&i diåm t=l c6 giå tri lå 118 vå m6i segment chira 518bytes.
+Dö tré gita bén gti vd bén nh@n lå 7 don vi th&i gian, segment dåu ti&n dén dtrqc ben nh@n tei th&i diém
+t=8, segment thü 2 vå thif 4 bi måt trong quå trinh truybn.
+Trang 3/6 - Mä db thi 2
+
+
+===== OCR page-04 =====
+
+TCP sender
+x
+TCP receiver
+lost
+leet
+t = 12
+Xåc dinh sequence number cüa TCP segment phfa TCP sender toi th&i diém t=5?
+A. 2590
+B. 2190
+c. 1554
+D. 590
+Cåu 18: Däc tinh nåo sau dåy ld dång voi giao thirc Go-Back-N?
+A. Bén nhön giri ACK riéng biét (individual ack) cho m6i packet
+B. Bén nh@n gåi ACK tich lüy (cumulative ack)
+C. Bén giri chi güi lei cåc g6i nåo khöng nh@n duqc ACK
+D. Cåu A,C dbu düng
+Cåu 19: Biét räng hinh vé dtr&i dåy lå thé hi?n du6i dong måy trong thåi hüu hqn (FSM) cüa bén gti theo
+giao thüc rdt. Häy cho biét hinh ve trén mö tå cho giao thtc rdt nåo?
+rdt send (data )
+gndpkt=makegkt d check )
+( ndpkt )
+Udit forr
+call from
+above
+rdt_rev (rcvpkt: S rcvpkt)
+Wattfot
+ACK or
+udi_gendßndpkt)
+NAK
+rcvpkt.} iB*CXgrcvpkt)
+A. rdt 3.0
+B. rdt2.1
+C. rdt2.O
+Cåu 20: Xem hinh dinh 10m. Dåy lä hinh thi'rc phån giåi DNS nåo
+DNS
+2
+3
+DNS måy Chb
+dns, .edu
+8
+Host yåu U
+cisc"y.edu
+A. Truy van dé quy
+C. Truy van giån tiép
+cau 21: Cho 3 16 bit
+edu TLD
+DNS may
+Chü
+5
+6
+7
+ONS mAcN
+dns.cs.umass.@du
+gatacs.umass.edu
+B. Truy van trvc tiep
+D. Truy vån tuån tv
+D. rdt2.2
+Trang 4/6 - Mä thi 2
+
+
+===== OCR page-05 =====
+
+Giå tri Checksum UDP lå:
+A. 1100101011000001
+0110011001100000
+0101010101010101
+B. 0100101011000001
+D. 0100101011000010
+Cåu 22: Phåt bibu nao sau dåy ld SAI vb kién trüc Client — Server (Måy khåch Måy chü) ?
+A. Server luön hoqt döng, c6 dia chi IP cé dinh
+B. Client c6 thé két nöi v6i Server khöng lién tuc
+C. Client c6 thé két n6i tnrc tiép v6i nhau
+D. Client c6 thé thay dåi dia chi IP
+Cåu 23: Doon code bång Python sau dåy duqc Viet Cho?
+A. TCP client
+C. UDP server
+while 1:
+connectionSocket, addr
+= serverSocket. accept ( )
+sentence = connectionSocket . recv (1024)
+connectionSocket . close ( )
+B. UDP client
+D. TCP server
+Cåu 24: Cho mot segment UDP c6 dé dåi duec chi ra trong tru&ng Length Iå 1000 Byte. Dung Itreng tåi
+(Payload) cüa segment ld:
+A. 920
+B. 992
+c. 980
+D. 982
+Cåu 25: Trong cau trüc header cüa TCP segment c6 6 cb lå:
+A. SYN, ACK, PSH, RST, FIN, URG
+B. sm, ACK, PSH, DAT, CON, URG
+C. SYN, DAT, PSH, RST, FIN, URG
+D. CON, ACK, PSH, RST, FIN, URG
+Cåu 26: Häy ghép nhiém ttrong fing tüng giao thüc du6i dåy:
+a. POP3 1- Gti e-mail giüa cåc server
+b. TCP 2- Tåi cåc email tir email sewer dén email client
+c. FTP 3- Cung cåp dich huång kétn6i
+d- DNS' 4- Dich vu phi köt n6i
+e- SMTP 5- Phin giåi tén thånh dia chi IP
+f. UDP tin
+A. a2, b4, c6, d5, el, f3
+C. a2, b3, c6, (15, el, f4
+Cho tinh huång gti mail nhtr hinh du6i dåy:
+agent
+méxchü
+maL
+may Chü thu
+djen tü' cüa Alice
+B. a2, b3, cs,
+D. al, b3, c6, d5,
+mall
+6
+4
+5
+méy Chü thu
+dien tü' Bob
+Yser
+agent
+Häy trå löi cåc cau höi tie 27 dén 28.
+Cåu 27: Giao thüc dtrqc måy Chü thu dien tt cüa Alice st dung dé gti mail dén måy Chü thu di+n tt cüa
+Bob trong bu6c 4 ld gi?
+A. SMTP
+B. FTP
+C. HTTP
+Cåu 28: Giao thüc durqc düng dé truy cåp vå doc thu trong buöc 6 lå gi?
+A. IMAP
+B. Tåt cå deu düng
+D. UDP
+Trang 5/6 Mä dé thi 2
+
+
+===== OCR page-06 =====
+
+C. HTTP
+D. POP3
+Cho mét HTTP request tir trinh duyet gti lén mot web server vd möt HTTP response turong tng cho
+client nhu sau:
+GET /etherea1-1abs/1ab2-2.htm1 HTTP/ 1.1
+Host: gala. cs . umass.edu
+User—Agent: Mozilla/ 5.0 (Windows; U; Windows NT 5.1; en—US; rv:l. 0.2)
+Gecko/ 20021120 Netscape/ 7.01
+Accept: text/ plaint text/html, text/xml, image/ j peg, image/png,
+audio/mpeg, audio/vnf. wave, video/mpeg, video/wmv, application/*, * / *
+Accept—Language: en—us, en; . 50
+Keep—Alive: 300
+Connection: keep-alive
+HTTP/ 1.1 404 Not Found
+Date: Tue, 23 sep 2003 05:35:53 GMT
+Server: Apache/ 2.0.40 (Red Hat Linux)
+Connection: Keep—A1 ive
+Keep—Alive: timeout—10, max—99
+Hiy trå 1M cåc cau håi tic 29 dén 30.
+Chu 29: Phåt bibu nåo sau dåy lå SAI vb trinh duyét khi gti HTTP request?
+Trinh duyet dung két nåi khöng bén vüng
+B. Trinh duyet you chu trang web toi host lå gaia.cs.umass.edu
+C. Trinh duyet sir dung HTTP phién bån 1.1
+D. Dåp ån khåc
+Cåu 30: Phåt bieu nåo sau dåy lå SAI ve server?
+A. Server trå vb nöi dung dtrqc yéu chu cho trinh duyet
+B. Web server duqc st dung lå Apache/2.0.40
+C. Server sir dung két noi bbn vüng
+D. Server dang sir dung HTTP phién bån 1.1
+Trang 6/6 - Mä dé thi 2

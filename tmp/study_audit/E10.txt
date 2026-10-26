@@ -1,0 +1,187 @@
+
+
+===== PDF PAGE 1 =====
+1 
+ 
+ Đề Nhập Môn Mạng máy Tính UIT 
+ 
+Thời gian làm bài: 40 phút (Không kể thời gian giao đề) 
+------------------------- 
+  
+Họ tên thí sinh: ................................................................. 
+Số báo danh: ...................................................................... 
+Câu 1. Tầng nào dưới đây không thuộc mô hình TCP/IP 
+     A. Tầng Applicaton      B. Tầng Session 
+     C. Tầng Link      D. Tầng Network 
+Câu 2. Thời gian đáp ứng khi một trình duyệt yêu cầu một đối tượng trên Web server nếu HTTP không bền vững 
+là bao nhiêu? 
+     A. RTT+ thời gian truyền tập tin      B. 2RTT+ thời gian truyền tập tin 
+     C. 3RTT+ thời gian truyền tập tin      D. nRTT+ thời gian truyền tập tin 
+Câu 3. Các giao thức ứng dụng hoạt động trên: 
+     A. Tầng trình diễn      B. Tầng phiên 
+     C. Tầng ứng dụng      D. Tầng liên kết dữ liệu 
+Câu 4. Giao thức nào cung cấp tính năng vận chuyển gói tin có độ tin cậy cao: 
+     A. UDP      B. TCP      C. ARP      D. IP 
+Câu 5. Giao thức UDP được sử dụng cho những ứng dụng: 
+     A. Có yêu cầu liên kết      B. Đòi hỏi độ tin cậy cao 
+     C. Yêu cầu độ trễ nhỏ      D. Không đòi hỏi độ tin cậy cao 
+Câu 6. Đơn vị cơ bản đo tốc độ truyền dữ liệu là: 
+     A. Bit      B. Byte 
+     C. Bps (bit per second)      D. Hz 
+Câu 7. Quá trình dữ liệu di chuyển từ hệ thống máy tính này sang hệ thống máy tính khácphải trải qua giai đoạn 
+nào: 
+     A. Phân tích dữ liệu      B. Nén dữ liệu 
+     C. Đóng gói      D. Lọc dữ liệu 
+Câu 8. Trong các cơ chế sau đây, cơ chế nào được sử dụng để cài đặt Web cache: 
+     A. Kiểm chứng và Mã kiểm chứng 401 Authorization require 
+     B. Trường tiêu đề "Last-Modified" và "If-Modified-Since" 
+     C. Phương thức yêu cầu POST 
+     D. A và B 
+Câu 9. Ứng dụng mạng (Network applications) có thể được xây dựng theo các kiến trúc nào sau 
+ 
+đây? 
+     A. Cả C, B và D      B. Peer-to-peer 
+     C. Client-Server      D. Hybrid 
+Câu 10. Khi Bob gửi e-mail cho Alice, máy tính của Alice không kết nối mạng. Khi đó, email của Bob 
+ 
+sẽ nằm ở đâu? 
+     A. Trong mail box của Bob trên mail server của Bob 
+     B. Trong hàng thư chờ gửi trên mail server của Alice 
+     C. Trong hàng thư chờ gửi trên mail server của Bob 
+
+===== PDF PAGE 2 =====
+2 
+ 
+     D. Trong mail box của Alice trên mail server của Alice 
+Câu 11. UDP được gọi là giao thức không hướng kết nối (connectionless) vì 
+     A. Tất cả các đáp án đều sai 
+     B. Tất cả gói tin UDP được đối xử một cách độc lập 
+     C. Cả B và D 
+     D. Nó gửi dữ liệu như là một luồng các gói tin liên quan đến nhau 
+Câu 12. Khi Bob gửi mail đến Alice, giao thức SMTP được sử dụng để chuyển mail của Bob đến 
+     A. Hòm thư (mail box) trên máy chủ của Alice 
+     B. Hàng đợi thông báo (message queue) trên máy chủ của Bob 
+     C. Cả hai ý A và B 
+     D. Trình đọc mail (User agent) của Alice 
+Câu 13. FTP là từ viết tắt của: 
+     A. File Transfer Protocol      B. Folder Transfer Protocol 
+     C. Protocol Transfer Program      D. Protocol Transfer Folder 
+Câu 14. HTTP là từ viết tắt của: 
+     A. HyperText Transmision Protocol      B. HyperText Transit Protocol 
+     C. HyperText Transfer Protocol      D. HyperText Treat Protocol 
+Câu 15. Giao thức POP3 sử dụng cổng dịch vụ số: 
+     A. 53      B. 23      C. 25      D. 110 
+Câu 16. Dịch vụ DNS có chức năng chính là gì: 
+     A. Phân giải tên netbios 
+     B. Phân giải tên miền (IP sang tên và ngược lại) 
+     C. Phân giải địa chỉ MAC 
+     D. Tất cả đều sai 
+Câu 17. Nhược điểm nếu xây dựng hệ thống dịch vụ tên miền (DNS) theo mô hình tập trung là: 
+     A. Nếu điểm tập trung bị hỏng, toàn bộ hệ thống sẽ bị tê liệt 
+13 
+     B. Số lượng yêu cầu phục vụ tại điểm tập trung duy nhất sẽ rất lớn 
+     C. Chi phí bảo trì hệ thống rất lớn 
+     D. Tất cả câu trả lời trên 
+Câu 18. Số hiệu cổng (port) của giao thức truyền mail SMTP là: 
+     A. 23      B. 25      C. 21      D. 110 
+Câu 19. Giao thức truyền thông trong DNS sử dụng cổng dịch vụ số: 
+     A. 21      B. 25      C. 53      D. 110 
+Câu 20. Trong số các cặp giao thức và cổng dịch vụ sau, cặp nào là sai: 
+     A. SMTP:TCP Port 25      B. FTP:UDP Port 22 
+     C. HTTP:TCP Port 80      D. DNS:UDP Port 53 
+Câu 21. Giao thức nào sau đây hoạt động trên nền giao thức UDP: 
+     A. ARP      B. DNS 
+     C. Telnet      D. Tất cả các câu trên đều đúng 
+Câu 22. Khẳng định nào sau đây là đúng khi nói về tên gọi loại máy chủ cung cấp dịch vụ 
+thư điện tử: 
+     A. Web Server      B. Mail Server 
+     C. FTP Server      D. Proxy 
+Câu 23. Khẳng định nào sau đây là đúng khi nói về đơn vị dữ liệu của tầng Ứng dụng 
+
+===== PDF PAGE 3 =====
+3 
+ 
+(Application): 
+     A. Message (Thông điệp)      B. Segment/ Datagram (Đoạn/Bó dữ liệu) 
+     C. Packet (Gói dữ liệu)      D. Frame (Khung dữ liệu) 
+Câu 24. HTTP (Hypertex Transfer Protocol) là: 
+     A. Giao thức ứng dụng cho phép các máy tính giao tiếp với nhau qua Web và có khả năng 
+liên kết các trang Web với nhau. 
+     B. Giao thức tầng vận chuyển cho phép truyền tải các trang Web. 
+     C. Một thành phần tên miền. 
+     D. Giao diện Web. 
+Câu 25. Các giao thức ứng dụng hoạt động trên: 
+     A. Tầng trình diễn      B. Tầng phiên 
+     C. Tầng ứng dụng      D. Tầng liên kết dữ liệu 
+Câu 26. HTTP làm nhiệm vụ gì: 
+     A. Cung cấp một cơ chế để lấy dữ liệu từ server chuyển đến client 
+     B. Hiển thị các trang Web từ xa trên màn hình và giúp người dùng tương tác với chúng 
+     C. Cung cấp giao diện người dùng như các nút bấm, thanh trượt,... 
+     D. Cung cấp dữ liệu từ server sử dụng giao thức chuyển file (File Transport Protocol) 
+Câu 27. rên Internet, email được gửi từ máy nguồn bằng cách thiết lập một kết nối TCP 
+đến một cổng cụ thể trên máy đích. Cổng đó là: 
+     A. 80      B. 110      C. 25      D. 404 
+Câu 28. Giao thức được sử dụng để 2 bên truyền file là: 
+     A. HTTP      B. FTP      C. SMTP      D. SNMP 
+Câu 29. Giao thức truyền tin cậy (rdt-reliable data transfer protocol) cần được sử dụng trên: 
+     A. Các kênh truyền có độ tin cậy cao      B. Các kênh truyền không tin cậy 
+     C. Cả hai trường hợp trên đều đúng      D. Cả hai trường hợp trên đều sai 
+Câu 30. UDP socket được xác định bởi: 
+     A. Địa chỉ IP nguồn, địa chỉ IP đích 
+     B. Địa chỉ IP nguồn, số port nguồn 
+     C. Địa chỉ IP đích, số port đích 
+     D. Địa chỉ IP nguồn, địa chỉ IP đích, số port nguồn, số port đích 
+Câu 31. Giả sử trường Length của một gói dữ liệu UDP có giá trị 150. Dữ liệu thực sự sẽ 
+có: 
+     A. 67 byte      B. 142 byte      C. 150 byte      D. 158 byte 
+Câu 32. Các giao thức của tầng giao vận (Transport): 
+     A. Kiểm soát việc truyền tin giữa hai tiến trình trên mạng máy tính 
+     B. Kiểm soát nội dung thông điệp trao đổi giữa hai tiến trình và hành vi của mỗi bên khi 
+nhận được thông điệp 
+     C. Kiểm soát việc truyền tin giữa hai máy tính trên mạng máy tính 
+     D. Kiểm soát việc truyền dữ liệu giữa hai máy tính trên cùng một môi trường truyền 
+Câu 33. Trong gói dữ liệu UDP (UDP segment), địa chỉ dùng để xác định tiến trình nhận 
+nằm ở: 
+     A. Byte 1 và 2      B. Byte 3 và 4 
+     C. Byte 5 và 6      D. Không xác định 
+Câu 34. Trong gói dữ liệu UDP (UDP segment), vùng dữ liệu thực sự bắt đầu từ byte thứ: 
+     A. 4      B. 5      C. 8      D. 9 
+
+===== PDF PAGE 4 =====
+4 
+ 
+Câu 35. Thời gian trễ do truyền (transmission delay) của một gói có độ dài 2000 bytes truyền qua liên kết có tốc 
+độ truyền 2 Mbps? 
+     A. 5s      B. 1000ms      C. 1ms      D. 8ms 
+Câu 36. Alice thực hiện truy cập vào một trang web 4 l ần và các mã tr ạng thái lần lượt nhận được là 200, 304, 
+404, 502. Số lần Alice xem nội dung trang web thành công ? 
+     A. 1 lần      B. 2 lần      C. 3 lần      D. 4 lần 
+Câu 37. Mục đích của số port trong header của TCP và UDP là gì? 
+     A. Bắt đầu quá trình bắt tay 3 bước 
+     B. Tập hợp các segment cho đúng thứ tự 
+     C. Xác định số lượng segment có thể được gửi đi cùng lúc mà không cần ACK 
+     D. Xác định tiến trình đang gửi/nhận dữ liệu 
+Câu 38. Trong số các cặp giao thức và cổng dịch vụ sau, cặp nào là đúng: 
+     A. FTP: TCP Port 22      B. Telnet: UDP Port 23 
+     C. DNS: TCP Port 50      D. SMTP: TCP Port 25 
+Câu 39.  
+Ở bước 2 trong sơ đồ giao thức nào được sử dụng 
+  
+     A. TCP      B. IMAP      C. POP3      D. SMTP 
+Câu 40. Trong giao thức truyền dữ liệu tin cậy (rdt), giao th ức nào sau đây x ử lý được trường hợp mất gói tin 
+ACK? 
+     A. rdt2.1      B. rdt2.2 
+     C. rdt3.0      D. Không thể xử lý được việc mất gói tin ACK 
+Câu 41. Lượng dữ liệu lớn nhất mà một segment có thể chứa được giới hạn bởi thông số nào sau đây? 
+     A. Băng thông tối đa      B. MTU (Maximum Transmission Unit) 
+     C. MSS (Maximum Segment Size)      D. Băng thông tối đa và MTU 
+Câu 42. Tính checksum của 2 chuỗi 16 bit sau: 
+ 
+10101100 01010001 
+ 
+01001001 11001100 
+     A. 00001001 11100010      B. 01001001 11100010 
+     C. 00001001 11110010      D. 00011001 11100010 
+----HẾT--- 
+ 
+ 
