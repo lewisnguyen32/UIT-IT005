@@ -6,6 +6,8 @@ Lịch có **14 giờ cơ sở**, gồm thời gian nghỉ, và tối đa **7 gi
 
 ## 1. Phạm vi và căn cứ
 
+**Cập nhật phạm vi ngày 27/10/2026:** Chương3 chỉ đến hết TCP theo ảnh outline người dùng gửi, bao gồm quản lý kết nối, điều khiển luồng và điều khiển tắc nghẽn. Nội dung T3 đến hết trang PDF102; phần phát triển tầng vận chuyển/QUIC/HTTP3 tr104–108 ngoài phạm vi. EstimatedRTT vẫn là phần TCP tùy chọn đã có trong kế hoạch; nguồn đề và số câu phân loại không đổi.
+
 Đã đọc đủ ba file lý thuyết, tổng **283 trang**, và toàn bộ câu hỏi trong **5 bộ đề được chốt, 172 lượt câu**. Hai đề scan đã được trích OCR và đối chiếu hình/số liệu. Ba subagent phụ trách từng chương; người điều phối kiểm tra phạm vi, trùng lặp, số câu và lịch chung.
 
 Trong tài liệu này, mọi số trang là **trang PDF tính từ 1**, có thể khác số slide in trên trang. Ký hiệu `D19 C12` nghĩa là câu 12 trong đề D19 dưới đây.
@@ -161,7 +163,7 @@ Luyện FSM D19 C19, D20 C16; mất ACK D19 C8, D20 C19, D24 C40; lỗi rdt2.0 D
 | Ước lượng RTT/timeout | B nhưng có đề hỏi | SampleRTT, cập nhật có trọng số và giá trị khởi tạo; không đánh đồng EstimatedRTT với RTO | D20 C23; LT3 thiếu phần công thức chi tiết, xem bổ sung có nguồn tại mục 7 |
 | Điều khiển tắc nghẽn | B, dành ít nhất một lượt đọc | cwnd, ssthresh, MSS; Slow Start, Congestion Avoidance, Fast Recovery; timeout khác 3 duplicate ACK | LT3 tr.96-102; chưa thấy câu trực tiếp yêu cầu tính cwnd/đọc đồ thị trong năm bộ đề |
 
-QUIC/HTTP3 ở LT3 tr.104-108 để C. Không suy từ UDP ít cơ chế rằng mọi ứng dụng chạy trên UDP đều không thể truyền tin cậy.
+QUIC/HTTP3 ở LT3 tr.104-108 **ngoài phạm vi Ch3**, theo yêu cầu chỉ học đến hết TCP ngày27/10/2026; không còn xếp vào mục C để học thêm. Không suy từ UDP ít cơ chế rằng mọi ứng dụng chạy trên UDP đều không thể truyền tin cậy.
 
 **Điều kiện kết thúc Ch3:** tự tính checksum; phân biệt lý do thêm sequence với timer; mô phỏng một ca mất packet/ACK trong GBN/SR; tính Seq/ACK theo byte; giải thích rwnd và vẽ handshake. Chỉ nhớ tên phiên bản/cờ TCP chưa đủ.
 
@@ -226,7 +228,7 @@ D20 C23 hỏi EstimatedRTT nhưng LT3 không có phần công thức chi tiết.
 
 ## 8. Phần hoãn sau tuần này
 
-Giữ thời gian cho A trước khi đọc sâu: tốc độ/tên công nghệ truy cập, cấu trúc ISP chi tiết và xác suất trong LT1; phân phối file BitTorrent, HTTP/2, chi tiết message DNS, tracking/GDPR và tự viết socket app hoàn chỉnh trong LT2; QUIC/HTTP3 và tính đồ thị congestion phức tạp trong LT3. Congestion cơ bản vẫn có một lượt đọc ở ngày 6.
+Giữ thời gian cho A trước khi đọc sâu: tốc độ/tên công nghệ truy cập, cấu trúc ISP chi tiết và xác suất trong LT1; phân phối file BitTorrent, HTTP/2, chi tiết message DNS, tracking/GDPR và tự viết socket app hoàn chỉnh trong LT2; tính đồ thị congestion phức tạp trong LT3. Congestion cơ bản vẫn có một lượt đọc ở ngày6 và thuộc phạm vi TCP đã chốt. QUIC/HTTP3 nằm ngoài phạm vi Ch3.
 
 Không đưa các bài subnet/VLSM, NAT/phân mảnh IP, thuật toán routing, ARP/MAC/CSMA/CRC từ các bộ ngân hàng/bài ôn đã loại vào lịch ba chương này.
 

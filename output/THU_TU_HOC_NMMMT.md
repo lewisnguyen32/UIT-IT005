@@ -4,6 +4,8 @@ Dành cho người mới học, chưa chắc kiến thức, có 2-3 giờ/ngày 
 
 Số trang là **trang PDF tính từ 1**, không phải số slide in ở góc. Khi ghi Ch1/Ch2/Ch3, mở file lý thuyết tương ứng trong `NMMMT/Lý thuyết/`.
 
+**Phạm vi Chương 3 chốt ngày 27/10/2026:** chỉ học đến hết TCP, gồm quản lý kết nối, điều khiển luồng và điều khiển tắc nghẽn theo ảnh outline người dùng gửi. Tài liệu T3 đến hết trang PDF102; phần phát triển tầng vận chuyển/QUIC/HTTP3 tr104–108 nằm ngoài phạm vi. Giữ các bước14–23 và phần EstimatedRTT tùy chọn ở bước24.
+
 ## 1. Danh sách học theo thứ tự
 
 | Bước | Khi học | Chương và phần | Trang cần đọc | Tóm tắt cần hiểu và việc phải làm |
@@ -58,7 +60,7 @@ Chỗ nào chưa đạt, dùng giờ tăng cường để học lại chính ph�
 | 6 | 20-23 và luyện TCP; bước 24 nếu có thêm giờ | 110 phút học + 10 phút nghỉ |
 | 7 | 25: 65 phút làm đề + 35 phút chữa + 10 phút nhớ lại | 110 phút học + 10 phút nghỉ |
 
-Ngày có ba giờ: thêm tối đa 60 phút gồm nghỉ ngắn, ưu tiên chữa phần A còn yếu. Không cố học BitTorrent, QUIC/HTTP3, HTTP/2 hay tính đồ thị congestion sâu khi các bước cơ bản còn chưa chắc. Phần mở rộng, câu luyện và các giả thiết công thức giữ theo kế hoạch chính.
+Ngày có ba giờ: thêm tối đa 60 phút gồm nghỉ ngắn, ưu tiên chữa phần A còn yếu. BitTorrent, HTTP/2 và tính đồ thị congestion sâu để sau nền cơ bản theo kế hoạch. QUIC/HTTP3 ngoài phạm vi Ch3 đã chốt. Phần mở rộng, câu luyện và các giả thiết công thức giữ theo kế hoạch chính.
 
 ## 4. Lưu ý khi đọc tài liệu
 

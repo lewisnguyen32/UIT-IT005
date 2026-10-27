@@ -1,5 +1,7 @@
 # Chương 3: hồ sơ phân tích theo phạm vi cuối cùng
 
+**Cập nhật 27/10/2026:** người dùng chốt chỉ học đến hết TCP, gồm quản lý kết nối, điều khiển luồng và điều khiển tắc nghẽn theo ảnh outline. T3 đến hết trang PDF102; tr103 là mục lục chuyển phần, tr104–108 phát triển tầng vận chuyển/QUIC/HTTP3 ngoài phạm vi. Trang109 có thể dùng tổng kết các phần đã giữ. EstimatedRTT vẫn tùy chọn trong TCP. Thay đổi này không ảnh hưởng phân loại71câu Ch3 trong172lượt vì không có câu QUIC trong năm đề giữ lại.
+
 **Nguồn dùng làm căn cứ:** E01, E02, E03, E08, E10 và T3. E06 là DOCX trùng E08, không đếm. Mọi số trang là **trang vật lý PDF**, không phải số slide in ở góc trang. Bản này thay thế các phương án phạm vi trước đó.
 
 ## 1. Nhật ký đọc và giới hạn bằng chứng
@@ -59,7 +61,7 @@ A: cần vững trước luyện đề tổng hợp. B: học sau A, vẫn dành
 | 3.8 Kết nối TCP | SYN/SYN+ACK/ACK, ISN; SYN/FIN tiêu thụ 1 số thứ tự; FIN đóng một chiều gửi, còn nhận chiều ngược; FIN+ACK có thể ghép | A | tr.90-94 | E02 C30; E03 C1,C18,C23 |
 | 3.9 EstimatedRTT | SampleRTT/EstimatedRTT, cập nhật trọng số, nêu khởi tạo | B, có đề hỏi nên không bỏ | T3 **thiếu công thức**, cần bổ sung minh bạch | E02 C23 tr.6 |
 | 3.10 Congestion TCP | cwnd/ssthresh/MSS; SS/CA/Fast Recovery; timeout khác 3 dupACK; mỗi ACK khác mỗi RTT | B nền lý thuyết | tr.96-102 | Không có câu trực tiếp về cwnd/đồ thị trong 172 lượt; E03 C15 chỉ nhắc tính năng TCP |
-| 3.11 QUIC/HTTP3 | QUIC trên UDP, bổ sung reliability/security/congestion, streams | C | tr.104-108 | Chưa thấy câu trực tiếp trong 5 bộ |
+| 3.11 QUIC/HTTP3 | Ngoài phạm vi theo yêu cầu chỉ học đến hết TCP ngày27/10/2026 | Loại khỏi lộ trình Ch3 | tr.104-108 | Không có câu trực tiếp trong 5 bộ; không thay đổi kiểm đếm |
 
 ## 4. Cơ chế và bẫy phải hiểu
 
@@ -150,7 +152,7 @@ Có thể ghép A cuối ngày3,B ngày4,C ngày5,D ngày6; giờ còn lại dà
 
 Nếu có3h/ngày, thêm120-150 phút Ch3:30 trace RDT/GBN/SR,40 Seq/ACK/hình TCP,20 buffer/window,15 EstimatedRTT/utilization,10 QUIC,5-35 kiểm lại sau một ngày. Không thêm subnetting/định tuyến/link layer từ ngân hàng đã loại.
 
-Đạt khi tự giải thích dịch vụ TCP/UDP; vẽ UDP header và checksum3 từ có carry; dựng bảng RDT; trace GBN/SR mất gói/ACK; Seq/ACK đúng byte,đọc rwnd,vẽ SYN/FIN; EstimatedRTT ghi khởi tạo; phân biệt rwnd/cwnd,SS/CA. Sai A thì dùng giờ mở rộng sửa trước QUIC.
+Đạt khi tự giải thích dịch vụ TCP/UDP; vẽ UDP header và checksum3 từ có carry; dựng bảng RDT; trace GBN/SR mất gói/ACK; Seq/ACK đúng byte,đọc rwnd,vẽ SYN/FIN; EstimatedRTT ghi khởi tạo; phân biệt rwnd/cwnd,SS/CA. Sai A thì dùng giờ mở rộng sửa. QUIC nằm ngoài phạm vi đã chốt.
 
 ## 7. Bài luyện chỉ từ năm đề được chấp nhận
 
