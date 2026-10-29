@@ -3,9 +3,53 @@
 > Nhật ký chi tiết được chuyển nguyên văn từ memory.md ngày 27/10/2026. Mốc hiện tại xem [memory.md](../memory.md); quy tắc làm việc xem [AGENTS.md](../AGENTS.md).
 > Các câu “đang học”, “chưa giảng”, “chờ trả lời” và phần trăm trong mục cũ chỉ mô tả thời điểm ghi, không thay thế mốc hiện tại. Đường dẫn trong bản ghi gốc tính từ thư mục NMMMT.
 
-## Điểm tiếp tục Chương 3 — 27/10/2026
+## Điểm tiếp tục Chương 3 — 28/10/2026
 
-Phạm vi Ch3 đến hếtTCP gồm quản lý kết nối, điều khiển luồng và tắc nghẽn(T3 hếttr102); tr104–108QUIC/HTTP3 ngoài phạm vi. **Bước14–19 đã học/tự kiểm/chữa:6/10=60%. TẠM DỪNG sau phần giải thích W theo yêu cầu; không còn câu tự kiểm đang chờ.** Buổi sau bắt đầu bước20TCPtr75–84 khi người dùng yêu cầu tiếp. Tiến độ không đo thành thạo; cần ôn thêm chiều IP/port phản hồi, thời điểm receiver đổi trạng thái và phân biệt ACK riêng/tích lũy.
+**TẠM DỪNG theo yêu cầu người dùng cuối buổi TCP ngày 28/10/2026.** Giữ nguyên mốc bên dưới; buổi sau tiếp bước22 khi người dùng yêu cầu. Không thêm bài hoặc câu tự kiểm trong lượt tạm dừng.
+
+Phạm vi Ch3 đến hếtTCP gồm quản lý kết nối, điều khiển luồng và tắc nghẽn(T3 hếttr102); tr104–108QUIC/HTTP3 ngoài phạm vi. **Bước14–21 đã học/tự kiểm/chữa:8/10=80%. FlowC1/C2đúng,C3kếtluậnđúng nhưngcầnlàmrõlýdo,đãgiảithíchbổsung/chưa cóxácnhậnđãnắm. Khôngcòncâutựkiểmđangchờ.** Bài tiếp bước22connectiontr90–94 CHƯA GIẢNG. Tiến độ không đo thành thạo; giữ đểôn ACK vớiappđãđọc/bufferTCPkhácbuffertrìnhphát, ACKnhảykhílấplỗ cóbuffer, đếmduplicateACK tại sender/phânbiệtSeqphátlạivớiACKchiềungược, chiều IP/port phản hồi và thời điểm receiver đổi trạng thái.
+
+### TCP bước20 lượt1 — 28/10/2026, T3 tr75–79
+
+- Người dùng yêu cầu bắt đầu buổi TCP. Đã giảng tổng quan luồng byte tin cậy/đúng thứ tự/hai chiều; nhận diện các trường port, Seq, ACK trong header; MSS là payload tối đa, không cộng header; Seq là byte dữ liệu đầu tiên, ACK là byte kế tiếp còn chờ liên tục. Hai chiều có dãy Seq riêng. Ví dụ tự soạn đã thiết lập, không SYN/FIN, B đang chờ1000: A Seq1000/payload300 chứa1000–1299, B ACK1300, data mới tiếp theo của A Seq1300. Chưa giảng cơ chế phát lại hoặc flow/connection/congestion.
+- Đã chỉ rõ lỗi T3tr78 sau khi kiểm ảnh render có sẵn:9000B là0–8999, không0–9999; MSS2000 thì4segment2000B+1segment1000B, không5segment đều2000B. Tr75 diễn đạt MSS dễ nhầm cảheader; dùng nghĩa phần dữ liệu tối đa. Có subagent rà độc lập tr75–79, không đổi nguồn/phạm vi.
+- **Ba câu tự soạn đã trả lời/chữa:** (1)MSS1000B,1000Bdata+20Bheader: người dùng đúng khôngvượt vìMSSkhôngtínhheader. (2)Seq500/payload200B: đúngACK700; chưa nêu khoảngbyte, đã bổ sung500–699, khôngcoi phần chưa trả lời làđã đúng. (3)A gửi200B có buộcSeqB tăng200không: người dùng đúngý không vì hai dãySeqriêng, nhưng nói chưa hình dung rõ và yêu cầu giảng kỹ.
+- Đã giải thích ngay hai luồngbyte/đánh sốriêng theoT3tr79: A gửiSeq42/ACK79/data30 (byte42–71); B gửiSeq79/ACK72/data50 (byte79–128); A gửiACKthuần Seq72/ACK129/data0. Seq trong segment nói về chiều mình gửi, ACK nói về chiều mình nhận; nhậndata chỉ làm ACK của phía nhận tiến khi liên tục, không tiêu thụSeqgửi của phía nhận. ACKthuần khôngchiếmSeq; vídụ đã thiết lập/khôngSYNFIN. Phânbiệt ACKnumber với cờACK, không dạy rằng ACK là sốbyte nhận trong riêngsegment. Chưa xác nhận người dùng đã hiểu lời giảng bổ sung, không thêmquiz trong lượt này.
+- Giữ60% vì bước20 chưa học/tựkiểm/chữa xong; không coi đã thành thạo. Tiếp theo ACKtíchlũy/lỗhổng và phátlại T3tr79–84; không còn câu tự kiểm đang chờ.
+
+### TCP bước21 — 28/10/2026, điều khiển luồng, T3 tr85–89
+
+- Người dùng yêu cầu tiếp. Đã giảng flowcontrol bảo vệ bộđệmnhận: TCP nhận dữliệu và ứngdụng đọc khỏi bộđệm làhai việc khácnhau; ứngdụng đọcchậm thìbuffer cóthểđầy. Xét A→B, Bquảngbárwnd choA trongTCPheader; Achỉgửitronggiớihạncửasổbênnhận, môhìnhbàinàychỉxétflowcontrol.
+- Môhìnhtr88: rwnd=RcvBuffer−dữliệuđangchiếmbuffer, tínhtheobyte. Ví dụBbuffer5000B/chứa2000B→rwnd3000B. SaukhiA xửlýquảngbá rwnd3000B vàbanđầukhôngbytechưaACK, Agửi1200B mớichưaACK/khôngcậpnhậtACKcửasổkhác→còngửitốiđa1800B. Táchthờiđiểm đểkhôngtrừképsốbyte đãtínhvàobuffer.
+- Phânbiệt rwndgiớihạntổngbytechưaACK vớimỗi segmentgiớihạnpayloadtheoMSS. ACKxácnhậnTCPđãnhậnliêntục, khôngbảođảmứngdụngđãđọchết; datađãACKvẫncóthểchiếmbuffer. Ứngdụngđọcbớt/khôngdatamớitớithêm thìchỗtrốngtăng. Chưa giảngcwnd/congestion hoặczero-window probing.
+- Lỗi nguồn: tr88/89 ghi “Bên gửi thông báo bộ đệm trống”; đãkiểmảnhcósẵn p088/p089 vàđốichiếutr87/hìnhreceiver-side buffering, làbênNHẬNdatalàbênquảngbárwnd (vớichiềuA→BthìBquảngbáchoA). Nóirõlỗidiễnđạt, khôngâmthầmsửanộidungPDF. Cósubagent ràđộc lập tr85–89/giảthiếtvídụ, khôngnguồnngoài/khôngđổiphạmvi.
+- **Ba câu tựsoạn bước21 đã trả lời/chữa:** C1 đúngrwnd6000−2500=3500/BthôngbáochoA. C2 đúngcòngửi4000−1500=2500B. C3 trảlời“không”đúngkếtluận nhưngnóichưahiểurõ/yêucầugiảithích; chưatựnêulýdo, khôngcoilàđãnắmchắc. ĐãgiảithíchriêngtrìnhTCPnhận/ứngdụngđọckhỏisocket/videođượcphát. Chưa xácnhậnhiểulờigiảngbổsung.
+- Userliênhệthanhtrắngvideo/preloadkhóhếtvìtrànbuffer. Đãlàmrõ (xétvideoquaTCP): thanhbufferedthườngphảnánhphầnvideotrìnhphátđãtảisẵn, màu/ýnghĩacụthểtùyplayer; khácbộđệmnhậnTCP. TrìnhphátđọcbytekhỏiTCP sangbuffer/cache riêng rồigiảimã/phátsau; appđọcTCPkhôngđồngnghĩavideođãchiếu. Cóthểtảitrướctoànbộnếucáchvậnhành/tàinguyênchophép, khôngcầngiữtoànvideo trongTCPbuffer cùnglúc; khôngquykếtviệckhôngpreloadhếtlàtrànTCPbuffer.
+- Ví dụbổsung đểgiảiC3: bufferTCPB6000B banđầutrống, nhậnSeq10000/data2000→ACK12000/buffer2000/rwnd4000 dùappchưađọc; appđọc1500B/khôngdatamạngmới→buffer500/rwnd5500theomôhìnhđơngiản,ACKvẫn12000. Khôngxéthẹnwindowupdate/chiếtzero-copy; khôngmởrộngQUIC/HTTP3.
+- Đối chiếu bổsungchínhthống cho câu hỏi video, nêurõngoàiT3chính: MDN buffered https://developer.mozilla.org/en-US/docs/Web/Media/Guides/Audio_and_video_delivery/buffering_seeking_time_ranges ; MDNpreload https://developer.mozilla.org/en-US/docs/Web/API/HTMLMediaElement/preload (auto cóthểtảicảfile, làhint); RFC9293§3.8.6.2.2 https://datatracker.ietf.org/doc/html/rfc9293#section-3.8.6.2.2 (đãACKnhưnguserprocesschưaconsume). Cósubagent ràvídụ/vai trò/nguồn, khôngthaynguồnchính hoặcnguồnđề.
+- Đãhọc/tựkiểm/chữa bước21→8/10=80%, giữđiểmACKvớiappđọc/bufferTCPvớiplayerđểôn, khôngépđúng100%/khôngkhẳngđịnhthànhthạo. Khôngcòncâutựkiểmđangchờ. Bước22connectiontr90–94 và23congestiontr96–102chưagiảng.
+
+### TCP bước20 lượt3 — 28/10/2026, timeout/phát lại nhanh, T3 tr80/82/84
+
+- Người dùng nói “hiểu rồi” sau khi chữa lượt2C2; ghi nhận đã xác nhận hiểu lời giảiACK2400, không suy thànhthạo qua bài mới. Tiếp buổiTCP, không có yêu cầu dừng.
+- Đã giảng môhìnhsender tinhgiản: timer theo segmentcũnhấtchưaACK; timeout nghĩa chưa nhậnACKphùhợp đúnghạn, datahoặcACKcóthểmất/chậm, không chứngminhdatađãmất. Phátlại giữSeq/dữliệu cũ, restarttimer; receiverkhônggiao trùng vàACKtheomốcliêntụchiệntại. Ví dụSeq1000/data200 đãnhận nhưngACK1200mất→timeout/gửilạiSeq1000→Bkhônggiaolạibyte1000–1199/ACK1200. Nếu Bđã nhận liêntục xa hơn thìACKkhônglùi chỉvìbảncũtớilại, bám panelphải tr82.
+- Fastretransmit: AđãnhậnACK1000gốc, sauđónhận3ACK1000trùng→nghithiếu segmentbắtđầuSeq1000, phátlạikhôngchờtimeout. Bảngđếm1ACKgốc+3duplicate=4ACKcùngsố, đếmtheoACKđãtớisender. Chỉgợiýthiếu/mất/chậm, khôngchắcdatađãmất vàkhôngxácnhậntíchlũydata phía saulỗhổng.
+- Đã dùng kỹnăngPDF/Poppler đểrender đúngtr82/84 do tríchxuấtkhônggiữđủmũitên; ảnhT3_p082.png/p084.png trong tmp/study_audit/ch3_figures. Tr84sơđồxácnhận4ACK100=1gốc+3dup,rồi retransSeq100. Tr82ACKchậm/timeoutbảntrùngvẫnACK120. Cósubagent ràđộc lập; khôngdùngnguồnngoài/khôngđổiphạmvi.
+- **Ba câu tựsoạn lượt3 đã trả lời/chữa, đúng ý chính:** C1 timeoutphátlạiSeq1000,Bkhônggiaolại/ACK1200: đúng; cụm“Bkhônggiao”hiểu theo câu hỏi làkhônggiaolầnnữa, không gánlàchưagiaolầnđầu. C2 ACK3000gốc+2dup: đúngchưađủ3dup; người dùng nói“lầngửithứ4”, đãchuẩnhóa làACKcùngsốthứ4 A nhậnđược (1gốc+3dup), khôngđếmchỉtheoBđãgửi. C3 thêmdup3: đúngphátlạiSeq3000khôngchờtimeout; cụm“Seq=ACK=3000”được làmrõlàSeqphátlạilấytừsốACK3000Ađãnhận, khôngsuy trườngACKtrongsegmentAphátlạicũng3000 vìtrườngđónóivềchiềudatacủaB/chưađủdữkiện. “Bỏquatimeout”chuẩnhóa thànhkhôngcầnchờhếttimer, timerTCPvẫndùng; khôngcoilàtắt cơchếtimeout.
+- Đã học/tựkiểm/chữa đủbước20, nângCh3lên7/10=70%, khôngtựkhẳngđịnhthànhthạo. Khôngcòncâutựkiểmđangchờ. Bài tiếp bước21flowtr85–89 CHƯA GIẢNG; giữđiểmyếuACKcumnhảysaulấplỗ, đếmdupởsender vàSeqphátlạivớiACKchiềungược đểôn.
+
+### TCP bước20 lượt2 — 28/10/2026, ACK tích lũy/lỗ hổng/mất ACK, T3 tr81–83
+
+- Đã giảng ACKn xác nhận liên tục tới byte n−1 trong luồng đang xét, tiếp chờn; đoạn đến sau không tự làm ACK vượt lỗhổng. Ví dụ tựsoạn: Bchờ1000; Seq1000/data200mất; Seq1200/data200tới/Bbuffer1200–1399→ACK1000; khi bảnphátlạiSeq1000/data200tới, ghépđủ1000–1399→ACK1400. Đã nói rõ giảthiết lưu đoạn đến sau, không đồngnhất TCP với GBN hủyout-of-order. GiátrịACK khác câu hỏi thờiđiểmgửiACK; T3tr81 có delayedACK nên không dạy luônACKngay mỗi segment. Chưa giảng khi nào kíchhoạtphátlại.
+- Ví dụ mấtACK tựsoạn: A gửiSeq500/data200, Bnhận/ACK700mất; A gửiSeq700/data100, Bnhận/ACK800tớiA trước timeout→ACK800 bao phủ500–799, không cầnphátlại chỉ vìACK700mất. Khôngsuy mọi mấtACK đều khôngphátlại.
+- **Ba câu tựsoạn lượt2 đã trả lời/chữa:** C1 Bchờ2000/nhậnSeq2300data100buffer: đúngACK2000, thiếu2000–2299, giữ2300–2399/chưagiaoapp. C2 nhậnthêmSeq2000data300: trảlờiACK2000 sai; đãchữaACK2400 bằngghépđoạn2000–2299mớinhận với2300–2399đãbuffer→đủliêntục2000–2399, bytecònchờ2400. Chưa cóxácnhậnngườidùngđãnắmphầnvừachữa. C3 Seq5000data100+Seq5100data150,ACK5100mất/ACK5250tớiA trướctimeout: đúngkhôngcầnphátlạichỉvìmấtACK5100,vìACK5250xácnhậnliêntụctới5249. Khôngsuytoànbộcâuđúng hoặc thànhthạoACKtíchlũy.
+- Cósubagent ràđộc lập tr80–84 vềtrace/giảthiết. Giữ60% vì cònphầnphátlạitrongbước20; khôngcòncâutựkiểmđangchờ/khôngépđúng100%mớichuyển. Bài tiếp timeout/timeout sớm tr80/82 vàfastretransmit tr84; giữđiểmyếuACKnhảysaulấplỗđểôn. Lưuý cho bài sau: đếm3duplicateACK ởsender sauACKgốc, khôngđếm tổng3ACKcùngsố; tr84 diễnđạtngắn dễnhầm, cần làmrõ trướcquiz.
+
+### Diagram tự soạn hai chiều Seq/ACK — 28/10/2026, đã trả lời/chữa
+
+- Người dùng yêu cầu diagram trống để tự điền. Dựa cơ chế T3tr76/79, không phải câu thuộc đề. Kết nối đã thiết lập, khôngSYNFIN; cácsegment đến nguyênvẹn/đúngthứtự, mỗimũitênsau được gửi saukhi mũitrước đãđượcnhận/xửlý. Banđầu Bchờbyte1000 củaA, Achờbyte5000 củaB. Data làpayload, khôngtínhheader.
+- Diagram5mũitên: (1)A→B Seq1000/ACK5000/data200B; (2)B→A Seq5000/ACK[1]/data100B; (3)A→B Seq[2]/ACK[3]/data0B; (4)B→A Seq[4]/ACK[5]/data50B; (5)A→B Seq[6]/ACK[7]/data80B.
+- **Người dùng đã trả lời đúng cả7ô:** [1]1200,[2]1200,[3]5100,[4]5100,[5]1200,[6]1200,[7]5150. Đã chữa/nhấn mạnh [2]=[6]=1200 vì ACKthuần data0 khôngtiêuthụSeq; [5]=1200 vì A chưa gửi thêmdata trước mũitên4. A gửi thêm80B ởmũitên5 thì byte mới tiếp theo củaA1280 (khôngđổi Seq của chính segment đang bắtđầu1200). Xác nhận áp dụng đúng trong trace này, không khẳngđịnh thànhthạo mọiSeqACK/TCP. Giữ60% vì cònphầnphátlại trongbước20. Không còn câu tự kiểm đang chờ.
 
 ### Mốc tạm dừng và bài sau
 
