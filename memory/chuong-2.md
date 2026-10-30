@@ -3,6 +3,15 @@
 > Nhật ký chi tiết được chuyển nguyên văn từ memory.md ngày 27/10/2026. Mốc hiện tại xem [memory.md](../memory.md); quy tắc làm việc xem [AGENTS.md](../AGENTS.md).
 > Các câu “đang học”, “chưa giảng”, “chờ trả lời” và phần trăm trong mục cũ chỉ mô tả thời điểm ghi, không thay thế mốc hiện tại. Đường dẫn trong bản ghi gốc tính từ thư mục NMMMT.
 
+## Đối chiếu đề mẫu cô — 30/10/2026
+
+- Đây là đề mới riêng, không phải C11–20 của bộ80 đang tạm dừng. Theo ảnh và xác nhậnC2A/C12A: đúngC1C(cookie),C7C(FTP/TCP21),C9C(client–server); saiC2A→D10RTT,C6A→B2lượt200+304cache,C11D→CtheoHTTP1.1mặcđịnhpersistent/đủpathdocs. Đã chữa bằng mô hìnhT2 và nguồn bổ sung, chưa xác nhận đã tự áp dụng lại.
+- C12A chấp nhận theo ý hỏi chức năng IMAPkhônggửimail; D cũng sai tênInternetMailAccessProtocol, chuẩn làInternetMessageAccessProtocol/RFC9051. User đã chọnA nên không tự gánB là đáp án cuối; TCP143làđúng. Đã ghi lỗi tương tự ởT2tr60, không học theo tên sai.
+- Bổ sung bản tổng hợp/Obsidian: công thứcHTTPpersistentkhôngpipelining nhiềuobject,defaultHTTP1.1/Connectionclose,scheme+Host+path,304vẫnxemcache,502,IMAPTCP143/tênMessage,FTPcontrol21/data20active vàbảngcổng8dòng. HTTP80/FTP21/DNS53đãcótrước, không nói là hoàn toàn chưa học; RFC/IANA được gắn nhãn bổ sung. Xem [báo cáo đề mẫu](../output/CHUA_DE_MAU_CO_20261030.md).
+- Giữ8/8chặng cơ sở; bộ80 C11–20vẫnchưatrảlời, không tự chấm hoặc ép tiếp bộ đó khi người dùng đang chữa đề mẫu.
+- Hỏi đáp tiếpC2: đãlàmrõpersistentvẫncần6GETcho1HTML+5ảnh nhưngchỉ1TCP; withpipeliningnhậnxongHTMLrồigửi5GETảnhliêntiếp/khôngđợitừngresponse,bodyvẫntruyềnnốitiếp. Với t_object0,5RTT,1TCPmới/cùngserver/bỏGETheader/xửlý/DNS/TLS:1setup+(1+0,5)HTML+(1+5×0,5)ảnh=6RTT,so10RTTwithoutpipeline;3RTTchỉnếubỏtruyềnbody. Cósubagent ràlogic; làgiảithíchmởrộng,chưa cócâutựlàmmớixácnhậnnắm.
+- Đãđốichiếulịchsửtrướckhigiảng: khái niệmpersistentkhôngtựpipeliningđãđượcnói,đãtựkiểmmộtobject/4requests1TCP; bài sốnhiềuobject/pipeliningchưađượckiểm trướcđó vàxếpBthêmgiờ. Khôngnóilàuserđãluyệnkỹhoặcthànhthạophầnnày.
+
 ## Tiến trình Chương 2 đã lưu, tạm dừng — 27/10/2026
 
 Đã học đủ **8/8 chặng cơ sở = 100% phạm vi nội dung đã thống nhất**, chưa đồng nghĩa thành thạo hoặc đã học toàn bộ phần mở rộng. Bốn câu tổng ôn cũ đã trả lời và chữa, không hỏi lại như thể chưa làm. **Người dùng yêu cầu tạm dừng ôn Ch2 để học Ch3. C11–20 bộ80 CHƯA TRẢ LỜI.** Chỉ tiếp ônCh2 khi người dùng quay lại; giữ kết quả chi tiết bên dưới.

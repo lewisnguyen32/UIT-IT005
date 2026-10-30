@@ -1,0 +1,1715 @@
+{
+  "extraction_version": "1.3",
+  "sources": [
+    {
+      "source": "Lý thuyết/#Week01-Chapter0 2024.pptx",
+      "sha256": "98764213de58b927ee987870de713eaafe02ccd8e2907b48a9f64572ba79d4ec",
+      "size_bytes": 1633562,
+      "mtime_ns": 1793361637499543300,
+      "slide_count": 9,
+      "extraction_version": "1.3",
+      "extractor_sha256": "5b0acf26c6261cd939bb1281f95211d14b9f448ee63fe33511d09015c25b38b0",
+      "output": "Lý thuyết/pdf/W01.md",
+      "slides": [
+        {
+          "number": 1,
+          "title": "HỆ ĐIỀU HÀNH",
+          "flags": []
+        },
+        {
+          "number": 2,
+          "title": "1. Tổng quan",
+          "flags": []
+        },
+        {
+          "number": 3,
+          "title": "2. Hình thức thi",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 4,
+          "title": "3. Chuẩn đầu ra môn học",
+          "flags": []
+        },
+        {
+          "number": 5,
+          "title": "4. Nội dung",
+          "flags": []
+        },
+        {
+          "number": 6,
+          "title": "5. Tài liệu tham khảo",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 7,
+          "title": "5. Tài liệu tham khảo",
+          "flags": []
+        },
+        {
+          "number": 8,
+          "title": "6. Quy định môn học",
+          "flags": []
+        },
+        {
+          "number": 9,
+          "title": "THẢO LUẬN",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Lý thuyết/#Week02-Chapter2 2024.pptx",
+      "sha256": "7156374aa90cc256bd7acf63b2d43b8411d55913a0c79cd32b5e3cbb8446318e",
+      "size_bytes": 5519851,
+      "mtime_ns": 1793361636070587600,
+      "slide_count": 57,
+      "extraction_version": "1.3",
+      "extractor_sha256": "5b0acf26c6261cd939bb1281f95211d14b9f448ee63fe33511d09015c25b38b0",
+      "output": "Lý thuyết/pdf/W02.md",
+      "slides": [
+        {
+          "number": 1,
+          "title": "HỆ ĐIỀU HÀNH",
+          "flags": []
+        },
+        {
+          "number": 2,
+          "title": "Biết được các thành phần của hệ điều hành",
+          "flags": []
+        },
+        {
+          "number": 3,
+          "title": "Các thành phần của hệ điều hành",
+          "flags": []
+        },
+        {
+          "number": 4,
+          "title": "CÁC THÀNH PHẦN CỦA HỆ ĐIỀU HÀNH",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 5,
+          "title": "1. Các thành phần của hệ điều hành",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 6,
+          "title": "1.1. Quản lý tiến trình",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 7,
+          "title": "1.1. Quản lý tiến trình",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 8,
+          "title": "1.1. Quản lý tiến trình",
+          "flags": []
+        },
+        {
+          "number": 9,
+          "title": "1.2. Quản lý bộ nhớ chính",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 10,
+          "title": "1.2. Quản lý bộ nhớ chính",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 11,
+          "title": "1.2. Quản lý bộ nhớ chính",
+          "flags": []
+        },
+        {
+          "number": 12,
+          "title": "1.2. Quản lý bộ nhớ chính",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 13,
+          "title": "1.2. Quản lý bộ nhớ chính",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 14,
+          "title": "1.3. Quản lý file",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 15,
+          "title": "1.3. Quản lý file",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 16,
+          "title": "1.3. Quản lý file",
+          "flags": []
+        },
+        {
+          "number": 17,
+          "title": "1.4. Quản lý hệ thống I/O",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 18,
+          "title": "1.4. Quản lý hệ thống I/O",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 19,
+          "title": "1.4. Quản lý hệ thống I/O",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 20,
+          "title": "1.5. Quản lý hệ thống lưu trữ thứ cấp",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 21,
+          "title": "1.5. Quản lý hệ thống lưu trữ thứ cấp",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 22,
+          "title": "1.5. Quản lý hệ thống lưu trữ thứ cấp",
+          "flags": []
+        },
+        {
+          "number": 23,
+          "title": "1.6. Hệ thống bảo vệ",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 24,
+          "title": "1.6. Hệ thống bảo vệ",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 25,
+          "title": "1.6. Hệ thống bảo vệ",
+          "flags": []
+        },
+        {
+          "number": 26,
+          "title": "1.7. Hệ thống thông dịch lệnh",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 27,
+          "title": "1.7. Hệ thống thông dịch lệnh",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 28,
+          "title": "1.7. Hệ thống thông dịch lệnh",
+          "flags": []
+        },
+        {
+          "number": 29,
+          "title": "CÁC DỊCH VỤ HỆ ĐIỀU HÀNH CUNG CẤP",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 30,
+          "title": "2. Các dịch vụ hệ điều hành cung cấp",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 31,
+          "title": "2. Các dịch vụ hệ điều hành cung cấp",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 32,
+          "title": "2. Các dịch vụ hệ điều hành cung cấp",
+          "flags": []
+        },
+        {
+          "number": 33,
+          "title": "2. Các dịch vụ hệ điều hành cung cấp",
+          "flags": []
+        },
+        {
+          "number": 34,
+          "title": "Giao diện người dùng",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 35,
+          "title": "LỜI GỌI HỆ THỐNG",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 36,
+          "title": "3. Lời gọi hệ thống",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 37,
+          "title": "3. Lời gọi hệ thống",
+          "flags": []
+        },
+        {
+          "number": 38,
+          "title": "3. Lời gọi hệ thống",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 39,
+          "title": "3. Lời gọi hệ thống",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 40,
+          "title": "3. Lời gọi hệ thống",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 41,
+          "title": "CÁC CHƯƠNG TRÌNH HỆ THỐNG",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 42,
+          "title": "4. Các chương trình hệ thống",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 43,
+          "title": "4. Các chương trình hệ thống",
+          "flags": []
+        },
+        {
+          "number": 44,
+          "title": "CẤU TRÚC HỆ THỐNG",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 45,
+          "title": "5. Cấu trúc hệ thống",
+          "flags": []
+        },
+        {
+          "number": 46,
+          "title": "5.1 Cấu trúc Monolithic - Original UNIX",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 47,
+          "title": "5.2 Cấu trúc Layered Approach",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 48,
+          "title": "5.3 Cấu trúc Microkernels",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 49,
+          "title": "5.4 Cấu trúc Modules",
+          "flags": []
+        },
+        {
+          "number": 50,
+          "title": "Cấu trúc hệ thống Linux",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 51,
+          "title": "5.5 Cấu trúc Hybrid Systems",
+          "flags": []
+        },
+        {
+          "number": 52,
+          "title": "Cấu trúc của macOS và iOS",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 53,
+          "title": "Cấu trúc của Darwin",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 54,
+          "title": "Kiến trúc Android",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 55,
+          "title": "Tóm tắt lại nội dung buổi học",
+          "flags": []
+        },
+        {
+          "number": 56,
+          "title": "Câu hỏi ôn tập chương 2",
+          "flags": []
+        },
+        {
+          "number": 57,
+          "title": "THẢO LUẬN",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Lý thuyết/#Week03-Chapter3 2024.pptx",
+      "sha256": "1021a9c9a0bd1f56e60bd4b13f6c619d3f2961a3f488fb1e41d9ffbd9f4e5190",
+      "size_bytes": 2410625,
+      "mtime_ns": 1793361639974697600,
+      "slide_count": 64,
+      "extraction_version": "1.3",
+      "extractor_sha256": "5b0acf26c6261cd939bb1281f95211d14b9f448ee63fe33511d09015c25b38b0",
+      "output": "Lý thuyết/pdf/W03.md",
+      "slides": [
+        {
+          "number": 1,
+          "title": "HỆ ĐIỀU HÀNH",
+          "flags": []
+        },
+        {
+          "number": 2,
+          "title": "Hiểu được khái niệm và các trạng thái của tiến trình",
+          "flags": []
+        },
+        {
+          "number": 3,
+          "title": "Khái niệm cơ bản",
+          "flags": []
+        },
+        {
+          "number": 4,
+          "title": "KHÁI NIỆM CƠ BẢN",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 5,
+          "title": "1. Khái niệm cơ bản",
+          "flags": []
+        },
+        {
+          "number": 6,
+          "title": "1. Khái niệm cơ bản",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 7,
+          "title": "1. Khái niệm cơ bản",
+          "flags": [
+            "media/hình",
+            "OLE/nhúng",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 8,
+          "title": "Layout bộ nhớ của một chương trình C",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 9,
+          "title": "1. Khái niệm cơ bản",
+          "flags": []
+        },
+        {
+          "number": 10,
+          "title": "TRẠNG THÁI TIẾN TRÌNH",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 11,
+          "title": "2. Trạng thái tiến trình",
+          "flags": []
+        },
+        {
+          "number": 12,
+          "title": "2. Trạng thái tiến trình",
+          "flags": []
+        },
+        {
+          "number": 13,
+          "title": "2. Trạng thái tiến trình",
+          "flags": []
+        },
+        {
+          "number": 14,
+          "title": "2. Trạng thái tiến trình",
+          "flags": []
+        },
+        {
+          "number": 15,
+          "title": "PROCESS CONTROL BLOCK",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 16,
+          "title": "3. Process Control Block",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 17,
+          "title": "4. ĐỊNH THỜI TIẾN TRÌNH",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 18,
+          "title": "4. Định thời tiến trình",
+          "flags": []
+        },
+        {
+          "number": 19,
+          "title": "4. Định thời tiến trình",
+          "flags": []
+        },
+        {
+          "number": 20,
+          "title": "4. Định thời tiến trình",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 21,
+          "title": "4.1. Các hàng đợi định thời",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 22,
+          "title": "4.1. Các hàng đợi định thời",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 23,
+          "title": "4.1. Các hàng đợi định thời",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 24,
+          "title": "4.2. Bộ định thời",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 25,
+          "title": "4.2. Bộ định thời",
+          "flags": []
+        },
+        {
+          "number": 26,
+          "title": "4.2. Bộ định thời",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 27,
+          "title": "4.2. Bộ định thời",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 28,
+          "title": "CÁC TÁC VỤ ĐỐI VỚI TIẾN TRÌNH",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 29,
+          "title": "5. Các tác vụ đối với tiến trình",
+          "flags": []
+        },
+        {
+          "number": 30,
+          "title": "5. Các tác vụ đối với tiến trình",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 31,
+          "title": "5. Các tác vụ đối với tiến trình",
+          "flags": []
+        },
+        {
+          "number": 32,
+          "title": "5. Các tác vụ đối với tiến trình",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 33,
+          "title": "5. Các tác vụ đối với tiến trình",
+          "flags": []
+        },
+        {
+          "number": 34,
+          "title": "5. Các tác vụ đối với tiến trình",
+          "flags": []
+        },
+        {
+          "number": 35,
+          "title": "5. Các tác vụ đối với tiến trình",
+          "flags": []
+        },
+        {
+          "number": 36,
+          "title": "5. Các tác vụ đối với tiến trình",
+          "flags": []
+        },
+        {
+          "number": 37,
+          "title": "5. Các tác vụ đối với tiến trình",
+          "flags": []
+        },
+        {
+          "number": 38,
+          "title": "5. Các tác vụ đối với tiến trình",
+          "flags": []
+        },
+        {
+          "number": 39,
+          "title": "CỘNG TÁC GIỮA CÁC TIẾN TRÌNH",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 40,
+          "title": "6. Cộng tác giữa các tiến trình",
+          "flags": []
+        },
+        {
+          "number": 41,
+          "title": "6.1. Giao tiếp liên tiến trình (IPC)",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 42,
+          "title": "6.1. Giao tiếp liên tiến trình (IPC)",
+          "flags": []
+        },
+        {
+          "number": 43,
+          "title": "6.1. Giao tiếp liên tiến trình (IPC)",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 44,
+          "title": "6.2. Bộ nhớ được chia sẻ - Shared memory",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 45,
+          "title": "6.2. Bộ nhớ được chia sẻ - Shared memory",
+          "flags": []
+        },
+        {
+          "number": 46,
+          "title": "6.3. Hệ thống truyền thông điệp - Message passing",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 47,
+          "title": "6.3. Hệ thống truyền thông điệp - Message passing",
+          "flags": []
+        },
+        {
+          "number": 48,
+          "title": "6.3. Hệ thống truyền thông điệp - Message passing",
+          "flags": []
+        },
+        {
+          "number": 49,
+          "title": "7.1. Tổng quan về tiểu trình",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 50,
+          "title": "7.1. Tổng quan về tiểu trình",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 51,
+          "title": "7.1. Tổng quan về tiểu trình",
+          "flags": []
+        },
+        {
+          "number": 52,
+          "title": "7.1. Tổng quan về tiểu trình",
+          "flags": []
+        },
+        {
+          "number": 53,
+          "title": "7.1. Tổng quan về tiểu trình",
+          "flags": []
+        },
+        {
+          "number": 54,
+          "title": "7.1. Tổng quan về tiểu trình",
+          "flags": []
+        },
+        {
+          "number": 55,
+          "title": "7.2. Các mô hình đa tiểu trình",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 56,
+          "title": "7.2. Các mô hình đa tiểu trình",
+          "flags": []
+        },
+        {
+          "number": 57,
+          "title": "7.2. Các mô hình đa tiểu trình",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 58,
+          "title": "7.2. Các mô hình đa tiểu trình",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 59,
+          "title": "7.2. Các mô hình đa tiểu trình",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 60,
+          "title": "Tóm tắt lại nội dung buổi học",
+          "flags": []
+        },
+        {
+          "number": 61,
+          "title": "Câu hỏi ôn tập chương 3",
+          "flags": []
+        },
+        {
+          "number": 62,
+          "title": "Câu hỏi ôn tập chương 3 (tt)",
+          "flags": []
+        },
+        {
+          "number": 63,
+          "title": "Câu hỏi ôn tập chương 3 (tt)",
+          "flags": []
+        },
+        {
+          "number": 64,
+          "title": "THẢO LUẬN",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Lý thuyết/#Week04-Chapter4-1 2024.pptx",
+      "sha256": "c56be82befbd94de72aa451a746568649ec541f8bcf90c9cb640dbd0bb990583",
+      "size_bytes": 2659398,
+      "mtime_ns": 1793322452163114400,
+      "slide_count": 74,
+      "extraction_version": "1.3",
+      "extractor_sha256": "5b0acf26c6261cd939bb1281f95211d14b9f448ee63fe33511d09015c25b38b0",
+      "output": "Lý thuyết/pdf/W04.md",
+      "slides": [
+        {
+          "number": 1,
+          "title": "HỆ ĐIỀU HÀNH",
+          "flags": []
+        },
+        {
+          "number": 2,
+          "title": "Biết được các khái niệm cơ bản về định thời",
+          "flags": []
+        },
+        {
+          "number": 3,
+          "title": "Các khái niệm cơ bản về định thời",
+          "flags": []
+        },
+        {
+          "number": 4,
+          "title": "CÁC KHÁI NIỆM CƠ BẢN VỀ ĐỊNH THỜI",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 5,
+          "title": "1. Các khái niệm cơ bản về định thời",
+          "flags": []
+        },
+        {
+          "number": 6,
+          "title": "1. Các khái niệm cơ bản về định thời",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 7,
+          "title": "1. Các khái niệm cơ bản về định thời",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 8,
+          "title": "1. Các khái niệm cơ bản về định thời",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 9,
+          "title": "CÁC LOẠI ĐỊNH THỜI",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 10,
+          "title": "2. Các loại định thời",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 11,
+          "title": "2.1. Định thời dài (Long-term scheduling)",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 12,
+          "title": "2.1. Định thời dài (Long-term Scheduling)",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 13,
+          "title": "2.2. Định thời vừa (Medium-term scheduling)",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 14,
+          "title": "2.2. Định thời vừa (Medium-term scheduling)",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 15,
+          "title": "2.3. Định thời ngắn (Short-term scheduling)",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 16,
+          "title": "2.3. Định thời ngắn (Short-term scheduling)",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 17,
+          "title": "2.3. Định thời ngắn (Short-term scheduling)",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 18,
+          "title": "2.3. Định thời ngắn (Short-term scheduling)",
+          "flags": []
+        },
+        {
+          "number": 19,
+          "title": "CÁC TIÊU CHUẨN ĐỊNH THỜI CPU",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 20,
+          "title": "3. Các tiêu chuẩn định thời CPU",
+          "flags": []
+        },
+        {
+          "number": 21,
+          "title": "Cách xác định các thông số định thời",
+          "flags": [
+            "Office Math: chữ phẳng không giữ bố cục; xem công thức gốc",
+            "media/hình"
+          ]
+        },
+        {
+          "number": 22,
+          "title": "Hướng hệ thống (System oriented)",
+          "flags": []
+        },
+        {
+          "number": 23,
+          "title": "4.1. Giải thuật định thời",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 24,
+          "title": "4.1. Giải thuật định thời",
+          "flags": []
+        },
+        {
+          "number": 25,
+          "title": "Các chế độ quyết định",
+          "flags": []
+        },
+        {
+          "number": 26,
+          "title": "Thời điểm thực thi hàm chọn lựa",
+          "flags": []
+        },
+        {
+          "number": 27,
+          "title": "Các giải thuật định thời",
+          "flags": []
+        },
+        {
+          "number": 28,
+          "title": "4.2. First-Come, First-Served (FCFS)",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 29,
+          "title": "4.2. First-Come, First-Served (FCFS)",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 30,
+          "title": "4.2. First-Come, First-Served (FCFS)",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 31,
+          "title": "4.2. First-Come, First-Served (FCFS)",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 32,
+          "title": "4.2. First-Come, First-Served (FCFS)",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 33,
+          "title": "4.2. First-Come, First-Served (FCFS)",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 34,
+          "title": "4.3. Shortest-Job-First (SJF)",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 35,
+          "title": "4.3. Shortest-Job-First (SJF)",
+          "flags": []
+        },
+        {
+          "number": 36,
+          "title": "4.3. Shortest-Job-First (SJF)",
+          "flags": []
+        },
+        {
+          "number": 37,
+          "title": "Ví dụ: SJF ở chế độ không trưng dụng",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 38,
+          "title": "Ví dụ: SJF ở chế độ không trưng dụng",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 39,
+          "title": "Ví dụ: SJF ở chế độ không trưng dụng",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 40,
+          "title": "4.3. Shortest-Job-First (SJF)",
+          "flags": []
+        },
+        {
+          "number": 41,
+          "title": "4.3. Shortest-Job-First (SJF)",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 42,
+          "title": "4.3. Shortest-Job-First (SJF)",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 43,
+          "title": "4.3. Shortest-Job-First (SJF)",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 44,
+          "title": "Nhận xét về giải thuật SJF",
+          "flags": []
+        },
+        {
+          "number": 45,
+          "title": "Nhận xét về giải thuật SJF",
+          "flags": []
+        },
+        {
+          "number": 46,
+          "title": "Nhận xét về giải thuật SJF",
+          "flags": [
+            "Office Math: chữ phẳng không giữ bố cục; xem công thức gốc",
+            "media/hình"
+          ]
+        },
+        {
+          "number": 47,
+          "title": "4.3. Shortest-Job-First (SJF)",
+          "flags": [
+            "Office Math: chữ phẳng không giữ bố cục; xem công thức gốc",
+            "media/hình"
+          ]
+        },
+        {
+          "number": 48,
+          "title": "4.4. Định thời theo độ ưu tiên - Priority Scheduling",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 49,
+          "title": "4.4. Định thời theo độ ưu tiên – Priority Scheduling",
+          "flags": []
+        },
+        {
+          "number": 50,
+          "title": "Cách gán độ ưu tiên cho tiến trình",
+          "flags": []
+        },
+        {
+          "number": 51,
+          "title": "4.4. Định thời theo độ ưu tiên – Priority Scheduling",
+          "flags": []
+        },
+        {
+          "number": 52,
+          "title": "4.4. Định thời theo độ ưu tiên – Priority Scheduling",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 53,
+          "title": "4.5. Round Robin (RR)",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 54,
+          "title": "4.5. Round Robin (RR)",
+          "flags": []
+        },
+        {
+          "number": 55,
+          "title": "4.5. Round Robin (RR)",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 56,
+          "title": "4.5. Round Robin (RR)",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 57,
+          "title": "4.5. Round Robin (RR)",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 58,
+          "title": "4.5. Round Robin (RR)",
+          "flags": []
+        },
+        {
+          "number": 59,
+          "title": "4.5. Round Robin (RR)",
+          "flags": []
+        },
+        {
+          "number": 60,
+          "title": "4.5. Round Robin (RR)",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 61,
+          "title": "Quantum time và Thời gian đáp ứng",
+          "flags": [
+            "media/hình",
+            "OLE/nhúng",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 62,
+          "title": "Quantum time và hiệu suất hệ thống",
+          "flags": []
+        },
+        {
+          "number": 63,
+          "title": "Cách chọn quantum time",
+          "flags": []
+        },
+        {
+          "number": 64,
+          "title": "Tóm tắt lại nội dung buổi học",
+          "flags": []
+        },
+        {
+          "number": 65,
+          "title": "Câu hỏi ôn tập",
+          "flags": []
+        },
+        {
+          "number": 66,
+          "title": "Bài tập 1",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 67,
+          "title": "Bài tập 2",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 68,
+          "title": "Bài tập 3",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 69,
+          "title": "Bài tập 4",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 70,
+          "title": "Bài tập 5",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 71,
+          "title": "Bài tập 6",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 72,
+          "title": "Bài tập 7",
+          "flags": [
+            "bảng"
+          ]
+        },
+        {
+          "number": 73,
+          "title": "Bài tập 8",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 74,
+          "title": "THẢO LUẬN",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        }
+      ]
+    },
+    {
+      "source": "Lý thuyết/#Week05-Chapter4-2 2024.pptx",
+      "sha256": "32dafb3dc91411c141ee5c167bd1713596b349f5656b8b2adca3c679ccec5ab3",
+      "size_bytes": 3035516,
+      "mtime_ns": 1793322387673852200,
+      "slide_count": 59,
+      "extraction_version": "1.3",
+      "extractor_sha256": "5b0acf26c6261cd939bb1281f95211d14b9f448ee63fe33511d09015c25b38b0",
+      "output": "Lý thuyết/pdf/W05.md",
+      "slides": [
+        {
+          "number": 1,
+          "title": "HỆ ĐIỀU HÀNH",
+          "flags": []
+        },
+        {
+          "number": 2,
+          "title": "4. Các giải thuật định thời",
+          "flags": []
+        },
+        {
+          "number": 3,
+          "title": "4.6. Highest Response Ratio Next (HRRN)",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 4,
+          "title": "4.6. Highest Response Ratio Next (HRRN)",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 5,
+          "title": "4.7. Multilevel Queue",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 6,
+          "title": "4.7. Multilevel Queue",
+          "flags": []
+        },
+        {
+          "number": 7,
+          "title": "Việc định thời giữa các hàng đợi",
+          "flags": []
+        },
+        {
+          "number": 8,
+          "title": "Ví dụ phân chia hàng đợi và tiến trình",
+          "flags": []
+        },
+        {
+          "number": 9,
+          "title": "Hạn chế của Multilevel Queue",
+          "flags": []
+        },
+        {
+          "number": 10,
+          "title": "4.8. Multilevel Feedback Queue",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 11,
+          "title": "4.8. Multilevel Feedback Queue",
+          "flags": []
+        },
+        {
+          "number": 12,
+          "title": "Ví dụ về Multilevel Feedback Queue",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 13,
+          "title": "Các vấn đề với Multilevel Feedback Queue",
+          "flags": []
+        },
+        {
+          "number": 14,
+          "title": "4.9. So sánh các giải thuật",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 15,
+          "title": "4.9. So sánh các giải thuật",
+          "flags": []
+        },
+        {
+          "number": 16,
+          "title": "ĐỊNH THỜI TIỂU TRÌNH",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 17,
+          "title": "5. Định thời tiểu trình",
+          "flags": []
+        },
+        {
+          "number": 18,
+          "title": "ĐỊNH THỜI ĐA BỘ XỬ LÝ",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 19,
+          "title": "6. Định thời đa bộ xử lý",
+          "flags": []
+        },
+        {
+          "number": 20,
+          "title": "6.1. Đa xử lý bất đối xứng",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 21,
+          "title": "6.1. Đa xử lý bất đối xứng",
+          "flags": []
+        },
+        {
+          "number": 22,
+          "title": "6.2. Đa xử lý đối xứng",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 23,
+          "title": "6.2. Đa xử lý đối xứng",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 24,
+          "title": "6.2. Đa xử lý đối xứng",
+          "flags": []
+        },
+        {
+          "number": 25,
+          "title": "Cân bằng tải (Load balancing)",
+          "flags": []
+        },
+        {
+          "number": 26,
+          "title": "Processor affinity",
+          "flags": []
+        },
+        {
+          "number": 27,
+          "title": "Processor affinity",
+          "flags": []
+        },
+        {
+          "number": 28,
+          "title": "Processor affinity",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 29,
+          "title": "ĐỊNH THỜI THEO THỜI GIAN THỰC",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 30,
+          "title": "7. Định thời theo thời gian thực",
+          "flags": []
+        },
+        {
+          "number": 31,
+          "title": "Định thời theo thời gian thực dựa trên độ ưu tiên",
+          "flags": []
+        },
+        {
+          "number": 32,
+          "title": "Mô hình tác vụ trong thời gian thực",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 33,
+          "title": "Các giải thuật định thời",
+          "flags": []
+        },
+        {
+          "number": 34,
+          "title": "Định thời Rate Monotonic",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 35,
+          "title": "Định thời EDF",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 36,
+          "title": "Định thời Total Bandwidth Server (TBS)",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 37,
+          "title": "7. Định thời theo thời gian thực",
+          "flags": []
+        },
+        {
+          "number": 38,
+          "title": "8.1. Định thời trên Linux",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 39,
+          "title": "8.1. Định thời trên Linux",
+          "flags": []
+        },
+        {
+          "number": 40,
+          "title": "8.1. Định thời trên Linux",
+          "flags": []
+        },
+        {
+          "number": 41,
+          "title": "8.1. Định thời trên Linux",
+          "flags": []
+        },
+        {
+          "number": 42,
+          "title": "8.1. Định thời trên Linux",
+          "flags": []
+        },
+        {
+          "number": 43,
+          "title": "8.1. Định thời trên Linux",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 44,
+          "title": "8.1. Định thời trên Linux",
+          "flags": [
+            "media/hình"
+          ]
+        },
+        {
+          "number": 45,
+          "title": "8.2. Định thời trên Windows",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 46,
+          "title": "8.2. Định thời trên Windows",
+          "flags": []
+        },
+        {
+          "number": 47,
+          "title": "8.2. Định thời trên Windows",
+          "flags": []
+        },
+        {
+          "number": 48,
+          "title": "8.2. Định thời trên Windows",
+          "flags": []
+        },
+        {
+          "number": 49,
+          "title": "8.2. Định thời trên Windows",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 50,
+          "title": "8.2. Định thời trên Windows",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 51,
+          "title": "8.2. Định thời trên Windows",
+          "flags": []
+        },
+        {
+          "number": 52,
+          "title": "8.3. Định thời trên Solaris (đọc thêm)",
+          "flags": [
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 53,
+          "title": "8.3. Định thời trên Solaris",
+          "flags": []
+        },
+        {
+          "number": 54,
+          "title": "8.3. Định thời trên Solaris",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 55,
+          "title": "8.3. Định thời trên Solaris",
+          "flags": []
+        },
+        {
+          "number": 56,
+          "title": "8.3. Định thời trên Solaris",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        },
+        {
+          "number": 57,
+          "title": "Tóm tắt nội dung buổi học",
+          "flags": []
+        },
+        {
+          "number": 58,
+          "title": "Câu hỏi ôn tập",
+          "flags": []
+        },
+        {
+          "number": 59,
+          "title": "THẢO LUẬN",
+          "flags": [
+            "media/hình",
+            "ít hoặc không có chữ nội dung; xem slide gốc"
+          ]
+        }
+      ]
+    }
+  ]
+}

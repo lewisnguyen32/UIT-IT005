@@ -3,6 +3,10 @@
 > Nhật ký chi tiết được chuyển nguyên văn từ memory.md ngày 27/10/2026. Mốc hiện tại xem [memory.md](../memory.md); quy tắc làm việc xem [AGENTS.md](../AGENTS.md).
 > Các câu “đang học”, “chưa giảng”, “chờ trả lời” và phần trăm trong mục cũ chỉ mô tả thời điểm ghi, không thay thế mốc hiện tại. Đường dẫn trong bản ghi gốc tính từ thư mục NMMMT.
 
+## Đối chiếu đề mẫu cô — 30/10/2026
+
+- C3 đúngD/8ms:2000×8/(2×10^6)=0,008s; C4 đúngA/1Mbps:min(1,2,3). Kiến thức/công thức đã có trong bản tổng hợp, không phát sinh chủ đềCh1mới; không suy thành thạo toànchương. Chi tiết ở [báo cáo đề mẫu](../output/CHUA_DE_MAU_CO_20261030.md).
+
 ## Kết quả sau tổng ôn
 
 - Nội dung Chương 1 đã học: bốn loại độ trễ; trễ truyền `L/R` và trễ lan truyền `d/s`; cường độ lưu lượng `La/R`, hàng đợi và mất gói; độ trễ của một gói qua nhiều link theo store-and-forward.

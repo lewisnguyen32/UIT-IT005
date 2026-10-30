@@ -3,11 +3,33 @@
 > Nhật ký chi tiết được chuyển nguyên văn từ memory.md ngày 27/10/2026. Mốc hiện tại xem [memory.md](../memory.md); quy tắc làm việc xem [AGENTS.md](../AGENTS.md).
 > Các câu “đang học”, “chưa giảng”, “chờ trả lời” và phần trăm trong mục cũ chỉ mô tả thời điểm ghi, không thay thế mốc hiện tại. Đường dẫn trong bản ghi gốc tính từ thư mục NMMMT.
 
-## Điểm tiếp tục Chương 3 — 29/10/2026
+## Điểm tiếp tục Chương 3 — 30/10/2026
 
-**Đang tiếp buổi TCP theo yêu cầu ngày29/10/2026**, sau mốc tạm dừng cuối buổi28/10.
+**Đang ôn TCP theo yêu cầu ngày30/10/2026**, sau khi trả lời/chữa xong FIN và hoàn tất các chặng cơ sở Ch3.
 
-Phạm vi Ch3 cập nhật29/10: đến hếtphầnTCPbanđầugồmflow/connection, T3hếttr94; TCPđiềukhiểntắcnghẽntr96–102 vàQUIC/HTTP3tr104–108ngoàiphạmvi thi. **Bước14–21 đã học/tự kiểm/chữa:8/9≈88,9%; bước22đanghọc,chưa cộngchặng. Bước22lượt2FINtr93–94có3câu tựsoạnđangchờtrảlời/chưachấm.** Lượt1 C1/C2đãtrảlời/chữa,C3Seq201đãgiảithích/vẽdiagramnhưngchưa cócâutựlàm/xácnhậnhiểu. Tiến độ không đo thành thạo; giữ đểôn ACKthuầnkhôngtiêuthụSeq, ACK vớiappđãđọc/bufferTCPkhácbuffertrìnhphát (flowC3đãgiảithích/chưađượcxácnhậnđãnắm), ACKnhảykhílấplỗ cóbuffer, đếmduplicateACK tại sender/phânbiệtSeqphátlạivớiACKchiềungược, chiều IP/port phản hồi và thời điểm receiver đổi trạng thái.
+Phạm vi Ch3 cập nhật29/10: đến hếtphầnTCPbanđầugồmflow/connection, T3hếttr94; TCPđiềukhiểntắcnghẽntr96–102 vàQUIC/HTTP3tr104–108ngoàiphạmvi thi. **Bước14–22 đã học/tự kiểm/chữa:9/9=100% nội dung, không phải thành thạo. ÔnTCPhai lượt đã trả lời/chữa; khôngcòncâutựkiểmđangchờ.** Lượt2 C4đúngrwnd/sailýdo vàlượnggửithêmđãchữa; C5đúng; C6đúngnhận/ACK,saiSeqclientđãchữa4001. ĐãápdụngđúngACKthuần0ởdiagramhandshakeônsốmới vàFIN nhưngvẫnlẫnhai chiềuSeq/ACKkhinhandata sauFIN. Giữ đểôn MSS/payload/header, ACK vớiappđãđọc/bufferTCPkhácbuffertrìnhphát, giới hạnunACKtheorwnd, đếmduplicateACK/SeqphátlạivớiACKchiềungược, chiều IP/port phản hồi và thời điểm receiver đổi trạng thái. EstimatedRTT vẫn tùy chọn/chưa học.
+
+### Đối chiếu đề mẫu cô — 30/10/2026
+
+- ĐúngC5B(ACK200→đãnhậnliêntụctới199),C8B(SYNbit1),C13D(port/process),C14A(checksum00001001 11100010). C14nguồnhai từ10101100 01010001 và01001001 11001100,tổng11110110 00011101/khôngcarry17,đảo16bit; cósubagent vàphéptínhđộclập.
+- C10userxácnhậnB, sai→C:LengthUDP=8+payload,tốithiểu8byte; trườngLength16bit=2byte,khôngphảichỉpayload. ĐãhọccơchếnhưngvẫncầncủngcốgiátrịLengthvớikíchthướctrường; bổsungtườngminhtrongbảntổnghợp/Obsidian.
+- C15SlowStartđúngB(theoT3tr98nhânđôimỗiRTT),chưathấylựachọncủauser/khôngchấmsai. Chỉchữatheoyêucầuđềmẫu,giữnguyêncongestiontr96–102ngoàiphạmvi và9chặngcơsở,khôngtựthêmvàolịch. Báocáođầyđủ [ở đây](../output/CHUA_DE_MAU_CO_20261030.md).
+
+### Ôn TCP lượt2 — 30/10/2026, C4–6 đã trả lời/chữa
+
+- TiếpônsauC1–3, khôngépMSSđúng100%mớichuyển. Ba câu tựsoạn mới bámT3tr82–89/93–94; cósubagent ràđộc lậpgiảthiết vàSeq/ACK. Các tìnhhuốngđộclập, khôngđưađápántrước.
+- **C4 đã trả lời/chữa:** đúngrwnd8000−3000=5000. Usergiảithíchcóthểthiếusegmenttrướcnênchưaliêntục/chưagiaolênapp: saivớidữkiện3000BđãACKtíchlũy/appchưađọc. ĐãchữaTCPnhậnđủvàACKkhácứngdụngđọckhỏibuffer; ởcase này giữbufferdoappchưađọc, khôngphảilàđangchờsegmentthiếu. Usertrảgửithêm6800B/khôngchắc: sai, đãchữa5000−1200=3800B theoquảngbá hiệnđangdùng, khôngdùngtổngRcvBuffer8000B làmgiớihạngửimới. Khôngtựcoilàđãhiểulờichữa.
+- **C5 đã trả lời đúng/chữa cảhai case:** (a)khôngcầnphátlạiđoạnđầuchỉvìmấtACK1400,vìACK2000đãbao phủliêntụctới1999/cảhai segment,trướctimeout. (b)đúngphátlạiSeq9000khôngchờtimeoutkhiđãnhậnACKgốc+3duplicateACK; cụm“bỏquatimeout”hiểulàkhôngcầnchờtimerhết, khôngtựgánlàtắt cơchếtimeout.
+- **C6 đã trả lời/chữa:** đúngclientvẫncóthểnhận100BvàACK9100; userghiSeq9100/ACK9100/khôngchắc,saiởSeq. ĐãchữaACKthuần Seq4001/ACK9100: clientFIN4000chiếm1→Seqclienttiếp4001; servergửibyte9000–9099→clientACK9100. NhậndatacủaserverkhônglàmdãySeqgửicủaclientchuyểnsang9100; ACKthuầnkhôngtiêuthụthêmSeq. Diagramminhhọađúng2chiều,bámT3tr93–94; chưacóxácnhậnhiểulờichữa.
+- Đãchữalượt2, khôngđặtthêmquiztronglượtchữanày/khôngépđúng100%mớichuyển. Tiếp theo củng cố MSS/header, ACKvớiứngdụngđọc, rwnd vàhai chiềuSeqACK hoặc luyện tổnghợp theođiềuhướnguser; chưađưabộmới.
+
+### Ôn TCP lượt1 — 30/10/2026, đã trả lời/chữa C1–3
+
+- Người dùng hỏi đã hếtTCPchưa/nếuhếthãyôn. ĐãxongphầnbắtbuộcđếnT3tr94; bắtđầuônTCPtheotừnglượt3câu, không tựchuyểnCh2 hoặcépEstimatedRTT/congestion. Câu tựsoạn mới đểcủngcố, khôngphảicâuthuộcnguồnđề; khôngđưalạicâuFINcũnhưchưalàm. BámT3tr75–79/81/90–91, cósubagent ràđộc lậpgiảthiết/sốliệu.
+- **C1 đã trả lời/chữa:** usernhầmMSS=payload−header→payloadmax1020B,chia1020/1020/460 vớiSeq4000/5020/6040. Đúng3segment/tổng2500B vàcáckhoảngbytekhớpđộdàiđãchọn; saigiớihạnpayload. ĐãchữaMSSlàpayloadtốiđa1000B,TCPsegmentđầy=header20+payload1000=1020B; đúng(Seq4000,data1000,byte4000–4999),(5000,1000,5000–5999),(6000,500,6000–6499). HeaderkhôngđánhSeqbytestream. Khôngchấmtoànbộcâusai/khôngtựcoilàđãhiểulờichữa.
+- **C2 đã trả lời đúng/chữa:** ACK5000sauSeq5300/data200buffer; nhậnSeq5000/data300thìACK5500. Usergiảithíchđúngđãbuffer5300–5499, ghépđủ5000–5499→chờ5500; đãápdụngđúngđiểmlấplỗtừngsai.
+- **C3 đã trả lời đúng/chữa:** [1]800,[2]301,[3]301,[4]801,[5]301. [3]=[5]chứngtỏápdụngđúngACKthuầnkhôngtiêuthụSeq trongdiagramhandshakemới, khôngcoilàcâuSeq201cũđãtựlàm. Khôngsuythànhthạo toànTCP.
+- Đãchữalượt1vàtiếpC4–6lượt2theoyêucầuôn; trạngtháicâumớiởmụctrên. GiữMSS/headerlàmđiểmcầncủngcố.
 
 ### Cập nhật phạm vi thi — 29/10/2026
 
@@ -20,8 +42,8 @@ Phạm vi Ch3 cập nhật29/10: đến hếtphầnTCPbanđầugồmflow/connect
 - Người dùng yêu cầu diagramhandshake rồi yêu cầu tiếp, khôngtựcoilàđãxácnhậnnắmSeq201. Đãgiảng FINchấm dứtchiềugửiappdata của bên gửiFIN; bên đóvẫnnhậnchiềungượcvàgửiACK. BênnhậnFIN ACKlạivàvẫncóthểgửiappdatachođếnFINriêng. FINkhôngpayloadtiêuthụ1sốSeq,ACKthuần0.
 - Diagramtựsoạn nốivídụtrước (clientđãgửi50B201–250,serverchưagửiappdata; mọi data đãACK,FINkhôngpayload/serverkhônggửithêmdata ởgiữa): C→S FIN+ACKSeq251/ACK901; S→C ACKthuầnSeq901/ACK252; S→C FIN+ACKSeq901/ACK252; C→S ACKthuầnSeq252/ACK902. Nhấnmạnh servervẫndùng901choFINvìACKthuầntrướckhôngtiêuthụSeq; ACKnumberhướngngược/khôngtựđồngnhấtvớiSeq.
 - TheoT3tr93, ACKchoFINcóthểgộpvớiFINcủachínhbênđó nênkhôngkhẳngđịnhluôn4segment. TheoT3tr94, trongvídụclientchủđộngđóng cònchờ2MSL (2lầnthờigiansốngtốiđacủasegment) sauACKcuối trướckhiđónghẳn; khôngépnhớtoànbộstate. Cósubagent ràđộc lập diagram/tínhsốvàgiảthiết, khôngnguồnngoài.
-- **Ba câu tựsoạn lượt2 đãđưa, CHƯA TRẢ LỜI/chưachấm**, giảsửmọidata trướcFINđãnhậnđủ/FINkhôngpayload: C1 clientgửiFINSeq1000,serverphản hồiACKbaonhiêu? C2 tiếpcâu1,serverđãACKFINclientnhưngchưagửiFINriêng: servercòngửiappdatađượckhông,clientcònnhậnđượckhông,clientcòngửiappdatamớiđượckhông? C3 serversauđógửiFINSeq7000: clientACKbaonhiêu,ACKthuầnnàycótiêuthụthêm1Seqkhông?
-- Theo phạmvimới giữ8/9≈88,9% khi cònchờtựkiểm/chữa bước22. Bước23congestiontr96–102 đãloại, khônggiảng/khôngtínhchặng.
+- **Ba câu FIN đã trả lời đúng/chữa ngày30/10:** C1 clientFINSeq1000→serverACK1001. C2 đúngservervẫngửiappdata,clientvẫnnhận/khônggửiappdatamới; cụm“clientkhônggửi”hiểutheocâuhỏilàappdata, vẫnđượcgửiACK/khôngcoilàkhônggửibấtkỳTCPsegmentnào. C3 serverFINSeq7000→clientACK7001,ACKthuầnkhôngtiêuthụthêmSeq. KhôngcòncâuFINđangchờ.
+- Đãhọc/tựkiểm/chữa đủbước22→9/9=100%nộidungcơsởCh3, khôngđồngnghĩathànhthạo. Bước23congestiontr96–102 đãloại, khônggiảng/khôngtínhchặng. Người dùngyêucầuônTCP, trạngtháiônhệntạiởmục30/10.
 
 ### TCP bước22 lượt1 — 29/10/2026, bắt tay 3 bước, T3 tr90–91
 

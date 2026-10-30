@@ -18,6 +18,12 @@ Danh sách này xác định đúng các PDF người dùng đã chọn; quy t�
 | E08 / D23 | [Đề A MMT — thư mục 2023](<../Giữa Kỳ/Nhập Môn Mạng Máy Tính/2023/Đề A MMT.pdf>) |
 | E10 / D24 | [Đề 2024](<../Giữa Kỳ/Nhập Môn Mạng Máy Tính/2024/2024.pdf>) |
 
+## Đề mẫu cô cung cấp riêng — 30/10/2026
+
+- Người dùng cho phép chữa/đối chiếu đề mẫu15câu qua2ảnh [trang1](<C:/Users/phuoc/Downloads/drive-download-20261030T020832Z-1-001/20261030_090708.jpg>) và [trang2](<C:/Users/phuoc/Downloads/drive-download-20261030T020832Z-1-001/20261030_090713.jpg>), nêu đây là đề cô đưa. Đây là nguồn luyện bổ sung được cho phép mới, không phải nguồn đề online và không gộp vào thống kê5PDF/172lượt câu.
+- Báo cáo: [chữa đề mẫu](../output/CHUA_DE_MAU_CO_20261030.md). User đã xác nhận lựa chọn cuối C2=A,C10=B,C12=A; không tự đoán từ nét sửa. C15 thuộc phần congestion đãloại/chưa thấy lựa chọn, không tự đưa lại vào lịch/tiến độ.
+- Các lỗhổng được bổ sung vào bản tổng hợp và Obsidian theo yêu cầu; RFC/IANA chỉ làm rõ cổng/tên/HTTP, nguồn lý thuyết chính vẫnT1/T2/T3. Không dùng key/đáp án riêng, có3subagent ràđộc lập.
+
 ## Phạm vi hiện hành — 29/10/2026
 
 - Người dùng cập nhật: chỉ tới hết phần TCP ban đầu, không thi TCP điều khiển tắc nghẽn. Giữ T3 đến hếttr94, gồm flow/connection; loại tr96–102, QUIC/HTTP3tr104–108 vẫn ngoài phạm vi. Fast retransmit tr84 vẫn giữ; EstimatedRTT bước24 vẫn tùy chọn.

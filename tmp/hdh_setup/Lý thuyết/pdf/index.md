@@ -1,0 +1,283 @@
+# Chỉ mục slide lý thuyết HDH
+
+Bản chữ trích từ PPTX; khi có hình, sơ đồ hoặc dữ liệu thiếu hãy xem slide gốc. Số slide theo thứ tự trong tệp.
+
+**Tuần 5:** người học ghi nhận có vẻ học đến slide 28, từ slide 29 đọc thêm; đây là mốc chưa xác nhận chính thức.
+
+## [W01](W01.md) — 9 slide
+
+- 1: HỆ ĐIỀU HÀNH
+- 2: 1. Tổng quan
+- 3: 2. Hình thức thi [ít hoặc không có chữ nội dung; xem slide gốc]
+- 4: 3. Chuẩn đầu ra môn học
+- 5: 4. Nội dung
+- 6: 5. Tài liệu tham khảo [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 7: 5. Tài liệu tham khảo
+- 8: 6. Quy định môn học
+- 9: THẢO LUẬN [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+
+## [W02](W02.md) — 57 slide
+
+- 1: HỆ ĐIỀU HÀNH
+- 2: Biết được các thành phần của hệ điều hành
+- 3: Các thành phần của hệ điều hành
+- 4: CÁC THÀNH PHẦN CỦA HỆ ĐIỀU HÀNH [ít hoặc không có chữ nội dung; xem slide gốc]
+- 5: 1. Các thành phần của hệ điều hành [media/hình]
+- 6: 1.1. Quản lý tiến trình [ít hoặc không có chữ nội dung; xem slide gốc]
+- 7: 1.1. Quản lý tiến trình [media/hình]
+- 8: 1.1. Quản lý tiến trình
+- 9: 1.2. Quản lý bộ nhớ chính [ít hoặc không có chữ nội dung; xem slide gốc]
+- 10: 1.2. Quản lý bộ nhớ chính [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 11: 1.2. Quản lý bộ nhớ chính
+- 12: 1.2. Quản lý bộ nhớ chính [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 13: 1.2. Quản lý bộ nhớ chính [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 14: 1.3. Quản lý file [ít hoặc không có chữ nội dung; xem slide gốc]
+- 15: 1.3. Quản lý file [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 16: 1.3. Quản lý file
+- 17: 1.4. Quản lý hệ thống I/O [ít hoặc không có chữ nội dung; xem slide gốc]
+- 18: 1.4. Quản lý hệ thống I/O [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 19: 1.4. Quản lý hệ thống I/O [media/hình]
+- 20: 1.5. Quản lý hệ thống lưu trữ thứ cấp [ít hoặc không có chữ nội dung; xem slide gốc]
+- 21: 1.5. Quản lý hệ thống lưu trữ thứ cấp [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 22: 1.5. Quản lý hệ thống lưu trữ thứ cấp
+- 23: 1.6. Hệ thống bảo vệ [ít hoặc không có chữ nội dung; xem slide gốc]
+- 24: 1.6. Hệ thống bảo vệ [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 25: 1.6. Hệ thống bảo vệ
+- 26: 1.7. Hệ thống thông dịch lệnh [ít hoặc không có chữ nội dung; xem slide gốc]
+- 27: 1.7. Hệ thống thông dịch lệnh [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 28: 1.7. Hệ thống thông dịch lệnh
+- 29: CÁC DỊCH VỤ HỆ ĐIỀU HÀNH CUNG CẤP [ít hoặc không có chữ nội dung; xem slide gốc]
+- 30: 2. Các dịch vụ hệ điều hành cung cấp [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 31: 2. Các dịch vụ hệ điều hành cung cấp [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 32: 2. Các dịch vụ hệ điều hành cung cấp
+- 33: 2. Các dịch vụ hệ điều hành cung cấp
+- 34: Giao diện người dùng [media/hình]
+- 35: LỜI GỌI HỆ THỐNG [ít hoặc không có chữ nội dung; xem slide gốc]
+- 36: 3. Lời gọi hệ thống [media/hình]
+- 37: 3. Lời gọi hệ thống
+- 38: 3. Lời gọi hệ thống [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 39: 3. Lời gọi hệ thống [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 40: 3. Lời gọi hệ thống [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 41: CÁC CHƯƠNG TRÌNH HỆ THỐNG [ít hoặc không có chữ nội dung; xem slide gốc]
+- 42: 4. Các chương trình hệ thống [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 43: 4. Các chương trình hệ thống
+- 44: CẤU TRÚC HỆ THỐNG [ít hoặc không có chữ nội dung; xem slide gốc]
+- 45: 5. Cấu trúc hệ thống
+- 46: 5.1 Cấu trúc Monolithic - Original UNIX [media/hình]
+- 47: 5.2 Cấu trúc Layered Approach [media/hình]
+- 48: 5.3 Cấu trúc Microkernels [media/hình]
+- 49: 5.4 Cấu trúc Modules
+- 50: Cấu trúc hệ thống Linux [media/hình]
+- 51: 5.5 Cấu trúc Hybrid Systems
+- 52: Cấu trúc của macOS và iOS [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 53: Cấu trúc của Darwin [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 54: Kiến trúc Android [media/hình]
+- 55: Tóm tắt lại nội dung buổi học
+- 56: Câu hỏi ôn tập chương 2
+- 57: THẢO LUẬN [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+
+## [W03](W03.md) — 64 slide
+
+- 1: HỆ ĐIỀU HÀNH
+- 2: Hiểu được khái niệm và các trạng thái của tiến trình
+- 3: Khái niệm cơ bản
+- 4: KHÁI NIỆM CƠ BẢN [ít hoặc không có chữ nội dung; xem slide gốc]
+- 5: 1. Khái niệm cơ bản
+- 6: 1. Khái niệm cơ bản [media/hình]
+- 7: 1. Khái niệm cơ bản [media/hình, OLE/nhúng, ít hoặc không có chữ nội dung; xem slide gốc]
+- 8: Layout bộ nhớ của một chương trình C [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 9: 1. Khái niệm cơ bản
+- 10: TRẠNG THÁI TIẾN TRÌNH [ít hoặc không có chữ nội dung; xem slide gốc]
+- 11: 2. Trạng thái tiến trình
+- 12: 2. Trạng thái tiến trình
+- 13: 2. Trạng thái tiến trình
+- 14: 2. Trạng thái tiến trình
+- 15: PROCESS CONTROL BLOCK [ít hoặc không có chữ nội dung; xem slide gốc]
+- 16: 3. Process Control Block [media/hình]
+- 17: 4. ĐỊNH THỜI TIẾN TRÌNH [ít hoặc không có chữ nội dung; xem slide gốc]
+- 18: 4. Định thời tiến trình
+- 19: 4. Định thời tiến trình
+- 20: 4. Định thời tiến trình [bảng]
+- 21: 4.1. Các hàng đợi định thời [ít hoặc không có chữ nội dung; xem slide gốc]
+- 22: 4.1. Các hàng đợi định thời [media/hình]
+- 23: 4.1. Các hàng đợi định thời [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 24: 4.2. Bộ định thời [ít hoặc không có chữ nội dung; xem slide gốc]
+- 25: 4.2. Bộ định thời
+- 26: 4.2. Bộ định thời [media/hình]
+- 27: 4.2. Bộ định thời [media/hình]
+- 28: CÁC TÁC VỤ ĐỐI VỚI TIẾN TRÌNH [ít hoặc không có chữ nội dung; xem slide gốc]
+- 29: 5. Các tác vụ đối với tiến trình
+- 30: 5. Các tác vụ đối với tiến trình [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 31: 5. Các tác vụ đối với tiến trình
+- 32: 5. Các tác vụ đối với tiến trình [media/hình]
+- 33: 5. Các tác vụ đối với tiến trình
+- 34: 5. Các tác vụ đối với tiến trình
+- 35: 5. Các tác vụ đối với tiến trình
+- 36: 5. Các tác vụ đối với tiến trình
+- 37: 5. Các tác vụ đối với tiến trình
+- 38: 5. Các tác vụ đối với tiến trình
+- 39: CỘNG TÁC GIỮA CÁC TIẾN TRÌNH [ít hoặc không có chữ nội dung; xem slide gốc]
+- 40: 6. Cộng tác giữa các tiến trình
+- 41: 6.1. Giao tiếp liên tiến trình (IPC) [ít hoặc không có chữ nội dung; xem slide gốc]
+- 42: 6.1. Giao tiếp liên tiến trình (IPC)
+- 43: 6.1. Giao tiếp liên tiến trình (IPC) [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 44: 6.2. Bộ nhớ được chia sẻ - Shared memory [ít hoặc không có chữ nội dung; xem slide gốc]
+- 45: 6.2. Bộ nhớ được chia sẻ - Shared memory
+- 46: 6.3. Hệ thống truyền thông điệp - Message passing [ít hoặc không có chữ nội dung; xem slide gốc]
+- 47: 6.3. Hệ thống truyền thông điệp - Message passing
+- 48: 6.3. Hệ thống truyền thông điệp - Message passing
+- 49: 7.1. Tổng quan về tiểu trình [ít hoặc không có chữ nội dung; xem slide gốc]
+- 50: 7.1. Tổng quan về tiểu trình [media/hình]
+- 51: 7.1. Tổng quan về tiểu trình
+- 52: 7.1. Tổng quan về tiểu trình
+- 53: 7.1. Tổng quan về tiểu trình
+- 54: 7.1. Tổng quan về tiểu trình
+- 55: 7.2. Các mô hình đa tiểu trình [ít hoặc không có chữ nội dung; xem slide gốc]
+- 56: 7.2. Các mô hình đa tiểu trình
+- 57: 7.2. Các mô hình đa tiểu trình [media/hình]
+- 58: 7.2. Các mô hình đa tiểu trình [media/hình]
+- 59: 7.2. Các mô hình đa tiểu trình [media/hình]
+- 60: Tóm tắt lại nội dung buổi học
+- 61: Câu hỏi ôn tập chương 3
+- 62: Câu hỏi ôn tập chương 3 (tt)
+- 63: Câu hỏi ôn tập chương 3 (tt)
+- 64: THẢO LUẬN [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+
+## [W04](W04.md) — 74 slide
+
+- 1: HỆ ĐIỀU HÀNH
+- 2: Biết được các khái niệm cơ bản về định thời
+- 3: Các khái niệm cơ bản về định thời
+- 4: CÁC KHÁI NIỆM CƠ BẢN VỀ ĐỊNH THỜI [ít hoặc không có chữ nội dung; xem slide gốc]
+- 5: 1. Các khái niệm cơ bản về định thời
+- 6: 1. Các khái niệm cơ bản về định thời [media/hình]
+- 7: 1. Các khái niệm cơ bản về định thời [media/hình]
+- 8: 1. Các khái niệm cơ bản về định thời [media/hình]
+- 9: CÁC LOẠI ĐỊNH THỜI [ít hoặc không có chữ nội dung; xem slide gốc]
+- 10: 2. Các loại định thời [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 11: 2.1. Định thời dài (Long-term scheduling) [ít hoặc không có chữ nội dung; xem slide gốc]
+- 12: 2.1. Định thời dài (Long-term Scheduling) [media/hình]
+- 13: 2.2. Định thời vừa (Medium-term scheduling) [ít hoặc không có chữ nội dung; xem slide gốc]
+- 14: 2.2. Định thời vừa (Medium-term scheduling) [media/hình]
+- 15: 2.3. Định thời ngắn (Short-term scheduling) [ít hoặc không có chữ nội dung; xem slide gốc]
+- 16: 2.3. Định thời ngắn (Short-term scheduling) [media/hình]
+- 17: 2.3. Định thời ngắn (Short-term scheduling) [media/hình]
+- 18: 2.3. Định thời ngắn (Short-term scheduling)
+- 19: CÁC TIÊU CHUẨN ĐỊNH THỜI CPU [ít hoặc không có chữ nội dung; xem slide gốc]
+- 20: 3. Các tiêu chuẩn định thời CPU
+- 21: Cách xác định các thông số định thời [Office Math: chữ phẳng không giữ bố cục; xem công thức gốc, media/hình]
+- 22: Hướng hệ thống (System oriented)
+- 23: 4.1. Giải thuật định thời [ít hoặc không có chữ nội dung; xem slide gốc]
+- 24: 4.1. Giải thuật định thời
+- 25: Các chế độ quyết định
+- 26: Thời điểm thực thi hàm chọn lựa
+- 27: Các giải thuật định thời
+- 28: 4.2. First-Come, First-Served (FCFS) [ít hoặc không có chữ nội dung; xem slide gốc]
+- 29: 4.2. First-Come, First-Served (FCFS) [media/hình]
+- 30: 4.2. First-Come, First-Served (FCFS) [bảng]
+- 31: 4.2. First-Come, First-Served (FCFS) [bảng]
+- 32: 4.2. First-Come, First-Served (FCFS) [bảng]
+- 33: 4.2. First-Come, First-Served (FCFS) [bảng]
+- 34: 4.3. Shortest-Job-First (SJF) [ít hoặc không có chữ nội dung; xem slide gốc]
+- 35: 4.3. Shortest-Job-First (SJF)
+- 36: 4.3. Shortest-Job-First (SJF)
+- 37: Ví dụ: SJF ở chế độ không trưng dụng [bảng]
+- 38: Ví dụ: SJF ở chế độ không trưng dụng [bảng]
+- 39: Ví dụ: SJF ở chế độ không trưng dụng [bảng]
+- 40: 4.3. Shortest-Job-First (SJF)
+- 41: 4.3. Shortest-Job-First (SJF) [bảng]
+- 42: 4.3. Shortest-Job-First (SJF) [bảng]
+- 43: 4.3. Shortest-Job-First (SJF) [bảng]
+- 44: Nhận xét về giải thuật SJF
+- 45: Nhận xét về giải thuật SJF
+- 46: Nhận xét về giải thuật SJF [Office Math: chữ phẳng không giữ bố cục; xem công thức gốc, media/hình]
+- 47: 4.3. Shortest-Job-First (SJF) [Office Math: chữ phẳng không giữ bố cục; xem công thức gốc, media/hình]
+- 48: 4.4. Định thời theo độ ưu tiên - Priority Scheduling [ít hoặc không có chữ nội dung; xem slide gốc]
+- 49: 4.4. Định thời theo độ ưu tiên – Priority Scheduling
+- 50: Cách gán độ ưu tiên cho tiến trình
+- 51: 4.4. Định thời theo độ ưu tiên – Priority Scheduling
+- 52: 4.4. Định thời theo độ ưu tiên – Priority Scheduling [bảng]
+- 53: 4.5. Round Robin (RR) [ít hoặc không có chữ nội dung; xem slide gốc]
+- 54: 4.5. Round Robin (RR)
+- 55: 4.5. Round Robin (RR) [bảng]
+- 56: 4.5. Round Robin (RR) [bảng]
+- 57: 4.5. Round Robin (RR) [bảng]
+- 58: 4.5. Round Robin (RR)
+- 59: 4.5. Round Robin (RR)
+- 60: 4.5. Round Robin (RR) [media/hình]
+- 61: Quantum time và Thời gian đáp ứng [media/hình, OLE/nhúng, ít hoặc không có chữ nội dung; xem slide gốc]
+- 62: Quantum time và hiệu suất hệ thống
+- 63: Cách chọn quantum time
+- 64: Tóm tắt lại nội dung buổi học
+- 65: Câu hỏi ôn tập
+- 66: Bài tập 1 [bảng]
+- 67: Bài tập 2 [bảng]
+- 68: Bài tập 3 [bảng]
+- 69: Bài tập 4 [bảng]
+- 70: Bài tập 5 [bảng]
+- 71: Bài tập 6 [bảng]
+- 72: Bài tập 7 [bảng]
+- 73: Bài tập 8 [media/hình]
+- 74: THẢO LUẬN [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+
+## [W05](W05.md) — 59 slide
+
+- 1: HỆ ĐIỀU HÀNH
+- 2: 4. Các giải thuật định thời
+- 3: 4.6. Highest Response Ratio Next (HRRN) [ít hoặc không có chữ nội dung; xem slide gốc]
+- 4: 4.6. Highest Response Ratio Next (HRRN) [media/hình]
+- 5: 4.7. Multilevel Queue [ít hoặc không có chữ nội dung; xem slide gốc]
+- 6: 4.7. Multilevel Queue
+- 7: Việc định thời giữa các hàng đợi
+- 8: Ví dụ phân chia hàng đợi và tiến trình
+- 9: Hạn chế của Multilevel Queue
+- 10: 4.8. Multilevel Feedback Queue [ít hoặc không có chữ nội dung; xem slide gốc]
+- 11: 4.8. Multilevel Feedback Queue
+- 12: Ví dụ về Multilevel Feedback Queue [media/hình]
+- 13: Các vấn đề với Multilevel Feedback Queue
+- 14: 4.9. So sánh các giải thuật [ít hoặc không có chữ nội dung; xem slide gốc]
+- 15: 4.9. So sánh các giải thuật
+- 16: ĐỊNH THỜI TIỂU TRÌNH [ít hoặc không có chữ nội dung; xem slide gốc]
+- 17: 5. Định thời tiểu trình
+- 18: ĐỊNH THỜI ĐA BỘ XỬ LÝ [ít hoặc không có chữ nội dung; xem slide gốc]
+- 19: 6. Định thời đa bộ xử lý
+- 20: 6.1. Đa xử lý bất đối xứng [ít hoặc không có chữ nội dung; xem slide gốc]
+- 21: 6.1. Đa xử lý bất đối xứng
+- 22: 6.2. Đa xử lý đối xứng [ít hoặc không có chữ nội dung; xem slide gốc]
+- 23: 6.2. Đa xử lý đối xứng [media/hình]
+- 24: 6.2. Đa xử lý đối xứng
+- 25: Cân bằng tải (Load balancing)
+- 26: Processor affinity
+- 27: Processor affinity
+- 28: Processor affinity [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 29: ĐỊNH THỜI THEO THỜI GIAN THỰC [ít hoặc không có chữ nội dung; xem slide gốc]
+- 30: 7. Định thời theo thời gian thực
+- 31: Định thời theo thời gian thực dựa trên độ ưu tiên
+- 32: Mô hình tác vụ trong thời gian thực [media/hình]
+- 33: Các giải thuật định thời
+- 34: Định thời Rate Monotonic [media/hình]
+- 35: Định thời EDF [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 36: Định thời Total Bandwidth Server (TBS) [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 37: 7. Định thời theo thời gian thực
+- 38: 8.1. Định thời trên Linux [ít hoặc không có chữ nội dung; xem slide gốc]
+- 39: 8.1. Định thời trên Linux
+- 40: 8.1. Định thời trên Linux
+- 41: 8.1. Định thời trên Linux
+- 42: 8.1. Định thời trên Linux
+- 43: 8.1. Định thời trên Linux [media/hình]
+- 44: 8.1. Định thời trên Linux [media/hình]
+- 45: 8.2. Định thời trên Windows [ít hoặc không có chữ nội dung; xem slide gốc]
+- 46: 8.2. Định thời trên Windows
+- 47: 8.2. Định thời trên Windows
+- 48: 8.2. Định thời trên Windows
+- 49: 8.2. Định thời trên Windows [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 50: 8.2. Định thời trên Windows [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 51: 8.2. Định thời trên Windows
+- 52: 8.3. Định thời trên Solaris (đọc thêm) [ít hoặc không có chữ nội dung; xem slide gốc]
+- 53: 8.3. Định thời trên Solaris
+- 54: 8.3. Định thời trên Solaris [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 55: 8.3. Định thời trên Solaris
+- 56: 8.3. Định thời trên Solaris [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
+- 57: Tóm tắt nội dung buổi học
+- 58: Câu hỏi ôn tập
+- 59: THẢO LUẬN [media/hình, ít hoặc không có chữ nội dung; xem slide gốc]
