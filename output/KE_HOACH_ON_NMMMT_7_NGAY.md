@@ -6,7 +6,7 @@ Lịch có **14 giờ cơ sở**, gồm thời gian nghỉ, và tối đa **7 gi
 
 ## 1. Phạm vi và căn cứ
 
-**Cập nhật phạm vi ngày 27/10/2026:** Chương3 chỉ đến hết TCP theo ảnh outline người dùng gửi, bao gồm quản lý kết nối, điều khiển luồng và điều khiển tắc nghẽn. Nội dung T3 đến hết trang PDF102; phần phát triển tầng vận chuyển/QUIC/HTTP3 tr104–108 ngoài phạm vi. EstimatedRTT vẫn là phần TCP tùy chọn đã có trong kế hoạch; nguồn đề và số câu phân loại không đổi.
+**Cập nhật phạm vi ngày 29/10/2026:** Chương3 chỉ đến hết phần TCP ban đầu, gồm điều khiển luồng và thiết lập/đóng kết nối, T3 hết trang PDF94. **TCP điều khiển tắc nghẽn tr96–102 không thi**; QUIC/HTTP3 tr104–108 vẫn ngoài phạm vi. Giữ bước14–22 (9 chặng cơ sở), bỏ bước23; EstimatedRTT bước24 vẫn tùy chọn. Nguồn đề và số câu phân loại không đổi.
 
 Đã đọc đủ ba file lý thuyết, tổng **283 trang**, và toàn bộ câu hỏi trong **5 bộ đề được chốt, 172 lượt câu**. Hai đề scan đã được trích OCR và đối chiếu hình/số liệu. Ba subagent phụ trách từng chương; người điều phối kiểm tra phạm vi, trùng lặp, số câu và lịch chung.
 
@@ -44,7 +44,7 @@ Mỗi lượt câu được gán đúng một chương để tránh đếm hai l
 
 - **A: làm chắc trong tuần.** Giải thích được bằng lời của mình và làm được câu cơ bản cùng dạng.
 - **B: học sau A.** Nắm cơ chế, làm ví dụ đơn giản; dùng giờ tăng cường để luyện sâu.
-- **C: đọc sau nếu còn giờ.** Có trong slide nhưng chưa có câu trực tiếp trong năm bộ đề được chọn, hoặc nằm ngoài phạm vi chi tiết bạn nêu. Không đồng nghĩa chắc chắn không thi.
+- **C: đọc sau nếu còn giờ.** Có trong slide nhưng chưa có câu trực tiếp trong năm bộ đề được chọn, hoặc ngoài trọng tâm chi tiết. Không đồng nghĩa chắc chắn không thi. Các phần người dùng đã loại khỏi phạm vi thi không xếp C và không tự thêm lại.
 
 Thứ tự học: **tổng quan biên/lõi -> chồng tầng -> độ trễ/RTT -> nguyên lý ứng dụng -> HTTP -> mail -> DNS -> dịch vụ vận chuyển/mux -> UDP/checksum -> RDT -> GBN/SR -> TCP -> luyện tổng hợp**. Chồng tầng được học trước phần tính hiệu suất sâu để người mới hình dung dữ liệu đang đi đâu; bài DNS+HTTP chỉ luyện sau khi hiểu cả hai giao thức.
 
@@ -124,7 +124,7 @@ Luyện D19 C20; D20 C13,C29; D23 C15,C17,C32; D24 C16-17,C19; D25 C7,C19. Với
 
 ### 3.1 Dịch vụ tầng vận chuyển
 
-**A.** Đọc LT3 trang 5-8. Hiểu truyền thông logic process-process, chạy tại đầu cuối; transport sử dụng dịch vụ tầng mạng. Tự so sánh TCP/UDP theo kết nối, reliability, flow/congestion control và overhead. TCP tin cậy không đồng nghĩa bảo đảm độ trễ/thông lượng tối thiểu hoặc tự mã hóa. UDP không tự cung cấp reliability nhưng ứng dụng có thể bổ sung cơ chế phía trên.
+**A.** Đọc LT3 trang 5-8. Hiểu truyền thông logic process-process, chạy tại đầu cuối; transport sử dụng dịch vụ tầng mạng. Tự so sánh TCP/UDP theo kết nối, reliability, flow control và overhead. TCP tin cậy không đồng nghĩa bảo đảm độ trễ/thông lượng tối thiểu hoặc tự mã hóa. UDP không tự cung cấp reliability nhưng ứng dụng có thể bổ sung cơ chế phía trên.
 
 Luyện D19 C6,C16; D23 C4,C10,C27-28,C34,C37; D24 C4-5,C11,C21,C32; D25 C3.
 
@@ -158,12 +158,12 @@ Luyện FSM D19 C19, D20 C16; mất ACK D19 C8, D20 C19, D24 C40; lỗi rdt2.0 D
 |---|---|---|---|
 | Byte stream, header, MSS, Seq/ACK | A | Seq là byte đầu tiên; ACK là byte kế tiếp còn chờ liên tục; hai chiều có không gian Seq riêng; phân biệt payload, header, MSS | LT3 tr.75-79; D19 C5,C15,C17,C25; D20 C6-8; D24 C41 |
 | Phát lại và ACK tích lũy | A | Mất ACK giữa chưa chắc phải gửi lại; timeout sớm có thể gây bản trùng; hiểu fast retransmit | LT3 tr.79-84; D19 C9; D20 C25; D25 C16-17 |
-| Điều khiển luồng | A | Bên nhận quảng bá rwnd; bên gửi giới hạn dữ liệu chưa ACK; phân biệt rwnd với kích thước mỗi gói và cwnd | LT3 tr.85-89; D20 C15; D25 C11,C27 |
+| Điều khiển luồng | A | Bên nhận quảng bá rwnd; bên gửi giới hạn dữ liệu chưa ACK; phân biệt rwnd với MSS/kích thước mỗi segment và tổng dữ liệu đã gửi | LT3 tr.85-89; D20 C15; D25 C11,C27 |
 | Thiết lập/đóng kết nối | A | SYN -> SYN+ACK -> ACK; ISN; FIN đóng một chiều, vẫn có thể nhận chiều kia | LT3 tr.90-94; D20 C30; D25 C1,C18,C23 |
-| Ước lượng RTT/timeout | B nhưng có đề hỏi | SampleRTT, cập nhật có trọng số và giá trị khởi tạo; không đánh đồng EstimatedRTT với RTO | D20 C23; LT3 thiếu phần công thức chi tiết, xem bổ sung có nguồn tại mục 7 |
-| Điều khiển tắc nghẽn | B, dành ít nhất một lượt đọc | cwnd, ssthresh, MSS; Slow Start, Congestion Avoidance, Fast Recovery; timeout khác 3 duplicate ACK | LT3 tr.96-102; chưa thấy câu trực tiếp yêu cầu tính cwnd/đọc đồ thị trong năm bộ đề |
+| Ước lượng RTT/timeout | B, tùy chọn | SampleRTT, cập nhật có trọng số và giá trị khởi tạo; không đánh đồng EstimatedRTT với RTO | D20 C23; LT3 thiếu phần công thức chi tiết, xem bổ sung có nguồn tại mục 7 |
+| TCP điều khiển tắc nghẽn | **Ngoài phạm vi thi** | Không yêu cầu học cwnd, ssthresh, Slow Start, Congestion Avoidance/Fast Recovery hoặc đồ thị congestion | LT3 tr.96-102; loại theo yêu cầu ngày29/10/2026 |
 
-QUIC/HTTP3 ở LT3 tr.104-108 **ngoài phạm vi Ch3**, theo yêu cầu chỉ học đến hết TCP ngày27/10/2026; không còn xếp vào mục C để học thêm. Không suy từ UDP ít cơ chế rằng mọi ứng dụng chạy trên UDP đều không thể truyền tin cậy.
+Theo phạm vi cập nhật ngày29/10/2026, **TCP điều khiển tắc nghẽn tr.96-102 và QUIC/HTTP3 tr.104-108 ngoài phạm vi thi**, không xếp vào C để học thêm. Fast retransmit ở tr84 vẫn giữ trong phần TCP ban đầu; không đồng nhất với Fast Recovery của phần bị loại. Trang109 chỉ ôn các mục còn giữ. Không suy từ UDP ít cơ chế rằng mọi ứng dụng chạy trên UDP đều không thể truyền tin cậy.
 
 **Điều kiện kết thúc Ch3:** tự tính checksum; phân biệt lý do thêm sequence với timer; mô phỏng một ca mất packet/ACK trong GBN/SR; tính Seq/ACK theo byte; giải thích rwnd và vẽ handshake. Chỉ nhớ tên phiên bản/cờ TCP chưa đủ.
 
@@ -178,7 +178,7 @@ QUIC/HTTP3 ở LT3 tr.104-108 **ngoài phạm vi Ch3**, theo yêu cầu chỉ h�
 | **3** | 30' cookie/cache/status + 20' nonpersistent/persistent và 2RTT + 30' mail + 30' DNS chức năng/phân cấp | Chữa D24 C8,C36, D23 C8, D19 C27-28; vẽ lại sơ đồ DNS/mail | Phân biệt cookie/cache và gửi/đọc mail; giải thích được 2RTT cho một object |
 | **4** | 25' DNS RR/iterative/recursive + 15' mã socket + 15' truy hồi Ch2; 10' dịch vụ transport + 15' mux/demux + 10' UDP header + 20' checksum | Luyện D20 C10-11,C26 và D24 C30-34,C42; nếu DNS còn yếu, dùng nửa phần thêm giờ để chữa D20 C29 | Vẽ đúng DNS; phân biệt socket UDP/TCP; tính Length/payload và checksum hai từ |
 | **5** | 55' rdt1.0-3.0/FSM + 40' GBN/SR/mất ACK + 15' tự mô phỏng và chữa lỗi | Làm D19 C8,C11,C18,C19, D20 C9,C16,C19,C25; khi cơ chế chắc mới đọc phép tính utilization | Tái tạo bảng RDT và mô phỏng một trường hợp mất gói/ACK mà không nhìn mẫu |
-| **6** | 40' TCP Seq/ACK/MSS/phát lại + 30' rwnd/handshake/FIN + 15' congestion cơ bản + 25' làm/chữa D19 C5,C9,C15 và D20 C6-8,C15,C30 | Khoảng 25' EstimatedRTT D20 C23; 20' thêm Seq/ACK; phần còn lại đọc LT3 tr.96-102 | Theo dõi đúng Seq/ACK theo byte; phân biệt rwnd/cwnd và thiết lập/đóng kết nối |
+| **6** | 40' TCP Seq/ACK/MSS/phát lại + 30' rwnd/handshake/FIN + 15' củng cố/chữa Seq/ACK và handshake/FIN + 25' làm/chữa D19 C5,C9,C15 và D20 C6-8,C15,C30 | Khoảng 25' EstimatedRTT D20 C23 tùy chọn; 20' thêm Seq/ACK; phần còn lại ôn checksum/GBN/SR hoặc chữa lỗi trong phạm vi | Theo dõi đúng Seq/ACK theo byte; giải thích rwnd và vẽ thiết lập/đóng kết nối |
 | **7** | 65' làm D25 C1-30 + 35' chữa theo cơ chế, ghi câu thiếu giả thiết + 10' viết lại tờ nhớ nhanh | Chữa hai nhóm yếu nhất, làm lại câu từ D23/D24 chưa dùng; tránh mở thêm chủ đề C | Một đề tổng hợp đã chữa và danh sách lỗi cụ thể cần xem trước ngày thi |
 
 Quỹ giờ cơ sở chia gần đúng: **Ch1 3 giờ, Ch2 4 giờ, Ch3 5 giờ, tổng hợp 2 giờ**, có tính nghỉ. Bản 14 giờ ưu tiên kỹ năng A; giờ thứ ba dùng để luyện/sửa chỗ chưa hiểu và các mục B. Nếu một ngày thiếu giờ, giữ phần học cơ chế và chữa lỗi; giảm số câu lặp cùng dạng trước.
@@ -228,7 +228,7 @@ D20 C23 hỏi EstimatedRTT nhưng LT3 không có phần công thức chi tiết.
 
 ## 8. Phần hoãn sau tuần này
 
-Giữ thời gian cho A trước khi đọc sâu: tốc độ/tên công nghệ truy cập, cấu trúc ISP chi tiết và xác suất trong LT1; phân phối file BitTorrent, HTTP/2, chi tiết message DNS, tracking/GDPR và tự viết socket app hoàn chỉnh trong LT2; tính đồ thị congestion phức tạp trong LT3. Congestion cơ bản vẫn có một lượt đọc ở ngày6 và thuộc phạm vi TCP đã chốt. QUIC/HTTP3 nằm ngoài phạm vi Ch3.
+Giữ thời gian cho A trước khi đọc sâu: tốc độ/tên công nghệ truy cập, cấu trúc ISP chi tiết và xác suất trong LT1; phân phối file BitTorrent, HTTP/2, chi tiết message DNS, tracking/GDPR và tự viết socket app hoàn chỉnh trong LT2. TCP điều khiển tắc nghẽn tr96–102 và QUIC/HTTP3 tr104–108 nằm ngoài phạm vi thi theo cập nhật29/10/2026, không đưa lại vào phần học thêm.
 
 Không đưa các bài subnet/VLSM, NAT/phân mảnh IP, thuật toán routing, ARP/MAC/CSMA/CRC từ các bộ ngân hàng/bài ôn đã loại vào lịch ba chương này.
 

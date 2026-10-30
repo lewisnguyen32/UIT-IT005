@@ -4,7 +4,7 @@ Dành cho người mới học, chưa chắc kiến thức, có 2-3 giờ/ngày 
 
 Số trang là **trang PDF tính từ 1**, không phải số slide in ở góc. Khi ghi Ch1/Ch2/Ch3, mở file lý thuyết tương ứng trong `NMMMT/Lý thuyết/`.
 
-**Phạm vi Chương 3 chốt ngày 27/10/2026:** chỉ học đến hết TCP, gồm quản lý kết nối, điều khiển luồng và điều khiển tắc nghẽn theo ảnh outline người dùng gửi. Tài liệu T3 đến hết trang PDF102; phần phát triển tầng vận chuyển/QUIC/HTTP3 tr104–108 nằm ngoài phạm vi. Giữ các bước14–23 và phần EstimatedRTT tùy chọn ở bước24.
+**Phạm vi Chương 3 cập nhật ngày 29/10/2026:** chỉ học đến hết phần TCP ban đầu, gồm điều khiển luồng và thiết lập/đóng kết nối, T3 hết trang PDF94. **TCP điều khiển tắc nghẽn tr96–102 không thi**; QUIC/HTTP3 tr104–108 vẫn ngoài phạm vi. Giữ bước14–22, tổng9 chặng cơ sở; bỏ bước23. EstimatedRTT bước24 vẫn tùy chọn. Giữ số bước24/25 để không đổi các tham chiếu đã lưu.
 
 ## 1. Danh sách học theo thứ tự
 
@@ -30,9 +30,9 @@ Số trang là **trang PDF tính từ 1**, không phải số slide in ở góc.
 | 18 | Ngày 5 | **Ch3 - rdt3.0, timer và timeout** | 57-61 | Bổ sung tình huống mất data hoặc ACK. Hiểu timeout/phát lại, ACK đến trễ và gói trùng; giải thích vì sao không giao bản trùng lên ứng dụng. |
 | 19 | Ngày 5 | **Ch3 - Stop-and-wait, pipelining, GBN/SR** | 62-73 | Hiểu chờ ACK làm giảm hiệu suất, cửa sổ cho phép nhiều gói đang chờ. So sánh ACK tích lũy/riêng, buffer, timer và gói phải phát lại. Theo đúng mô hình hủy/lưu gói sai thứ tự được đề cho. |
 | 20 | Ngày 6 | **Ch3 - TCP: header, MSS, Seq/ACK, phát lại** | 75-84 | TCP đếm byte; Seq là byte đầu tiên của segment, ACK là byte kế tiếp còn chờ liên tục. Tính theo payload, không đếm số gói. Theo dõi mất ACK, timeout sớm và phát lại nhanh. |
-| 21 | Ngày 6 | **Ch3 - Điều khiển luồng** | 85-89 | Bên nhận quảng bá rwnd để bảo vệ bộ đệm; bên gửi giới hạn dữ liệu chưa ACK. Phân biệt rwnd với kích thước mỗi segment, tổng dữ liệu đã gửi và cwnd. |
+| 21 | Ngày 6 | **Ch3 - Điều khiển luồng** | 85-89 | Bên nhận quảng bá rwnd để bảo vệ bộ đệm; bên gửi giới hạn dữ liệu chưa ACK. Phân biệt rwnd với MSS/kích thước mỗi segment và tổng dữ liệu đã gửi. |
 | 22 | Ngày 6 | **Ch3 - Thiết lập và đóng TCP** | 90-94 | Vẽ SYN -> SYN+ACK -> ACK. Hiểu số thứ tự ban đầu, SYN/FIN chiếm một số thứ tự; FIN kết thúc một chiều gửi và phía đó vẫn có thể nhận chiều ngược lại. |
-| 23 | Ngày 6 | **Ch3 - Điều khiển tắc nghẽn cơ bản** | 96-102 | Phân biệt cwnd/rwnd; nhận diện Slow Start, Congestion Avoidance, Fast Recovery, ssthresh; hiểu timeout khác ba duplicate ACK. Học cơ chế trước đồ thị/tính toán sâu. |
+| 23 | Bỏ khỏi lịch | **Ngoài phạm vi thi: TCP điều khiển tắc nghẽn** | 96-102 | Loại theo yêu cầu ngày29/10/2026; không học, đặt câu tự kiểm hoặc tính vào tiến độ cơ sở. Fast retransmit tr84 vẫn thuộc bước20 đã giữ. |
 | 24 | Thêm giờ ngày 6 | **Ch3 - EstimatedRTT** | Mục 7 của kế hoạch chính | LT3 thiếu công thức chi tiết. Đọc phần bổ sung đã kiểm nguồn, ghi rõ giá trị khởi tạo/hệ số rồi làm câu 23 đề 2020-2021. Đây là mục B: ưu tiên sau Seq/ACK, RDT và checksum. |
 | 25 | Ngày 7 | **Tổng hợp cả ba chương** | Đề 2025-2026; xem lại trang lý thuyết của từng lỗi | Làm 30 câu trong 65 phút, sau đó chữa theo cơ chế. Phân biệt sai kiến thức, đơn vị, giả thiết và đọc hình; đánh dấu câu chưa chặt. Viết lại một tờ nhớ nhanh. |
 
@@ -57,10 +57,10 @@ Chỗ nào chưa đạt, dùng giờ tăng cường để học lại chính ph�
 | 3 | 8-11 | 110 phút học + 10 phút nghỉ |
 | 4 | 12-16 và truy hồi Ch2 | 110 phút học + 10 phút nghỉ |
 | 5 | 17-19 và chữa sơ đồ | 110 phút học + 10 phút nghỉ |
-| 6 | 20-23 và luyện TCP; bước 24 nếu có thêm giờ | 110 phút học + 10 phút nghỉ |
+| 6 | 20-22 và luyện TCP; bước 24 nếu có thêm giờ | 110 phút học + 10 phút nghỉ |
 | 7 | 25: 65 phút làm đề + 35 phút chữa + 10 phút nhớ lại | 110 phút học + 10 phút nghỉ |
 
-Ngày có ba giờ: thêm tối đa 60 phút gồm nghỉ ngắn, ưu tiên chữa phần A còn yếu. BitTorrent, HTTP/2 và tính đồ thị congestion sâu để sau nền cơ bản theo kế hoạch. QUIC/HTTP3 ngoài phạm vi Ch3 đã chốt. Phần mở rộng, câu luyện và các giả thiết công thức giữ theo kế hoạch chính.
+Ngày có ba giờ: thêm tối đa 60 phút gồm nghỉ ngắn, ưu tiên chữa phần A còn yếu. BitTorrent và HTTP/2 để sau nền cơ bản theo kế hoạch. TCP điều khiển tắc nghẽn và QUIC/HTTP3 ngoài phạm vi thi, không dùng giờ thêm để tự đưa lại vào lịch. Phần mở rộng còn giữ, câu luyện và các giả thiết công thức theo kế hoạch chính.
 
 ## 4. Lưu ý khi đọc tài liệu
 

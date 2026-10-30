@@ -18,6 +18,11 @@ Danh sách này xác định đúng các PDF người dùng đã chọn; quy t�
 | E08 / D23 | [Đề A MMT — thư mục 2023](<../Giữa Kỳ/Nhập Môn Mạng Máy Tính/2023/Đề A MMT.pdf>) |
 | E10 / D24 | [Đề 2024](<../Giữa Kỳ/Nhập Môn Mạng Máy Tính/2024/2024.pdf>) |
 
+## Phạm vi hiện hành — 29/10/2026
+
+- Người dùng cập nhật: chỉ tới hết phần TCP ban đầu, không thi TCP điều khiển tắc nghẽn. Giữ T3 đến hếttr94, gồm flow/connection; loại tr96–102, QUIC/HTTP3tr104–108 vẫn ngoài phạm vi. Fast retransmit tr84 vẫn giữ; EstimatedRTT bước24 vẫn tùy chọn.
+- Có9chặng cơ sở bước14–22; bước23 bỏ khỏi lịch/tính tiến độ. NguồnT1/T2/T3 và5PDFđề/172lượt câu, kết quả phân loại và tần suất không đổi. Các mốc phạm vi/phần trăm cũ bên dưới là lịch sử trước cập nhật này.
+
 ## Bản lưu trước khi tách memory
 
 Các mục bên dưới được giữ nguyên văn từ các tệp trước khi tách ngày 27/10/2026. Yêu cầu đọc toàn bộ nguồn để lập kế hoạch đã được thực hiện; không phải việc cần lặp lại mỗi buổi. Quy tắc cũ về subagent và cập nhật tiến độ ở hai tệp đã được thay bằng AGENTS.md. Thông tin môi trường là ghi nhận lúc đó, chỉ kiểm lại khi thực sự cần dùng.

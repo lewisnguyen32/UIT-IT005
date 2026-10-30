@@ -3,11 +3,34 @@
 > Nhật ký chi tiết được chuyển nguyên văn từ memory.md ngày 27/10/2026. Mốc hiện tại xem [memory.md](../memory.md); quy tắc làm việc xem [AGENTS.md](../AGENTS.md).
 > Các câu “đang học”, “chưa giảng”, “chờ trả lời” và phần trăm trong mục cũ chỉ mô tả thời điểm ghi, không thay thế mốc hiện tại. Đường dẫn trong bản ghi gốc tính từ thư mục NMMMT.
 
-## Điểm tiếp tục Chương 3 — 28/10/2026
+## Điểm tiếp tục Chương 3 — 29/10/2026
 
-**TẠM DỪNG theo yêu cầu người dùng cuối buổi TCP ngày 28/10/2026.** Giữ nguyên mốc bên dưới; buổi sau tiếp bước22 khi người dùng yêu cầu. Không thêm bài hoặc câu tự kiểm trong lượt tạm dừng.
+**Đang tiếp buổi TCP theo yêu cầu ngày29/10/2026**, sau mốc tạm dừng cuối buổi28/10.
 
-Phạm vi Ch3 đến hếtTCP gồm quản lý kết nối, điều khiển luồng và tắc nghẽn(T3 hếttr102); tr104–108QUIC/HTTP3 ngoài phạm vi. **Bước14–21 đã học/tự kiểm/chữa:8/10=80%. FlowC1/C2đúng,C3kếtluậnđúng nhưngcầnlàmrõlýdo,đãgiảithíchbổsung/chưa cóxácnhậnđãnắm. Khôngcòncâutựkiểmđangchờ.** Bài tiếp bước22connectiontr90–94 CHƯA GIẢNG. Tiến độ không đo thành thạo; giữ đểôn ACK vớiappđãđọc/bufferTCPkhácbuffertrìnhphát, ACKnhảykhílấplỗ cóbuffer, đếmduplicateACK tại sender/phânbiệtSeqphátlạivớiACKchiềungược, chiều IP/port phản hồi và thời điểm receiver đổi trạng thái.
+Phạm vi Ch3 cập nhật29/10: đến hếtphầnTCPbanđầugồmflow/connection, T3hếttr94; TCPđiềukhiểntắcnghẽntr96–102 vàQUIC/HTTP3tr104–108ngoàiphạmvi thi. **Bước14–21 đã học/tự kiểm/chữa:8/9≈88,9%; bước22đanghọc,chưa cộngchặng. Bước22lượt2FINtr93–94có3câu tựsoạnđangchờtrảlời/chưachấm.** Lượt1 C1/C2đãtrảlời/chữa,C3Seq201đãgiảithích/vẽdiagramnhưngchưa cócâutựlàm/xácnhậnhiểu. Tiến độ không đo thành thạo; giữ đểôn ACKthuầnkhôngtiêuthụSeq, ACK vớiappđãđọc/bufferTCPkhácbuffertrìnhphát (flowC3đãgiảithích/chưađượcxácnhậnđãnắm), ACKnhảykhílấplỗ cóbuffer, đếmduplicateACK tại sender/phânbiệtSeqphátlạivớiACKchiềungược, chiều IP/port phản hồi và thời điểm receiver đổi trạng thái.
+
+### Cập nhật phạm vi thi — 29/10/2026
+
+- Trong lúc bắt đầu phầnFIN, người dùng cập nhật “chỉ tới hết phần TCP đầu, không thi TCP - điều khiển tắc nghẽn”. GiữTCPđếntr94gồmflow/connection; loạibước23/tr96–102 khỏi bàihọc/tựkiểm/tiếnđộ, QUIC/HTTP3vẫnngoài. EstimatedRTTbước24vẫntùychọn; fastretransmittr84vẫngiữ.
+- Chặngcơsở từ10(bước14–23) thành9(bước14–22). Vẫnchỉhoànthành8chặng14–21→8/9≈88,9%, không phải học thêm hoặc tăngthànhthạo. Mốc80%vàcácmốcphầntrămcũ trongnhậtký giữtheomẫusốởthờiđiểmghi.
+- ĐãđồngbộAGENTS.md,2tệplộtrình/kếhoạch trongoutput vàmốcnguồnhiệnhành; cósubagent ràđộclập. GiữnguyênPDFnguồn/5đề/172lượtcâu, phânloạivàtầnsuất. Ngày6chuyển15phútcongestionsangchữaSeqACK/handshake/FIN, vẫngiữ110phúthọc+10phútnghỉ; khôngthêmchủđề.
+
+### TCP bước22 lượt2 — 29/10/2026, đóng kết nối/FIN, T3 tr93–94
+
+- Người dùng yêu cầu diagramhandshake rồi yêu cầu tiếp, khôngtựcoilàđãxácnhậnnắmSeq201. Đãgiảng FINchấm dứtchiềugửiappdata của bên gửiFIN; bên đóvẫnnhậnchiềungượcvàgửiACK. BênnhậnFIN ACKlạivàvẫncóthểgửiappdatachođếnFINriêng. FINkhôngpayloadtiêuthụ1sốSeq,ACKthuần0.
+- Diagramtựsoạn nốivídụtrước (clientđãgửi50B201–250,serverchưagửiappdata; mọi data đãACK,FINkhôngpayload/serverkhônggửithêmdata ởgiữa): C→S FIN+ACKSeq251/ACK901; S→C ACKthuầnSeq901/ACK252; S→C FIN+ACKSeq901/ACK252; C→S ACKthuầnSeq252/ACK902. Nhấnmạnh servervẫndùng901choFINvìACKthuầntrướckhôngtiêuthụSeq; ACKnumberhướngngược/khôngtựđồngnhấtvớiSeq.
+- TheoT3tr93, ACKchoFINcóthểgộpvớiFINcủachínhbênđó nênkhôngkhẳngđịnhluôn4segment. TheoT3tr94, trongvídụclientchủđộngđóng cònchờ2MSL (2lầnthờigiansốngtốiđacủasegment) sauACKcuối trướckhiđónghẳn; khôngépnhớtoànbộstate. Cósubagent ràđộc lập diagram/tínhsốvàgiảthiết, khôngnguồnngoài.
+- **Ba câu tựsoạn lượt2 đãđưa, CHƯA TRẢ LỜI/chưachấm**, giảsửmọidata trướcFINđãnhậnđủ/FINkhôngpayload: C1 clientgửiFINSeq1000,serverphản hồiACKbaonhiêu? C2 tiếpcâu1,serverđãACKFINclientnhưngchưagửiFINriêng: servercòngửiappdatađượckhông,clientcònnhậnđượckhông,clientcòngửiappdatamớiđượckhông? C3 serversauđógửiFINSeq7000: clientACKbaonhiêu,ACKthuầnnàycótiêuthụthêm1Seqkhông?
+- Theo phạmvimới giữ8/9≈88,9% khi cònchờtựkiểm/chữa bước22. Bước23congestiontr96–102 đãloại, khônggiảng/khôngtínhchặng.
+
+### TCP bước22 lượt1 — 29/10/2026, bắt tay 3 bước, T3 tr90–91
+
+- Người dùng yêu cầu tiếp sau tạm dừng28/10. Báo80%theocáchđếmchặngđãhọc/tựkiểm/chữa, chưa nângvìbước22đanghọc. Giảng kết nối chuẩn clientchủđộng/serverchờ: SYN→SYN+ACK→ACK; mỗiđầuchọnISNriêng; ACKcuốicùngcho server biếtclientđãnhậnSYNcủaserver.
+- Ví dụ tựsoạn cả3segmentkhôngpayload: A SYN Seq1000; B SYN+ACK Seq5000/ACK1001; A ACKthuần Seq1001/ACK5001. SYNtiêuthụ1sốSeq dùkhôngappdata; ACKthuần0 nênappdatađầutiêncủaAvẫnbắtđầu1001. SYN+ACKlà2cờSYN=1/ACK=1; trườngACKnumberkhácvớicờACK. SlidechoACKthứ3cóthểkèmdata, chỉgiảsửdata0trongvídụnày; khôngkhẳngđịnhbắtbuộcACKthứ3luônrỗng.
+- ĐãdùngPopplerrenderđúngp091/p094 vào tmp/study_audit/ch3_figures; tr91 nhãnClient state LISTEN bịđặtsai cho vídụclientchủđộngconnect, đãnóirõkhigiảng. DạyclientchủđộnggửiSYN/serverLISTEN, chưaépnhớtoànbộstate. Cósubagent ràđộc lập tr90–94/ảnh; chưa cầnnguồnbổsungngoài. Đãkiểmtr93–94cho lượtsau nhưngCHƯAGIẢNGFIN/đóngkếtnối.
+- **Kết quả3câu tựsoạn:** C1 người dùng ghi“SYN=900,ACK=201”: đúngcácgiátrịSeq/ACK, đãchuẩnhóaviếtSYN=1,Seq900,ACK201; khôngchấmtoàncâusai hoặcđồngnhấtSYNvớiSeq. C2 đúngSeq201/ACK901củaACKthứ3khôngdata. C3 người dùng nói“Không biết, giải thích kỹ hơn”, khôngtựchấmlàđúnghoặccoilàđãtựlàm.
+- ĐãgiảithíchC3bằngbảngmốcgửicủaclient: SYNSeq200tiêuthụ1→mốctiếp201; ACKthuầnSeq201/data0tiêuthụ0→mốcvẫn201; datađầutiên50BSeq201chứabyte201–250→mốcsau251. SeqxuấthiệntrongheaderACKthuầnkhônglàmsốđóđượctiêuthụ; nhậnSYN+ACKcủaserverkhôngtiêuthụSeqgửicủaclient. Chưa cóxácnhậnđãhiểulờigiảithích; khôngthêmquiz/khônggiảngFINtronglượtnày.
+- Giữ80%; sauchữalượt1tiếpFINtr93–94. Bước23congestiontr96–102chưagiảng; EstimatedRTTtùychọn.
 
 ### TCP bước20 lượt1 — 28/10/2026, T3 tr75–79
 

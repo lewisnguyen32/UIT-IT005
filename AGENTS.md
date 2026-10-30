@@ -21,7 +21,7 @@ Thư mục ôn thi theo đợt, dùng lại khi cần. Giữ cách làm đơn gi
 - **Nguồn đề:** chỉ năm PDF đã chọn E01/E02/E03/E08/E10, tổng 172 lượt câu (có câu lặp), làm căn cứ chọn câu từ đề, thống kê và xếp trọng tâm. Tên và đường dẫn chính xác của cả tám PDF ở [danh sách nguồn](memory/nguon-va-lich-su.md). Chỉ dùng phần câu hỏi; không đọc file đáp án riêng hay dùng trang đáp án tham khảo làm căn cứ. Không lấy đề online hoặc theo URL đề online trong tài liệu.
 - **Đọc nhanh đúng nguồn:** được dùng bản trích xuất/OCR đã đối chiếu của chính các PDF trên trong `tmp/study_audit/`; chúng là bản đọc lại của nguồn gốc, không phải nguồn mới. Khi thiếu chữ, số liệu hoặc hình chưa rõ, kiểm đúng trang PDF gốc; không cần mở lại toàn bộ PDF mỗi lượt.
 - Nếu PDF thiếu, sai hoặc mơ hồ, nói rõ chỗ đó. Nguồn lý thuyết chính thống bên ngoài chỉ bổ sung để làm rõ và phải ghi rõ là bổ sung; không âm thầm thay nguồn chính, tăng tần suất hay mở rộng phạm vi đề.
-- Ch3 đến hết TCP, gồm flow/connection/congestion, T3 hết trang PDF 102. QUIC/HTTP3 trang 104–108 ngoài phạm vi; trang 109 chỉ ôn mục đã giữ. EstimatedRTT tùy chọn.
+- Phạm vi Ch3 cập nhật ngày 29/10/2026: đến hết phần TCP ban đầu, gồm flow/connection, T3 hết trang PDF 94. TCP điều khiển tắc nghẽn trang 96–102 và QUIC/HTTP3 trang 104–108 ngoài phạm vi thi; không tự thêm lại khi còn giờ. Trang 109 chỉ ôn mục đã giữ. Giữ bước14–22 (9 chặng cơ sở), bỏ bước23; EstimatedRTT bước24 vẫn tùy chọn.
 - Giữ nguyên tài liệu trong `Giữa Kỳ/`, `Lý thuyết/` và nội dung/lộ trình trong `output/` khi chỉ tổ chức lại memory. Không suy đoán bằng chứng thiếu hoặc tự đổi phạm vi.
 
 ## Lưu ít, lưu đúng
