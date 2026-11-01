@@ -11,6 +11,7 @@
 - Giữ8/8chặng cơ sở; bộ80 C11–20vẫnchưatrảlời, không tự chấm hoặc ép tiếp bộ đó khi người dùng đang chữa đề mẫu.
 - Hỏi đáp tiếpC2: đãlàmrõpersistentvẫncần6GETcho1HTML+5ảnh nhưngchỉ1TCP; withpipeliningnhậnxongHTMLrồigửi5GETảnhliêntiếp/khôngđợitừngresponse,bodyvẫntruyềnnốitiếp. Với t_object0,5RTT,1TCPmới/cùngserver/bỏGETheader/xửlý/DNS/TLS:1setup+(1+0,5)HTML+(1+5×0,5)ảnh=6RTT,so10RTTwithoutpipeline;3RTTchỉnếubỏtruyềnbody. Cósubagent ràlogic; làgiảithíchmởrộng,chưa cócâutựlàmmớixácnhậnnắm.
 - Đãđốichiếulịchsửtrướckhigiảng: khái niệmpersistentkhôngtựpipeliningđãđượcnói,đãtựkiểmmộtobject/4requests1TCP; bài sốnhiềuobject/pipeliningchưađượckiểm trướcđó vàxếpBthêmgiờ. Khôngnóilàuserđãluyệnkỹhoặcthànhthạophầnnày.
+- 31/10: theo yêu cầu, giải thích lại C2 kèm hai sơ đồ GET/response và mốc hoàn tất từng ảnh: without10RTT, with6RTT. Giữ giả định/mô hình đã kiểm ở trên; chưa có trả lời tự kiểm mới, không nâng mức thành thạo.
 
 ## Tiến trình Chương 2 đã lưu, tạm dừng — 27/10/2026
 

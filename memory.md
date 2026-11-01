@@ -1,6 +1,6 @@
-# Mốc ôn thi — 30/10/2026
+# Mốc ôn thi — 31/10/2026
 
-**Đang làm rõ câu2 đề mẫu: persistent và pipelining.** Đã giải thích trường hợp pipelining là6RTT với cùng số liệu; chưa có câu tự kiểm mới/xác nhận đã nắm. Bản tổng hợp/Obsidian đã bổ sung theo yêu cầu trước.
+**Đang làm rõ câu2 đề mẫu: persistent và pipelining.** Đã giải thích lại kèm hai sơ đồ: không pipeline10RTT, có pipeline6RTT với cùng số liệu; chưa có câu tự kiểm mới/xác nhận đã nắm. Bản tổng hợp/Obsidian đã bổ sung theo yêu cầu trước.
 
 - **Chương 3: 9/9 chặng = 100% nội dung đã học/tự kiểm/chữa**, bước14–22; không phải thành thạo. Ba câu FIN đã trả lời đúng/chữa ngày30/10, không hỏi lại như chưa làm. Phạm vi chính hếtT3tr94; bước23congestion đãloại, QUIC/HTTP3 ngoài phạm vi; EstimatedRTTbước24 vẫn tùy chọn/chưa học.
 - **Đề mẫu cô15câu:**10đúng/14đãlàm theo ý hỏiC12A; sai2,6,10,11 đãchữa. C2A/C10B/C12A được user xác nhận; C12cólỗitênởD, C15chưa chọn/ngoài phạmvi hiện hành. [Báo cáo và lỗ hổng](output/CHUA_DE_MAU_CO_20261030.md); khônggộpvào172câu.
