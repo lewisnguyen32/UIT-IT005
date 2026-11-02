@@ -1,12 +1,16 @@
-# Mốc ôn thi — 31/10/2026
+# Mốc ôn thi — 01/11/2026
 
-**Đang làm rõ câu2 đề mẫu: persistent và pipelining.** Đã giải thích lại kèm hai sơ đồ: không pipeline10RTT, có pipeline6RTT với cùng số liệu; chưa có câu tự kiểm mới/xác nhận đã nắm. Bản tổng hợp/Obsidian đã bổ sung theo yêu cầu trước.
+**Lịch thi đã xác nhận:** NMMMT ngày 03/11/2026, 9h30–11h. Ngày 02/11 rảnh cả ngày; ôn chính sau 12h30, buổi sáng chỉ ôn nhẹ tùy chọn. Việc lên lịch không thay đổi tiến độ học bên dưới.
+
+Lịch gợi ý 02/11, **chưa thực hiện**: 13h–13h45 ôn trọng tâm; nghỉ 15 phút; 14h–15h05 làm D25 C1–30; 19h–19h55 chữa đề và bù kiến thức chưa kiểm. Tổng 3 giờ gồm nghỉ; chia block lớn theo yêu cầu, có làm đề riêng.
+
+**Đang ôn Chương 2 theo yêu cầu chuyển chương ngày01/11: đưa lại C11–20 của bộ80 đã tạm dừng, CHƯA TRẢ LỜI, chưa kèm đáp án.** Ch1 giữ kết quả19/19câu đã chọn; C13 chưa chọn/đã giải thích/chưa xác nhận nắm, không ép làm trước Ch2. Mốc HTTP trước đó: câu2 đề mẫu persistent/pipelining đã giải thích bằng hai sơ đồ 10RTT/6RTT, chưa xác nhận đã nắm; bản tổng hợp/Obsidian đã bổ sung.
 
 - **Chương 3: 9/9 chặng = 100% nội dung đã học/tự kiểm/chữa**, bước14–22; không phải thành thạo. Ba câu FIN đã trả lời đúng/chữa ngày30/10, không hỏi lại như chưa làm. Phạm vi chính hếtT3tr94; bước23congestion đãloại, QUIC/HTTP3 ngoài phạm vi; EstimatedRTTbước24 vẫn tùy chọn/chưa học.
 - **Đề mẫu cô15câu:**10đúng/14đãlàm theo ý hỏiC12A; sai2,6,10,11 đãchữa. C2A/C10B/C12A được user xác nhận; C12cólỗitênởD, C15chưa chọn/ngoài phạmvi hiện hành. [Báo cáo và lỗ hổng](output/CHUA_DE_MAU_CO_20261030.md); khônggộpvào172câu.
 - **Điểm cần ôn:** HTTP nhiềuobject/304/ghépURL,UDP Length; MSS/header,ACK vớiappđọc,rwnd vàhai chiềuSeqACK. Đã bổ sung IMAPTCP143/tênMessage,FTPcontrol/data vàbảngcổng; không tự coi phần mới đã thành thạo.
-- **Chương 2: 8/8 chặng cơ sở = 100%**, bước 6–13. Bộ 80 câu: C1–10 đã trả lời/chữa; **C11–20 đã đưa nhưng CHƯA TRẢ LỜI**, đang tạm dừng. Chỉ quay lại khi người dùng chọn Ch2; không ép hoàn tất trước Ch3.
-- **Chương 1:** đã tổng ôn và làm 8 câu. Cần củng cố định nghĩa giao thức, tầng xử lý switch/router, đổi đơn vị và cộng đủ độ trễ từng link. Chưa xác nhận thành thạo toàn chương.
+- **Chương 2: 8/8 chặng cơ sở = 100%**, bước6–13, không phải thành thạo. Bộ80: C1–10 đã trả lời/chữa; **C11–20 đưa lại ngày01/11, đang chờ trả lời** theo yêu cầu quay lại Ch2. Đây là lượt cũ chưa trả lời, không phải bộ mới.
+- **Chương 1:** đã tổng ôn/làm8câu trước; bộ20câu ngày01/11 đúng19/19câu đã chọn,C13 chưa chọn/đã giải thích. Chưa có cách tính tự trình bày, chưa xác nhận nắm gỡ/đóng gói ở router; không suy thành thạo toàn chương. Giữ điểm yếu cũ để kiểm tra vận dụng sau.
 
 Phần trăm tính theo các chặng nội dung có trọng số bằng nhau đã học/tự kiểm/chữa, **không phải mức thành thạo**. Chi tiết câu trả lời và điểm cần củng cố được giữ trong nhật ký chương.
 

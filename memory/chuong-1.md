@@ -3,6 +3,21 @@
 > Nhật ký chi tiết được chuyển nguyên văn từ memory.md ngày 27/10/2026. Mốc hiện tại xem [memory.md](../memory.md); quy tắc làm việc xem [AGENTS.md](../AGENTS.md).
 > Các câu “đang học”, “chưa giảng”, “chờ trả lời” và phần trăm trong mục cũ chỉ mô tả thời điểm ghi, không thay thế mốc hiện tại. Đường dẫn trong bản ghi gốc tính từ thư mục NMMMT.
 
+## C11–20 tự kiểm tiếp — 01/11/2026, đúng9/9câu đã chọn; C13 đã giải thích
+
+- Người dùng nói tiếp tục sau C1–10 đúng10/10; tiếp ôn Ch1 bằng10 câu trắc nghiệm tự soạn mới, một lựa chọn đúng/câu, chưa đưa đáp án. Bám T1 tr3–4,9–12,29–35,46–56,62–67; không phải câu trích nguồn đề.
+- C11 Internet là mạng của các mạng; C12 ứng dụng mạng chạy ở hệ thống đầu cuối; C13 router bỏ đóng gói liên kết đầu vào/xử lý datagram/đóng frame đầu ra; C14 chuyển mạch kênh24Mbps,mỗi cuộc gọi3Mbps,tính số cuộc gọi tối đa,bỏ overhead; C15 hàng đợi do gói tới lúc đầu ra đang bận; C16 tăng gấp đôiR,giữL/d/s,ảnh hưởng hai loại trễ.
+- C17 một gói1500byte,A→R1→R2→B,store-and-forward: tốc độ lần lượt6/3/12Mbps,lan truyền1/2/3ms,bỏ xử lý/hàng đợi,tính từ bit đầu rờiA tới bit cuối tớiB. C18 L1000byte,a500gói/s,R8Mbps,tínhrho. C19 bốn kết nối chia đều20Mbps,mỗiRs10/Rc3Mbps,luôn có dữ liệu/không nút thắt khác,tính throughput mỗi kết nối. C20 yêu cầu đi9ms,server xử lý3ms,phản hồi về13ms,không bắt tay/phát lại,tính thời gian nhận phản hồi.
+- Người dùng đánh số1–10 tương ứng C11–20:11B,12D,13“không rõ/giải thích lại”,14C,15B,16D,17A,18C,19B,20D. Cả9câu đã chọn đều đúng; C13 chưa có lựa chọn, không tính sai/đúng. C17=2+4+1+1+2+3=13ms,C18rho0,5,C19min(10,3,5)=3Mbps,C20=9+3+13=25ms; chưa có cách tính của người dùng.
+- Đã giải thích C13 theo T1tr64–67: frame phục vụ từng liên kết, router gỡ bao gói liên kết đầu vào để xử lý datagram/tra đường ra, rồi đóng gói vào frame đầu ra; không cần gỡ tới thông điệp ứng dụng khi chuyển tiếp thông thường. Nêu đáp ánA theo yêu cầu giải thích; chưa xác nhận người dùng đã nắm, không tự coi C13 đã trả lời đúng hoặc thành thạo gỡ/đóng gói.
+
+## Bộ 10 câu tự kiểm — 01/11/2026, đã trả lời/chữa, đúng 10/10
+
+- Người dùng yêu cầu 10 câu Ch1. Bộ trắc nghiệm tự soạn mới, mỗi câu một đáp án; không phải câu trích đề; lúc đưa câu hỏi chưa kèm đáp án. Bám T1 tr6,26,32–33,46–50,53–56,62–67.
+- C1 định nghĩa giao thức; C2 routing/forwarding; C3 chia khe thời gian định kỳ; C4 tầng cao nhất switch lớp2/router; C5 PDU từ ứng dụng xuống liên kết; C6 gói chờ4ms rồi truyền khi buffer còn chỗ.
+- C7 gói1250byte,5Mbps,600km,s=2×10^8m/s: tổng trễ truyền+lan truyền một link. C8 A→R1→R2→B,store-and-forward,gói1000byte,mỗi link4Mbps/lan truyền0,8ms: thời gian từ bit đầu rời A đến bit cuối tới B; bỏ xử lý/hàng đợi. C9 gói500byte,a600gói/s,R2Mbps: cường độ lưu lượng và hệ quả khi duy trì/buffer hữu hạn. C10 có5kết nối chia đều30Mbps,Rs12Mbps,Rc8Mbps: throughput mỗi kết nối, giả sử luôn có dữ liệu/không nút thắt khác. Tách với 8 câu tổng ôn cũ.
+- Người dùng trả lời 1C,2B,3A,4D,5B,6C,7A,8D,9C,10B: đúng cả10; đã chấm/chữa. C7:2+3=5ms; C8:3×(2+0,8)=8,4ms; C9:rho1,2/quá tải lâu dài,buffer hữu hạn đầy/mất gói; C10:min(12,8,30/5)=6Mbps. C1/C4 chọn đúng các điểm từng nhầm; C7/C8 kết quả đúng nhưng chưa có cách tính của người dùng. Ghi nhận củng cố trong bộ này, không suy thành thạo toàn Ch1; không còn câu đang chờ, chưa chọn bài tiếp.
+
 ## Đối chiếu đề mẫu cô — 30/10/2026
 
 - C3 đúngD/8ms:2000×8/(2×10^6)=0,008s; C4 đúngA/1Mbps:min(1,2,3). Kiến thức/công thức đã có trong bản tổng hợp, không phát sinh chủ đềCh1mới; không suy thành thạo toànchương. Chi tiết ở [báo cáo đề mẫu](../output/CHUA_DE_MAU_CO_20261030.md).

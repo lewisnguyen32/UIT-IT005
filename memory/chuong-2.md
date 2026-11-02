@@ -3,6 +3,10 @@
 > Nhật ký chi tiết được chuyển nguyên văn từ memory.md ngày 27/10/2026. Mốc hiện tại xem [memory.md](../memory.md); quy tắc làm việc xem [AGENTS.md](../AGENTS.md).
 > Các câu “đang học”, “chưa giảng”, “chờ trả lời” và phần trăm trong mục cũ chỉ mô tả thời điểm ghi, không thay thế mốc hiện tại. Đường dẫn trong bản ghi gốc tính từ thư mục NMMMT.
 
+## Quay lại ôn Chương 2 — 01/11/2026
+
+- Người dùng yêu cầu “qua chương2” sau lượt ôn Ch1. Giữ8/8chặng cơ sở=100%nội dung, không phải thành thạo. Đưa lại lượt C11–20 của output/CAU_HOI_TONG_ON_CHUONG_2.md (bộ80 tự soạn đã review), chưa đáp án, vẫn CHƯA TRẢ LỜI; không tạo bộ mới/không coi câu đã làm. Lượt này trả lời ngắn bằng lời, giữ số11–20 để chấm. Ch1C13 đã giải thích/chưa chọn, không ép giải quyết trước Ch2.
+
 ## Đối chiếu đề mẫu cô — 30/10/2026
 
 - Đây là đề mới riêng, không phải C11–20 của bộ80 đang tạm dừng. Theo ảnh và xác nhậnC2A/C12A: đúngC1C(cookie),C7C(FTP/TCP21),C9C(client–server); saiC2A→D10RTT,C6A→B2lượt200+304cache,C11D→CtheoHTTP1.1mặcđịnhpersistent/đủpathdocs. Đã chữa bằng mô hìnhT2 và nguồn bổ sung, chưa xác nhận đã tự áp dụng lại.
