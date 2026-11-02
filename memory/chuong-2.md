@@ -3,6 +3,17 @@
 > Nhật ký chi tiết được chuyển nguyên văn từ memory.md ngày 27/10/2026. Mốc hiện tại xem [memory.md](../memory.md); quy tắc làm việc xem [AGENTS.md](../AGENTS.md).
 > Các câu “đang học”, “chưa giảng”, “chờ trả lời” và phần trăm trong mục cũ chỉ mô tả thời điểm ghi, không thay thế mốc hiện tại. Đường dẫn trong bản ghi gốc tính từ thư mục NMMMT.
 
+## Chữa C11–20 bộ80 — 02/11/2026
+
+- Người dùng trả lời số1–10 tương ứng C11–20. Chấm theo từng ý, không quy toàn lượt đúng/sai hoặc tự coi đã thành thạo; giữ8/8chặng. Đã chữa đủ lượt, chưa đưa C21–30.
+- C11 đúng host chạy nhiều process; sai socket là host–process, đã sửa process–transport (T2tr8). C12 đúng trang web là tài nguyên, chưa phân loại đủ bốn thành phần; đã bổ sung browser process/client, Apache đang chạy process/server, máy chạyApache làhost,index.html tài nguyên. C13 đúng IP chọnhost/port chọn endpointứngdụng trong môhìnhcơbản.
+- C14 đúng client chủ động/server chờ/vai trò đổi; “vì SMTP” chưa giải thích việc đổi vai, đã làm rõ A mởkết nối→Aclient/Bserver, B mở→đổi. C15 nêu được hạn chế peer chưa có dữ liệu cần; thiếu so sánh kiến trúc/tự mở rộng/peer vào-ra, đã bổ sung theoT2tr6–7.
+- C16 đúng có thể chia sẻ khi chưa đủ file; gọi khối làseed sai thuật ngữ, đã sửa chunk/khối dữliệu theoT2tr85–86, thêm điều kiện bên kia cần khối mình có. Không mở rộng BitTorrent thành trọng tâm mới.
+- **C17 đánh dấu ôn theo yêu cầu:** trả lời tên trường là byte đánh dấu nhiệm vụ chưa phân biệt nhãn/giá trị/ngữ nghĩa; chưa đủ bốn thành phần. Đã giải thích T2tr10 bằng Content-Length:5 (tên trường Content-Length,giá trị5,nghĩa body5byte), bốn mục loại thôngđiệp/cúpháp/ngữnghĩa/quytắc và khả năng tương tác qua đặc tả công khai. Chưa có xác nhận hiểu hoặc câu áp dụng mới; không coi đã nắm.
+- C18 đúng ý chính: backup tin cậy,thoại trễ thấp/chấp nhận mất ít,video lưu sẵn thông lượng,bảo mật cảba; bổ sung video cần tốc độ đáp ứng mức phát/có thể buffer, nhu cầu nổi bật không loại trừ các nhu cầu khác (T2tr11–12).
+- C19a chọn sai đúng/TLS, b khôngbảođảm đúng, c đoán sai đúngkếtluận/chưa nhớchắc, d đúng đúng; e chọnđúng là sai. Đã sửa e: app quaUDP có thể tự thêm ACK/timeout/phátlại, UDP không tự cung cấp. Chuẩn aS,bS,cS,dĐ,eS (T2tr13–15).
+- C20 đúng chức năng/cổng HTTP80,SMTP25,DNS53,POP3110 và FTP truyềnfile; HTTP cần gọi trao đổi request/response client–server; thiếu IMAP,transport,nhầm FTP20/21,phân biệtTCP/TLS chưa trình bày riêng. Đã bổ sung bảng: HTTP TCP80,SMTP TCP25,DNS UDP/TCP53,POP3 TCP110,IMAP TCP143,FTPcontrol TCP21; FTPdata20 chỉactive cơbản (bổ sung đã kiểm trong tổnghợp/báocáo30/10). TCP truyền tin cậy khácTLS mãhóa/toànvẹn/xácthực; C19a đã nhắc TLS, không coi hoàn toàn chưabiết. Chưa xác nhận nắm lời chữa.
+
 ## Quay lại ôn Chương 2 — 01/11/2026
 
 - Người dùng yêu cầu “qua chương2” sau lượt ôn Ch1. Giữ8/8chặng cơ sở=100%nội dung, không phải thành thạo. Đưa lại lượt C11–20 của output/CAU_HOI_TONG_ON_CHUONG_2.md (bộ80 tự soạn đã review), chưa đáp án, vẫn CHƯA TRẢ LỜI; không tạo bộ mới/không coi câu đã làm. Lượt này trả lời ngắn bằng lời, giữ số11–20 để chấm. Ch1C13 đã giải thích/chưa chọn, không ép giải quyết trước Ch2.

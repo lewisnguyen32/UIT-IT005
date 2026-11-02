@@ -1,0 +1,189 @@
+===== PDF PAGE 1 =====
+Thực hiện bởi Trường Đại học Công nghệ Thông tin, ĐHQG-HCM1
+
+
+===== PDF PAGE 2 =====
+Nội
+dung
+2
+oCácdịchvụtầngvậnchuyểnoMultiplexing and demultiplexingoUDPoNguyênlýtruyềntin cậyoTCPoTCP -ĐiềukhiểntắcnghẽnoSựpháttriểncủacáctínhnăngcủatầngvậnchuyển
+
+
+===== PDF PAGE 3 =====
+TCP: 
+tổng
+quan
+3
+oACKs tích lũyoCơ chế pipelining:§Điều khiển tắc nghẽn và điều khiển luồng với “window size”o  Hướng kết nối: §handshaking (trao đổi các thông điệp thiết lập và đóng kết nối)  
+oTin cậy, dữ liệu đúng thứ tự theo byteo“full duplex data”:§Luồng dữ liệu 2 chiều trong cùng một kết nối§MSS: maximum segment size (độ dài tối đa của 1 segment)
+
+
+===== PDF PAGE 4 =====
+Cấu
+trúc
+của
+TCP segment
+4
+source port #dest port #32 bits
+notusedreceive windowflow control: # bytes receiver willing to accept
+sequence numbersegment seq  #: counting bytes of data into bytestream (not segments!)
+applicationdata (variable length)data sent by application into TCP socket
+Aacknowledgement numberACK: seq # of next expected byte; A bit: this is an ACK
+options (variable length)TCP options
+headlenlength (of TCP header)checksumInternet checksum
+RST, SYN, FIN: connection management
+FSRUrg data pointerPUCE
+C, E: congestion notification
+
+
+===== PDF PAGE 5 =====
+TCP: 
+Truyền
+tin 
+cậy
+5
+oTruyềntheothứtự: Sequence number, ACKoTruyềnlại:§Segment lỗi: ACK§Segment bịmất: timeout
+
+
+===== PDF PAGE 6 =====
+TCP sequence numbers, ACKs: 
+ví
+dụ
+6
+oThông điệptầngứngdụng: 9000 bytes (byte #0 -> byte #8999)oMỗisegment chứatốiđa2000 bytes (MSS)o=> 5 2000-byte segments0->19992000->39994000->5999
+8000->8999
+6000->7999
+Sequence number
+
+
+===== PDF PAGE 7 =====
+TCP sequence numbers, ACKs: 
+ví
+dụ
+7
+oThông điệptầngứngdụng: 9000 bytes (byte #0 -> byte #8999)oMỗisegment chứatốiđa2000 bytes (MSS)o=> 5 2000-byte segments
+Sender - Sequence numberReceiver - ACK  Seq = 0, length = 2000BS = 2000, length = 2000BS = 4000, length = 2000BS = 6000, length = 2000BS = 8000, length = 1000B
+Tôi nhận được đến byte #1999, tôi cần từ byte #2000 trờ điACK = 2000ACK = 4000ACK = 6000ACK = 8000ACK = 9000
+0->19992000->39994000->59996000->79998000->8999
+Tôi sẽ gửi từ #2000
+
+
+===== PDF PAGE 8 =====
+TCP sequence numbers, ACKs
+8
+host ACKs 50Bhost ACKs 30B, send 50B
+Host BHost A
+Send 30BSeq=42, ACK=79, data = 30B
+Seq=79, ACK=72, data = 50B
+Seq=?, ACK=?
+
+
+===== PDF PAGE 9 =====
+TCP round trip time, timeout
+9
+Q: TCP xác định thời gian timeout thế nào?§Phải lâu hơn RTT, nhưng RTT khác nhau sau mỗi lần gửi!§Nếu quá ngắn: gửi lại không cần thiết§Nếu quá lâu: chậm phản ứng với việc mất segment
+Q: Làm thế nào để dự đoán RTT?§SampleRTT:đo thời gian truyền segment cho đến khi nhận được ACK•Bỏ qua việc truyền lại§SampleRTT sẽ khác nhau với mỗi lần đo•Tính trung bình nhiều lần đo chứ không chỉ dựa vào lần đo hiện tại
+
+
+===== PDF PAGE 10 =====
+TCP round trip time, timeout
+10
+EstimatedRTT = (1- a)*EstimatedRTT + a*SampleRTT§Cơ chế EWMA: exponential weighted moving average §Sự ảnh hưởng của các lần đo trước sẽ giảm theo a §Giá trị tiêu biểu: a = 0.125RTT: gaia.cs.umass.edu to fantasia.eurecom.fr
+100
+150
+200
+250
+300
+350
+1 8 15222936435057647178859299106
+time (seconnds)
+RTT (milliseconds)
+SampleRTTEstimated RTT
+RTT (milliseconds)
+RTT: gaia.cs.umass.edu to fantasia.eurecom.fr
+sampleRTTEstimatedRTT
+time (seconds)
+
+
+===== PDF PAGE 11 =====
+TCP round trip time, timeout
+11
+§Khoảng timeout: EstimatedRTT cộng với “safety margin” – biên độ an toàn”TimeoutInterval = EstimatedRTT + 4*DevRTTestimated RTT“safety margin”
+* Check out the online interactive exercises for more examples: http://gaia.cs.umass.edu/kurose_ross/interactive/
+DevRTT = (1-b)*DevRTT + b*|SampleRTT-EstimatedRTT|(typically, b = 0.25)
+§DevRTT: EWMA of SampleRTT deviation from EstimatedRTT: 
+
+
+===== PDF PAGE 12 =====
+TCP Sender 
+(
+tinh
+giản
+)
+12
+Sự kiện: Nhận dữ liệu từ tầng ứng dụngoTạo segment với STT seq #oseq #: STT của byte đầu tiên trong segment oBắt đầu tính thời gian với segment cũ nhấtSự kiện: timeoutoGửi lại segment bị timeoutoBắt đầu tính lại thời gian
+Sự kiện: nhận được ACKoNếu ACK xác nhận cho các segment chưa được ACK§Cập nhật trạng thái§Tính lại thời gian với các segment chưa được ACK
+
+
+===== PDF PAGE 13 =====
+TCP Receiver: ACK generation 
+[RFC 5681]
+13
+Sự kiện tại bên nhậnNhận được segment đúng với STT đang chờ. Tất cả segment trước đó đã được ACK.Nhận được segment đúng với STT đang chờ, một segment chưa được ACK.Nhận được segment không đúng thứ tự (STT cao hơn). Nhận được segment trong khoảng bị trống (giữa STT đang chờ và STT nhận được trước đó). 
+Hành độngChờ segment kế tiếp trong 500ms, nếu không nhận được segment mớithì sẽ ACK.Gửi ACK tích lũy để ACK cho 2 segment.Gửi ACK trùng ngay lập tức, để chỉ cho bên gửi biết đang chờ segment nào.Lập tức gửi ACK cho segment có thứ tự thấp nhất trong khoảng bị trống
+
+
+===== PDF PAGE 14 =====
+TCP: 
+các
+trường
+hợp
+truyền
+lại
+14
+Mất ACK
+Host BHost A
+Seq=92, 8 bytes of data
+Seq=92, 8 bytes of data
+ACK=100X
+ACK=100
+timeout
+timeout
+Host BHost A
+Seq=92,  8bytes of dataACK=120
+timeoutACK=100ACK=120
+SendBase=100SendBase=120
+SendBase=120
+Seq=92, 8 bytes of dataSeq=100, 20 bytes of data
+SendBase=92
+send cumulative ACK for 120
+
+
+===== PDF PAGE 15 =====
+TCP: 
+các
+trường
+hợp
+truyền
+lại
+15
+ACK tích lũy
+Host BHost A
+Seq=92, 8 bytes of data
+Seq=120,  15 bytes of data
+Seq=100, 20 bytes of dataXACK=100ACK=120
+
+
+===== PDF PAGE 16 =====
+TCP: 
+truyền
+lại
+nhanh
+16
+Host BHost Atimeout
+ACK=100ACK=100ACK=100ACK=100
+XSeq=92, 8 bytes of dataSeq=100, 20 bytes of data
+Seq=100, 20 bytes of data
+Việc nhận 3ACK trùng lặp cho biết đã nhận được 3 segment sau một segment bị thiếu –có khả năng bị mất phân đoạn. => Truyềnlại!
+Khi bên gửi nhận được 3 ACK yêu cầu cùng segment, bên gửi gửilại segmentđược yêu cầu mà không cần chờ timeout.
+TCP: truyền lại nhanh

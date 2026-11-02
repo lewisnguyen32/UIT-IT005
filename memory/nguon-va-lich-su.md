@@ -12,11 +12,19 @@ Danh sách này xác định đúng các PDF người dùng đã chọn; quy t�
 | T1 / LT1 | [Chương 1 — Giới thiệu](<../Lý thuyết/[BHT CNPM] NMMMT_Chương1_Giới thiệu.pdf>) |
 | T2 / LT2 | [Chương 2 — Tầng ứng dụng](<../Lý thuyết/[BHT CNPM] NMMMT_Chương 2 _Tầng ứng dụng.pdf>) |
 | T3 / LT3 | [Chương 3 — Tầng vận chuyển](<../Lý thuyết/[BHT CNPM] NMMMT_Chương 3_Tầng vận chuyển.pdf>) |
+| T3-TCP-2023 | [TCP ban đầu — cập nhật ngày02/11](<../Lý thuyết/Chapter_3_2023_3.6 TCP_1st.pdf>) |
 | E01 / D19 | [Đề 2019–2020](<../Giữa Kỳ/[BHT CNPM] NMMMT 2019-2020 GK1.pdf>) |
 | E02 / D20 | [Đề 2020–2021](<../Giữa Kỳ/[BHT CNPM] NMMMT 2020-2021 GK1.pdf>) |
 | E03 / D25 | [Đề 2025–2026](<../Giữa Kỳ/[BHT CNPM] NMMMT 2025-2026 GK1.pdf>) |
 | E08 / D23 | [Đề A MMT — thư mục 2023](<../Giữa Kỳ/Nhập Môn Mạng Máy Tính/2023/Đề A MMT.pdf>) |
 | E10 / D24 | [Đề 2024](<../Giữa Kỳ/Nhập Môn Mạng Máy Tính/2024/2024.pdf>) |
+
+## Cập nhật slide TCP — 02/11/2026
+
+- User gửi `C:/Users/phuoc/Downloads/Chapter_3_2023_3.6 TCP_1st.pdf`, yêu cầu cập nhật slide/dạy EstimatedRTT, sau đó chỉ định ghi nội dung vào mộtfileMarkdownriêng. Đã lưu bản giốngnguyênbản trongLýthuyết với cùng tên;16trang, SHA256`9c7f914f672ced0ae9d76c46239248c252bf5aff66d7ca423ffad8abbed1ea18`.
+- T3-TCP-2023 là nguồn chính mới do user cung cấp cho phầnTCPbanđầu/EstimatedRTT liênquan; không thay toàn bộT3cũ vì file mới không cóflow/FIN. T3cũ vẫn dùng choRDT/UDP vàflow/connection, khôngxóahoặcghiđè. Nguồn đề5PDF/172lượt, phạmvi khôngthi congestion/QUIC và9chặngcơsở giữnguyên.
+- EstimatedRTT có trongbảnmới: PDF/slide9–11, côngthứcởtr10. Đã tríchxuất vào`tmp/study_audit/T3_TCP_1st_2023_20261102.txt`, metadata/hashởfilejsoncùngtên; render/kiểm trựcquan đủ3trang và cósubagentràđộc lập. Các nhận xét “T3thiếucôngthức” trướcđó chỉ áp dụng bảnT3cũ, khôngápdụngbảnmới. Chưa kiểmtoànbộhình16trang.
+- Bài học riêng theo yêu cầu: [EstimatedRTT](../output/ESTIMATED_RTT.md). Không sửa nội dung kếhoạch/lộtrìnhcũ hoặc thốngkêđề; đây là nguồn lýthuyết mớiđượcuserchỉđịnh, khôngphảinguồnngoài tựthêm.
 
 ## Đề mẫu cô cung cấp riêng — 30/10/2026
 
