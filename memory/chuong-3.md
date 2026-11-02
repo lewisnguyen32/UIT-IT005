@@ -3,6 +3,11 @@
 > Nhật ký chi tiết được chuyển nguyên văn từ memory.md ngày 27/10/2026. Mốc hiện tại xem [memory.md](../memory.md); quy tắc làm việc xem [AGENTS.md](../AGENTS.md).
 > Các câu “đang học”, “chưa giảng”, “chờ trả lời” và phần trăm trong mục cũ chỉ mô tả thời điểm ghi, không thay thế mốc hiện tại. Đường dẫn trong bản ghi gốc tính từ thư mục NMMMT.
 
+## Làm rõ E02/D20 câu 19 và 9 — 02/11/2026
+
+- Đã cung cấp key tự giải 30 câu E02, có rà soát độc lập; đây không phải bằng chứng user đã làm đề. User phản biện C19 đúng: timeout chỉ cho biết chưa nhận ACK hợp lệ, không xác định data/ACK mất, hỏng hay chậm. B đúng theo ý hành động phát lại khi timeout nhưng chữ “tự phát hiện lỗi” không chặt; không chốt B hoàn toàn chính xác về diễn đạt. RDT có checksum phát hiện lỗi bit; không gán việc kiểm lỗi bit chỉ cho ứng dụng (T3 tr58–61).
+- C9: user phân biệt gói đến receiver với được lưu/chấp nhận. Theo GBN không buffer, gói thứ2/5 đến nhưng sai thứ tự nên bỏ, chưa giao ứng dụng; B là ý đề, câu chữ “yêu cầu” không chặt. T3 tr68 cho phép hủy hoặc buffer tùy triển khai. Chuẩn hóa ACK: slide GBN ACK(n) xác nhận hết đến n, nên không ACK gói1 nếu gói1 mất; nếu nói ACK1 theo nghĩa đang chờ gói1 thì là quy ước next-expected. Theo TCP trên hình, mốc byte đang chờ là161. Chưa có xác nhận user hiểu phần chuẩn hóa ACK; không đổi tiến độ/điểm đề.
+
 ## Bổ sung DevRTT vào file riêng — 02/11/2026
 
 - User yêu cầu thêm phần tínhDevRTT vàooutput/ESTIMATED_RTT.md; đã thêm mục6.1–6.4/côngthức/2lần tính/so sánhquyướcvàC4–5tựkiểmkhôngđápán. ChưađưaC4–5trongchat/chưatrảlời/chưa xácnhận đọc,khôngtựcoilàđãhọc/tựkiểm/chữaDevRTT. Giữ9/9chặngcơsở/kếtquảEstimated2/3.

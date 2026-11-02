@@ -18,6 +18,8 @@ Phần trăm tính theo các chặng nội dung có trọng số bằng nhau đ�
 
 ## Chỉ mở phần liên quan
 
+- E02/D20 đã được cung cấp key tự giải, chưa có bằng chứng user làm cả đề. Đang làm rõ C19 (timeout không xác định nguyên nhân lỗi) và C9 (gói đến/chấp nhận/buffer, quy ước ACK); chi tiết ở nhật ký Ch3, không đổi tiến độ.
+
 - [Tổng hợp kiến thức ba chương](output/TONG_HOP_KIEN_THUC_NMMMT_3_CHUONG.md): mỗi mục1–2câu, có công thức/điều kiện và phạm vi TCP đếntr94; tài liệu tra nhanh, không phải xác nhận thành thạo. Đã ghi bản Obsidian theo yêu cầu vào [MMT.md](<D:/The Great Root/Obsidian/my-notes/content/Ôn thi/MMT.md>).
 - [Chương 1](memory/chuong-1.md): lịch sử học, kết quả tổng ôn và chỗ cần sửa.
 - [Chương 2](memory/chuong-2.md): mốc tạm dừng, kết quả C1–10, lưu ý chấm và lịch sử từng chủ đề.
