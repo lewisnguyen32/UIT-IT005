@@ -3,11 +3,23 @@
 > Nhật ký chi tiết được chuyển nguyên văn từ memory.md ngày 27/10/2026. Mốc hiện tại xem [memory.md](../memory.md); quy tắc làm việc xem [AGENTS.md](../AGENTS.md).
 > Các câu “đang học”, “chưa giảng”, “chờ trả lời” và phần trăm trong mục cũ chỉ mô tả thời điểm ghi, không thay thế mốc hiện tại. Đường dẫn trong bản ghi gốc tính từ thư mục NMMMT.
 
-## EstimatedRTT và slideTCP mới — 02/11/2026, đã tạo tài liệu riêng
+## Bổ sung DevRTT vào file riêng — 02/11/2026
+
+- User yêu cầu thêm phần tínhDevRTT vàooutput/ESTIMATED_RTT.md; đã thêm mục6.1–6.4/côngthức/2lần tính/so sánhquyướcvàC4–5tựkiểmkhôngđápán. ChưađưaC4–5trongchat/chưatrảlời/chưa xácnhận đọc,khôngtựcoilàđãhọc/tựkiểm/chữaDevRTT. Giữ9/9chặngcơsở/kếtquảEstimated2/3.
+- NguồnchínhT3-TCP-2023tr11khôngchỉrõE_cũ/E_mớitrongDevRTT. ĐãđốichiếuRFC6298§2.3trựctiếpbằngwebvàsubagentràđộclập: RFCdùngSRTTcũcậpnhậtRTTVARtrướcrồimớicậpnhậtSRTT. GắnnhãnRFCbổsungchochỗmơhồ,khônggánquyướcchođề/cô;ví dụ/câu4–5chọnE_cũrõràng,nếuđềquyđịnhkháctheoyêucầuđề. TimeoutdùngE_mới+4D_mớilàbảnrútgọnslide,khônglấythêmmin1s/clockgranularityvàobài.
+- Ví dụđãkiểm:E0=100,D0=10,alpha0,125,beta0,25,Sample120rồi80→D1=12,5/E1=102,5/T1=152,5;D2=15/E2=99,6875/T2=159,6875ms. Bảngso sánhchỉlầnđầu nếuE_mới:D1=11,875/T1=150ms,cho thấyphảinêurõquyước. C4E80/D8/alpha0,2/beta0,25/Sample100;C5tiếpSample90,cùngquyướcE_cũ,đềuchưađápán/chấm.
+
+## EstimatedRTT và slideTCP mới — 02/11/2026, C1–3 đã trả lời/chữa, đúng2/3
 
 - User gửiPDFTCP1st2023/yêucầucậpnhật nguồn,dạyEstimatedRTT; sauđó chỉđịnh thêmnội dung vào1file.mdriêng. Đã tạo [bài học EstimatedRTT](../output/ESTIMATED_RTT.md), không giảng dài trong chat hoặc sửa cácoutputcũ. NguồnmớiT3-TCP-2023 có16trang, trang9SampleRTT/tr10EstimatedRTT/tr11DevRTT+timeout; đườngdẫn/hashở[nguồn](nguon-va-lich-su.md).
 - Đã xemtrựcquantr9–11/subagentràđộclập. CôngthứcE_mới=(1−alpha)E_cũ+alpha×SampleRTT;alpha tiêu biểu0,125/đềchohệsốnàodùnghệsốđó. Ví dụtựsoạnđãgiải trongfile:E_cũ100,alpha0,125,Sample120→102,5;Sample80tiếp→99,6875ms. Slidekhôngnêukhởitạochitiết, nênvídụ/tựkiểmđềuchoEbanđầu,khôngtựlấy0. KhôngmởbàitínhDevRTTdo slidechưalàmrõold/newEtrongthứtựcậpnhật; chỉphânbiệtTimeoutInterval=E+4DevRTT/TIME_WAIT.
 - Trongfilecó3câutựkiểmchưađápán/tựsoạn: E_cũ80ms,alpha0,2,Sample100;tiếpSample90; câu3vềbỏmẫusegmentđãtruyền lại. Userchưađọcxácnhận/chưatrảlời,chưa chấm/khôngtựđánhdấuđãhọchoặcthànhthạo. Giữ9/9chặngcơsở; lượtFINtrướcvẫnđúng10/10vàđãhoàntấtônTCPcơsở. KhôngtựxếpbổsungEstimatedRTTvàokhốisángthi đãgợiý.
+
+- User yêu cầu “Cho tôi câu hỏi làmthửluônđi”: đã đưa lạiđúng3câu trongfilevàochat, khôngphảibộmới/chưađápán. C1E80ms,alpha0,2,Sample100;C2tiếpSample90/dùngE_cũlàkếtquảC1;C3theoslide9códùngmẫusegmenttruyền lạikhông/vìsao. Cả3CHƯA TRẢ LỜI/chưa chấm, khôngtựcoilàđãhiểutàiliệu.
+
+- User trả C1=84,C2=85,2/E_cũ84,C3“có”: C1/C2đúng/cậpnhậtnốitiếpđúng; C3sai,đãchữa theoT3-TCP-2023tr9: khôngdùngmẫucủasegmenttruyền lại trongmôhìnhđanghọc. Ví dụgiảithích gửiở0ms/gửilại100ms/ACKđến130ms: cóthểACKbảngửiđầuhoặcbảngửilại,nênmẫucóthể130hoặc30ms/khôngxácđịnhđược,chọnbỏmẫunày. Hai phép tínhđãđốichiếu:0,8×80+0,2×100=84;0,8×84+0,2×90=85,2ms. Đúng2/3,khôngtựcoiC3đãhiểulờichữa/khôngsuythànhthạo. Khôngcòn câuchờ,chưachọnbàitiếp;chưagiảngbàitínhDevRTT/TimeoutInterval.
+
+- Userhỏi“estimatedRTT=timerluônà”: đãgiảithíchT3-TCP-2023tr11: EstimatedRTTước lượngthờigianđi-về,DevRTTdaođộng,TimeoutInterval=E+4DevRTT làkhoảngchờđặttimer;timerlàcơchếđếmthờigian. Ví dụtựsoạnE100ms/Dev10ms→Timeout140ms,khôngđặtthẳng100ms;chưa cóxácnhận hiểu/khôngmởtínhDevRTTnốitiếp/khôngđặtquizmới.
 
 ## Sơ đồ FIN và server gửi tiếp — 02/11/2026, đã trả lời/chữa, đúng10/10ô
 

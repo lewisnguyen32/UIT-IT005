@@ -25,6 +25,7 @@ Danh sách này xác định đúng các PDF người dùng đã chọn; quy t�
 - T3-TCP-2023 là nguồn chính mới do user cung cấp cho phầnTCPbanđầu/EstimatedRTT liênquan; không thay toàn bộT3cũ vì file mới không cóflow/FIN. T3cũ vẫn dùng choRDT/UDP vàflow/connection, khôngxóahoặcghiđè. Nguồn đề5PDF/172lượt, phạmvi khôngthi congestion/QUIC và9chặngcơsở giữnguyên.
 - EstimatedRTT có trongbảnmới: PDF/slide9–11, côngthứcởtr10. Đã tríchxuất vào`tmp/study_audit/T3_TCP_1st_2023_20261102.txt`, metadata/hashởfilejsoncùngtên; render/kiểm trựcquan đủ3trang và cósubagentràđộc lập. Các nhận xét “T3thiếucôngthức” trướcđó chỉ áp dụng bảnT3cũ, khôngápdụngbảnmới. Chưa kiểmtoànbộhình16trang.
 - Bài học riêng theo yêu cầu: [EstimatedRTT](../output/ESTIMATED_RTT.md). Không sửa nội dung kếhoạch/lộtrìnhcũ hoặc thốngkêđề; đây là nguồn lýthuyết mớiđượcuserchỉđịnh, khôngphảinguồnngoài tựthêm.
+- UseryêucầubổsungDevRTTtrongfile: tr11khôngchỉrõE_cũ/E_mới,đãđốichiếubổsung[RFC6298§2.3](https://www.rfc-editor.org/rfc/rfc6298.html#section-2) ngày02/11vàsubagentràđộclập. Bài vídụghiquyướcdùngE_cũtheoRFC,đồngthờiminhhọakhácbiệtnếuđềchỉđịnhE_mới;khônggánquyướcRFCchođề/cô. Giữcôngthứctimeout rútgọncủaslide,khôngmởrộngthànhtoànbộthuậttoánRTO.
 
 ## Đề mẫu cô cung cấp riêng — 30/10/2026
 
