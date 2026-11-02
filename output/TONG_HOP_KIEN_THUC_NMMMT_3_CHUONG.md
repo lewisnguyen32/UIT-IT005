@@ -73,16 +73,16 @@ Nguồn chính: [T2 — Chương2](<D:/0_Personal/UIT/Đề thi các năm/NMMMT/
 
 **Giao thức — vận chuyển — cổng cần nhận diện:** Đây là cổng dịch vụ mặc định phía server, khác cổng nguồn tạm thời của client; ứng dụng có thể được cấu hình dùng cổng khác.
 
-| Giao thức | Vận chuyển trong mô hình đang học | Cổng mặc định | Vai trò/lưu ý |
-|---|---|---:|---|
-| HTTP | TCP | 80 | Web HTTP cơ sở |
-| HTTPS | TCP + TLS | 443 | Web có TLS trong mô hình TCP đang học |
-| DNS | UDP hoặc TCP | 53 | Bài truy vấn cơ sở thường dùng UDP; DNS cũng hỗ trợ TCP |
-| SMTP | TCP | 25 | Chuyển thư giữa mail server trong mô hình môn học |
-| POP3 | TCP | 110 | Truy xuất/tải thư |
-| IMAP | TCP | 143 | Truy xuất/quản lý thư trên server |
-| FTP — điều khiển | TCP | 21 | Gửi lệnh/điều khiển truyền tệp |
-| FTP — dữ liệu active | TCP | 20 | Cổng dữ liệu phía server ở chế độ active cơ bản; không áp cố định cho passive |
+| Giao thức | Tên đầy đủ | Vận chuyển trong mô hình đang học | Cổng mặc định | Vai trò/lưu ý |
+|---|---|---|---:|---|
+| HTTP | Hypertext Transfer Protocol | TCP | 80 | Web HTTP cơ sở |
+| HTTPS | Hypertext Transfer Protocol Secure | TCP + TLS | 443 | Web có TLS trong mô hình TCP đang học |
+| DNS | Domain Name System | UDP hoặc TCP | 53 | Bài truy vấn cơ sở thường dùng UDP; DNS cũng hỗ trợ TCP |
+| SMTP | Simple Mail Transfer Protocol | TCP | 25 | Chuyển thư giữa mail server trong mô hình môn học |
+| POP3 | Post Office Protocol version 3 | TCP | 110 | Truy xuất/tải thư |
+| IMAP | Internet Message Access Protocol | TCP | 143 | Truy xuất/quản lý thư trên server |
+| FTP — điều khiển | File Transfer Protocol | TCP | 21 | Gửi lệnh/điều khiển truyền tệp |
+| FTP — dữ liệu active | File Transfer Protocol | TCP | 20 | Cổng dữ liệu phía server ở chế độ active cơ bản; không áp cố định cho passive |
 
 Các cặp HTTPS/443, IMAP/143 và phân biệt FTP control/data được bổ sung để làm rõ bảng; nguồn RFC/IANA ở cuối bản. Không mở rộng sang QUIC/HTTP3 hay thêm cơ chế TCP điều khiển tắc nghẽn.
 
