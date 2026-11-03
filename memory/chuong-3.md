@@ -3,6 +3,11 @@
 > Nhật ký chi tiết được chuyển nguyên văn từ memory.md ngày 27/10/2026. Mốc hiện tại xem [memory.md](../memory.md); quy tắc làm việc xem [AGENTS.md](../AGENTS.md).
 > Các câu “đang học”, “chưa giảng”, “chờ trả lời” và phần trăm trong mục cũ chỉ mô tả thời điểm ghi, không thay thế mốc hiện tại. Đường dẫn trong bản ghi gốc tính từ thư mục NMMMT.
 
+## Tự kiểm hiệu suất U — 03/11/2026, đã trả lời/chữa
+
+- User xin một câu tính U. Đã đưa một câu tự soạn theo T3 tr62–64: stop-and-wait, L=1000 bytes, R=1 Mbps=10^6 bit/s, RTT=40 ms là lan truyền hai chiều (chưa gồm truyền data); ACK gửi ngay khi nhận đủ gói, bỏ thời gian truyền ACK/xử lý, không mất/lỗi. Hỏi U phần trăm và phép tính; chưa đưa đáp án/chưa trả lời/chấm. Không đổi tiến độ9/9chặng.
+- User trả16,67%: đúng kết quả; chưa cung cấp phép tính nên không tự suy cách làm. Đã chữa L/R=8000/10^6=0,008s=8ms; U=8/(40+8)=1/6≈16,67%. Không thêm câu mới/không suy thành thạo; giữ9/9chặng.
+
 ## Làm rõ E02/D20 câu 19 và 9 — 02/11/2026
 
 - Đã cung cấp key tự giải 30 câu E02, có rà soát độc lập; đây không phải bằng chứng user đã làm đề. User phản biện C19 đúng: timeout chỉ cho biết chưa nhận ACK hợp lệ, không xác định data/ACK mất, hỏng hay chậm. B đúng theo ý hành động phát lại khi timeout nhưng chữ “tự phát hiện lỗi” không chặt; không chốt B hoàn toàn chính xác về diễn đạt. RDT có checksum phát hiện lỗi bit; không gán việc kiểm lỗi bit chỉ cho ứng dụng (T3 tr58–61).

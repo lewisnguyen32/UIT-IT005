@@ -1,4 +1,8 @@
-# Mốc ôn thi — 02/11/2026
+# Mốc ôn thi — 03/11/2026
+
+**Tự kiểm U ngày03/11:** câu tự soạn stop-and-wait đã trả lời đúng kết quả16,67%; đã chữa phép tính (truyền8ms, chu kỳ48ms). User chưa trình bày cách tính; không suy thành thạo, không đổi9/9chặng Ch3. Không còn câu U đang chờ.
+
+**Đề D19/E01:** đã cung cấp key tự giải30câu, kiểm đủ6ảnh và rà độc lập ngày03/11; chưa có bài làm của user, chưa chấm/đổi tiến độ. C4 hỏi không thuộcTCP/IP→A; C9A(100,120,120),C12A(4,203333ms),C20D(tuần tự),C21C(checksumB53D).
 
 **Lịch thi đã xác nhận:** NMMMT ngày 03/11/2026, 9h30–11h. Ngày 02/11 rảnh cả ngày; ôn chính sau 12h30, buổi sáng chỉ ôn nhẹ tùy chọn. Việc lên lịch không thay đổi tiến độ học bên dưới.
 
@@ -17,6 +21,8 @@ Gợi ý sáng03/11 trước thi9h30 (**chưa chốt/chưa thực hiện**, theo
 Phần trăm tính theo các chặng nội dung có trọng số bằng nhau đã học/tự kiểm/chữa, **không phải mức thành thạo**. Chi tiết câu trả lời và điểm cần củng cố được giữ trong nhật ký chương.
 
 ## Chỉ mở phần liên quan
+
+- [Tính năng các giao thức](output/TINH_NANG_CAC_GIAO_THUC_NMMMT.md): bảng HTTP/FTP/mail/DNS/Telnet, TCP–UDP, RDT, GBN–SR và các điểm dễ nhầm; tạo theo yêu cầu03/11, không đổi tiến độ.
 
 - E02/D20 đã được cung cấp key tự giải, chưa có bằng chứng user làm cả đề. Đang làm rõ C19 (timeout không xác định nguyên nhân lỗi) và C9 (gói đến/chấp nhận/buffer, quy ước ACK); chi tiết ở nhật ký Ch3, không đổi tiến độ.
 

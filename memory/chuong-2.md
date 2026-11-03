@@ -3,6 +3,10 @@
 > Nhật ký chi tiết được chuyển nguyên văn từ memory.md ngày 27/10/2026. Mốc hiện tại xem [memory.md](../memory.md); quy tắc làm việc xem [AGENTS.md](../AGENTS.md).
 > Các câu “đang học”, “chưa giảng”, “chờ trả lời” và phần trăm trong mục cũ chỉ mô tả thời điểm ghi, không thay thế mốc hiện tại. Đường dẫn trong bản ghi gốc tính từ thư mục NMMMT.
 
+## Bảng tra tính năng giao thức — 03/11/2026
+
+- Theo yêu cầu lưu phần vừa nhắc lại, đã tạo [Tính năng các giao thức](../output/TINH_NANG_CAC_GIAO_THUC_NMMMT.md): chức năng/cổng ứng dụng, TCP–UDP và RDT/GBN/SR; giữ các phân biệt POP3/IMAP, timeout không xác định nguyên nhân, hai quy ước ACK và GBN buffer tùy triển khai. Đây là tài liệu tra cứu, không phải kết quả tự kiểm mới; không đổi tiến độ Ch2/Ch3.
+
 ## Chữa C11–20 bộ80 — 02/11/2026
 
 - Người dùng trả lời số1–10 tương ứng C11–20. Chấm theo từng ý, không quy toàn lượt đúng/sai hoặc tự coi đã thành thạo; giữ8/8chặng. Đã chữa đủ lượt, chưa đưa C21–30.
