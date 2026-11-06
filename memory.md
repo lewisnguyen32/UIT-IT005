@@ -1,4 +1,12 @@
-# Mốc ôn thi — 03/11/2026
+# Mốc học — 06/11/2026
+
+**Trạng thái:** đã thi xong giữa kỳ, kết quả tốt theo người học; đợt ôn giữa kỳ đã kết thúc. Người học đánh giá cấu trúc học hiện tại rất tốt. [Ghi nhận sau giữa kỳ](DANH_GIA_SAU_GIUA_KY.md).
+
+**Dùng lại cho cuối kỳ:** theo người học, khả năng cao cuối kỳ cũng có kiến thức giữa kỳ; giữ nguyên toàn bộ output kiến thức. Chưa chốt phạm vi/lịch ôn cuối kỳ. Giữ các mốc và câu chưa trả lời bên dưới, không suy thành thạo hay tự tiếp bài.
+
+## Mốc ôn giữ lại từ 03/11/2026
+
+Các lịch gợi ý trước thi dưới đây là lịch sử, không còn là việc sắp làm; không suy ra đã thực hiện. Các kết quả học và câu chưa trả lời vẫn giữ nguyên.
 
 **Tự kiểm U ngày03/11:** câu tự soạn stop-and-wait đã trả lời đúng kết quả16,67%; đã chữa phép tính (truyền8ms, chu kỳ48ms). User chưa trình bày cách tính; không suy thành thạo, không đổi9/9chặng Ch3. Không còn câu U đang chờ.
 
